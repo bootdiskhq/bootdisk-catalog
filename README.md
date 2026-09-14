@@ -44,28 +44,40 @@ The implementation intentionally uses only the Python standard library.
 
 ## Importing ingest observations
 
-`bootdisk_catalog.import_ingest` is the first narrow bridge from preservation observations into catalog JSON. It deliberately imports only facts that ingest can establish directly:
+`bootdisk_catalog.import_ingest` is the preservation-to-catalog bridge. Its normal mode consumes the complete ingest manifest and imports every explicit preserved regular-file observation under `files.referenced` and `files.discovered`.
+
+For each observation it creates:
 
 - an `Artifact` from observed SHA-256 and size;
 - an `Occurrence` describing where that artifact was observed.
 
-It does **not** create `Software`, `SoftwareRelease` or `Identification` records. Those are catalog interpretation and must be added with evidence rather than inferred from filenames or titles.
+Artifacts naturally deduplicate by SHA-256. If the same bytes occur in several entries or roles, the catalog contains one Artifact and separate Occurrences for each observation.
+
+Declared missing/non-file observations are not converted to Artifacts because no preserved byte identity exists. Structurally invalid observations fail the import rather than being silently ignored.
+
+The importer does **not** create `Software`, `SoftwareRelease` or `Identification` records. Those are catalog interpretation and must be added with evidence rather than inferred from filenames or titles.
 
 The importer addresses the source manifest by the SHA-256 of the exact manifest file. Local manifest filenames and directories therefore do not become catalog identity.
 
-Example:
+Normal whole-manifest import:
 
 ```bash
 python -m bootdisk_catalog.import_ingest \
-  /tmp/bootdisk-kcd15-manifest.json \
-  --entry K24 \
-  --file installer \
-  --output /tmp/bootdisk-kcd15-catalog
+  /path/to/ingest-manifest.json \
+  --output /path/to/catalog
 ```
 
-`--entry` is the ingest entry `source_id`. `--file` is an explicit role under `files.referenced` or `files.discovered`, such as `installer`, `run`, `screenshot`, `icon` or `description_rtf` when present.
+For focused debugging, `--entry` and `--file` may be supplied together:
 
-The output is written beneath `artifacts/` and `occurrences/` and is immediately reloaded through `Catalog` for validation before the command succeeds.
+```bash
+python -m bootdisk_catalog.import_ingest \
+  /path/to/ingest-manifest.json \
+  --entry K24 \
+  --file installer \
+  --output /path/to/catalog
+```
+
+The output is written beneath `artifacts/` and `occurrences/` and is reloaded through `Catalog` for graph validation before the command succeeds.
 
 ## Running the tests
 
