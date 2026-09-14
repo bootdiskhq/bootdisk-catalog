@@ -75,6 +75,7 @@ class IdentificationTests(unittest.TestCase):
         self.assertEqual(release["software_id"], "software:winamp")
         self.assertEqual(identification["artifact_id"], ARTIFACT_ID)
         self.assertEqual(identification["status"], "curated")
+        self.assertEqual(identification["evidence"][0]["kind"], "observed")
         self.assertEqual(
             identification["evidence"][0]["source_ref"],
             {"manifest": f"sha256:{MANIFEST_DIGEST}", "entry": "K37"},
