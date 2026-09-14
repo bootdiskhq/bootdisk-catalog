@@ -79,6 +79,35 @@ python -m bootdisk_catalog.import_ingest \
 
 The output is written beneath `artifacts/` and `occurrences/` and is reloaded through `Catalog` for graph validation before the command succeeds.
 
+## Adding explicit software identifications
+
+`bootdisk_catalog.identify` adds semantic catalog interpretation only when a curator supplies it explicitly. It does not infer software identity from a filename, hash or editorial title.
+
+The command starts from an existing Artifact and one of its Occurrences. The Occurrence anchors the evidence to the immutable ingest-manifest identity and source entry. The curator then supplies stable Software and SoftwareRelease identities plus the source field/value supporting the interpretation.
+
+Example for a curated Winamp 2.76 identification:
+
+```bash
+python -m bootdisk_catalog.identify \
+  /path/to/catalog \
+  --artifact artifact:sha256:b609c58ca767f0809fe30775e2dd9f28315f85f2972196b2a5aca4a84a2964ad \
+  --entry K37 \
+  --software-id software:winamp \
+  --software-name Winamp \
+  --release-id release:winamp:2.76 \
+  --version 2.76 \
+  --field normalized.title \
+  --value "WinAmp 2.76"
+```
+
+This creates or safely reuses:
+
+- `Software` (`software:winamp`);
+- `SoftwareRelease` (`release:winamp:2.76`);
+- an evidence-bearing `Identification` from the Artifact to that release.
+
+The source field is recorded as `observed` evidence, while the semantic conclusion remains separately marked as `curated` (or `interpreted` when requested). Re-running the same identification is idempotent; conflicting existing records are never silently overwritten.
+
 ## Running the tests
 
 From the repository root:
