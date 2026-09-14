@@ -143,7 +143,9 @@ class IngestImportTests(unittest.TestCase):
                             "path": "Other/setup.exe",
                             "exists": True,
                             "is_file": True,
-                            "size": 99,
+                            # Same digest means the same exact bytes. The size must
+                            # therefore agree with the first observation as well.
+                            "size": 1234567,
                             "sha256": ARTIFACT_DIGEST,
                         }
                     },
