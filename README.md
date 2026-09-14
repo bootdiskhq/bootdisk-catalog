@@ -42,6 +42,31 @@ Reverse relationships are derived in memory and are not duplicated into authorit
 
 The implementation intentionally uses only the Python standard library.
 
+## Importing ingest observations
+
+`bootdisk_catalog.import_ingest` is the first narrow bridge from preservation observations into catalog JSON. It deliberately imports only facts that ingest can establish directly:
+
+- an `Artifact` from observed SHA-256 and size;
+- an `Occurrence` describing where that artifact was observed.
+
+It does **not** create `Software`, `SoftwareRelease` or `Identification` records. Those are catalog interpretation and must be added with evidence rather than inferred from filenames or titles.
+
+The importer addresses the source manifest by the SHA-256 of the exact manifest file. Local manifest filenames and directories therefore do not become catalog identity.
+
+Example:
+
+```bash
+python -m bootdisk_catalog.import_ingest \
+  /tmp/bootdisk-kcd15-manifest.json \
+  --entry K24 \
+  --file installer \
+  --output /tmp/bootdisk-kcd15-catalog
+```
+
+`--entry` is the ingest entry `source_id`. `--file` is an explicit role under `files.referenced` or `files.discovered`, such as `installer`, `run`, `screenshot`, `icon` or `description_rtf` when present.
+
+The output is written beneath `artifacts/` and `occurrences/` and is immediately reloaded through `Catalog` for validation before the command succeeds.
+
 ## Running the tests
 
 From the repository root:
@@ -62,6 +87,7 @@ This component does not currently provide:
 - a search engine;
 - a frontend projection;
 - source-format parsing;
-- external preservation-manifest loading.
+- automatic software identification;
+- external preservation-manifest semantic resolution beyond immutable references.
 
-The goal of this first implementation is to prove that Bootdisk catalog data can be navigated correctly from authoritative JSON using stable IDs alone.
+The goal is to keep the catalog boundary explicit: ingest tells Catalog what was observed; Catalog adds interpretation without rewriting preservation evidence.
