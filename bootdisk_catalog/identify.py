@@ -79,9 +79,13 @@ def _preflight_record(path: Path, record: dict[str, Any]) -> None:
     try:
         existing = json.loads(path.read_text(encoding="utf-8"))
     except (OSError, json.JSONDecodeError) as exc:
-        raise IdentificationError(f"cannot inspect existing catalog record {path}: {exc}") from exc
+        raise IdentificationError(
+            f"cannot inspect existing catalog record {path}: {exc}"
+        ) from exc
     if existing != record:
-        raise IdentificationError(f"refusing to overwrite conflicting catalog record: {path}")
+        raise IdentificationError(
+            f"refusing to overwrite conflicting catalog record: {path}"
+        )
 
 
 def create_identification(
@@ -103,6 +107,9 @@ def create_identification(
     Its filesystem path is intentionally omitted because the supplied evidence field
     describes the editorial entry, not necessarily the referenced file itself.
     """
+
+    if status not in {"interpreted", "curated"}:
+        raise IdentificationError(f"invalid identification status: {status!r}")
 
     root = Path(catalog_root)
     catalog = Catalog.load(root)
@@ -136,7 +143,9 @@ def create_identification(
         "status": status,
         "evidence": [
             {
-                "kind": status,
+                # The source field is observed evidence. The semantic conclusion
+                # drawn from it is represented separately by Identification.status.
+                "kind": "observed",
                 "source_ref": source_ref,
                 "field": evidence_field,
                 "value": evidence_value,
