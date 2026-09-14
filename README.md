@@ -108,6 +108,47 @@ This creates or safely reuses:
 
 The source field is recorded as `observed` evidence, while the semantic conclusion remains separately marked as `curated` (or `interpreted` when requested). Re-running the same identification is idempotent; conflicting existing records are never silently overwritten.
 
+## Viewing cataloged software
+
+`bootdisk_catalog.view` derives a software-centered presentation from the authoritative catalog graph. It does not write new catalog facts and can always be rebuilt from the JSON records.
+
+Human-readable view:
+
+```bash
+python -m bootdisk_catalog.view \
+  /path/to/catalog \
+  software:winamp
+```
+
+Example shape:
+
+```text
+Software:
+  Winamp (software:winamp)
+
+Release:
+  2.76 (release:winamp:2.76)
+
+Artifact:
+  artifact:sha256:b609c58ca767f0809fe30775e2dd9f28315f85f2972196b2a5aca4a84a2964ad
+  size: 2229552
+
+Occurrence:
+  entry: K37
+  path:  WinAmp/WinAmp276_full.exe
+```
+
+The same derived projection can be emitted as JSON for tooling or a future presentation layer:
+
+```bash
+python -m bootdisk_catalog.view \
+  /path/to/catalog \
+  software:winamp \
+  --json
+```
+
+This keeps presentation concerns separate from catalog truth while giving command-line tools and future frontends one consistent traversal of `Software -> SoftwareRelease -> Artifact -> Occurrence`.
+
 ## Running the tests
 
 From the repository root:
@@ -126,7 +167,7 @@ This component does not currently provide:
 - an ORM;
 - an HTTP API;
 - a search engine;
-- a frontend projection;
+- a frontend;
 - source-format parsing;
 - automatic software identification;
 - external preservation-manifest semantic resolution beyond immutable references.
