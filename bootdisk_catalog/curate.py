@@ -101,7 +101,22 @@ def curation_queue(
             }
         )
 
+    # Preserve manifest order deliberately. Editorial/source order is evidence too,
+    # and curation does not need to rewrite it merely to make K-numbers look numeric.
     return queue
+
+
+def select_curation_entry(
+    queue: list[dict[str, Any]], entry_id: str
+) -> dict[str, Any]:
+    """Select exactly one source entry from a derived curation queue."""
+
+    matches = [item for item in queue if item["entry"] == entry_id]
+    if not matches:
+        raise CurationError(f"ingest entry not found in curation queue: {entry_id}")
+    if len(matches) != 1:
+        raise CurationError(f"ambiguous ingest entry in curation queue: {entry_id}")
+    return matches[0]
 
 
 def format_curation_queue(
@@ -122,6 +137,31 @@ def format_curation_queue(
     return "\n".join(lines)
 
 
+def format_curation_entry(item: dict[str, Any]) -> str:
+    """Render one source entry as compact human review context."""
+
+    title = item["title"] if item["title"] is not None else "-"
+    lines = [
+        "Curation review:",
+        f"  entry:  {item['entry']}",
+        f"  status: {item['status']}",
+        f"  editorial title: {title}",
+        "",
+        "Preserved occurrences:",
+    ]
+    for occurrence in item["occurrences"]:
+        lines.append(f"  {occurrence['artifact_id']}")
+        lines.append(f"    path: {occurrence['path'] or '-'}")
+    if not item["occurrences"]:
+        lines.append("  none")
+
+    if item["identifications"]:
+        lines.extend(["", "Existing identifications:"])
+        lines.extend(f"  {identification_id}" for identification_id in item["identifications"])
+
+    return "\n".join(lines)
+
+
 def main(argv: list[str] | None = None) -> int:
     parser = argparse.ArgumentParser(
         description="Review ingest entries against evidence-backed catalog curation state"
@@ -132,12 +172,26 @@ def main(argv: list[str] | None = None) -> int:
         "--pending", action="store_true", help="show only entries still needing curation"
     )
     parser.add_argument(
+        "--entry", help="review one exact ingest source_id instead of the whole queue"
+    )
+    parser.add_argument(
         "--json", action="store_true", dest="as_json", help="emit the review queue as JSON"
     )
     args = parser.parse_args(argv)
 
     catalog = Catalog.load(Path(args.catalog_root))
     queue = curation_queue(catalog, args.manifest)
+
+    if args.entry:
+        item = select_curation_entry(queue, args.entry)
+        if args.pending and item["status"] != "pending":
+            raise CurationError(f"ingest entry is already identified: {args.entry}")
+        if args.as_json:
+            print(json.dumps(item, indent=2, ensure_ascii=False))
+        else:
+            print(format_curation_entry(item))
+        return 0
+
     if args.pending:
         queue = [item for item in queue if item["status"] == "pending"]
 
