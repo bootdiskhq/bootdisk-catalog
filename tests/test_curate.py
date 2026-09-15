@@ -16,8 +16,14 @@ ARTIFACT_ID = f"artifact:sha256:{ARTIFACT_DIGEST}"
 class CurationTests(unittest.TestCase):
     def setUp(self):
         self.tempdir = tempfile.TemporaryDirectory()
-        self.root = Path(self.tempdir.name)
-        self.manifest_path = self.root / "ingest.json"
+        self.workspace = Path(self.tempdir.name)
+        self.root = self.workspace / "catalog"
+        self.root.mkdir()
+
+        # The ingest manifest is an external evidence source, not a Catalog record.
+        # Keep it outside the catalog root so Catalog.load() never mistakes it for
+        # authoritative catalog JSON while recursively discovering records.
+        self.manifest_path = self.workspace / "ingest.json"
 
         manifest = {
             "entries": [
@@ -29,7 +35,13 @@ class CurationTests(unittest.TestCase):
         self.manifest_path.write_bytes(raw)
         self.manifest_ref = f"sha256:{hashlib.sha256(raw).hexdigest()}"
 
-        for directory in ("artifacts", "occurrences", "software", "releases", "identifications"):
+        for directory in (
+            "artifacts",
+            "occurrences",
+            "software",
+            "releases",
+            "identifications",
+        ):
             (self.root / directory).mkdir()
 
         self._write(
@@ -63,7 +75,12 @@ class CurationTests(unittest.TestCase):
 
         self._write(
             "software/one.json",
-            {"schema": SCHEMA, "type": "software", "id": "software:one", "name": "Program One"},
+            {
+                "schema": SCHEMA,
+                "type": "software",
+                "id": "software:one",
+                "name": "Program One",
+            },
         )
         self._write(
             "releases/one.json",
@@ -87,7 +104,10 @@ class CurationTests(unittest.TestCase):
                 "evidence": [
                     {
                         "kind": "observed",
-                        "source_ref": {"manifest": self.manifest_ref, "entry": "K1"},
+                        "source_ref": {
+                            "manifest": self.manifest_ref,
+                            "entry": "K1",
+                        },
                         "field": "normalized.title",
                         "value": "Program One 1.0",
                     }
