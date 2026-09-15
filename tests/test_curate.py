@@ -5,7 +5,13 @@ import tempfile
 import unittest
 
 from bootdisk_catalog import Catalog
-from bootdisk_catalog.curate import curation_queue, format_curation_queue
+from bootdisk_catalog.curate import (
+    CurationError,
+    curation_queue,
+    format_curation_entry,
+    format_curation_queue,
+    select_curation_entry,
+)
 
 
 SCHEMA = "bootdisk-catalog-0.1"
@@ -138,6 +144,33 @@ class CurationTests(unittest.TestCase):
         self.assertNotIn("K1", text)
         self.assertIn("K2  [pending]  Program Two 2.0", text)
         self.assertIn("K2/Setup.exe", text)
+
+    def test_select_entry_returns_exact_source_entry(self):
+        queue = curation_queue(Catalog.load(self.root), self.manifest_path)
+
+        item = select_curation_entry(queue, "K2")
+
+        self.assertEqual(item["entry"], "K2")
+        self.assertEqual(item["status"], "pending")
+        self.assertEqual(item["title"], "Program Two 2.0")
+
+    def test_select_entry_rejects_unknown_source_entry(self):
+        queue = curation_queue(Catalog.load(self.root), self.manifest_path)
+
+        with self.assertRaisesRegex(CurationError, "ingest entry not found"):
+            select_curation_entry(queue, "K99")
+
+    def test_entry_view_keeps_title_editorial_and_shows_occurrences(self):
+        queue = curation_queue(Catalog.load(self.root), self.manifest_path)
+        item = select_curation_entry(queue, "K2")
+
+        text = format_curation_entry(item)
+
+        self.assertIn("entry:  K2", text)
+        self.assertIn("status: pending", text)
+        self.assertIn("editorial title: Program Two 2.0", text)
+        self.assertIn(ARTIFACT_ID, text)
+        self.assertIn("path: K2/Setup.exe", text)
 
 
 if __name__ == "__main__":
