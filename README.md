@@ -79,6 +79,29 @@ python -m bootdisk_catalog.import_ingest \
 
 The output is written beneath `artifacts/` and `occurrences/` and is reloaded through `Catalog` for graph validation before the command succeeds.
 
+## Reviewing the curation queue
+
+`bootdisk_catalog.curate` joins an exact ingest manifest to the catalog's immutable Occurrence and Identification evidence. It is a review surface: editorial titles are shown as context, but are never promoted to Software identity automatically.
+
+```bash
+python -m bootdisk_catalog.curate \
+  /path/to/catalog \
+  /path/to/ingest-manifest.json
+```
+
+Each ingest entry is shown as `pending` or `identified`, together with its preserved Artifact occurrences and source paths. To concentrate on unfinished work:
+
+```bash
+python -m bootdisk_catalog.curate \
+  /path/to/catalog \
+  /path/to/ingest-manifest.json \
+  --pending
+```
+
+Curation state is tied to the Identification's evidence source (`manifest` + `entry`), not merely to an Artifact hash. This is deliberate: byte-identical generic files such as `Setup.exe` can occur in unrelated editorial entries without causing one entry's interpretation to leak into another.
+
+`--json` emits the same queue as structured data for future interactive tooling. This first workflow step remains read-only; semantic claims are still committed explicitly with `bootdisk_catalog.identify`.
+
 ## Adding explicit software identifications
 
 `bootdisk_catalog.identify` adds semantic catalog interpretation only when a curator supplies it explicitly. It does not infer software identity from a filename, hash or editorial title.
