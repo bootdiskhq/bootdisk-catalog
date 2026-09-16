@@ -169,6 +169,8 @@ Curation bundle   -> Software, Releases and Identifications
 
 The curation bundle is preservation data, not disposable build output. A working Catalog directory may be regenerated, but the bundle should be retained and versioned alongside the source collection's other preservation metadata.
 
+Repository-owned reference bundles live under `data/curation/`, named for the preserved source collection. These files are reviewed and versioned like code. The test suite restores each reference bundle over a minimal regenerated observation graph and verifies its stable semantic identities. The first reference bundle is `data/curation/kcd15-2001.json`, whose acceptance record is K37 identified as Winamp 2.76.
+
 ## Viewing cataloged software
 
 `bootdisk_catalog.view` derives a software-centered presentation from the authoritative catalog graph. It does not write new catalog facts and can always be rebuilt from the JSON records.
