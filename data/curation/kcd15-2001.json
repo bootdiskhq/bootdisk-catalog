@@ -1,0 +1,38 @@
+{
+  "catalog_schema": "bootdisk-catalog-0.1",
+  "records": [
+    {
+      "artifact_id": "artifact:sha256:b609c58ca767f0809fe30775e2dd9f28315f85f2972196b2a5aca4a84a2964ad",
+      "evidence": [
+        {
+          "field": "normalized.title",
+          "kind": "observed",
+          "source_ref": {
+            "entry": "K37",
+            "manifest": "sha256:ae29b1d2976ee7c7439b2e12fe18b774d1d57e77c9a20bc3567d2e5079257281"
+          },
+          "value": "WinAmp 2.76"
+        }
+      ],
+      "id": "identification:97e260274a5258dae047c0f6294ee1da53b50d22a3f5e588e41da8b23aef5f04",
+      "schema": "bootdisk-catalog-0.1",
+      "software_release_id": "release:winamp:2.76",
+      "status": "curated",
+      "type": "identification"
+    },
+    {
+      "id": "software:winamp",
+      "name": "Winamp",
+      "schema": "bootdisk-catalog-0.1",
+      "type": "software"
+    },
+    {
+      "id": "release:winamp:2.76",
+      "schema": "bootdisk-catalog-0.1",
+      "software_id": "software:winamp",
+      "type": "software_release",
+      "version": "2.76"
+    }
+  ],
+  "schema": "bootdisk-catalog-curation-0.1"
+}
