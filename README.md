@@ -131,6 +131,44 @@ This creates or safely reuses:
 
 The source field is recorded as `observed` evidence, while the semantic conclusion remains separately marked as `curated` (or `interpreted` when requested). Re-running the same identification is idempotent; conflicting existing records are never silently overwritten.
 
+## Preserving curated knowledge
+
+Artifacts and Occurrences can be rebuilt from an Ingest manifest. `Software`, `SoftwareRelease` and `Identification` records represent human interpretation and cannot safely be reconstructed by inference. They must therefore be preserved separately before a generated Catalog tree is discarded or rebuilt.
+
+Export the semantic records into a versioned curation bundle:
+
+```bash
+python -m bootdisk_catalog.curation_bundle export \
+  /path/to/catalog \
+  /path/to/curation/source.json
+```
+
+A complete rebuild is then deliberately two-stage:
+
+```bash
+python -m bootdisk_catalog.import_ingest \
+  /path/to/ingest-manifest.json \
+  --output /path/to/catalog
+
+python -m bootdisk_catalog.curation_bundle restore \
+  /path/to/catalog \
+  /path/to/curation/source.json
+```
+
+The bundle contains only semantic records; reproducible Artifact and Occurrence records are not duplicated into it. Restore preflights the entire bundle before writing and refuses conflicting existing semantic records, then reloads the complete Catalog graph for validation.
+
+This gives the Catalog two explicit preservation inputs:
+
+```text
+Ingest manifest   -> observed Artifacts and Occurrences
+Curation bundle   -> Software, Releases and Identifications
+                         |
+                         v
+                  reconstructed Catalog
+```
+
+The curation bundle is preservation data, not disposable build output. A working Catalog directory may be regenerated, but the bundle should be retained and versioned alongside the source collection's other preservation metadata.
+
 ## Viewing cataloged software
 
 `bootdisk_catalog.view` derives a software-centered presentation from the authoritative catalog graph. It does not write new catalog facts and can always be rebuilt from the JSON records.
