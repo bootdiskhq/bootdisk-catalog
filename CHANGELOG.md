@@ -12,6 +12,9 @@ First Bootdisk Catalog release candidate.
 - software-centered derived view
 - frontend-oriented disposable presentation projection
 - automated pull-request unit tests
+- portable export and conflict-safe restore of curated semantic knowledge
+- versioned K-CD 15/2001 reference curation bundle
+- automated reference rebuild preserving K37 as Winamp 2.76
 
 The release candidate deliberately keeps source parsing in Ingest and publication
 assets/derivatives in Publish. It does not introduce a database or automatic
