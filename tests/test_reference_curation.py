@@ -1,0 +1,93 @@
+import json
+from pathlib import Path
+import tempfile
+import unittest
+
+from bootdisk_catalog import Catalog
+from bootdisk_catalog.curation_bundle import restore_bundle
+
+
+REPOSITORY_ROOT = Path(__file__).resolve().parents[1]
+BUNDLE_PATH = REPOSITORY_ROOT / "data" / "curation" / "kcd15-2001.json"
+EXPECTED_IDENTIFICATION_ID = (
+    "identification:"
+    "97e260274a5258dae047c0f6294ee1da53b50d22a3f5e588e41da8b23aef5f04"
+)
+
+
+class ReferenceCurationTests(unittest.TestCase):
+    def test_kcd15_2001_bundle_restores_winamp_after_catalog_rebuild(self):
+        bundle = json.loads(BUNDLE_PATH.read_text(encoding="utf-8"))
+        records = {record["type"]: record for record in bundle["records"]}
+
+        self.assertEqual(bundle["schema"], "bootdisk-catalog-curation-0.1")
+        self.assertEqual(bundle["catalog_schema"], "bootdisk-catalog-0.1")
+        self.assertEqual(
+            set(records),
+            {"software", "software_release", "identification"},
+        )
+
+        identification = records["identification"]
+        artifact_id = identification["artifact_id"]
+        artifact_digest = artifact_id.removeprefix("artifact:sha256:")
+        source_ref = identification["evidence"][0]["source_ref"]
+        manifest_digest = source_ref["manifest"].removeprefix("sha256:")
+        entry = source_ref["entry"]
+
+        with tempfile.TemporaryDirectory() as root_name:
+            root = Path(root_name)
+            (root / "artifacts").mkdir()
+            (root / "occurrences").mkdir()
+            (root / "artifacts" / "artifact.json").write_text(
+                json.dumps(
+                    {
+                        "schema": "bootdisk-catalog-0.1",
+                        "type": "artifact",
+                        "id": artifact_id,
+                        "sha256": artifact_digest,
+                        "size": 2229552,
+                    }
+                )
+                + "\n",
+                encoding="utf-8",
+            )
+            (root / "occurrences" / "occurrence.json").write_text(
+                json.dumps(
+                    {
+                        "schema": "bootdisk-catalog-0.1",
+                        "type": "occurrence",
+                        "id": (
+                            f"occurrence:{manifest_digest}:{entry}:installer"
+                        ),
+                        "artifact_id": artifact_id,
+                        "source_ref": {
+                            "manifest": source_ref["manifest"],
+                            "entry": entry,
+                            "path": "WinAmp/WinAmp276_full.exe",
+                        },
+                    }
+                )
+                + "\n",
+                encoding="utf-8",
+            )
+
+            self.assertEqual(restore_bundle(root, bundle), 3)
+            restored = Catalog.load(root)
+
+        self.assertEqual(
+            identification["id"],
+            EXPECTED_IDENTIFICATION_ID,
+        )
+        self.assertEqual(restored.record("software:winamp")["name"], "Winamp")
+        self.assertEqual(
+            restored.record("release:winamp:2.76")["version"],
+            "2.76",
+        )
+        self.assertEqual(
+            restored.record(EXPECTED_IDENTIFICATION_ID)["status"],
+            "curated",
+        )
+
+
+if __name__ == "__main__":
+    unittest.main()
