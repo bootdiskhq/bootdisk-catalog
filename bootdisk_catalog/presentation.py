@@ -16,6 +16,21 @@ from .catalog import Catalog
 from .curate import curation_queue
 
 
+def _curated_descriptions(catalog: Catalog, subject_id: str) -> list[dict[str, str]]:
+    return sorted(
+        (
+            {
+                "description_id": description["id"],
+                "language": description["language"],
+                "text": description["text"],
+            }
+            for description in catalog.descriptions_for_subject(subject_id)
+            if description["status"] == "curated"
+        ),
+        key=lambda item: (item["language"], item["description_id"]),
+    )
+
+
 def _identified_releases(catalog: Catalog, identification_ids: list[str]) -> list[dict[str, Any]]:
     releases = []
     seen: set[str] = set()
@@ -34,6 +49,7 @@ def _identified_releases(catalog: Catalog, identification_ids: list[str]) -> lis
                 "version": release["version"],
                 "identification_id": identification["id"],
                 "status": identification["status"],
+                "descriptions": _curated_descriptions(catalog, release["id"]),
             }
         )
     return sorted(releases, key=lambda item: (item["software_id"], item["release_id"]))

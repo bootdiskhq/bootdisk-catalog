@@ -10,7 +10,14 @@
         "release_id": "release:winamp:2.76",
         "version": "2.76",
         "identification_id": "identification:<sha256>",
-        "status": "curated"
+        "status": "curated",
+        "descriptions": [
+          {
+            "description_id": "description:release:winamp:2.76:nb-NO",
+            "language": "nb-NO",
+            "text": "Winamp 2.76 er bevart på K-CD 15/2001 som program K37."
+          }
+        ]
       }
     ],
     "occurrences": [
