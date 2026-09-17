@@ -22,6 +22,46 @@
       "type": "description"
     },
     {
+      "evidence": [
+        {
+          "field": "normalized.description",
+          "kind": "curated",
+          "source_ref": {
+            "entry": "K38",
+            "manifest": "sha256:ae29b1d2976ee7c7439b2e12fe18b774d1d57e77c9a20bc3567d2e5079257281"
+          },
+          "value": "Det er en fordel å kunne pakke filer som skal lagres eller sendes. Bruk WinZip når du vil pakke filene, slik at de tar mindre plass."
+        }
+      ],
+      "id": "description:release:winzip:8.0:nb-NO",
+      "language": "nb-NO",
+      "schema": "bootdisk-catalog-0.1",
+      "status": "curated",
+      "subject_id": "release:winzip:8.0",
+      "text": "WinZip 8.0 brukes til å pakke filer slik at de tar mindre plass ved lagring eller sending.",
+      "type": "description"
+    },
+    {
+      "evidence": [
+        {
+          "field": "normalized.description",
+          "kind": "curated",
+          "source_ref": {
+            "entry": "K39",
+            "manifest": "sha256:ae29b1d2976ee7c7439b2e12fe18b774d1d57e77c9a20bc3567d2e5079257281"
+          },
+          "value": "Hvis du har mange bilder på datamaskinen, kan du med fordel bruke XnView til å sortere og finne akkurat de bildene du har bruk for."
+        }
+      ],
+      "id": "description:release:xnview:1.21:nb-NO",
+      "language": "nb-NO",
+      "schema": "bootdisk-catalog-0.1",
+      "status": "curated",
+      "subject_id": "release:xnview:1.21",
+      "text": "XnView 1.21 brukes til å sortere og finne bilder på datamaskinen.",
+      "type": "description"
+    },
+    {
       "artifact_id": "artifact:sha256:b609c58ca767f0809fe30775e2dd9f28315f85f2972196b2a5aca4a84a2964ad",
       "evidence": [
         {
@@ -41,8 +81,58 @@
       "type": "identification"
     },
     {
+      "artifact_id": "artifact:sha256:64a155d9abd5fd5a004d0c59310a7407936265e691f503a9954b12d54b2fa7d1",
+      "evidence": [
+        {
+          "field": "normalized.title",
+          "kind": "observed",
+          "source_ref": {
+            "entry": "K38",
+            "manifest": "sha256:ae29b1d2976ee7c7439b2e12fe18b774d1d57e77c9a20bc3567d2e5079257281"
+          },
+          "value": "WinZip 8.0"
+        }
+      ],
+      "id": "identification:3a09c246e0763c40277fff89b5f9a60697ceb4a3120a4d69fd060a83b2d3bdd7",
+      "schema": "bootdisk-catalog-0.1",
+      "software_release_id": "release:winzip:8.0",
+      "status": "curated",
+      "type": "identification"
+    },
+    {
+      "artifact_id": "artifact:sha256:51fef638c35e529b203fc2f19e61c36aac56621b1d59ed0ae3f7c5338509829d",
+      "evidence": [
+        {
+          "field": "normalized.title",
+          "kind": "observed",
+          "source_ref": {
+            "entry": "K39",
+            "manifest": "sha256:ae29b1d2976ee7c7439b2e12fe18b774d1d57e77c9a20bc3567d2e5079257281"
+          },
+          "value": "XnView 1.21"
+        }
+      ],
+      "id": "identification:cbbc8927f406a0ef379abdc8055542ddd97dbb5f83b5a7bb4a1bb802de8a9ef7",
+      "schema": "bootdisk-catalog-0.1",
+      "software_release_id": "release:xnview:1.21",
+      "status": "curated",
+      "type": "identification"
+    },
+    {
       "id": "software:winamp",
       "name": "Winamp",
+      "schema": "bootdisk-catalog-0.1",
+      "type": "software"
+    },
+    {
+      "id": "software:winzip",
+      "name": "WinZip",
+      "schema": "bootdisk-catalog-0.1",
+      "type": "software"
+    },
+    {
+      "id": "software:xnview",
+      "name": "XnView",
       "schema": "bootdisk-catalog-0.1",
       "type": "software"
     },
@@ -52,6 +142,20 @@
       "software_id": "software:winamp",
       "type": "software_release",
       "version": "2.76"
+    },
+    {
+      "id": "release:winzip:8.0",
+      "schema": "bootdisk-catalog-0.1",
+      "software_id": "software:winzip",
+      "type": "software_release",
+      "version": "8.0"
+    },
+    {
+      "id": "release:xnview:1.21",
+      "schema": "bootdisk-catalog-0.1",
+      "software_id": "software:xnview",
+      "type": "software_release",
+      "version": "1.21"
     }
   ],
   "schema": "bootdisk-catalog-curation-0.1"

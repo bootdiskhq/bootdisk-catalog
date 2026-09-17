@@ -18,64 +18,62 @@ EXPECTED_IDENTIFICATION_ID = (
 class ReferenceCurationTests(unittest.TestCase):
     def test_kcd15_2001_bundle_restores_winamp_after_catalog_rebuild(self):
         bundle = json.loads(BUNDLE_PATH.read_text(encoding="utf-8"))
-        records = {record["type"]: record for record in bundle["records"]}
+        records_by_type = {}
+        for record in bundle["records"]:
+            records_by_type.setdefault(record["type"], []).append(record)
 
         self.assertEqual(bundle["schema"], "bootdisk-catalog-curation-0.1")
         self.assertEqual(bundle["catalog_schema"], "bootdisk-catalog-0.1")
         self.assertEqual(
-            set(records),
+            set(records_by_type),
             {"software", "software_release", "identification", "description"},
         )
-
-        identification = records["identification"]
-        artifact_id = identification["artifact_id"]
-        artifact_digest = artifact_id.removeprefix("artifact:sha256:")
-        source_ref = identification["evidence"][0]["source_ref"]
-        manifest_digest = source_ref["manifest"].removeprefix("sha256:")
-        entry = source_ref["entry"]
 
         with tempfile.TemporaryDirectory() as root_name:
             root = Path(root_name)
             (root / "artifacts").mkdir()
             (root / "occurrences").mkdir()
-            (root / "artifacts" / "artifact.json").write_text(
-                json.dumps(
-                    {
-                        "schema": "bootdisk-catalog-0.1",
-                        "type": "artifact",
-                        "id": artifact_id,
-                        "sha256": artifact_digest,
-                        "size": 2229552,
-                    }
+            for identification in records_by_type["identification"]:
+                artifact_id = identification["artifact_id"]
+                artifact_digest = artifact_id.removeprefix("artifact:sha256:")
+                source_ref = identification["evidence"][0]["source_ref"]
+                manifest_digest = source_ref["manifest"].removeprefix("sha256:")
+                entry = source_ref["entry"]
+                (root / "artifacts" / f"{entry}.json").write_text(
+                    json.dumps(
+                        {
+                            "schema": "bootdisk-catalog-0.1",
+                            "type": "artifact",
+                            "id": artifact_id,
+                            "sha256": artifact_digest,
+                            "size": 1,
+                        }
+                    )
+                    + "\n",
+                    encoding="utf-8",
                 )
-                + "\n",
-                encoding="utf-8",
-            )
-            (root / "occurrences" / "occurrence.json").write_text(
-                json.dumps(
-                    {
-                        "schema": "bootdisk-catalog-0.1",
-                        "type": "occurrence",
-                        "id": (
-                            f"occurrence:{manifest_digest}:{entry}:installer"
-                        ),
-                        "artifact_id": artifact_id,
-                        "source_ref": {
-                            "manifest": source_ref["manifest"],
-                            "entry": entry,
-                            "path": "WinAmp/WinAmp276_full.exe",
-                        },
-                    }
+                (root / "occurrences" / f"{entry}.json").write_text(
+                    json.dumps(
+                        {
+                            "schema": "bootdisk-catalog-0.1",
+                            "type": "occurrence",
+                            "id": f"occurrence:{manifest_digest}:{entry}:installer",
+                            "artifact_id": artifact_id,
+                            "source_ref": {
+                                "manifest": source_ref["manifest"],
+                                "entry": entry,
+                            },
+                        }
+                    )
+                    + "\n",
+                    encoding="utf-8",
                 )
-                + "\n",
-                encoding="utf-8",
-            )
 
-            self.assertEqual(restore_bundle(root, bundle), 4)
+            self.assertEqual(restore_bundle(root, bundle), 12)
             restored = Catalog.load(root)
 
         self.assertEqual(
-            identification["id"],
+            restored.record(EXPECTED_IDENTIFICATION_ID)["id"],
             EXPECTED_IDENTIFICATION_ID,
         )
         self.assertEqual(restored.record("software:winamp")["name"], "Winamp")
@@ -91,6 +89,14 @@ class ReferenceCurationTests(unittest.TestCase):
         self.assertEqual(len(descriptions), 1)
         self.assertEqual(descriptions[0]["language"], "nb-NO")
         self.assertIn("K37", descriptions[0]["text"])
+        self.assertEqual(restored.record("software:winzip")["name"], "WinZip")
+        self.assertEqual(
+            restored.record("release:xnview:1.21")["version"], "1.21"
+        )
+        self.assertIn(
+            "pakke filer",
+            restored.descriptions_for_subject("release:winzip:8.0")[0]["text"],
+        )
 
 
 if __name__ == "__main__":
