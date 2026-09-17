@@ -2,6 +2,26 @@
   "catalog_schema": "bootdisk-catalog-0.1",
   "records": [
     {
+      "evidence": [
+        {
+          "field": "normalized.title",
+          "kind": "curated",
+          "source_ref": {
+            "entry": "K37",
+            "manifest": "sha256:ae29b1d2976ee7c7439b2e12fe18b774d1d57e77c9a20bc3567d2e5079257281"
+          },
+          "value": "WinAmp 2.76"
+        }
+      ],
+      "id": "description:release:winamp:2.76:nb-NO",
+      "language": "nb-NO",
+      "schema": "bootdisk-catalog-0.1",
+      "status": "curated",
+      "subject_id": "release:winamp:2.76",
+      "text": "Winamp 2.76 er bevart på K-CD 15/2001 som program K37.",
+      "type": "description"
+    },
+    {
       "artifact_id": "artifact:sha256:b609c58ca767f0809fe30775e2dd9f28315f85f2972196b2a5aca4a84a2964ad",
       "evidence": [
         {

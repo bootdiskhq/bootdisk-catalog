@@ -78,6 +78,26 @@ class CatalogTests(unittest.TestCase):
                     }
                 ],
             },
+            "description": {
+                "schema": SCHEMA,
+                "type": "description",
+                "id": "description:release:winamp:2.76:nb-NO",
+                "subject_id": "release:winamp:2.76",
+                "language": "nb-NO",
+                "text": "Winamp 2.76 er bevart som K37.",
+                "status": "curated",
+                "evidence": [
+                    {
+                        "kind": "curated",
+                        "source_ref": {
+                            "manifest": f"sha256:{MANIFEST_DIGEST}",
+                            "entry": "0018",
+                        },
+                        "field": "normalized.title",
+                        "value": "WinAmp 2.76",
+                    }
+                ],
+            },
         }
 
     def write_valid_catalog(self):
@@ -89,6 +109,7 @@ class CatalogTests(unittest.TestCase):
         self.write("bytes/c.json", records["artifact"])
         self.write("history/d.json", records["occurrence"])
         self.write("claims/e.json", records["identification"])
+        self.write("prose/f.json", records["description"])
 
     def test_loads_and_resolves_graph_by_id_not_path(self):
         self.write_valid_catalog()
@@ -116,6 +137,10 @@ class CatalogTests(unittest.TestCase):
             "identification:artifact-a:winamp-2.76"
         )
         self.assertEqual(release["id"], "release:winamp:2.76")
+        self.assertEqual(
+            catalog.descriptions_for_subject("release:winamp:2.76")[0]["language"],
+            "nb-NO",
+        )
 
     def test_rejects_duplicate_ids_even_when_files_differ(self):
         software = self.valid_records()["software"]
@@ -168,6 +193,27 @@ class CatalogTests(unittest.TestCase):
         with self.assertRaisesRegex(
             CatalogValidationError, "evidence must be a non-empty list"
         ):
+            Catalog.load(self.root)
+
+    def test_description_requires_evidence(self):
+        records = self.valid_records()
+        records["description"]["evidence"] = []
+        self.write("software.json", records["software"])
+        self.write("release.json", records["release"])
+        self.write("description.json", records["description"])
+
+        with self.assertRaisesRegex(
+            CatalogValidationError, "description evidence must be a non-empty list"
+        ):
+            Catalog.load(self.root)
+
+    def test_description_subject_must_be_software_or_release(self):
+        records = self.valid_records()
+        records["description"]["subject_id"] = ARTIFACT_ID
+        self.write("artifact.json", records["artifact"])
+        self.write("description.json", records["description"])
+
+        with self.assertRaisesRegex(CatalogValidationError, "expected software or"):
             Catalog.load(self.root)
 
 
