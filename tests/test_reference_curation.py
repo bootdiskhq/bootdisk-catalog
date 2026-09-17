@@ -24,7 +24,7 @@ class ReferenceCurationTests(unittest.TestCase):
         self.assertEqual(bundle["catalog_schema"], "bootdisk-catalog-0.1")
         self.assertEqual(
             set(records),
-            {"software", "software_release", "identification"},
+            {"software", "software_release", "identification", "description"},
         )
 
         identification = records["identification"]
@@ -71,7 +71,7 @@ class ReferenceCurationTests(unittest.TestCase):
                 encoding="utf-8",
             )
 
-            self.assertEqual(restore_bundle(root, bundle), 3)
+            self.assertEqual(restore_bundle(root, bundle), 4)
             restored = Catalog.load(root)
 
         self.assertEqual(
@@ -87,6 +87,10 @@ class ReferenceCurationTests(unittest.TestCase):
             restored.record(EXPECTED_IDENTIFICATION_ID)["status"],
             "curated",
         )
+        descriptions = restored.descriptions_for_subject("release:winamp:2.76")
+        self.assertEqual(len(descriptions), 1)
+        self.assertEqual(descriptions[0]["language"], "nb-NO")
+        self.assertIn("K37", descriptions[0]["text"])
 
 
 if __name__ == "__main__":

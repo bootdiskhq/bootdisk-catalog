@@ -65,6 +65,7 @@ def _record_path(root: Path, record: dict[str, Any]) -> Path:
         "software": "software",
         "software_release": "releases",
         "identification": "identifications",
+        "description": "descriptions",
     }
     return root / directories[record["type"]] / _safe_filename(record["id"])
 

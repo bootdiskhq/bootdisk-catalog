@@ -1,8 +1,8 @@
 """Export and restore human-curated Catalog knowledge independently of imports.
 
 Artifacts and Occurrences are reproducible from ingest manifests. Software identity,
-releases and identifications are human knowledge and therefore need a portable,
-versionable representation of their own.
+releases, identifications and descriptions are human knowledge and therefore need a
+portable, versionable representation of their own.
 """
 from __future__ import annotations
 
@@ -15,7 +15,12 @@ from .catalog import Catalog, SCHEMA
 from .identify import IdentificationError, _canonical_json, _preflight_record, _record_path
 
 BUNDLE_SCHEMA = "bootdisk-catalog-curation-0.1"
-CURATED_TYPES = ("software", "software_release", "identification")
+CURATED_TYPES = (
+    "software",
+    "software_release",
+    "identification",
+    "description",
+)
 
 
 def export_bundle(catalog: Catalog) -> dict[str, Any]:

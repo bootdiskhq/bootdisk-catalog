@@ -33,6 +33,16 @@ REQUIRED_FIELDS: dict[str, tuple[str, ...]] = {
         "status",
         "evidence",
     ),
+    "description": (
+        "schema",
+        "type",
+        "id",
+        "subject_id",
+        "language",
+        "text",
+        "status",
+        "evidence",
+    ),
 }
 
 ID_PREFIXES = {
@@ -41,10 +51,13 @@ ID_PREFIXES = {
     "artifact": "artifact:sha256:",
     "occurrence": "occurrence:",
     "identification": "identification:",
+    "description": "description:",
 }
 
 IDENTIFICATION_STATUSES = {"interpreted", "curated"}
+DESCRIPTION_STATUSES = {"draft", "curated"}
 EVIDENCE_KINDS = {"observed", "derived", "interpreted", "curated"}
+LANGUAGE_TAG_RE = re.compile(r"^[a-z]{2,3}(?:-[A-Z]{2})?$")
 
 
 class CatalogError(Exception):
@@ -163,6 +176,16 @@ class Catalog:
         identification = self._require_type(identification_id, "identification")
         return self._records[identification["artifact_id"]]
 
+    def descriptions_for_subject(
+        self, subject_id: str
+    ) -> tuple[dict[str, Any], ...]:
+        self.record(subject_id)
+        return tuple(
+            record
+            for record in self._by_type["description"]
+            if record["subject_id"] == subject_id
+        )
+
     def _add_record(self, loaded: LoadedRecord) -> None:
         record = loaded.data
         record_type = record.get("type")
@@ -214,6 +237,8 @@ class Catalog:
             self._validate_source_ref(record["source_ref"], path, "source_ref")
         elif record_type == "identification":
             self._validate_identification(record, path)
+        elif record_type == "description":
+            self._validate_description(record, path)
 
     def _validate_artifact(self, record: dict[str, Any], path: Path) -> None:
         digest = record["sha256"]
@@ -267,6 +292,49 @@ class Catalog:
 
             self._validate_source_ref(item["source_ref"], path, label)
 
+    def _validate_description(self, record: dict[str, Any], path: Path) -> None:
+        language = record["language"]
+        if not isinstance(language, str) or not LANGUAGE_TAG_RE.fullmatch(language):
+            raise CatalogValidationError(
+                f"invalid description language in {path}: {language!r}"
+            )
+
+        text = record["text"]
+        if not isinstance(text, str) or not text.strip():
+            raise CatalogValidationError(
+                f"description text must not be empty in {path}"
+            )
+
+        status = record["status"]
+        if status not in DESCRIPTION_STATUSES:
+            raise CatalogValidationError(
+                f"invalid description status in {path}: {status!r}"
+            )
+
+        evidence = record["evidence"]
+        if not isinstance(evidence, list) or not evidence:
+            raise CatalogValidationError(
+                f"description evidence must be a non-empty list in {path}"
+            )
+        for index, item in enumerate(evidence):
+            label = f"evidence[{index}]"
+            if not isinstance(item, dict):
+                raise CatalogValidationError(f"{label} must be an object in {path}")
+            missing = [
+                field
+                for field in ("kind", "source_ref", "field", "value")
+                if field not in item
+            ]
+            if missing:
+                raise CatalogValidationError(
+                    f"missing fields in {label} in {path}: {', '.join(missing)}"
+                )
+            if item["kind"] not in EVIDENCE_KINDS:
+                raise CatalogValidationError(
+                    f"invalid knowledge kind in {label} in {path}: {item['kind']!r}"
+                )
+            self._validate_source_ref(item["source_ref"], path, label)
+
     def _validate_source_ref(
         self, source_ref: Any, path: Path, label: str
     ) -> None:
@@ -304,6 +372,19 @@ class Catalog:
             self._expect_reference(
                 identification, "software_release_id", "software_release"
             )
+
+        for description in self._by_type["description"]:
+            target_id = description.get("subject_id")
+            target = self._records.get(target_id)
+            if target is None:
+                raise CatalogValidationError(
+                    f"broken reference: {description['id']}.subject_id -> {target_id}"
+                )
+            if target["type"] not in {"software", "software_release"}:
+                raise CatalogValidationError(
+                    f"wrong reference type: {description['id']}.subject_id -> "
+                    f"{target_id} is {target['type']}, expected software or software_release"
+                )
 
     def _expect_reference(
         self, owner: dict[str, Any], field: str, expected_type: str
