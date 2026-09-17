@@ -18,7 +18,11 @@ The JSON projection exposes:
 - editorial title as source context;
 - curation state;
 - identified Software and SoftwareRelease records when present;
+- curated, language-tagged descriptions for identified releases;
 - preserved Artifact IDs and source paths.
+
+Draft descriptions remain in the authoritative Catalog but are deliberately omitted
+from this publication-facing projection.
 
 The projection deliberately contains source paths rather than invented web URLs.
 `bootdisk-publish` remains responsible for publication policy, stable published

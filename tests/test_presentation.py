@@ -58,6 +58,18 @@ class PresentationProjectionTests(unittest.TestCase):
                 "field": "normalized.title", "value": "Program One 1.0",
             }],
         })
+        for status in ("curated", "draft"):
+            self._write(f"descriptions/{status}.json", {
+                "schema": SCHEMA, "type": "description",
+                "id": f"description:release:one:1.0:nb-NO:{status}",
+                "subject_id": "release:one:1.0", "language": "nb-NO",
+                "text": f"{status.capitalize()} description.", "status": status,
+                "evidence": [{
+                    "kind": "curated",
+                    "source_ref": {"manifest": manifest_ref, "entry": "K1"},
+                    "field": "normalized.title", "value": "Program One 1.0",
+                }],
+            })
 
     def tearDown(self):
         self.tempdir.cleanup()
@@ -76,6 +88,14 @@ class PresentationProjectionTests(unittest.TestCase):
         self.assertEqual(cards[0]["software"][0]["software_id"], "software:one")
         self.assertEqual(cards[0]["software"][0]["software_name"], "Program One")
         self.assertEqual(cards[0]["software"][0]["version"], "1.0")
+        self.assertEqual(
+            cards[0]["software"][0]["descriptions"],
+            [{
+                "description_id": "description:release:one:1.0:nb-NO:curated",
+                "language": "nb-NO",
+                "text": "Curated description.",
+            }],
+        )
 
     def test_pending_entry_has_source_occurrences_without_invented_software(self):
         cards = presentation_projection(Catalog.load(self.root), self.manifest_path)
