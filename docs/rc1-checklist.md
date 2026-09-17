@@ -8,7 +8,9 @@
 - [x] software-centered derived view
 - [x] frontend presentation projection
 - [x] pull-request CI definition
-- [ ] automated CI green on release-candidate PR
-- [ ] K-CD 15/2001 smoke test green
+- [x] automated CI green on release-candidate PR
+- [x] K-CD 15/2001 smoke test green
 
-Only the last two validation gates remain before rc1 is treated as validated.
+All release-candidate gates are satisfied. The reference rebuild imported 153
+Artifacts and 164 Occurrences, restored the three versioned semantic records, and
+resolved K37 as Winamp 2.76 with its stable Identification ID.
