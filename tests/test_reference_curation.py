@@ -69,7 +69,7 @@ class ReferenceCurationTests(unittest.TestCase):
                     encoding="utf-8",
                 )
 
-            self.assertEqual(restore_bundle(root, bundle), 12)
+            self.assertEqual(restore_bundle(root, bundle), 20)
             restored = Catalog.load(root)
 
         self.assertEqual(
@@ -90,6 +90,13 @@ class ReferenceCurationTests(unittest.TestCase):
         self.assertEqual(descriptions[0]["language"], "nb-NO")
         self.assertIn("K37", descriptions[0]["text"])
         self.assertEqual(restored.record("software:winzip")["name"], "WinZip")
+        self.assertEqual(
+            restored.record("release:acrobat-reader:5.0")["version"], "5.0"
+        )
+        self.assertEqual(
+            restored.record("software:internet-explorer")["name"],
+            "Internet Explorer",
+        )
         self.assertEqual(
             restored.record("release:xnview:1.21")["version"], "1.21"
         )

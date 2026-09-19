@@ -4,6 +4,46 @@
     {
       "evidence": [
         {
+          "field": "normalized.description",
+          "kind": "curated",
+          "source_ref": {
+            "entry": "K24",
+            "manifest": "sha256:ae29b1d2976ee7c7439b2e12fe18b774d1d57e77c9a20bc3567d2e5079257281"
+          },
+          "value": "Acrobat Reader brukes til å lese elektroniske dokumenter på skjermen. Bruk det f.eks. til å lese veiledningene til programmene på denne siden."
+        }
+      ],
+      "id": "description:release:acrobat-reader:5.0:nb-NO",
+      "language": "nb-NO",
+      "schema": "bootdisk-catalog-0.1",
+      "status": "curated",
+      "subject_id": "release:acrobat-reader:5.0",
+      "text": "Acrobat Reader 5.0 brukes til å lese elektroniske dokumenter, blant annet programveiledningene på K-CD-en.",
+      "type": "description"
+    },
+    {
+      "evidence": [
+        {
+          "field": "normalized.description",
+          "kind": "curated",
+          "source_ref": {
+            "entry": "K29",
+            "manifest": "sha256:ae29b1d2976ee7c7439b2e12fe18b774d1d57e77c9a20bc3567d2e5079257281"
+          },
+          "value": "Når du skal surfe på internett, trenger du et godt nettleserprogram. Det mest kjente er Internet Explorer, som du finner den nyeste utgaven av her."
+        }
+      ],
+      "id": "description:release:internet-explorer:5.5:nb-NO",
+      "language": "nb-NO",
+      "schema": "bootdisk-catalog-0.1",
+      "status": "curated",
+      "subject_id": "release:internet-explorer:5.5",
+      "text": "Internet Explorer 5.5 er nettleseren som ble distribuert som program K29 på K-CD 15/2001.",
+      "type": "description"
+    },
+    {
+      "evidence": [
+        {
           "field": "normalized.title",
           "kind": "curated",
           "source_ref": {
@@ -60,6 +100,44 @@
       "subject_id": "release:xnview:1.21",
       "text": "XnView 1.21 brukes til å sortere og finne bilder på datamaskinen.",
       "type": "description"
+    },
+    {
+      "artifact_id": "artifact:sha256:79522eb4edbcee603e0f971cba660365ecb33595953d787e9909593a51b2717d",
+      "evidence": [
+        {
+          "field": "normalized.title",
+          "kind": "observed",
+          "source_ref": {
+            "entry": "K24",
+            "manifest": "sha256:ae29b1d2976ee7c7439b2e12fe18b774d1d57e77c9a20bc3567d2e5079257281"
+          },
+          "value": "Acrobat Reader 5.0"
+        }
+      ],
+      "id": "identification:11ed8a7fb15dce0c954e8d4030d259230067e5427db48c2a02014e58a6f8aa70",
+      "schema": "bootdisk-catalog-0.1",
+      "software_release_id": "release:acrobat-reader:5.0",
+      "status": "curated",
+      "type": "identification"
+    },
+    {
+      "artifact_id": "artifact:sha256:352d4a52efab3fb8c48dcc2b24569ecd8c27902d573f898f35bea73676f346bc",
+      "evidence": [
+        {
+          "field": "normalized.title",
+          "kind": "observed",
+          "source_ref": {
+            "entry": "K29",
+            "manifest": "sha256:ae29b1d2976ee7c7439b2e12fe18b774d1d57e77c9a20bc3567d2e5079257281"
+          },
+          "value": "Internet Explorer 5.5"
+        }
+      ],
+      "id": "identification:88b2e6c290791c16236a6ac4fddb5ab5ec58ea8a5145a107991cd18adefe462a",
+      "schema": "bootdisk-catalog-0.1",
+      "software_release_id": "release:internet-explorer:5.5",
+      "status": "curated",
+      "type": "identification"
     },
     {
       "artifact_id": "artifact:sha256:b609c58ca767f0809fe30775e2dd9f28315f85f2972196b2a5aca4a84a2964ad",
@@ -119,6 +197,18 @@
       "type": "identification"
     },
     {
+      "id": "software:acrobat-reader",
+      "name": "Acrobat Reader",
+      "schema": "bootdisk-catalog-0.1",
+      "type": "software"
+    },
+    {
+      "id": "software:internet-explorer",
+      "name": "Internet Explorer",
+      "schema": "bootdisk-catalog-0.1",
+      "type": "software"
+    },
+    {
       "id": "software:winamp",
       "name": "Winamp",
       "schema": "bootdisk-catalog-0.1",
@@ -135,6 +225,20 @@
       "name": "XnView",
       "schema": "bootdisk-catalog-0.1",
       "type": "software"
+    },
+    {
+      "id": "release:acrobat-reader:5.0",
+      "schema": "bootdisk-catalog-0.1",
+      "software_id": "software:acrobat-reader",
+      "type": "software_release",
+      "version": "5.0"
+    },
+    {
+      "id": "release:internet-explorer:5.5",
+      "schema": "bootdisk-catalog-0.1",
+      "software_id": "software:internet-explorer",
+      "type": "software_release",
+      "version": "5.5"
     },
     {
       "id": "release:winamp:2.76",
