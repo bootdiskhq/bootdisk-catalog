@@ -7,6 +7,46 @@
           "field": "normalized.description",
           "kind": "curated",
           "source_ref": {
+            "entry": "K30",
+            "manifest": "sha256:ae29b1d2976ee7c7439b2e12fe18b774d1d57e77c9a20bc3567d2e5079257281"
+          },
+          "value": "Programmet som det arbeides med i ekspert-hjemmesideskolen. Forstå kodespråket HTML. Bygg hjemmesider helt fra bunnen av, eller benytt de innebygde malene i programmet."
+        }
+      ],
+      "id": "description:release:1st-page:2000:nb-NO",
+      "language": "nb-NO",
+      "schema": "bootdisk-catalog-0.1",
+      "status": "curated",
+      "subject_id": "release:1st-page:2000",
+      "text": "1st Page 2000 er et HTML-redigeringsprogram for å bygge hjemmesider fra bunnen av eller med innebygde maler.",
+      "type": "description"
+    },
+    {
+      "evidence": [
+        {
+          "field": "normalized.description",
+          "kind": "curated",
+          "source_ref": {
+            "entry": "K35",
+            "manifest": "sha256:ae29b1d2976ee7c7439b2e12fe18b774d1d57e77c9a20bc3567d2e5079257281"
+          },
+          "value": "Med Komputer for alle får du gratis virusbeskyttelse. AVG 6.0 gir mulighet for å beskytte datamaskinen mot alle kjente og ukjente virus."
+        }
+      ],
+      "id": "description:release:avg-antivirus:6.0:nb-NO",
+      "language": "nb-NO",
+      "schema": "bootdisk-catalog-0.1",
+      "status": "curated",
+      "subject_id": "release:avg-antivirus:6.0",
+      "text": "AVG Antivirus 6.0 er antivirusprogrammet som ble distribuert som K35 under navnet AVG Antivirus Pro.",
+      "type": "description"
+    },
+    {
+      "evidence": [
+        {
+          "field": "normalized.description",
+          "kind": "curated",
+          "source_ref": {
             "entry": "K24",
             "manifest": "sha256:ae29b1d2976ee7c7439b2e12fe18b774d1d57e77c9a20bc3567d2e5079257281"
           },
@@ -100,6 +140,53 @@
       "subject_id": "release:xnview:1.21",
       "text": "XnView 1.21 brukes til å sortere og finne bilder på datamaskinen.",
       "type": "description"
+    },
+    {
+      "artifact_id": "artifact:sha256:26adea53490125fd31e300da97ef48b9ddc583753789051746b9a31406b418cf",
+      "evidence": [
+        {
+          "field": "normalized.title",
+          "kind": "observed",
+          "source_ref": {
+            "entry": "K30",
+            "manifest": "sha256:ae29b1d2976ee7c7439b2e12fe18b774d1d57e77c9a20bc3567d2e5079257281"
+          },
+          "value": "1st Page 2000"
+        }
+      ],
+      "id": "identification:b216601b0114de2fda2febc0aa3eb8f2256d3c1da0c840fb18c07ae65dc8fe82",
+      "schema": "bootdisk-catalog-0.1",
+      "software_release_id": "release:1st-page:2000",
+      "status": "curated",
+      "type": "identification"
+    },
+    {
+      "artifact_id": "artifact:sha256:0acea3d8103d89a025d14ef2b87211053c462abd46fa25b5cefb6813cf413bfa",
+      "evidence": [
+        {
+          "field": "normalized.title",
+          "kind": "observed",
+          "source_ref": {
+            "entry": "K35",
+            "manifest": "sha256:ae29b1d2976ee7c7439b2e12fe18b774d1d57e77c9a20bc3567d2e5079257281"
+          },
+          "value": "AVG Antivirus Pro"
+        },
+        {
+          "field": "normalized.description",
+          "kind": "observed",
+          "source_ref": {
+            "entry": "K35",
+            "manifest": "sha256:ae29b1d2976ee7c7439b2e12fe18b774d1d57e77c9a20bc3567d2e5079257281"
+          },
+          "value": "AVG 6.0"
+        }
+      ],
+      "id": "identification:b4e087a07a45e64a6a3b64e876e9fe67da5f3203d465863e262c6d81da5bf8b6",
+      "schema": "bootdisk-catalog-0.1",
+      "software_release_id": "release:avg-antivirus:6.0",
+      "status": "curated",
+      "type": "identification"
     },
     {
       "artifact_id": "artifact:sha256:79522eb4edbcee603e0f971cba660365ecb33595953d787e9909593a51b2717d",
@@ -197,8 +284,20 @@
       "type": "identification"
     },
     {
+      "id": "software:1st-page",
+      "name": "1st Page",
+      "schema": "bootdisk-catalog-0.1",
+      "type": "software"
+    },
+    {
       "id": "software:acrobat-reader",
       "name": "Acrobat Reader",
+      "schema": "bootdisk-catalog-0.1",
+      "type": "software"
+    },
+    {
+      "id": "software:avg-antivirus",
+      "name": "AVG Antivirus",
       "schema": "bootdisk-catalog-0.1",
       "type": "software"
     },
@@ -227,11 +326,25 @@
       "type": "software"
     },
     {
+      "id": "release:1st-page:2000",
+      "schema": "bootdisk-catalog-0.1",
+      "software_id": "software:1st-page",
+      "type": "software_release",
+      "version": "2000"
+    },
+    {
       "id": "release:acrobat-reader:5.0",
       "schema": "bootdisk-catalog-0.1",
       "software_id": "software:acrobat-reader",
       "type": "software_release",
       "version": "5.0"
+    },
+    {
+      "id": "release:avg-antivirus:6.0",
+      "schema": "bootdisk-catalog-0.1",
+      "software_id": "software:avg-antivirus",
+      "type": "software_release",
+      "version": "6.0"
     },
     {
       "id": "release:internet-explorer:5.5",
