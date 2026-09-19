@@ -33,12 +33,23 @@ def _identification_id(artifact_id: str, release_id: str) -> str:
 
 
 def _select_occurrence(
-    catalog: Catalog, artifact_id: str, entry: str
+    catalog: Catalog, artifact_id: str, entry: str, manifest_path=None
 ) -> dict[str, Any]:
     try:
         artifact = catalog.record(artifact_id)
     except CatalogError as exc:
         raise IdentificationError(str(exc)) from exc
+
+    if artifact["type"] == "package":
+        if manifest_path is None:
+            raise IdentificationError("package identification requires its ingest manifest")
+        from .import_ingest import _read_manifest, _find_entry
+        manifest, digest = _read_manifest(Path(manifest_path))
+        source = _find_entry(manifest, entry)
+        identity = source.get("content_identity", {})
+        if artifact_id != "package:sha256:" + str(identity.get("manifest_sha256")):
+            raise IdentificationError("package does not belong to the requested source entry")
+        return {"source_ref": {"manifest": "sha256:" + digest, "entry": entry}}
 
     if artifact["type"] != "artifact":
         raise IdentificationError(f"catalog id is not an artifact: {artifact_id}")
@@ -101,6 +112,7 @@ def create_identification(
     evidence_field: str,
     evidence_value: str,
     status: str = "curated",
+    manifest_path: str | Path | None = None,
 ) -> tuple[dict[str, Any], dict[str, Any], dict[str, Any]]:
     """Write Software, SoftwareRelease and Identification records explicitly.
 
@@ -114,7 +126,7 @@ def create_identification(
 
     root = Path(catalog_root)
     catalog = Catalog.load(root)
-    occurrence = _select_occurrence(catalog, artifact_id, entry)
+    occurrence = _select_occurrence(catalog, artifact_id, entry, manifest_path)
 
     occurrence_source = occurrence["source_ref"]
     source_ref = {
@@ -139,7 +151,7 @@ def create_identification(
         "schema": SCHEMA,
         "type": "identification",
         "id": _identification_id(artifact_id, release_id),
-        "artifact_id": artifact_id,
+        ("package_id" if catalog.record(artifact_id)["type"] == "package" else "artifact_id"): artifact_id,
         "software_release_id": release_id,
         "status": status,
         "evidence": [
@@ -177,7 +189,10 @@ def main(argv: list[str] | None = None) -> int:
         description="Add an explicit evidence-based software identification"
     )
     parser.add_argument("catalog_root")
-    parser.add_argument("--artifact", required=True, dest="artifact_id")
+    target = parser.add_mutually_exclusive_group(required=True)
+    target.add_argument("--artifact", dest="artifact_id")
+    target.add_argument("--package", dest="artifact_id")
+    parser.add_argument("--manifest", dest="manifest_path", type=Path)
     parser.add_argument("--entry", required=True)
     parser.add_argument("--software-id", required=True)
     parser.add_argument("--software-name", required=True)
@@ -201,6 +216,7 @@ def main(argv: list[str] | None = None) -> int:
         evidence_field=args.evidence_field,
         evidence_value=args.evidence_value,
         status=args.status,
+        manifest_path=args.manifest_path,
     )
     print(software["id"])
     print(release["id"])
