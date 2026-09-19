@@ -19,6 +19,8 @@ The JSON projection exposes:
 - curation state;
 - identified Software and SoftwareRelease records when present;
 - curated, language-tagged descriptions for identified releases;
+- the identified artifact's distribution kind when known (`full`, `demo`,
+  `trial`, `update` or `unknown`);
 - preserved Artifact IDs and source paths.
 
 Draft descriptions remain in the authoritative Catalog but are deliberately omitted

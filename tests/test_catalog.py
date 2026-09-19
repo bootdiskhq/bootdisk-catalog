@@ -66,6 +66,7 @@ class CatalogTests(unittest.TestCase):
                 "artifact_id": ARTIFACT_ID,
                 "software_release_id": "release:winamp:2.76",
                 "status": "curated",
+                "distribution_kind": "demo",
                 "evidence": [
                     {
                         "kind": "observed",
@@ -192,6 +193,19 @@ class CatalogTests(unittest.TestCase):
 
         with self.assertRaisesRegex(
             CatalogValidationError, "evidence must be a non-empty list"
+        ):
+            Catalog.load(self.root)
+
+    def test_identification_rejects_unknown_distribution_kind(self):
+        records = self.valid_records()
+        records["identification"]["distribution_kind"] = "magazine-ish"
+        self.write("software.json", records["software"])
+        self.write("release.json", records["release"])
+        self.write("artifact.json", records["artifact"])
+        self.write("identification.json", records["identification"])
+
+        with self.assertRaisesRegex(
+            CatalogValidationError, "invalid identification distribution_kind"
         ):
             Catalog.load(self.root)
 

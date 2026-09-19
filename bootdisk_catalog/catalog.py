@@ -55,6 +55,7 @@ ID_PREFIXES = {
 }
 
 IDENTIFICATION_STATUSES = {"interpreted", "curated"}
+IDENTIFICATION_DISTRIBUTION_KINDS = {"full", "demo", "trial", "update", "unknown"}
 DESCRIPTION_STATUSES = {"draft", "curated"}
 EVIDENCE_KINDS = {"observed", "derived", "interpreted", "curated"}
 LANGUAGE_TAG_RE = re.compile(r"^[a-z]{2,3}(?:-[A-Z]{2})?$")
@@ -262,6 +263,16 @@ class Catalog:
         if status not in IDENTIFICATION_STATUSES:
             raise CatalogValidationError(
                 f"invalid identification status in {path}: {status!r}"
+            )
+
+        distribution_kind = record.get("distribution_kind")
+        if (
+            distribution_kind is not None
+            and distribution_kind not in IDENTIFICATION_DISTRIBUTION_KINDS
+        ):
+            raise CatalogValidationError(
+                f"invalid identification distribution_kind in {path}: "
+                f"{distribution_kind!r}"
             )
 
         evidence = record["evidence"]
