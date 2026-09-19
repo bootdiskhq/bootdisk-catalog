@@ -45,6 +45,7 @@ def _identified_releases(catalog: Catalog, identification_ids: list[str]) -> lis
             {
                 "software_id": software["id"],
                 "software_name": software["name"],
+                "content_kind": software.get("content_kind"),
                 "release_id": release["id"],
                 "version": release["version"],
                 "identification_id": identification["id"],

@@ -2,84 +2,869 @@
   "catalog_schema": "bootdisk-catalog-0.1",
   "records": [
     {
+      "schema": "bootdisk-catalog-0.1",
+      "type": "description",
+      "id": "description:aliens-vs-predator-2:unknown:nb-NO",
+      "subject_id": "release:aliens-vs-predator-2:unknown",
+      "language": "nb-NO",
+      "text": "Magasindemo av Aliens vs. Predator 2 med et utdrag fra en enspilleroppgave som marinesoldat.",
+      "status": "curated",
       "evidence": [
         {
-          "field": "normalized.description",
-          "kind": "curated",
+          "kind": "observed",
           "source_ref": {
-            "entry": "K15",
-            "manifest": "sha256:ae29b1d2976ee7c7439b2e12fe18b774d1d57e77c9a20bc3567d2e5079257281"
+            "manifest": "sha256:ae29b1d2976ee7c7439b2e12fe18b774d1d57e77c9a20bc3567d2e5079257281",
+            "entry": "K1"
           },
-          "value": "Spillet er en variant over Spaceinvaders. Her er det imidlertid ikke fiendtlige romskip, men grønne, giftige edderkopper som skal skytes ned fra nettet sitt."
+          "field": "normalized.title",
+          "value": "Alien vs. Predator"
+        },
+        {
+          "kind": "observed",
+          "source_ref": {
+            "manifest": "sha256:ae29b1d2976ee7c7439b2e12fe18b774d1d57e77c9a20bc3567d2e5079257281",
+            "entry": "K1"
+          },
+          "field": "normalized.description",
+          "value": "På jakt etter vanvittige, siklende monstre i mørke ganger om bord på et romskip lysår unna jorden i en fjern fremtid. Det er med andre ord lagt opp til en skikkelig kosekveld."
+        },
+        {
+          "kind": "observed",
+          "source_ref": {
+            "manifest": "sha256:ae29b1d2976ee7c7439b2e12fe18b774d1d57e77c9a20bc3567d2e5079257281",
+            "entry": "K1",
+            "path": "Alien/readme.txt"
+          },
+          "field": "file_content_review",
+          "value": {
+            "sha256": "68198bbc82bc4ad7a9858ce9edfa9967a3d12690886f6af77ef34d53e8006298",
+            "summary": "Identifies Aliens Vs Predator 2, North American Magazine Demo; contains one Marine mission excerpt."
+          }
+        },
+        {
+          "kind": "observed",
+          "source_ref": {
+            "manifest": "sha256:ae29b1d2976ee7c7439b2e12fe18b774d1d57e77c9a20bc3567d2e5079257281",
+            "entry": "K1",
+            "path": "Alien/Setup.ini"
+          },
+          "field": "file_content_review",
+          "value": {
+            "sha256": "ce03ae39a7beda9769290cc613c13d5e31add606bebfc38f06f176ebf535574c",
+            "summary": "AppName=Aliens vs. Predator 2 Demo"
+          }
         }
-      ],
-      "id": "description:release:mutant-xpiders:unknown:nb-NO",
-      "language": "nb-NO",
-      "schema": "bootdisk-catalog-0.1",
-      "status": "curated",
-      "subject_id": "release:mutant-xpiders:unknown",
-      "text": "Mutant Xpiders er en variant av Space Invaders der spilleren skyter grønne edderkopper i stedet for romskip. Versjonen på K-CD-en er foreløpig ukjent.",
-      "type": "description"
+      ]
     },
     {
+      "schema": "bootdisk-catalog-0.1",
+      "type": "description",
+      "id": "description:bille-og-trille:unknown:nb-NO",
+      "subject_id": "release:bille-og-trille:unknown",
+      "language": "nb-NO",
+      "text": "Barnespill med Bille og Trille. CD-en inneholder en kjørbar fil med Demo i filnavnet; utgaven er ikke endelig avklart.",
+      "status": "curated",
       "evidence": [
         {
-          "field": "normalized.description",
-          "kind": "curated",
+          "kind": "observed",
           "source_ref": {
-            "entry": "K22",
-            "manifest": "sha256:ae29b1d2976ee7c7439b2e12fe18b774d1d57e77c9a20bc3567d2e5079257281"
+            "manifest": "sha256:ae29b1d2976ee7c7439b2e12fe18b774d1d57e77c9a20bc3567d2e5079257281",
+            "entry": "K3"
           },
-          "value": "Nå skal du en tur på skytebanen. Du må være både rask og nøyaktig med musen. Du skal treffe virvlende skyteskiver og ting og tang som flyr gjennom luften."
+          "field": "normalized.title",
+          "value": "Bille og Trille"
+        },
+        {
+          "kind": "observed",
+          "source_ref": {
+            "manifest": "sha256:ae29b1d2976ee7c7439b2e12fe18b774d1d57e77c9a20bc3567d2e5079257281",
+            "entry": "K3"
+          },
+          "field": "normalized.description",
+          "value": "Bille & Trille er to helt vanlige barn som går i barnehagen. De har masser av fantasi, så det skjer saker og ting i barnehagen."
         }
-      ],
-      "id": "description:release:shoot-and-relax:unknown:nb-NO",
-      "language": "nb-NO",
-      "schema": "bootdisk-catalog-0.1",
-      "status": "curated",
-      "subject_id": "release:shoot-and-relax:unknown",
-      "text": "Shoot & Relax er et skytebanespill der spilleren bruker musen til å treffe bevegelige skiver og gjenstander. Versjonen på K-CD-en er foreløpig ukjent.",
-      "type": "description"
+      ]
     },
     {
+      "schema": "bootdisk-catalog-0.1",
+      "type": "description",
+      "id": "description:blockout:unknown:nb-NO",
+      "subject_id": "release:blockout:unknown",
+      "language": "nb-NO",
+      "text": "Spilloppføring for Blockout, bevart med installasjonsfil og redaksjonelt materiale.",
+      "status": "curated",
       "evidence": [
         {
-          "field": "normalized.description",
-          "kind": "curated",
+          "kind": "observed",
           "source_ref": {
-            "entry": "K8",
-            "manifest": "sha256:ae29b1d2976ee7c7439b2e12fe18b774d1d57e77c9a20bc3567d2e5079257281"
+            "manifest": "sha256:ae29b1d2976ee7c7439b2e12fe18b774d1d57e77c9a20bc3567d2e5079257281",
+            "entry": "K4"
           },
-          "value": "Her blir tingene snudd på hodet. En bevæpnet, humoristisk og veltalende hjort går på jakt etter skytegale jegere. I dette 3D-skytespillet styrer du hjorten rundt i de store skogene."
+          "field": "normalized.title",
+          "value": "Blockout"
+        },
+        {
+          "kind": "observed",
+          "source_ref": {
+            "manifest": "sha256:ae29b1d2976ee7c7439b2e12fe18b774d1d57e77c9a20bc3567d2e5079257281",
+            "entry": "K4"
+          },
+          "field": "normalized.description",
+          "value": "Nå er det på tide med et vanedannende spill igjen som tester hvor raskt og logisk du tenker. Dette spillet minner om Tetris i en 3D-utgave."
         }
-      ],
-      "id": "description:release:deer-avenger:4:nb-NO",
-      "language": "nb-NO",
-      "schema": "bootdisk-catalog-0.1",
-      "status": "curated",
-      "subject_id": "release:deer-avenger:4",
-      "text": "Deer Avenger 4 er et humoristisk 3D-skytespill der en bevæpnet hjort jakter på jegere. K-CD-en inneholder en demo.",
-      "type": "description"
+      ]
     },
     {
+      "schema": "bootdisk-catalog-0.1",
+      "type": "description",
+      "id": "description:bruk-photo-objects:unknown:nb-NO",
+      "subject_id": "release:bruk-photo-objects:unknown",
+      "language": "nb-NO",
+      "text": "PDF-veiledning i å installere og bruke Photo-Objects Sampler.",
+      "status": "curated",
       "evidence": [
         {
-          "field": "normalized.description",
-          "kind": "curated",
+          "kind": "observed",
           "source_ref": {
-            "entry": "K13",
-            "manifest": "sha256:ae29b1d2976ee7c7439b2e12fe18b774d1d57e77c9a20bc3567d2e5079257281"
+            "manifest": "sha256:ae29b1d2976ee7c7439b2e12fe18b774d1d57e77c9a20bc3567d2e5079257281",
+            "entry": "K41"
           },
-          "value": "Du skal ta kontroll over et kompani store MechWarriors som blir styrt av modige piloter. Her får du en stor demo av MechCommander 2."
+          "field": "normalized.title",
+          "value": "Bruk Photo-Objects"
+        },
+        {
+          "kind": "observed",
+          "source_ref": {
+            "manifest": "sha256:ae29b1d2976ee7c7439b2e12fe18b774d1d57e77c9a20bc3567d2e5079257281",
+            "entry": "K41"
+          },
+          "field": "normalized.description",
+          "value": "I galleriet finner du 101 flotte bilder du kan bruke fritt. Denne veiledningen viser deg hvordan du finner de bildene du vil bruke."
+        },
+        {
+          "kind": "observed",
+          "source_ref": {
+            "manifest": "sha256:ae29b1d2976ee7c7439b2e12fe18b774d1d57e77c9a20bc3567d2e5079257281",
+            "entry": "K41",
+            "path": "PhotoPDF/PhotoObjects.pdf"
+          },
+          "field": "file_content_review",
+          "value": {
+            "sha256": "0125797c6604eae6c1abe47304be54b464fa5686c61911c4a81b56e2f3e84f56",
+            "summary": "Reviewed PDF opening page; confirms the named course or guide."
+          }
         }
-      ],
-      "id": "description:release:mechcommander:2:nb-NO",
-      "language": "nb-NO",
+      ]
+    },
+    {
       "schema": "bootdisk-catalog-0.1",
+      "type": "description",
+      "id": "description:bugnosis:unknown:nb-NO",
+      "subject_id": "release:bugnosis:unknown",
+      "language": "nb-NO",
+      "text": "Verktøy for å oppdage sporingsbilder på nettsider, distribuert her som en flerfilinstallasjon.",
       "status": "curated",
-      "subject_id": "release:mechcommander:2",
-      "text": "MechCommander 2 lar spilleren lede en avdeling MechWarriors. K-CD-en inneholder en demo av spillet.",
-      "type": "description"
+      "evidence": [
+        {
+          "kind": "observed",
+          "source_ref": {
+            "manifest": "sha256:ae29b1d2976ee7c7439b2e12fe18b774d1d57e77c9a20bc3567d2e5079257281",
+            "entry": "K5"
+          },
+          "field": "normalized.title",
+          "value": "Bugnosis"
+        },
+        {
+          "kind": "observed",
+          "source_ref": {
+            "manifest": "sha256:ae29b1d2976ee7c7439b2e12fe18b774d1d57e77c9a20bc3567d2e5079257281",
+            "entry": "K5"
+          },
+          "field": "normalized.description",
+          "value": "Med Bugnosis vil du kunne oppdage de usynlige spionene som holder øye med hvor du beveger deg på internett."
+        },
+        {
+          "kind": "observed",
+          "source_ref": {
+            "manifest": "sha256:ae29b1d2976ee7c7439b2e12fe18b774d1d57e77c9a20bc3567d2e5079257281",
+            "entry": "K5",
+            "path": "Bugnosis/SETUP.INI"
+          },
+          "field": "file_content_review",
+          "value": {
+            "sha256": "c505c3ab1a0982f46b58243418d7774f940057f1d413806da51eae0ba250f7dd",
+            "summary": "AppName=Web bugs detector; generic installer identity is insufficient."
+          }
+        }
+      ]
+    },
+    {
+      "schema": "bootdisk-catalog-0.1",
+      "type": "description",
+      "id": "description:clickpuzzle:unknown:nb-NO",
+      "subject_id": "release:clickpuzzle:unknown",
+      "language": "nb-NO",
+      "text": "Puslespill der brikker fjernes ved å klikke på dem.",
+      "status": "curated",
+      "evidence": [
+        {
+          "kind": "observed",
+          "source_ref": {
+            "manifest": "sha256:ae29b1d2976ee7c7439b2e12fe18b774d1d57e77c9a20bc3567d2e5079257281",
+            "entry": "K6"
+          },
+          "field": "normalized.title",
+          "value": "ClickPuzzle"
+        },
+        {
+          "kind": "observed",
+          "source_ref": {
+            "manifest": "sha256:ae29b1d2976ee7c7439b2e12fe18b774d1d57e77c9a20bc3567d2e5079257281",
+            "entry": "K6"
+          },
+          "field": "normalized.description",
+          "value": "Her skal du ved hjelp av ditt våkne blikk for kompliserte sammenhenger fjerne så mange firkanter som mulig. Reglene er enkle, men oppgaven er ikke lett."
+        }
+      ]
+    },
+    {
+      "schema": "bootdisk-catalog-0.1",
+      "type": "description",
+      "id": "description:cpu-z:unknown:nb-NO",
+      "subject_id": "release:cpu-z:unknown",
+      "language": "nb-NO",
+      "text": "Verktøy som viser informasjon om prosessoren og datamaskinens maskinvare.",
+      "status": "curated",
+      "evidence": [
+        {
+          "kind": "observed",
+          "source_ref": {
+            "manifest": "sha256:ae29b1d2976ee7c7439b2e12fe18b774d1d57e77c9a20bc3567d2e5079257281",
+            "entry": "K23"
+          },
+          "field": "normalized.title",
+          "value": "Cpu-Z"
+        },
+        {
+          "kind": "observed",
+          "source_ref": {
+            "manifest": "sha256:ae29b1d2976ee7c7439b2e12fe18b774d1d57e77c9a20bc3567d2e5079257281",
+            "entry": "K23"
+          },
+          "field": "normalized.description",
+          "value": "Dette programmet forteller deg alt om CPU-en din. Du kan se modell, revisjon, frekvens, ramtype, om den er overklokket samt få mange andre nyttige eller interessante opplysninger om hjertet i datamaskinen."
+        }
+      ]
+    },
+    {
+      "schema": "bootdisk-catalog-0.1",
+      "type": "description",
+      "id": "description:digitalkameraskolen:unknown:nb-NO",
+      "subject_id": "release:digitalkameraskolen:unknown",
+      "language": "nb-NO",
+      "text": "PDF-kurs om digital fotografering og bruk av digitalkamera.",
+      "status": "curated",
+      "evidence": [
+        {
+          "kind": "observed",
+          "source_ref": {
+            "manifest": "sha256:ae29b1d2976ee7c7439b2e12fe18b774d1d57e77c9a20bc3567d2e5079257281",
+            "entry": "K25"
+          },
+          "field": "normalized.title",
+          "value": "Digitalkameraskolen"
+        },
+        {
+          "kind": "observed",
+          "source_ref": {
+            "manifest": "sha256:ae29b1d2976ee7c7439b2e12fe18b774d1d57e77c9a20bc3567d2e5079257281",
+            "entry": "K25"
+          },
+          "field": "normalized.description",
+          "value": "Hvis du har et digitalkamera, eller du overveier å kjøpe et, får du tips om hvordan du bruker det riktig."
+        },
+        {
+          "kind": "observed",
+          "source_ref": {
+            "manifest": "sha256:ae29b1d2976ee7c7439b2e12fe18b774d1d57e77c9a20bc3567d2e5079257281",
+            "entry": "K25",
+            "path": "Digital/Digitalskolen.pdf"
+          },
+          "field": "file_content_review",
+          "value": {
+            "sha256": "65381c166a71a952d6d8f3f121e23c920b22325b98faa0b7cfa3aeef6af93f0a",
+            "summary": "Reviewed PDF opening page; confirms the named course or guide."
+          }
+        }
+      ]
+    },
+    {
+      "schema": "bootdisk-catalog-0.1",
+      "type": "description",
+      "id": "description:docucom-pdf-driver:unknown:nb-NO",
+      "subject_id": "release:docucom-pdf-driver:unknown",
+      "language": "nb-NO",
+      "text": "Skriverdriver for å lage PDF-dokumenter. K-CD-teksten oppgir 4.61; produktversjonen er foreløpig ikke bekreftet uavhengig.",
+      "status": "curated",
+      "evidence": [
+        {
+          "kind": "observed",
+          "source_ref": {
+            "manifest": "sha256:ae29b1d2976ee7c7439b2e12fe18b774d1d57e77c9a20bc3567d2e5079257281",
+            "entry": "K16"
+          },
+          "field": "normalized.title",
+          "value": "DocuCom PDF Driver"
+        },
+        {
+          "kind": "observed",
+          "source_ref": {
+            "manifest": "sha256:ae29b1d2976ee7c7439b2e12fe18b774d1d57e77c9a20bc3567d2e5079257281",
+            "entry": "K16"
+          },
+          "field": "normalized.description",
+          "value": "Med DocuCom PDF Driver 4.61 kan du opprette dine egne PDF-dokumenter. PDF er et filformat som kan åpnes og leses på andre datamaskiner, uansett om operativsystemet er Windows eller Mac OS."
+        },
+        {
+          "kind": "observed",
+          "source_ref": {
+            "manifest": "sha256:ae29b1d2976ee7c7439b2e12fe18b774d1d57e77c9a20bc3567d2e5079257281",
+            "entry": "K16",
+            "path": "DocuCom/SETUP.INI"
+          },
+          "field": "file_content_review",
+          "value": {
+            "sha256": "441fe3426f68cf974b178f60718b72bf4710af7b356039ee87bf2479e39fd88f",
+            "summary": "AppName=DocuCom PDF Driver; installer version is not the product version."
+          }
+        }
+      ]
+    },
+    {
+      "schema": "bootdisk-catalog-0.1",
+      "type": "description",
+      "id": "description:dr-goo:unknown:nb-NO",
+      "subject_id": "release:dr-goo:unknown",
+      "language": "nb-NO",
+      "text": "Plattformspill med strategiske elementer, bevart med installasjonsfiler og spilldata.",
+      "status": "curated",
+      "evidence": [
+        {
+          "kind": "observed",
+          "source_ref": {
+            "manifest": "sha256:ae29b1d2976ee7c7439b2e12fe18b774d1d57e77c9a20bc3567d2e5079257281",
+            "entry": "K7"
+          },
+          "field": "normalized.title",
+          "value": "Dr. Goo"
+        },
+        {
+          "kind": "observed",
+          "source_ref": {
+            "manifest": "sha256:ae29b1d2976ee7c7439b2e12fe18b774d1d57e77c9a20bc3567d2e5079257281",
+            "entry": "K7"
+          },
+          "field": "normalized.description",
+          "value": "Nå skal du redde liv. I dette lille plattformspillet må frosken Dr. Goo finne de fem medisinveskene som kan redde lille Johnny. Pass på! Tiden er kostbar, og den går."
+        },
+        {
+          "kind": "observed",
+          "source_ref": {
+            "manifest": "sha256:ae29b1d2976ee7c7439b2e12fe18b774d1d57e77c9a20bc3567d2e5079257281",
+            "entry": "K7",
+            "path": "DrGoo/FILE_ID.DIZ"
+          },
+          "field": "file_content_review",
+          "value": {
+            "sha256": "2eaa2703895e17480fe243b08aefbcf7db73e9a7d81ad61c6f6529b05fae1b31",
+            "summary": "Describes the product as a strategy platformer."
+          }
+        }
+      ]
+    },
+    {
+      "schema": "bootdisk-catalog-0.1",
+      "type": "description",
+      "id": "description:fire-fighter:unknown:nb-NO",
+      "subject_id": "release:fire-fighter:unknown",
+      "language": "nb-NO",
+      "text": "Spill med brannslokking som tema, distribuert som Fire Fighter på K-CD-en.",
+      "status": "curated",
+      "evidence": [
+        {
+          "kind": "observed",
+          "source_ref": {
+            "manifest": "sha256:ae29b1d2976ee7c7439b2e12fe18b774d1d57e77c9a20bc3567d2e5079257281",
+            "entry": "K9"
+          },
+          "field": "normalized.title",
+          "value": "Fire Fighter"
+        },
+        {
+          "kind": "observed",
+          "source_ref": {
+            "manifest": "sha256:ae29b1d2976ee7c7439b2e12fe18b774d1d57e77c9a20bc3567d2e5079257281",
+            "entry": "K9"
+          },
+          "field": "normalized.description",
+          "value": "Et artig og enkelt spill for hele familien. Du skal styre den lille brannmannen rundt i skogen før alle trærne og husene brenner ned, eller tiden utløper."
+        }
+      ]
+    },
+    {
+      "schema": "bootdisk-catalog-0.1",
+      "type": "description",
+      "id": "description:floppy-image:unknown:nb-NO",
+      "subject_id": "release:floppy-image:unknown",
+      "language": "nb-NO",
+      "text": "Verktøy for å lagre og gjenopprette diskettavbildninger.",
+      "status": "curated",
+      "evidence": [
+        {
+          "kind": "observed",
+          "source_ref": {
+            "manifest": "sha256:ae29b1d2976ee7c7439b2e12fe18b774d1d57e77c9a20bc3567d2e5079257281",
+            "entry": "K10"
+          },
+          "field": "normalized.title",
+          "value": "Floppy Image"
+        },
+        {
+          "kind": "observed",
+          "source_ref": {
+            "manifest": "sha256:ae29b1d2976ee7c7439b2e12fe18b774d1d57e77c9a20bc3567d2e5079257281",
+            "entry": "K10"
+          },
+          "field": "normalized.description",
+          "value": "Kulde, varme, trykk og fuktighet kan medføre at du mister verdifull informasjon. Nå kan du med et par klikk lage sikkerhetskopier av diskettene og trygt legge dem på harddisken."
+        }
+      ]
+    },
+    {
+      "schema": "bootdisk-catalog-0.1",
+      "type": "description",
+      "id": "description:font-xplorer-lite:unknown:nb-NO",
+      "subject_id": "release:font-xplorer-lite:unknown",
+      "language": "nb-NO",
+      "text": "Verktøy for å få oversikt over skrifter. Installasjonsfilen oppgir navnet Font Xplorer Lite.",
+      "status": "curated",
+      "evidence": [
+        {
+          "kind": "observed",
+          "source_ref": {
+            "manifest": "sha256:ae29b1d2976ee7c7439b2e12fe18b774d1d57e77c9a20bc3567d2e5079257281",
+            "entry": "K11"
+          },
+          "field": "normalized.title",
+          "value": "FontExplorer Lite"
+        },
+        {
+          "kind": "observed",
+          "source_ref": {
+            "manifest": "sha256:ae29b1d2976ee7c7439b2e12fe18b774d1d57e77c9a20bc3567d2e5079257281",
+            "entry": "K11"
+          },
+          "field": "normalized.description",
+          "value": "Nå slipper du å prøve deg frem. Her får du en oversikt over samtlige skrifttyper som er installert på pc-en. Sammenlign dem, skriv ut oversiktene og les om de forskjellige skriftene."
+        }
+      ]
+    },
+    {
+      "schema": "bootdisk-catalog-0.1",
+      "type": "description",
+      "id": "description:hjemmesideskolen-ekspert:unknown:nb-NO",
+      "subject_id": "release:hjemmesideskolen-ekspert:unknown",
+      "language": "nb-NO",
+      "text": "PDF-kurs om HTML og hjemmesider med 1st Page 2000.",
+      "status": "curated",
+      "evidence": [
+        {
+          "kind": "observed",
+          "source_ref": {
+            "manifest": "sha256:ae29b1d2976ee7c7439b2e12fe18b774d1d57e77c9a20bc3567d2e5079257281",
+            "entry": "K31"
+          },
+          "field": "normalized.title",
+          "value": "Hjemmesideskolen - ekspert"
+        },
+        {
+          "kind": "observed",
+          "source_ref": {
+            "manifest": "sha256:ae29b1d2976ee7c7439b2e12fe18b774d1d57e77c9a20bc3567d2e5079257281",
+            "entry": "K31"
+          },
+          "field": "normalized.description",
+          "value": "Med hjemmesideekspertskolen lærer du å lage flotte og funksjonelle hjemmesider med programmet 1st Page."
+        },
+        {
+          "kind": "observed",
+          "source_ref": {
+            "manifest": "sha256:ae29b1d2976ee7c7439b2e12fe18b774d1d57e77c9a20bc3567d2e5079257281",
+            "entry": "K31",
+            "path": "WebExpert/WebExpert.pdf"
+          },
+          "field": "file_content_review",
+          "value": {
+            "sha256": "f04ba13664e5a3ae065ad3cde0b50ef0f6129288f162d6e9daf019eb4f53de33",
+            "summary": "Reviewed PDF opening page; confirms the named course or guide."
+          }
+        }
+      ]
+    },
+    {
+      "schema": "bootdisk-catalog-0.1",
+      "type": "description",
+      "id": "description:ice-breaker:unknown:nb-NO",
+      "subject_id": "release:ice-breaker:unknown",
+      "language": "nb-NO",
+      "text": "Spilloppføring for Ice Breaker. Filnavnet antyder 1.2.1, men versjonen er foreløpig ikke bekreftet.",
+      "status": "curated",
+      "evidence": [
+        {
+          "kind": "observed",
+          "source_ref": {
+            "manifest": "sha256:ae29b1d2976ee7c7439b2e12fe18b774d1d57e77c9a20bc3567d2e5079257281",
+            "entry": "K12"
+          },
+          "field": "normalized.title",
+          "value": "Ice Breaker"
+        },
+        {
+          "kind": "observed",
+          "source_ref": {
+            "manifest": "sha256:ae29b1d2976ee7c7439b2e12fe18b774d1d57e77c9a20bc3567d2e5079257281",
+            "entry": "K12"
+          },
+          "field": "normalized.description",
+          "value": "Et spill for de minste eller til en kort pause foran skjermen. Bruk musen og sperr veien for pingvinene slik at du gjør isfjellet deres så lite som mulig."
+        }
+      ]
+    },
+    {
+      "schema": "bootdisk-catalog-0.1",
+      "type": "description",
+      "id": "description:kfa-arsregister:unknown:nb-NO",
+      "subject_id": "release:kfa-arsregister:unknown",
+      "language": "nb-NO",
+      "text": "Register over artikler og programmer fra Komputer for alle.",
+      "status": "curated",
+      "evidence": [
+        {
+          "kind": "observed",
+          "source_ref": {
+            "manifest": "sha256:ae29b1d2976ee7c7439b2e12fe18b774d1d57e77c9a20bc3567d2e5079257281",
+            "entry": "K26"
+          },
+          "field": "normalized.title",
+          "value": "Kfa årsregister"
+        },
+        {
+          "kind": "observed",
+          "source_ref": {
+            "manifest": "sha256:ae29b1d2976ee7c7439b2e12fe18b774d1d57e77c9a20bc3567d2e5079257281",
+            "entry": "K26"
+          },
+          "field": "normalized.description",
+          "value": "Med Komputer for alles komplette årsregister kan du finne frem til samtlige artikler og programmer i bladet og på KCD-en."
+        }
+      ]
+    },
+    {
+      "schema": "bootdisk-catalog-0.1",
+      "type": "description",
+      "id": "description:larabie-fonts-kcd15-2001:unknown:nb-NO",
+      "subject_id": "release:larabie-fonts-kcd15-2001:unknown",
+      "language": "nb-NO",
+      "text": "Skriftpakke fra Larabie Fonts. Medfølgende tekst beskriver skriftene som freeware.",
+      "status": "curated",
+      "evidence": [
+        {
+          "kind": "observed",
+          "source_ref": {
+            "manifest": "sha256:ae29b1d2976ee7c7439b2e12fe18b774d1d57e77c9a20bc3567d2e5079257281",
+            "entry": "K42"
+          },
+          "field": "normalized.title",
+          "value": "2 Larabie Fonts"
+        },
+        {
+          "kind": "observed",
+          "source_ref": {
+            "manifest": "sha256:ae29b1d2976ee7c7439b2e12fe18b774d1d57e77c9a20bc3567d2e5079257281",
+            "entry": "K42"
+          },
+          "field": "normalized.description",
+          "value": "Disse to skriftene kan fritt installeres og brukes i alle dokumentene dine."
+        },
+        {
+          "kind": "observed",
+          "source_ref": {
+            "manifest": "sha256:ae29b1d2976ee7c7439b2e12fe18b774d1d57e77c9a20bc3567d2e5079257281",
+            "entry": "K42",
+            "path": "Fonts/READ_ME.TXT"
+          },
+          "field": "file_content_review",
+          "value": {
+            "sha256": "3a0f8be398b661c3a5c8765ef81249d47f2146408adcbe8f2f82264b40943b81",
+            "summary": "Identifies Larabie Fonts and describes the enclosed fonts as freeware."
+          }
+        }
+      ]
+    },
+    {
+      "schema": "bootdisk-catalog-0.1",
+      "type": "description",
+      "id": "description:outlookskolen:unknown:nb-NO",
+      "subject_id": "release:outlookskolen:unknown",
+      "language": "nb-NO",
+      "text": "PDF-kurs om e-post og adressebok i Outlook Express.",
+      "status": "curated",
+      "evidence": [
+        {
+          "kind": "observed",
+          "source_ref": {
+            "manifest": "sha256:ae29b1d2976ee7c7439b2e12fe18b774d1d57e77c9a20bc3567d2e5079257281",
+            "entry": "K34"
+          },
+          "field": "normalized.title",
+          "value": "Outlookskolen"
+        },
+        {
+          "kind": "observed",
+          "source_ref": {
+            "manifest": "sha256:ae29b1d2976ee7c7439b2e12fe18b774d1d57e77c9a20bc3567d2e5079257281",
+            "entry": "K34"
+          },
+          "field": "normalized.description",
+          "value": "E-postprogrammet Outlook Express er både gratis og nyttig. Dette kurset gir deg en oversikt over programmets funksjoner og muligheter. Du lærer både å sende og motta e-post på pc-en."
+        },
+        {
+          "kind": "observed",
+          "source_ref": {
+            "manifest": "sha256:ae29b1d2976ee7c7439b2e12fe18b774d1d57e77c9a20bc3567d2e5079257281",
+            "entry": "K34",
+            "path": "Outlook/Outlook.pdf"
+          },
+          "field": "file_content_review",
+          "value": {
+            "sha256": "f51d7d7de0eaba2ccbde6d3ada62631b3c88c9deb46f6bede044f0959de43a2f",
+            "summary": "Reviewed PDF opening page; confirms the named course or guide."
+          }
+        }
+      ]
+    },
+    {
+      "schema": "bootdisk-catalog-0.1",
+      "type": "description",
+      "id": "description:panorama-factory:2.3:nb-NO",
+      "subject_id": "release:panorama-factory:2.3",
+      "language": "nb-NO",
+      "text": "Syr sammen fotografier til panoramabilder. Standard Edition 2.3 er beskrevet som shareware med 30 dagers evaluering.",
+      "status": "curated",
+      "evidence": [
+        {
+          "kind": "observed",
+          "source_ref": {
+            "manifest": "sha256:ae29b1d2976ee7c7439b2e12fe18b774d1d57e77c9a20bc3567d2e5079257281",
+            "entry": "K17"
+          },
+          "field": "normalized.title",
+          "value": "Panorama Factory"
+        },
+        {
+          "kind": "observed",
+          "source_ref": {
+            "manifest": "sha256:ae29b1d2976ee7c7439b2e12fe18b774d1d57e77c9a20bc3567d2e5079257281",
+            "entry": "K17"
+          },
+          "field": "normalized.description",
+          "value": "Klipp sammen feriebildene til flotte panoramaer med programmet Panorama Factory. De ferdige bildene kan lagres i flere bildeformater."
+        },
+        {
+          "kind": "observed",
+          "source_ref": {
+            "manifest": "sha256:ae29b1d2976ee7c7439b2e12fe18b774d1d57e77c9a20bc3567d2e5079257281",
+            "entry": "K17",
+            "path": "Panorama Factory/README.TXT"
+          },
+          "field": "file_content_review",
+          "value": {
+            "sha256": "a2cd9d5f8e412429b14656d5d1f1dc2b8992eedcb0043f5158a95527d2b39e69",
+            "summary": "The Panorama Factory V2.3 Standard Edition; evaluation up to 30 days before registration."
+          }
+        }
+      ]
+    },
+    {
+      "schema": "bootdisk-catalog-0.1",
+      "type": "description",
+      "id": "description:pf-eksempelbilder:unknown:nb-NO",
+      "subject_id": "release:pf-eksempelbilder:unknown",
+      "language": "nb-NO",
+      "text": "Eksempelbilder fra Marselisborg Marina ved Århus, ment for øvelsene med Panorama Factory.",
+      "status": "curated",
+      "evidence": [
+        {
+          "kind": "observed",
+          "source_ref": {
+            "manifest": "sha256:ae29b1d2976ee7c7439b2e12fe18b774d1d57e77c9a20bc3567d2e5079257281",
+            "entry": "K18"
+          },
+          "field": "normalized.title",
+          "value": "PF Eksempelbilder"
+        },
+        {
+          "kind": "observed",
+          "source_ref": {
+            "manifest": "sha256:ae29b1d2976ee7c7439b2e12fe18b774d1d57e77c9a20bc3567d2e5079257281",
+            "entry": "K18"
+          },
+          "field": "normalized.description",
+          "value": "Prøv eksemplene fra bladet. Alle bildene ligger på KCD-en. Bildene stammer fra Marselisborg Marina ved Århus en vakker sommerdag."
+        }
+      ]
+    },
+    {
+      "schema": "bootdisk-catalog-0.1",
+      "type": "description",
+      "id": "description:photo-objects-sampler:unknown:nb-NO",
+      "subject_id": "release:photo-objects-sampler:unknown",
+      "language": "nb-NO",
+      "text": "Samling med fotografiske utklippsbilder og tilhørende bildeprogram.",
+      "status": "curated",
+      "evidence": [
+        {
+          "kind": "observed",
+          "source_ref": {
+            "manifest": "sha256:ae29b1d2976ee7c7439b2e12fe18b774d1d57e77c9a20bc3567d2e5079257281",
+            "entry": "K40"
+          },
+          "field": "normalized.title",
+          "value": "101 Photo-Objects"
+        },
+        {
+          "kind": "observed",
+          "source_ref": {
+            "manifest": "sha256:ae29b1d2976ee7c7439b2e12fe18b774d1d57e77c9a20bc3567d2e5079257281",
+            "entry": "K40"
+          },
+          "field": "normalized.description",
+          "value": "Disse 101 flotte bildene er eksempler på en omfattende samling fotoclipart fra Hemera med 50 000 bilder."
+        }
+      ]
+    },
+    {
+      "schema": "bootdisk-catalog-0.1",
+      "type": "description",
+      "id": "description:powerpoint-skolen:unknown:nb-NO",
+      "subject_id": "release:powerpoint-skolen:unknown",
+      "language": "nb-NO",
+      "text": "PDF-kurs om å lage presentasjoner i PowerPoint.",
+      "status": "curated",
+      "evidence": [
+        {
+          "kind": "observed",
+          "source_ref": {
+            "manifest": "sha256:ae29b1d2976ee7c7439b2e12fe18b774d1d57e77c9a20bc3567d2e5079257281",
+            "entry": "K27"
+          },
+          "field": "normalized.title",
+          "value": "PowerPoint skolen"
+        },
+        {
+          "kind": "observed",
+          "source_ref": {
+            "manifest": "sha256:ae29b1d2976ee7c7439b2e12fe18b774d1d57e77c9a20bc3567d2e5079257281",
+            "entry": "K27"
+          },
+          "field": "normalized.description",
+          "value": "Med PowerPoint-skolen oppdager du fort hvor lett det er å lage flotte animerte presentasjoner på pc-en."
+        },
+        {
+          "kind": "observed",
+          "source_ref": {
+            "manifest": "sha256:ae29b1d2976ee7c7439b2e12fe18b774d1d57e77c9a20bc3567d2e5079257281",
+            "entry": "K27",
+            "path": "PowerPoint/PowerPoint.pdf"
+          },
+          "field": "file_content_review",
+          "value": {
+            "sha256": "ebe93778e98c7efb0258190693d852575ecc2e83ff7c98a617cfc67d4b57346c",
+            "summary": "Reviewed PDF opening page; confirms the named course or guide."
+          }
+        }
+      ]
+    },
+    {
+      "schema": "bootdisk-catalog-0.1",
+      "type": "description",
+      "id": "description:puzzlejig:unknown:nb-NO",
+      "subject_id": "release:puzzlejig:unknown",
+      "language": "nb-NO",
+      "text": "Lager puslespill av fotografier og andre bilder.",
+      "status": "curated",
+      "evidence": [
+        {
+          "kind": "observed",
+          "source_ref": {
+            "manifest": "sha256:ae29b1d2976ee7c7439b2e12fe18b774d1d57e77c9a20bc3567d2e5079257281",
+            "entry": "K19"
+          },
+          "field": "normalized.title",
+          "value": "PuzzleJig"
+        },
+        {
+          "kind": "observed",
+          "source_ref": {
+            "manifest": "sha256:ae29b1d2976ee7c7439b2e12fe18b774d1d57e77c9a20bc3567d2e5079257281",
+            "entry": "K19"
+          },
+          "field": "normalized.description",
+          "value": "Ta et av mesterverkene dine fra fotoalbumet og hent det inn i programmet. Trykk på en knapp, så blir bildet til et puslespill."
+        }
+      ]
+    },
+    {
+      "schema": "bootdisk-catalog-0.1",
+      "type": "description",
+      "id": "description:red-faction:unknown:nb-NO",
+      "subject_id": "release:red-faction:unknown",
+      "language": "nb-NO",
+      "text": "Internasjonal demo av førstepersonsskytespillet Red Faction.",
+      "status": "curated",
+      "evidence": [
+        {
+          "kind": "observed",
+          "source_ref": {
+            "manifest": "sha256:ae29b1d2976ee7c7439b2e12fe18b774d1d57e77c9a20bc3567d2e5079257281",
+            "entry": "K20"
+          },
+          "field": "normalized.title",
+          "value": "Red Faction International"
+        },
+        {
+          "kind": "observed",
+          "source_ref": {
+            "manifest": "sha256:ae29b1d2976ee7c7439b2e12fe18b774d1d57e77c9a20bc3567d2e5079257281",
+            "entry": "K20"
+          },
+          "field": "normalized.description",
+          "value": "Et 3D-skytespill med fantastisk grafikk og våpen tatt ut av den villeste science fiction-film. Før du får lov til å dundre løs på egen hånd, må du igjennom en lærerik treningstur."
+        },
+        {
+          "kind": "observed",
+          "source_ref": {
+            "manifest": "sha256:ae29b1d2976ee7c7439b2e12fe18b774d1d57e77c9a20bc3567d2e5079257281",
+            "entry": "K20",
+            "path": "Red Faction International/Setup.ini"
+          },
+          "field": "file_content_review",
+          "value": {
+            "sha256": "b3f3acbb1d580a848b77976efa7c8389f6cf51c7f596dbf7e5d3e268f9233239",
+            "summary": "AppName=Red Faction International Demo"
+          }
+        }
+      ]
     },
     {
       "evidence": [
@@ -99,26 +884,6 @@
       "status": "curated",
       "subject_id": "release:1st-page:2000",
       "text": "1st Page 2000 er et HTML-redigeringsprogram for å bygge hjemmesider fra bunnen av eller med innebygde maler.",
-      "type": "description"
-    },
-    {
-      "evidence": [
-        {
-          "field": "normalized.description",
-          "kind": "curated",
-          "source_ref": {
-            "entry": "K35",
-            "manifest": "sha256:ae29b1d2976ee7c7439b2e12fe18b774d1d57e77c9a20bc3567d2e5079257281"
-          },
-          "value": "Med Komputer for alle får du gratis virusbeskyttelse. AVG 6.0 gir mulighet for å beskytte datamaskinen mot alle kjente og ukjente virus."
-        }
-      ],
-      "id": "description:release:avg-antivirus:6.0:nb-NO",
-      "language": "nb-NO",
-      "schema": "bootdisk-catalog-0.1",
-      "status": "curated",
-      "subject_id": "release:avg-antivirus:6.0",
-      "text": "AVG Antivirus 6.0 er antivirusprogrammet som ble distribuert som K35 under navnet AVG Antivirus Pro.",
       "type": "description"
     },
     {
@@ -147,6 +912,46 @@
           "field": "normalized.description",
           "kind": "curated",
           "source_ref": {
+            "entry": "K35",
+            "manifest": "sha256:ae29b1d2976ee7c7439b2e12fe18b774d1d57e77c9a20bc3567d2e5079257281"
+          },
+          "value": "Med Komputer for alle får du gratis virusbeskyttelse. AVG 6.0 gir mulighet for å beskytte datamaskinen mot alle kjente og ukjente virus."
+        }
+      ],
+      "id": "description:release:avg-antivirus:6.0:nb-NO",
+      "language": "nb-NO",
+      "schema": "bootdisk-catalog-0.1",
+      "status": "curated",
+      "subject_id": "release:avg-antivirus:6.0",
+      "text": "AVG Antivirus 6.0 er antivirusprogrammet som ble distribuert som K35 under navnet AVG Antivirus Pro.",
+      "type": "description"
+    },
+    {
+      "evidence": [
+        {
+          "field": "normalized.description",
+          "kind": "curated",
+          "source_ref": {
+            "entry": "K8",
+            "manifest": "sha256:ae29b1d2976ee7c7439b2e12fe18b774d1d57e77c9a20bc3567d2e5079257281"
+          },
+          "value": "Her blir tingene snudd på hodet. En bevæpnet, humoristisk og veltalende hjort går på jakt etter skytegale jegere. I dette 3D-skytespillet styrer du hjorten rundt i de store skogene."
+        }
+      ],
+      "id": "description:release:deer-avenger:4:nb-NO",
+      "language": "nb-NO",
+      "schema": "bootdisk-catalog-0.1",
+      "status": "curated",
+      "subject_id": "release:deer-avenger:4",
+      "text": "Deer Avenger 4 er et humoristisk 3D-skytespill der en bevæpnet hjort jakter på jegere. K-CD-en inneholder en demo.",
+      "type": "description"
+    },
+    {
+      "evidence": [
+        {
+          "field": "normalized.description",
+          "kind": "curated",
+          "source_ref": {
             "entry": "K29",
             "manifest": "sha256:ae29b1d2976ee7c7439b2e12fe18b774d1d57e77c9a20bc3567d2e5079257281"
           },
@@ -159,6 +964,79 @@
       "status": "curated",
       "subject_id": "release:internet-explorer:5.5",
       "text": "Internet Explorer 5.5 er nettleseren som ble distribuert som program K29 på K-CD 15/2001.",
+      "type": "description"
+    },
+    {
+      "evidence": [
+        {
+          "field": "normalized.description",
+          "kind": "curated",
+          "source_ref": {
+            "entry": "K13",
+            "manifest": "sha256:ae29b1d2976ee7c7439b2e12fe18b774d1d57e77c9a20bc3567d2e5079257281"
+          },
+          "value": "Du skal ta kontroll over et kompani store MechWarriors som blir styrt av modige piloter. Her får du en stor demo av MechCommander 2."
+        }
+      ],
+      "id": "description:release:mechcommander:2:nb-NO",
+      "language": "nb-NO",
+      "schema": "bootdisk-catalog-0.1",
+      "status": "curated",
+      "subject_id": "release:mechcommander:2",
+      "text": "MechCommander 2 lar spilleren lede en avdeling MechWarriors. K-CD-en inneholder en demo av spillet.",
+      "type": "description"
+    },
+    {
+      "evidence": [
+        {
+          "field": "normalized.description",
+          "kind": "curated",
+          "source_ref": {
+            "entry": "K15",
+            "manifest": "sha256:ae29b1d2976ee7c7439b2e12fe18b774d1d57e77c9a20bc3567d2e5079257281"
+          },
+          "value": "Spillet er en variant over Spaceinvaders. Her er det imidlertid ikke fiendtlige romskip, men grønne, giftige edderkopper som skal skytes ned fra nettet sitt."
+        },
+        {
+          "kind": "observed",
+          "source_ref": {
+            "manifest": "sha256:ae29b1d2976ee7c7439b2e12fe18b774d1d57e77c9a20bc3567d2e5079257281",
+            "entry": "K15",
+            "path": "Mutant Xpiders/README.TXT"
+          },
+          "field": "file_content_review",
+          "value": {
+            "sha256": "800d708f92f4d29bc68925a61dcffd8789f49de26860a73737f21f707140d8d6",
+            "summary": "Mutant Xpiders by Trevor Lawford, Version 1.5, July 2000."
+          }
+        }
+      ],
+      "id": "description:release:mutant-xpiders:1.5:nb-NO",
+      "language": "nb-NO",
+      "schema": "bootdisk-catalog-0.1",
+      "status": "curated",
+      "subject_id": "release:mutant-xpiders:1.5",
+      "text": "Mutant Xpiders 1.5 er et arkadespill der spilleren skyter edderkopper. Versjonen er bekreftet i den medfølgende README-filen.",
+      "type": "description"
+    },
+    {
+      "evidence": [
+        {
+          "field": "normalized.description",
+          "kind": "curated",
+          "source_ref": {
+            "entry": "K22",
+            "manifest": "sha256:ae29b1d2976ee7c7439b2e12fe18b774d1d57e77c9a20bc3567d2e5079257281"
+          },
+          "value": "Nå skal du en tur på skytebanen. Du må være både rask og nøyaktig med musen. Du skal treffe virvlende skyteskiver og ting og tang som flyr gjennom luften."
+        }
+      ],
+      "id": "description:release:shoot-and-relax:unknown:nb-NO",
+      "language": "nb-NO",
+      "schema": "bootdisk-catalog-0.1",
+      "status": "curated",
+      "subject_id": "release:shoot-and-relax:unknown",
+      "text": "Shoot & Relax er et skytebanespill der spilleren bruker musen til å treffe bevegelige skiver og gjenstander. Versjonen på K-CD-en er foreløpig ukjent.",
       "type": "description"
     },
     {
@@ -222,91 +1100,578 @@
       "type": "description"
     },
     {
-      "artifact_id": "artifact:sha256:c635e44cc91e797e4f5056d8316e66369df112255458c3a381f69b0385a809f5",
-      "distribution_kind": "unknown",
+      "schema": "bootdisk-catalog-0.1",
+      "type": "description",
+      "id": "description:resize-browser:unknown:nb-NO",
+      "subject_id": "release:resize-browser:unknown",
+      "language": "nb-NO",
+      "text": "RJL Software-verktøy som endrer nettleservinduets størrelse og plassering.",
+      "status": "curated",
+      "evidence": [
+        {
+          "kind": "observed",
+          "source_ref": {
+            "manifest": "sha256:ae29b1d2976ee7c7439b2e12fe18b774d1d57e77c9a20bc3567d2e5079257281",
+            "entry": "K21"
+          },
+          "field": "normalized.title",
+          "value": "Resize Browser"
+        },
+        {
+          "kind": "observed",
+          "source_ref": {
+            "manifest": "sha256:ae29b1d2976ee7c7439b2e12fe18b774d1d57e77c9a20bc3567d2e5079257281",
+            "entry": "K21"
+          },
+          "field": "normalized.description",
+          "value": "Med dette lille programmet sørger du for at nettleseren alltid åpner vinduet sitt i den samme størrelsen. Du kan stille inn Resize Browser slik at det plasserer vinduet på det samme stedet på skjermen. Hver gang."
+        },
+        {
+          "kind": "observed",
+          "source_ref": {
+            "manifest": "sha256:ae29b1d2976ee7c7439b2e12fe18b774d1d57e77c9a20bc3567d2e5079257281",
+            "entry": "K21",
+            "path": "Resize/readme.htm"
+          },
+          "field": "file_content_review",
+          "value": {
+            "sha256": "8d4cca39aaceba8f3ad398430dde87eea8c44558d4f800898e158ce5178635d6",
+            "summary": "Identifies Browser Resize by RJL Software."
+          }
+        }
+      ]
+    },
+    {
+      "schema": "bootdisk-catalog-0.1",
+      "type": "description",
+      "id": "description:word-ekspert-skolen:unknown:nb-NO",
+      "subject_id": "release:word-ekspert-skolen:unknown",
+      "language": "nb-NO",
+      "text": "PDF-kurs om avanserte funksjoner, maler og automatisering i Word.",
+      "status": "curated",
+      "evidence": [
+        {
+          "kind": "observed",
+          "source_ref": {
+            "manifest": "sha256:ae29b1d2976ee7c7439b2e12fe18b774d1d57e77c9a20bc3567d2e5079257281",
+            "entry": "K33"
+          },
+          "field": "normalized.title",
+          "value": "Word Ekspert-skolen"
+        },
+        {
+          "kind": "observed",
+          "source_ref": {
+            "manifest": "sha256:ae29b1d2976ee7c7439b2e12fe18b774d1d57e77c9a20bc3567d2e5079257281",
+            "entry": "K33"
+          },
+          "field": "normalized.description",
+          "value": "Word har en rekke avanserte funksjoner. Vi viser deg hvordan du kan gjøre tekstbehandlingen både enklere og bedre."
+        },
+        {
+          "kind": "observed",
+          "source_ref": {
+            "manifest": "sha256:ae29b1d2976ee7c7439b2e12fe18b774d1d57e77c9a20bc3567d2e5079257281",
+            "entry": "K33",
+            "path": "WordExpert/WordExpert.pdf"
+          },
+          "field": "file_content_review",
+          "value": {
+            "sha256": "3d1b7bf8295e21f5c2f9a7073d0554b723c28840f74dbd7c62ca3fdaa8f0f0fb",
+            "summary": "Reviewed PDF opening page; confirms the named course or guide."
+          }
+        }
+      ]
+    },
+    {
+      "schema": "bootdisk-catalog-0.1",
+      "type": "description",
+      "id": "description:wordskolen:unknown:nb-NO",
+      "subject_id": "release:wordskolen:unknown",
+      "language": "nb-NO",
+      "text": "PDF-kurs med norske veiledninger i tekstbehandling med Word.",
+      "status": "curated",
+      "evidence": [
+        {
+          "kind": "observed",
+          "source_ref": {
+            "manifest": "sha256:ae29b1d2976ee7c7439b2e12fe18b774d1d57e77c9a20bc3567d2e5079257281",
+            "entry": "K32"
+          },
+          "field": "normalized.title",
+          "value": "Wordskolen"
+        },
+        {
+          "kind": "observed",
+          "source_ref": {
+            "manifest": "sha256:ae29b1d2976ee7c7439b2e12fe18b774d1d57e77c9a20bc3567d2e5079257281",
+            "entry": "K32"
+          },
+          "field": "normalized.description",
+          "value": "Det kjente tekstbehandlingsprogrammet Word inneholder mange funksjoner. I dette kurset kan du lære hvordan du bruker programmet."
+        },
+        {
+          "kind": "observed",
+          "source_ref": {
+            "manifest": "sha256:ae29b1d2976ee7c7439b2e12fe18b774d1d57e77c9a20bc3567d2e5079257281",
+            "entry": "K32",
+            "path": "Word/Word.pdf"
+          },
+          "field": "file_content_review",
+          "value": {
+            "sha256": "a8dd7844aa7338e1c9b432c118b3cf86150d02c9d0b8bb418fe0da8f72723979",
+            "summary": "Reviewed PDF opening page; confirms the named course or guide."
+          }
+        }
+      ]
+    },
+    {
+      "schema": "bootdisk-catalog-0.1",
+      "type": "description",
+      "id": "description:workpace:unknown:nb-NO",
+      "subject_id": "release:workpace:unknown",
+      "language": "nb-NO",
+      "text": "Program med påminnelser om pauser ved datamaskinen. Pakken inneholder både Windows-filer og dokumentasjon for DOS-utgaven.",
+      "status": "curated",
+      "evidence": [
+        {
+          "kind": "observed",
+          "source_ref": {
+            "manifest": "sha256:ae29b1d2976ee7c7439b2e12fe18b774d1d57e77c9a20bc3567d2e5079257281",
+            "entry": "K14"
+          },
+          "field": "normalized.title",
+          "value": "WorkPace"
+        },
+        {
+          "kind": "observed",
+          "source_ref": {
+            "manifest": "sha256:ae29b1d2976ee7c7439b2e12fe18b774d1d57e77c9a20bc3567d2e5079257281",
+            "entry": "K14"
+          },
+          "field": "normalized.description",
+          "value": "Programmet WorkPace hjelper deg med å forebygge eller lindre museskader, ømme muskler og kroniske lidelser."
+        },
+        {
+          "kind": "observed",
+          "source_ref": {
+            "manifest": "sha256:ae29b1d2976ee7c7439b2e12fe18b774d1d57e77c9a20bc3567d2e5079257281",
+            "entry": "K14",
+            "path": "WorkPace/README.TXT"
+          },
+          "field": "file_content_review",
+          "value": {
+            "sha256": "c0f90db25f62f53364eb3ec0b76b01647056051b4fb8213873305990097524e6",
+            "summary": "This README describes WorkPace for DOS; it does not establish the Windows release version."
+          }
+        }
+      ]
+    },
+    {
       "evidence": [
         {
           "field": "normalized.title",
           "kind": "observed",
           "source_ref": {
-            "entry": "K15",
+            "entry": "K30",
             "manifest": "sha256:ae29b1d2976ee7c7439b2e12fe18b774d1d57e77c9a20bc3567d2e5079257281"
           },
-          "value": "Mutant Xpiders"
-        },
-        {
-          "field": "normalized.run",
-          "kind": "observed",
-          "source_ref": {
-            "entry": "K15",
-            "manifest": "sha256:ae29b1d2976ee7c7439b2e12fe18b774d1d57e77c9a20bc3567d2e5079257281"
-          },
-          "value": "Mutant Xpiders/Mut_xpid.exe"
+          "value": "1st Page 2000"
         }
       ],
-      "id": "identification:1f80e426cf66cc411a3f4fafe380ccca8c85bedceabdd85ba10b519f68b46968",
+      "id": "identification:092e576cdc1b66743c55150260f9d3f2aca80cad1ce2734e304e0ed33ff8913c",
       "schema": "bootdisk-catalog-0.1",
-      "software_release_id": "release:mutant-xpiders:unknown",
+      "software_release_id": "release:1st-page:2000",
       "status": "curated",
-      "type": "identification"
+      "type": "identification",
+      "package_id": "package:sha256:9ae2eac8d9e34ff035cbf0823606a6f3ccfce66b5a8171f1054c8394ff71877b"
     },
     {
-      "artifact_id": "artifact:sha256:ad499debd7f8f3e3ab9f59b0376acd7de39bb31fcce0c5829466c1a24467d88c",
+      "schema": "bootdisk-catalog-0.1",
+      "type": "identification",
+      "id": "identification:1168a9cb73ed7962f6c7b56bfcf62e9d6192d9bdf7ed93736c435005fdb5aaf0",
+      "package_id": "package:sha256:5835a6a4f5a07c61c0f0efb20bb624f61ddb9e4b69d3c53489b8551c7f095da7",
+      "software_release_id": "release:puzzlejig:unknown",
+      "status": "interpreted",
       "distribution_kind": "unknown",
+      "evidence": [
+        {
+          "kind": "observed",
+          "source_ref": {
+            "manifest": "sha256:ae29b1d2976ee7c7439b2e12fe18b774d1d57e77c9a20bc3567d2e5079257281",
+            "entry": "K19"
+          },
+          "field": "normalized.title",
+          "value": "PuzzleJig"
+        },
+        {
+          "kind": "observed",
+          "source_ref": {
+            "manifest": "sha256:ae29b1d2976ee7c7439b2e12fe18b774d1d57e77c9a20bc3567d2e5079257281",
+            "entry": "K19"
+          },
+          "field": "normalized.description",
+          "value": "Ta et av mesterverkene dine fra fotoalbumet og hent det inn i programmet. Trykk på en knapp, så blir bildet til et puslespill."
+        }
+      ]
+    },
+    {
+      "artifact_id": "artifact:sha256:79522eb4edbcee603e0f971cba660365ecb33595953d787e9909593a51b2717d",
       "evidence": [
         {
           "field": "normalized.title",
           "kind": "observed",
           "source_ref": {
-            "entry": "K22",
+            "entry": "K24",
             "manifest": "sha256:ae29b1d2976ee7c7439b2e12fe18b774d1d57e77c9a20bc3567d2e5079257281"
           },
-          "value": "Shoot && Relax"
-        },
-        {
-          "field": "normalized.run",
-          "kind": "observed",
-          "source_ref": {
-            "entry": "K22",
-            "manifest": "sha256:ae29b1d2976ee7c7439b2e12fe18b774d1d57e77c9a20bc3567d2e5079257281"
-          },
-          "value": "Shoot/Shoot.exe"
+          "value": "Acrobat Reader 5.0"
         }
       ],
-      "id": "identification:714c6783ac29c407b801817b3f60a00dea5c315cb99e7cfc01a4fcb69a242bd4",
+      "id": "identification:11ed8a7fb15dce0c954e8d4030d259230067e5427db48c2a02014e58a6f8aa70",
       "schema": "bootdisk-catalog-0.1",
-      "software_release_id": "release:shoot-and-relax:unknown",
+      "software_release_id": "release:acrobat-reader:5.0",
       "status": "curated",
       "type": "identification"
     },
     {
-      "artifact_id": "artifact:sha256:43a95930506c15f6119acbc2648673aa3730bd5aa04f7d21ea8d9f964e4df348",
+      "schema": "bootdisk-catalog-0.1",
+      "type": "identification",
+      "id": "identification:1f18d5fbf7ac2fc2e138844449e194f4bded442a723e2e3ee3895a2c09999d06",
+      "package_id": "package:sha256:52166234f6cabf44a6761296ca74b25f37e24ea443edddc86a5ac0ce22828ebd",
+      "software_release_id": "release:floppy-image:unknown",
+      "status": "interpreted",
+      "distribution_kind": "unknown",
+      "evidence": [
+        {
+          "kind": "observed",
+          "source_ref": {
+            "manifest": "sha256:ae29b1d2976ee7c7439b2e12fe18b774d1d57e77c9a20bc3567d2e5079257281",
+            "entry": "K10"
+          },
+          "field": "normalized.title",
+          "value": "Floppy Image"
+        },
+        {
+          "kind": "observed",
+          "source_ref": {
+            "manifest": "sha256:ae29b1d2976ee7c7439b2e12fe18b774d1d57e77c9a20bc3567d2e5079257281",
+            "entry": "K10"
+          },
+          "field": "normalized.description",
+          "value": "Kulde, varme, trykk og fuktighet kan medføre at du mister verdifull informasjon. Nå kan du med et par klikk lage sikkerhetskopier av diskettene og trygt legge dem på harddisken."
+        }
+      ]
+    },
+    {
+      "schema": "bootdisk-catalog-0.1",
+      "type": "identification",
+      "id": "identification:27d93305e8a93b5c62a210778d5e6036d6455551bc648d94fd662412a5cc705a",
+      "package_id": "package:sha256:1cfc6405ebd314e739f8bb82b50e46055357ed270f1e7d589d90c2ef48692569",
+      "software_release_id": "release:kfa-arsregister:unknown",
+      "status": "interpreted",
+      "distribution_kind": "unknown",
+      "evidence": [
+        {
+          "kind": "observed",
+          "source_ref": {
+            "manifest": "sha256:ae29b1d2976ee7c7439b2e12fe18b774d1d57e77c9a20bc3567d2e5079257281",
+            "entry": "K26"
+          },
+          "field": "normalized.title",
+          "value": "Kfa årsregister"
+        },
+        {
+          "kind": "observed",
+          "source_ref": {
+            "manifest": "sha256:ae29b1d2976ee7c7439b2e12fe18b774d1d57e77c9a20bc3567d2e5079257281",
+            "entry": "K26"
+          },
+          "field": "normalized.description",
+          "value": "Med Komputer for alles komplette årsregister kan du finne frem til samtlige artikler og programmer i bladet og på KCD-en."
+        }
+      ]
+    },
+    {
+      "schema": "bootdisk-catalog-0.1",
+      "type": "identification",
+      "id": "identification:2f3702f8c0c308a15ba79b5eb8db9c8c15b773faa8e1e72b5f1adc0d0571bc1c",
+      "package_id": "package:sha256:7d04226c33fbfa90878ebdb946d05e060dd6054c273d4c99337c5f0e4128563a",
+      "software_release_id": "release:red-faction:unknown",
+      "status": "curated",
       "distribution_kind": "demo",
       "evidence": [
         {
-          "field": "normalized.title",
           "kind": "observed",
           "source_ref": {
-            "entry": "K8",
-            "manifest": "sha256:ae29b1d2976ee7c7439b2e12fe18b774d1d57e77c9a20bc3567d2e5079257281"
+            "manifest": "sha256:ae29b1d2976ee7c7439b2e12fe18b774d1d57e77c9a20bc3567d2e5079257281",
+            "entry": "K20"
           },
-          "value": "Deer Avenger 4"
+          "field": "normalized.title",
+          "value": "Red Faction International"
         },
         {
-          "field": "normalized.installer",
           "kind": "observed",
           "source_ref": {
-            "entry": "K8",
-            "manifest": "sha256:ae29b1d2976ee7c7439b2e12fe18b774d1d57e77c9a20bc3567d2e5079257281"
+            "manifest": "sha256:ae29b1d2976ee7c7439b2e12fe18b774d1d57e77c9a20bc3567d2e5079257281",
+            "entry": "K20"
           },
-          "value": "Deer Avenger/DA4_Demo_Install.exe"
+          "field": "normalized.description",
+          "value": "Et 3D-skytespill med fantastisk grafikk og våpen tatt ut av den villeste science fiction-film. Før du får lov til å dundre løs på egen hånd, må du igjennom en lærerik treningstur."
+        },
+        {
+          "kind": "observed",
+          "source_ref": {
+            "manifest": "sha256:ae29b1d2976ee7c7439b2e12fe18b774d1d57e77c9a20bc3567d2e5079257281",
+            "entry": "K20",
+            "path": "Red Faction International/Setup.ini"
+          },
+          "field": "file_content_review",
+          "value": {
+            "sha256": "b3f3acbb1d580a848b77976efa7c8389f6cf51c7f596dbf7e5d3e268f9233239",
+            "summary": "AppName=Red Faction International Demo"
+          }
         }
-      ],
-      "id": "identification:97d24b579d31b2de327d72be88917bcd0ad7b99ed340418f4d065d07facb961d",
+      ]
+    },
+    {
       "schema": "bootdisk-catalog-0.1",
-      "software_release_id": "release:deer-avenger:4",
+      "type": "identification",
+      "id": "identification:30f20696f3fed7bce3b88d7879bbfd190e98017523ea5726df4999f71f17e076",
+      "package_id": "package:sha256:63a175b57102879b7a6c8987715071b5e3182db624b39e74f62af32fb386658e",
+      "software_release_id": "release:photo-objects-sampler:unknown",
+      "status": "interpreted",
+      "distribution_kind": "unknown",
+      "evidence": [
+        {
+          "kind": "observed",
+          "source_ref": {
+            "manifest": "sha256:ae29b1d2976ee7c7439b2e12fe18b774d1d57e77c9a20bc3567d2e5079257281",
+            "entry": "K40"
+          },
+          "field": "normalized.title",
+          "value": "101 Photo-Objects"
+        },
+        {
+          "kind": "observed",
+          "source_ref": {
+            "manifest": "sha256:ae29b1d2976ee7c7439b2e12fe18b774d1d57e77c9a20bc3567d2e5079257281",
+            "entry": "K40"
+          },
+          "field": "normalized.description",
+          "value": "Disse 101 flotte bildene er eksempler på en omfattende samling fotoclipart fra Hemera med 50 000 bilder."
+        }
+      ]
+    },
+    {
+      "schema": "bootdisk-catalog-0.1",
+      "type": "identification",
+      "id": "identification:37569c0d0df686d8fea5d4eb578cae242fd6d1a8172773de343901649a0b8ce1",
+      "package_id": "package:sha256:2a24bd374e46e8f6de0257b4fa6bf9439d012e3e044f9ee5a345beadc46c2f5c",
+      "software_release_id": "release:larabie-fonts-kcd15-2001:unknown",
       "status": "curated",
-      "type": "identification"
+      "distribution_kind": "unknown",
+      "evidence": [
+        {
+          "kind": "observed",
+          "source_ref": {
+            "manifest": "sha256:ae29b1d2976ee7c7439b2e12fe18b774d1d57e77c9a20bc3567d2e5079257281",
+            "entry": "K42"
+          },
+          "field": "normalized.title",
+          "value": "2 Larabie Fonts"
+        },
+        {
+          "kind": "observed",
+          "source_ref": {
+            "manifest": "sha256:ae29b1d2976ee7c7439b2e12fe18b774d1d57e77c9a20bc3567d2e5079257281",
+            "entry": "K42"
+          },
+          "field": "normalized.description",
+          "value": "Disse to skriftene kan fritt installeres og brukes i alle dokumentene dine."
+        },
+        {
+          "kind": "observed",
+          "source_ref": {
+            "manifest": "sha256:ae29b1d2976ee7c7439b2e12fe18b774d1d57e77c9a20bc3567d2e5079257281",
+            "entry": "K42",
+            "path": "Fonts/READ_ME.TXT"
+          },
+          "field": "file_content_review",
+          "value": {
+            "sha256": "3a0f8be398b661c3a5c8765ef81249d47f2146408adcbe8f2f82264b40943b81",
+            "summary": "Identifies Larabie Fonts and describes the enclosed fonts as freeware."
+          }
+        }
+      ]
+    },
+    {
+      "schema": "bootdisk-catalog-0.1",
+      "type": "identification",
+      "id": "identification:389f9c46ef08983c7916a1d419b880ad2a2a6d990d891a82b0a27cc6cb556a5a",
+      "package_id": "package:sha256:63139f945ea6676db40eb65a00d6aeab0f7eeaec03c4549d84211b94f1c802dc",
+      "software_release_id": "release:aliens-vs-predator-2:unknown",
+      "status": "curated",
+      "distribution_kind": "demo",
+      "evidence": [
+        {
+          "kind": "observed",
+          "source_ref": {
+            "manifest": "sha256:ae29b1d2976ee7c7439b2e12fe18b774d1d57e77c9a20bc3567d2e5079257281",
+            "entry": "K1"
+          },
+          "field": "normalized.title",
+          "value": "Alien vs. Predator"
+        },
+        {
+          "kind": "observed",
+          "source_ref": {
+            "manifest": "sha256:ae29b1d2976ee7c7439b2e12fe18b774d1d57e77c9a20bc3567d2e5079257281",
+            "entry": "K1"
+          },
+          "field": "normalized.description",
+          "value": "På jakt etter vanvittige, siklende monstre i mørke ganger om bord på et romskip lysår unna jorden i en fjern fremtid. Det er med andre ord lagt opp til en skikkelig kosekveld."
+        },
+        {
+          "kind": "observed",
+          "source_ref": {
+            "manifest": "sha256:ae29b1d2976ee7c7439b2e12fe18b774d1d57e77c9a20bc3567d2e5079257281",
+            "entry": "K1",
+            "path": "Alien/readme.txt"
+          },
+          "field": "file_content_review",
+          "value": {
+            "sha256": "68198bbc82bc4ad7a9858ce9edfa9967a3d12690886f6af77ef34d53e8006298",
+            "summary": "Identifies Aliens Vs Predator 2, North American Magazine Demo; contains one Marine mission excerpt."
+          }
+        },
+        {
+          "kind": "observed",
+          "source_ref": {
+            "manifest": "sha256:ae29b1d2976ee7c7439b2e12fe18b774d1d57e77c9a20bc3567d2e5079257281",
+            "entry": "K1",
+            "path": "Alien/Setup.ini"
+          },
+          "field": "file_content_review",
+          "value": {
+            "sha256": "ce03ae39a7beda9769290cc613c13d5e31add606bebfc38f06f176ebf535574c",
+            "summary": "AppName=Aliens vs. Predator 2 Demo"
+          }
+        }
+      ]
+    },
+    {
+      "schema": "bootdisk-catalog-0.1",
+      "type": "identification",
+      "id": "identification:401a52e9c1729ab57a95973b2650234557a0aad8b447c7afc82ae1077eb6715d",
+      "package_id": "package:sha256:20c56751359d791f6e7c4a32b81a9b83f8de25216e53b8e8b4ddb75b67333cf2",
+      "software_release_id": "release:bugnosis:unknown",
+      "status": "curated",
+      "distribution_kind": "unknown",
+      "evidence": [
+        {
+          "kind": "observed",
+          "source_ref": {
+            "manifest": "sha256:ae29b1d2976ee7c7439b2e12fe18b774d1d57e77c9a20bc3567d2e5079257281",
+            "entry": "K5"
+          },
+          "field": "normalized.title",
+          "value": "Bugnosis"
+        },
+        {
+          "kind": "observed",
+          "source_ref": {
+            "manifest": "sha256:ae29b1d2976ee7c7439b2e12fe18b774d1d57e77c9a20bc3567d2e5079257281",
+            "entry": "K5"
+          },
+          "field": "normalized.description",
+          "value": "Med Bugnosis vil du kunne oppdage de usynlige spionene som holder øye med hvor du beveger deg på internett."
+        },
+        {
+          "kind": "observed",
+          "source_ref": {
+            "manifest": "sha256:ae29b1d2976ee7c7439b2e12fe18b774d1d57e77c9a20bc3567d2e5079257281",
+            "entry": "K5",
+            "path": "Bugnosis/SETUP.INI"
+          },
+          "field": "file_content_review",
+          "value": {
+            "sha256": "c505c3ab1a0982f46b58243418d7774f940057f1d413806da51eae0ba250f7dd",
+            "summary": "AppName=Web bugs detector; generic installer identity is insufficient."
+          }
+        }
+      ]
+    },
+    {
+      "schema": "bootdisk-catalog-0.1",
+      "type": "identification",
+      "id": "identification:4139ce31dc1e2445fb77d30815b7630ca3572bb9a3082b08e51433b9aa12bd12",
+      "package_id": "package:sha256:950611c088e071a27db9358430a60addaba2b0297376bc52a6d9422d8a668d10",
+      "software_release_id": "release:digitalkameraskolen:unknown",
+      "status": "curated",
+      "distribution_kind": "unknown",
+      "evidence": [
+        {
+          "kind": "observed",
+          "source_ref": {
+            "manifest": "sha256:ae29b1d2976ee7c7439b2e12fe18b774d1d57e77c9a20bc3567d2e5079257281",
+            "entry": "K25"
+          },
+          "field": "normalized.title",
+          "value": "Digitalkameraskolen"
+        },
+        {
+          "kind": "observed",
+          "source_ref": {
+            "manifest": "sha256:ae29b1d2976ee7c7439b2e12fe18b774d1d57e77c9a20bc3567d2e5079257281",
+            "entry": "K25"
+          },
+          "field": "normalized.description",
+          "value": "Hvis du har et digitalkamera, eller du overveier å kjøpe et, får du tips om hvordan du bruker det riktig."
+        },
+        {
+          "kind": "observed",
+          "source_ref": {
+            "manifest": "sha256:ae29b1d2976ee7c7439b2e12fe18b774d1d57e77c9a20bc3567d2e5079257281",
+            "entry": "K25",
+            "path": "Digital/Digitalskolen.pdf"
+          },
+          "field": "file_content_review",
+          "value": {
+            "sha256": "65381c166a71a952d6d8f3f121e23c920b22325b98faa0b7cfa3aeef6af93f0a",
+            "summary": "Reviewed PDF opening page; confirms the named course or guide."
+          }
+        }
+      ]
+    },
+    {
+      "schema": "bootdisk-catalog-0.1",
+      "type": "identification",
+      "id": "identification:42b0dd813f5237639a42079293a5da2e9d6f65373c844fe63b7d5803a118a89f",
+      "package_id": "package:sha256:8dbd7751ce55c57d8b606fd0fba03a305b4c7ba45c6d0bd823f88a655da06e0a",
+      "software_release_id": "release:clickpuzzle:unknown",
+      "status": "interpreted",
+      "distribution_kind": "unknown",
+      "evidence": [
+        {
+          "kind": "observed",
+          "source_ref": {
+            "manifest": "sha256:ae29b1d2976ee7c7439b2e12fe18b774d1d57e77c9a20bc3567d2e5079257281",
+            "entry": "K6"
+          },
+          "field": "normalized.title",
+          "value": "ClickPuzzle"
+        },
+        {
+          "kind": "observed",
+          "source_ref": {
+            "manifest": "sha256:ae29b1d2976ee7c7439b2e12fe18b774d1d57e77c9a20bc3567d2e5079257281",
+            "entry": "K6"
+          },
+          "field": "normalized.description",
+          "value": "Her skal du ved hjelp av ditt våkne blikk for kompliserte sammenhenger fjerne så mange firkanter som mulig. Reglene er enkle, men oppgaven er ikke lett."
+        }
+      ]
     },
     {
       "artifact_id": "artifact:sha256:7e21eebd1a09d6096ddc1491e40c4126262abd0162135a309ec0fe727d44dd7d",
@@ -338,70 +1703,278 @@
       "type": "identification"
     },
     {
-      "artifact_id": "artifact:sha256:26adea53490125fd31e300da97ef48b9ddc583753789051746b9a31406b418cf",
-      "evidence": [
-        {
-          "field": "normalized.title",
-          "kind": "observed",
-          "source_ref": {
-            "entry": "K30",
-            "manifest": "sha256:ae29b1d2976ee7c7439b2e12fe18b774d1d57e77c9a20bc3567d2e5079257281"
-          },
-          "value": "1st Page 2000"
-        }
-      ],
-      "id": "identification:b216601b0114de2fda2febc0aa3eb8f2256d3c1da0c840fb18c07ae65dc8fe82",
       "schema": "bootdisk-catalog-0.1",
-      "software_release_id": "release:1st-page:2000",
-      "status": "curated",
-      "type": "identification"
-    },
-    {
-      "artifact_id": "artifact:sha256:0acea3d8103d89a025d14ef2b87211053c462abd46fa25b5cefb6813cf413bfa",
+      "type": "identification",
+      "id": "identification:53f88f3024aa296a3855ea581d2a917f7504e8d86985072f0bb7cbd0d3172e27",
+      "package_id": "package:sha256:5dc2a1d9fcd72c75b876a6db69c4e9a3466dc65c998d1affc14c6b5d246f6d40",
+      "software_release_id": "release:cpu-z:unknown",
+      "status": "interpreted",
+      "distribution_kind": "unknown",
       "evidence": [
         {
-          "field": "normalized.title",
           "kind": "observed",
           "source_ref": {
-            "entry": "K35",
-            "manifest": "sha256:ae29b1d2976ee7c7439b2e12fe18b774d1d57e77c9a20bc3567d2e5079257281"
+            "manifest": "sha256:ae29b1d2976ee7c7439b2e12fe18b774d1d57e77c9a20bc3567d2e5079257281",
+            "entry": "K23"
           },
-          "value": "AVG Antivirus Pro"
+          "field": "normalized.title",
+          "value": "Cpu-Z"
         },
         {
-          "field": "normalized.description",
           "kind": "observed",
           "source_ref": {
-            "entry": "K35",
-            "manifest": "sha256:ae29b1d2976ee7c7439b2e12fe18b774d1d57e77c9a20bc3567d2e5079257281"
+            "manifest": "sha256:ae29b1d2976ee7c7439b2e12fe18b774d1d57e77c9a20bc3567d2e5079257281",
+            "entry": "K23"
           },
-          "value": "AVG 6.0"
+          "field": "normalized.description",
+          "value": "Dette programmet forteller deg alt om CPU-en din. Du kan se modell, revisjon, frekvens, ramtype, om den er overklokket samt få mange andre nyttige eller interessante opplysninger om hjertet i datamaskinen."
         }
-      ],
-      "id": "identification:b4e087a07a45e64a6a3b64e876e9fe67da5f3203d465863e262c6d81da5bf8b6",
-      "schema": "bootdisk-catalog-0.1",
-      "software_release_id": "release:avg-antivirus:6.0",
-      "status": "curated",
-      "type": "identification"
+      ]
     },
     {
-      "artifact_id": "artifact:sha256:79522eb4edbcee603e0f971cba660365ecb33595953d787e9909593a51b2717d",
+      "schema": "bootdisk-catalog-0.1",
+      "type": "identification",
+      "id": "identification:5c995038ace5d72fa6d24edf48d2abc1ff6bf2235ebeb4cb899280c11b21df91",
+      "package_id": "package:sha256:107c5490106a7f0eaedabacd09db14ea3738dd750cf822621f17cad7687944ea",
+      "software_release_id": "release:bille-og-trille:unknown",
+      "status": "interpreted",
+      "distribution_kind": "unknown",
+      "evidence": [
+        {
+          "kind": "observed",
+          "source_ref": {
+            "manifest": "sha256:ae29b1d2976ee7c7439b2e12fe18b774d1d57e77c9a20bc3567d2e5079257281",
+            "entry": "K3"
+          },
+          "field": "normalized.title",
+          "value": "Bille og Trille"
+        },
+        {
+          "kind": "observed",
+          "source_ref": {
+            "manifest": "sha256:ae29b1d2976ee7c7439b2e12fe18b774d1d57e77c9a20bc3567d2e5079257281",
+            "entry": "K3"
+          },
+          "field": "normalized.description",
+          "value": "Bille & Trille er to helt vanlige barn som går i barnehagen. De har masser av fantasi, så det skjer saker og ting i barnehagen."
+        }
+      ]
+    },
+    {
       "evidence": [
         {
           "field": "normalized.title",
           "kind": "observed",
           "source_ref": {
-            "entry": "K24",
+            "entry": "K38",
             "manifest": "sha256:ae29b1d2976ee7c7439b2e12fe18b774d1d57e77c9a20bc3567d2e5079257281"
           },
-          "value": "Acrobat Reader 5.0"
+          "value": "WinZip 8.0"
         }
       ],
-      "id": "identification:11ed8a7fb15dce0c954e8d4030d259230067e5427db48c2a02014e58a6f8aa70",
+      "id": "identification:5cecff64c8215f98904fd634dae7c6e791688c516e6b26d272cd0e53f9aa2257",
       "schema": "bootdisk-catalog-0.1",
-      "software_release_id": "release:acrobat-reader:5.0",
+      "software_release_id": "release:winzip:8.0",
+      "status": "curated",
+      "type": "identification",
+      "package_id": "package:sha256:17dbcad2fdcb5ca7befa992310a2d35bab96d6ed0cb125aeaf3335768fb1c122"
+    },
+    {
+      "schema": "bootdisk-catalog-0.1",
+      "type": "identification",
+      "id": "identification:66c30be1ec49e185a80e49089090961be6a6301098fba925184b8ec6b2da4cf9",
+      "package_id": "package:sha256:9b179118640b8b0ec1557decb1d3fec8ad298d22fc4eeda30352f9c1b8124b64",
+      "software_release_id": "release:dr-goo:unknown",
+      "status": "curated",
+      "distribution_kind": "unknown",
+      "evidence": [
+        {
+          "kind": "observed",
+          "source_ref": {
+            "manifest": "sha256:ae29b1d2976ee7c7439b2e12fe18b774d1d57e77c9a20bc3567d2e5079257281",
+            "entry": "K7"
+          },
+          "field": "normalized.title",
+          "value": "Dr. Goo"
+        },
+        {
+          "kind": "observed",
+          "source_ref": {
+            "manifest": "sha256:ae29b1d2976ee7c7439b2e12fe18b774d1d57e77c9a20bc3567d2e5079257281",
+            "entry": "K7"
+          },
+          "field": "normalized.description",
+          "value": "Nå skal du redde liv. I dette lille plattformspillet må frosken Dr. Goo finne de fem medisinveskene som kan redde lille Johnny. Pass på! Tiden er kostbar, og den går."
+        },
+        {
+          "kind": "observed",
+          "source_ref": {
+            "manifest": "sha256:ae29b1d2976ee7c7439b2e12fe18b774d1d57e77c9a20bc3567d2e5079257281",
+            "entry": "K7",
+            "path": "DrGoo/FILE_ID.DIZ"
+          },
+          "field": "file_content_review",
+          "value": {
+            "sha256": "2eaa2703895e17480fe243b08aefbcf7db73e9a7d81ad61c6f6529b05fae1b31",
+            "summary": "Describes the product as a strategy platformer."
+          }
+        }
+      ]
+    },
+    {
+      "schema": "bootdisk-catalog-0.1",
+      "type": "identification",
+      "id": "identification:6e9126e9381d0c3973dbffc734717ae6fe5e82c2d0ea82e4cbc40a97cd21ac81",
+      "package_id": "package:sha256:b2192645cea7040ccb54368caa505653b6869348e3d0e659d10fee5f8d99ade9",
+      "software_release_id": "release:resize-browser:unknown",
+      "status": "curated",
+      "distribution_kind": "unknown",
+      "evidence": [
+        {
+          "kind": "observed",
+          "source_ref": {
+            "manifest": "sha256:ae29b1d2976ee7c7439b2e12fe18b774d1d57e77c9a20bc3567d2e5079257281",
+            "entry": "K21"
+          },
+          "field": "normalized.title",
+          "value": "Resize Browser"
+        },
+        {
+          "kind": "observed",
+          "source_ref": {
+            "manifest": "sha256:ae29b1d2976ee7c7439b2e12fe18b774d1d57e77c9a20bc3567d2e5079257281",
+            "entry": "K21"
+          },
+          "field": "normalized.description",
+          "value": "Med dette lille programmet sørger du for at nettleseren alltid åpner vinduet sitt i den samme størrelsen. Du kan stille inn Resize Browser slik at det plasserer vinduet på det samme stedet på skjermen. Hver gang."
+        },
+        {
+          "kind": "observed",
+          "source_ref": {
+            "manifest": "sha256:ae29b1d2976ee7c7439b2e12fe18b774d1d57e77c9a20bc3567d2e5079257281",
+            "entry": "K21",
+            "path": "Resize/readme.htm"
+          },
+          "field": "file_content_review",
+          "value": {
+            "sha256": "8d4cca39aaceba8f3ad398430dde87eea8c44558d4f800898e158ce5178635d6",
+            "summary": "Identifies Browser Resize by RJL Software."
+          }
+        }
+      ]
+    },
+    {
+      "artifact_id": "artifact:sha256:ad499debd7f8f3e3ab9f59b0376acd7de39bb31fcce0c5829466c1a24467d88c",
+      "distribution_kind": "trial",
+      "evidence": [
+        {
+          "field": "normalized.title",
+          "kind": "observed",
+          "source_ref": {
+            "entry": "K22",
+            "manifest": "sha256:ae29b1d2976ee7c7439b2e12fe18b774d1d57e77c9a20bc3567d2e5079257281"
+          },
+          "value": "Shoot && Relax"
+        },
+        {
+          "field": "normalized.run",
+          "kind": "observed",
+          "source_ref": {
+            "entry": "K22",
+            "manifest": "sha256:ae29b1d2976ee7c7439b2e12fe18b774d1d57e77c9a20bc3567d2e5079257281"
+          },
+          "value": "Shoot/Shoot.exe"
+        },
+        {
+          "kind": "observed",
+          "source_ref": {
+            "manifest": "sha256:ae29b1d2976ee7c7439b2e12fe18b774d1d57e77c9a20bc3567d2e5079257281",
+            "entry": "K22",
+            "path": "Shoot/ReadMe.txt"
+          },
+          "field": "file_content_review",
+          "value": {
+            "sha256": "9d8fb178beb33f6b36eac4cd223ba147cc607a383024b385f8c62e129ea5d173",
+            "summary": "Shareware evaluation permits 20 starts; continued use requires registration."
+          }
+        }
+      ],
+      "id": "identification:714c6783ac29c407b801817b3f60a00dea5c315cb99e7cfc01a4fcb69a242bd4",
+      "schema": "bootdisk-catalog-0.1",
+      "software_release_id": "release:shoot-and-relax:unknown",
       "status": "curated",
       "type": "identification"
+    },
+    {
+      "schema": "bootdisk-catalog-0.1",
+      "type": "identification",
+      "id": "identification:731c6ca77a26f9eb39bf8a7afa91acc41626c2095dda0248c6829230c044e488",
+      "package_id": "package:sha256:0dd859e28383d55ee7e301a3ac107859400b4d37a7c317d714498c1877efcaeb",
+      "software_release_id": "release:docucom-pdf-driver:unknown",
+      "status": "curated",
+      "distribution_kind": "unknown",
+      "evidence": [
+        {
+          "kind": "observed",
+          "source_ref": {
+            "manifest": "sha256:ae29b1d2976ee7c7439b2e12fe18b774d1d57e77c9a20bc3567d2e5079257281",
+            "entry": "K16"
+          },
+          "field": "normalized.title",
+          "value": "DocuCom PDF Driver"
+        },
+        {
+          "kind": "observed",
+          "source_ref": {
+            "manifest": "sha256:ae29b1d2976ee7c7439b2e12fe18b774d1d57e77c9a20bc3567d2e5079257281",
+            "entry": "K16"
+          },
+          "field": "normalized.description",
+          "value": "Med DocuCom PDF Driver 4.61 kan du opprette dine egne PDF-dokumenter. PDF er et filformat som kan åpnes og leses på andre datamaskiner, uansett om operativsystemet er Windows eller Mac OS."
+        },
+        {
+          "kind": "observed",
+          "source_ref": {
+            "manifest": "sha256:ae29b1d2976ee7c7439b2e12fe18b774d1d57e77c9a20bc3567d2e5079257281",
+            "entry": "K16",
+            "path": "DocuCom/SETUP.INI"
+          },
+          "field": "file_content_review",
+          "value": {
+            "sha256": "441fe3426f68cf974b178f60718b72bf4710af7b356039ee87bf2479e39fd88f",
+            "summary": "AppName=DocuCom PDF Driver; installer version is not the product version."
+          }
+        }
+      ]
+    },
+    {
+      "schema": "bootdisk-catalog-0.1",
+      "type": "identification",
+      "id": "identification:7b4ddbeb5e1df015bebee4cab01ba23fcc98665f1898cfaaa7e8e7085993e80f",
+      "package_id": "package:sha256:9fdefa104cfd51002ca54f558410bdb331d551bde38dce6b75a8a43d665b9ccd",
+      "software_release_id": "release:fire-fighter:unknown",
+      "status": "interpreted",
+      "distribution_kind": "unknown",
+      "evidence": [
+        {
+          "kind": "observed",
+          "source_ref": {
+            "manifest": "sha256:ae29b1d2976ee7c7439b2e12fe18b774d1d57e77c9a20bc3567d2e5079257281",
+            "entry": "K9"
+          },
+          "field": "normalized.title",
+          "value": "Fire Fighter"
+        },
+        {
+          "kind": "observed",
+          "source_ref": {
+            "manifest": "sha256:ae29b1d2976ee7c7439b2e12fe18b774d1d57e77c9a20bc3567d2e5079257281",
+            "entry": "K9"
+          },
+          "field": "normalized.description",
+          "value": "Et artig og enkelt spill for hele familien. Du skal styre den lille brannmannen rundt i skogen før alle trærne og husene brenner ned, eller tiden utløper."
+        }
+      ]
     },
     {
       "artifact_id": "artifact:sha256:352d4a52efab3fb8c48dcc2b24569ecd8c27902d573f898f35bea73676f346bc",
@@ -419,6 +1992,77 @@
       "id": "identification:88b2e6c290791c16236a6ac4fddb5ab5ec58ea8a5145a107991cd18adefe462a",
       "schema": "bootdisk-catalog-0.1",
       "software_release_id": "release:internet-explorer:5.5",
+      "status": "curated",
+      "type": "identification"
+    },
+    {
+      "schema": "bootdisk-catalog-0.1",
+      "type": "identification",
+      "id": "identification:8edf619e8034905f1ec4c536cd89a9da8177f376f28a6e143118154945140774",
+      "package_id": "package:sha256:60dc4d0753286f79bfc4bf17c2584a28d14665516ccc5edd94db54ea5205b309",
+      "software_release_id": "release:workpace:unknown",
+      "status": "curated",
+      "distribution_kind": "unknown",
+      "evidence": [
+        {
+          "kind": "observed",
+          "source_ref": {
+            "manifest": "sha256:ae29b1d2976ee7c7439b2e12fe18b774d1d57e77c9a20bc3567d2e5079257281",
+            "entry": "K14"
+          },
+          "field": "normalized.title",
+          "value": "WorkPace"
+        },
+        {
+          "kind": "observed",
+          "source_ref": {
+            "manifest": "sha256:ae29b1d2976ee7c7439b2e12fe18b774d1d57e77c9a20bc3567d2e5079257281",
+            "entry": "K14"
+          },
+          "field": "normalized.description",
+          "value": "Programmet WorkPace hjelper deg med å forebygge eller lindre museskader, ømme muskler og kroniske lidelser."
+        },
+        {
+          "kind": "observed",
+          "source_ref": {
+            "manifest": "sha256:ae29b1d2976ee7c7439b2e12fe18b774d1d57e77c9a20bc3567d2e5079257281",
+            "entry": "K14",
+            "path": "WorkPace/README.TXT"
+          },
+          "field": "file_content_review",
+          "value": {
+            "sha256": "c0f90db25f62f53364eb3ec0b76b01647056051b4fb8213873305990097524e6",
+            "summary": "This README describes WorkPace for DOS; it does not establish the Windows release version."
+          }
+        }
+      ]
+    },
+    {
+      "artifact_id": "artifact:sha256:43a95930506c15f6119acbc2648673aa3730bd5aa04f7d21ea8d9f964e4df348",
+      "distribution_kind": "demo",
+      "evidence": [
+        {
+          "field": "normalized.title",
+          "kind": "observed",
+          "source_ref": {
+            "entry": "K8",
+            "manifest": "sha256:ae29b1d2976ee7c7439b2e12fe18b774d1d57e77c9a20bc3567d2e5079257281"
+          },
+          "value": "Deer Avenger 4"
+        },
+        {
+          "field": "normalized.installer",
+          "kind": "observed",
+          "source_ref": {
+            "entry": "K8",
+            "manifest": "sha256:ae29b1d2976ee7c7439b2e12fe18b774d1d57e77c9a20bc3567d2e5079257281"
+          },
+          "value": "Deer Avenger/DA4_Demo_Install.exe"
+        }
+      ],
+      "id": "identification:97d24b579d31b2de327d72be88917bcd0ad7b99ed340418f4d065d07facb961d",
+      "schema": "bootdisk-catalog-0.1",
+      "software_release_id": "release:deer-avenger:4",
       "status": "curated",
       "type": "identification"
     },
@@ -442,21 +2086,285 @@
       "type": "identification"
     },
     {
-      "artifact_id": "artifact:sha256:64a155d9abd5fd5a004d0c59310a7407936265e691f503a9954b12d54b2fa7d1",
+      "schema": "bootdisk-catalog-0.1",
+      "type": "identification",
+      "id": "identification:9d65c00c2b2c26a40ff8f1c4953ae91782c5f6de4a1335e03d3ce5c2995911a8",
+      "package_id": "package:sha256:307eca8a9c271afb067d516c96d02bdbe4c967216d03f4a7710b070971a3db40",
+      "software_release_id": "release:outlookskolen:unknown",
+      "status": "curated",
+      "distribution_kind": "unknown",
+      "evidence": [
+        {
+          "kind": "observed",
+          "source_ref": {
+            "manifest": "sha256:ae29b1d2976ee7c7439b2e12fe18b774d1d57e77c9a20bc3567d2e5079257281",
+            "entry": "K34"
+          },
+          "field": "normalized.title",
+          "value": "Outlookskolen"
+        },
+        {
+          "kind": "observed",
+          "source_ref": {
+            "manifest": "sha256:ae29b1d2976ee7c7439b2e12fe18b774d1d57e77c9a20bc3567d2e5079257281",
+            "entry": "K34"
+          },
+          "field": "normalized.description",
+          "value": "E-postprogrammet Outlook Express er både gratis og nyttig. Dette kurset gir deg en oversikt over programmets funksjoner og muligheter. Du lærer både å sende og motta e-post på pc-en."
+        },
+        {
+          "kind": "observed",
+          "source_ref": {
+            "manifest": "sha256:ae29b1d2976ee7c7439b2e12fe18b774d1d57e77c9a20bc3567d2e5079257281",
+            "entry": "K34",
+            "path": "Outlook/Outlook.pdf"
+          },
+          "field": "file_content_review",
+          "value": {
+            "sha256": "f51d7d7de0eaba2ccbde6d3ada62631b3c88c9deb46f6bede044f0959de43a2f",
+            "summary": "Reviewed PDF opening page; confirms the named course or guide."
+          }
+        }
+      ]
+    },
+    {
+      "schema": "bootdisk-catalog-0.1",
+      "type": "identification",
+      "id": "identification:a772a325f98347874c884503714f9322bd51cd5d1f48b5cc7537f0dfb5e28ff2",
+      "package_id": "package:sha256:228a14d0f520fd7d82dd4f7f2fa1667471f3b16994ed50c815aa7b28d0bbc720",
+      "software_release_id": "release:word-ekspert-skolen:unknown",
+      "status": "curated",
+      "distribution_kind": "unknown",
+      "evidence": [
+        {
+          "kind": "observed",
+          "source_ref": {
+            "manifest": "sha256:ae29b1d2976ee7c7439b2e12fe18b774d1d57e77c9a20bc3567d2e5079257281",
+            "entry": "K33"
+          },
+          "field": "normalized.title",
+          "value": "Word Ekspert-skolen"
+        },
+        {
+          "kind": "observed",
+          "source_ref": {
+            "manifest": "sha256:ae29b1d2976ee7c7439b2e12fe18b774d1d57e77c9a20bc3567d2e5079257281",
+            "entry": "K33"
+          },
+          "field": "normalized.description",
+          "value": "Word har en rekke avanserte funksjoner. Vi viser deg hvordan du kan gjøre tekstbehandlingen både enklere og bedre."
+        },
+        {
+          "kind": "observed",
+          "source_ref": {
+            "manifest": "sha256:ae29b1d2976ee7c7439b2e12fe18b774d1d57e77c9a20bc3567d2e5079257281",
+            "entry": "K33",
+            "path": "WordExpert/WordExpert.pdf"
+          },
+          "field": "file_content_review",
+          "value": {
+            "sha256": "3d1b7bf8295e21f5c2f9a7073d0554b723c28840f74dbd7c62ca3fdaa8f0f0fb",
+            "summary": "Reviewed PDF opening page; confirms the named course or guide."
+          }
+        }
+      ]
+    },
+    {
       "evidence": [
         {
           "field": "normalized.title",
           "kind": "observed",
           "source_ref": {
-            "entry": "K38",
+            "entry": "K35",
             "manifest": "sha256:ae29b1d2976ee7c7439b2e12fe18b774d1d57e77c9a20bc3567d2e5079257281"
           },
-          "value": "WinZip 8.0"
+          "value": "AVG Antivirus Pro"
+        },
+        {
+          "field": "normalized.description",
+          "kind": "observed",
+          "source_ref": {
+            "entry": "K35",
+            "manifest": "sha256:ae29b1d2976ee7c7439b2e12fe18b774d1d57e77c9a20bc3567d2e5079257281"
+          },
+          "value": "AVG 6.0"
         }
       ],
-      "id": "identification:3a09c246e0763c40277fff89b5f9a60697ceb4a3120a4d69fd060a83b2d3bdd7",
+      "id": "identification:acfbddf92bbae4cebc574e3de30e131e2993ff37646c13363b6d0aae60a405af",
       "schema": "bootdisk-catalog-0.1",
-      "software_release_id": "release:winzip:8.0",
+      "software_release_id": "release:avg-antivirus:6.0",
+      "status": "curated",
+      "type": "identification",
+      "package_id": "package:sha256:b0f2cf1c1396b6abe96c363af874f9b89f43f4b49803d0ea86f0b234309eb910"
+    },
+    {
+      "schema": "bootdisk-catalog-0.1",
+      "type": "identification",
+      "id": "identification:b98f7e1236c4c97e4a2ebd40ac4f3d04e07d94af3d3eba9583e22a56fe980b8c",
+      "package_id": "package:sha256:ca330cb61f39de9951b58c5e0cb21e8eaf0b6f3c2a143340ecf31f70f144a245",
+      "software_release_id": "release:blockout:unknown",
+      "status": "interpreted",
+      "distribution_kind": "unknown",
+      "evidence": [
+        {
+          "kind": "observed",
+          "source_ref": {
+            "manifest": "sha256:ae29b1d2976ee7c7439b2e12fe18b774d1d57e77c9a20bc3567d2e5079257281",
+            "entry": "K4"
+          },
+          "field": "normalized.title",
+          "value": "Blockout"
+        },
+        {
+          "kind": "observed",
+          "source_ref": {
+            "manifest": "sha256:ae29b1d2976ee7c7439b2e12fe18b774d1d57e77c9a20bc3567d2e5079257281",
+            "entry": "K4"
+          },
+          "field": "normalized.description",
+          "value": "Nå er det på tide med et vanedannende spill igjen som tester hvor raskt og logisk du tenker. Dette spillet minner om Tetris i en 3D-utgave."
+        }
+      ]
+    },
+    {
+      "schema": "bootdisk-catalog-0.1",
+      "type": "identification",
+      "id": "identification:b993c0efae57713d4cc17507e94514401dade14ef85d9a2d3ead3a5b56e5e1c3",
+      "package_id": "package:sha256:5b3cdb1e94ebfe46cdfeeeacfd430d3c6377731f050117bd42e727b915e0aaff",
+      "software_release_id": "release:ice-breaker:unknown",
+      "status": "interpreted",
+      "distribution_kind": "unknown",
+      "evidence": [
+        {
+          "kind": "observed",
+          "source_ref": {
+            "manifest": "sha256:ae29b1d2976ee7c7439b2e12fe18b774d1d57e77c9a20bc3567d2e5079257281",
+            "entry": "K12"
+          },
+          "field": "normalized.title",
+          "value": "Ice Breaker"
+        },
+        {
+          "kind": "observed",
+          "source_ref": {
+            "manifest": "sha256:ae29b1d2976ee7c7439b2e12fe18b774d1d57e77c9a20bc3567d2e5079257281",
+            "entry": "K12"
+          },
+          "field": "normalized.description",
+          "value": "Et spill for de minste eller til en kort pause foran skjermen. Bruk musen og sperr veien for pingvinene slik at du gjør isfjellet deres så lite som mulig."
+        }
+      ]
+    },
+    {
+      "schema": "bootdisk-catalog-0.1",
+      "type": "identification",
+      "id": "identification:c14648d27c8461a787768b09f3c54fce53731303be4600085b1990ba457fcc2e",
+      "package_id": "package:sha256:bb2a45675a7fff472aec5f6e024a8d608a55719e6b85260cf7460cfdb11013dc",
+      "software_release_id": "release:powerpoint-skolen:unknown",
+      "status": "curated",
+      "distribution_kind": "unknown",
+      "evidence": [
+        {
+          "kind": "observed",
+          "source_ref": {
+            "manifest": "sha256:ae29b1d2976ee7c7439b2e12fe18b774d1d57e77c9a20bc3567d2e5079257281",
+            "entry": "K27"
+          },
+          "field": "normalized.title",
+          "value": "PowerPoint skolen"
+        },
+        {
+          "kind": "observed",
+          "source_ref": {
+            "manifest": "sha256:ae29b1d2976ee7c7439b2e12fe18b774d1d57e77c9a20bc3567d2e5079257281",
+            "entry": "K27"
+          },
+          "field": "normalized.description",
+          "value": "Med PowerPoint-skolen oppdager du fort hvor lett det er å lage flotte animerte presentasjoner på pc-en."
+        },
+        {
+          "kind": "observed",
+          "source_ref": {
+            "manifest": "sha256:ae29b1d2976ee7c7439b2e12fe18b774d1d57e77c9a20bc3567d2e5079257281",
+            "entry": "K27",
+            "path": "PowerPoint/PowerPoint.pdf"
+          },
+          "field": "file_content_review",
+          "value": {
+            "sha256": "ebe93778e98c7efb0258190693d852575ecc2e83ff7c98a617cfc67d4b57346c",
+            "summary": "Reviewed PDF opening page; confirms the named course or guide."
+          }
+        }
+      ]
+    },
+    {
+      "schema": "bootdisk-catalog-0.1",
+      "type": "identification",
+      "id": "identification:c72a570a72333228aff9db23b616ad4cf735d290b5af2d1e68f67782ad41d65a",
+      "package_id": "package:sha256:c13b61f6d169fa1ba073288b72a56d2262f6c86fa301e4f0ae6aac0cfab640b5",
+      "software_release_id": "release:font-xplorer-lite:unknown",
+      "status": "interpreted",
+      "distribution_kind": "unknown",
+      "evidence": [
+        {
+          "kind": "observed",
+          "source_ref": {
+            "manifest": "sha256:ae29b1d2976ee7c7439b2e12fe18b774d1d57e77c9a20bc3567d2e5079257281",
+            "entry": "K11"
+          },
+          "field": "normalized.title",
+          "value": "FontExplorer Lite"
+        },
+        {
+          "kind": "observed",
+          "source_ref": {
+            "manifest": "sha256:ae29b1d2976ee7c7439b2e12fe18b774d1d57e77c9a20bc3567d2e5079257281",
+            "entry": "K11"
+          },
+          "field": "normalized.description",
+          "value": "Nå slipper du å prøve deg frem. Her får du en oversikt over samtlige skrifttyper som er installert på pc-en. Sammenlign dem, skriv ut oversiktene og les om de forskjellige skriftene."
+        }
+      ]
+    },
+    {
+      "artifact_id": "artifact:sha256:c635e44cc91e797e4f5056d8316e66369df112255458c3a381f69b0385a809f5",
+      "distribution_kind": "unknown",
+      "evidence": [
+        {
+          "field": "normalized.title",
+          "kind": "observed",
+          "source_ref": {
+            "entry": "K15",
+            "manifest": "sha256:ae29b1d2976ee7c7439b2e12fe18b774d1d57e77c9a20bc3567d2e5079257281"
+          },
+          "value": "Mutant Xpiders"
+        },
+        {
+          "field": "normalized.run",
+          "kind": "observed",
+          "source_ref": {
+            "entry": "K15",
+            "manifest": "sha256:ae29b1d2976ee7c7439b2e12fe18b774d1d57e77c9a20bc3567d2e5079257281"
+          },
+          "value": "Mutant Xpiders/Mut_xpid.exe"
+        },
+        {
+          "kind": "observed",
+          "source_ref": {
+            "manifest": "sha256:ae29b1d2976ee7c7439b2e12fe18b774d1d57e77c9a20bc3567d2e5079257281",
+            "entry": "K15",
+            "path": "Mutant Xpiders/README.TXT"
+          },
+          "field": "file_content_review",
+          "value": {
+            "sha256": "800d708f92f4d29bc68925a61dcffd8789f49de26860a73737f21f707140d8d6",
+            "summary": "Mutant Xpiders by Trevor Lawford, Version 1.5, July 2000."
+          }
+        }
+      ],
+      "id": "identification:cb847af8508635263a0d52a0b3709fb4c5a391e45a8314ae0ef5be3b0a073f24",
+      "schema": "bootdisk-catalog-0.1",
+      "software_release_id": "release:mutant-xpiders:1.5",
       "status": "curated",
       "type": "identification"
     },
@@ -480,70 +2388,474 @@
       "type": "identification"
     },
     {
+      "schema": "bootdisk-catalog-0.1",
+      "type": "identification",
+      "id": "identification:cc25df742868c7fa586bbf3e30127c16a58f6347901dab9913704b23e69ed88b",
+      "package_id": "package:sha256:d8c6dc1129e03b00bfcfb0afc5e6429a26864311c1e687e424c1d0b71afa594c",
+      "software_release_id": "release:pf-eksempelbilder:unknown",
+      "status": "interpreted",
+      "distribution_kind": "unknown",
+      "evidence": [
+        {
+          "kind": "observed",
+          "source_ref": {
+            "manifest": "sha256:ae29b1d2976ee7c7439b2e12fe18b774d1d57e77c9a20bc3567d2e5079257281",
+            "entry": "K18"
+          },
+          "field": "normalized.title",
+          "value": "PF Eksempelbilder"
+        },
+        {
+          "kind": "observed",
+          "source_ref": {
+            "manifest": "sha256:ae29b1d2976ee7c7439b2e12fe18b774d1d57e77c9a20bc3567d2e5079257281",
+            "entry": "K18"
+          },
+          "field": "normalized.description",
+          "value": "Prøv eksemplene fra bladet. Alle bildene ligger på KCD-en. Bildene stammer fra Marselisborg Marina ved Århus en vakker sommerdag."
+        }
+      ]
+    },
+    {
+      "schema": "bootdisk-catalog-0.1",
+      "type": "identification",
+      "id": "identification:d3c36a8fcb3215a891717d11599e1d33ae59009022c762e5421e0908c14bfd50",
+      "package_id": "package:sha256:5ffb997a9ce80f05122505c432b7999142d0860deab6eaa3497961173ba6789a",
+      "software_release_id": "release:wordskolen:unknown",
+      "status": "curated",
+      "distribution_kind": "unknown",
+      "evidence": [
+        {
+          "kind": "observed",
+          "source_ref": {
+            "manifest": "sha256:ae29b1d2976ee7c7439b2e12fe18b774d1d57e77c9a20bc3567d2e5079257281",
+            "entry": "K32"
+          },
+          "field": "normalized.title",
+          "value": "Wordskolen"
+        },
+        {
+          "kind": "observed",
+          "source_ref": {
+            "manifest": "sha256:ae29b1d2976ee7c7439b2e12fe18b774d1d57e77c9a20bc3567d2e5079257281",
+            "entry": "K32"
+          },
+          "field": "normalized.description",
+          "value": "Det kjente tekstbehandlingsprogrammet Word inneholder mange funksjoner. I dette kurset kan du lære hvordan du bruker programmet."
+        },
+        {
+          "kind": "observed",
+          "source_ref": {
+            "manifest": "sha256:ae29b1d2976ee7c7439b2e12fe18b774d1d57e77c9a20bc3567d2e5079257281",
+            "entry": "K32",
+            "path": "Word/Word.pdf"
+          },
+          "field": "file_content_review",
+          "value": {
+            "sha256": "a8dd7844aa7338e1c9b432c118b3cf86150d02c9d0b8bb418fe0da8f72723979",
+            "summary": "Reviewed PDF opening page; confirms the named course or guide."
+          }
+        }
+      ]
+    },
+    {
+      "schema": "bootdisk-catalog-0.1",
+      "type": "identification",
+      "id": "identification:e3923661d1e1f1d0542bf787e488ddb8031b7f796adb327578819565294ff178",
+      "package_id": "package:sha256:496aa4c72e458fd468b393b8c0071854276c282a11f9b7a0464d3cd27001b7da",
+      "software_release_id": "release:bruk-photo-objects:unknown",
+      "status": "curated",
+      "distribution_kind": "unknown",
+      "evidence": [
+        {
+          "kind": "observed",
+          "source_ref": {
+            "manifest": "sha256:ae29b1d2976ee7c7439b2e12fe18b774d1d57e77c9a20bc3567d2e5079257281",
+            "entry": "K41"
+          },
+          "field": "normalized.title",
+          "value": "Bruk Photo-Objects"
+        },
+        {
+          "kind": "observed",
+          "source_ref": {
+            "manifest": "sha256:ae29b1d2976ee7c7439b2e12fe18b774d1d57e77c9a20bc3567d2e5079257281",
+            "entry": "K41"
+          },
+          "field": "normalized.description",
+          "value": "I galleriet finner du 101 flotte bilder du kan bruke fritt. Denne veiledningen viser deg hvordan du finner de bildene du vil bruke."
+        },
+        {
+          "kind": "observed",
+          "source_ref": {
+            "manifest": "sha256:ae29b1d2976ee7c7439b2e12fe18b774d1d57e77c9a20bc3567d2e5079257281",
+            "entry": "K41",
+            "path": "PhotoPDF/PhotoObjects.pdf"
+          },
+          "field": "file_content_review",
+          "value": {
+            "sha256": "0125797c6604eae6c1abe47304be54b464fa5686c61911c4a81b56e2f3e84f56",
+            "summary": "Reviewed PDF opening page; confirms the named course or guide."
+          }
+        }
+      ]
+    },
+    {
+      "schema": "bootdisk-catalog-0.1",
+      "type": "identification",
+      "id": "identification:f68648ea3a3cc25fc71ab774db21160d87bedb18ed1521efd4e459bd1f760ef9",
+      "package_id": "package:sha256:3a00602935017e43571bcfcb6307fa06862468d73e59b3ee88aa56fa73e30825",
+      "software_release_id": "release:hjemmesideskolen-ekspert:unknown",
+      "status": "curated",
+      "distribution_kind": "unknown",
+      "evidence": [
+        {
+          "kind": "observed",
+          "source_ref": {
+            "manifest": "sha256:ae29b1d2976ee7c7439b2e12fe18b774d1d57e77c9a20bc3567d2e5079257281",
+            "entry": "K31"
+          },
+          "field": "normalized.title",
+          "value": "Hjemmesideskolen - ekspert"
+        },
+        {
+          "kind": "observed",
+          "source_ref": {
+            "manifest": "sha256:ae29b1d2976ee7c7439b2e12fe18b774d1d57e77c9a20bc3567d2e5079257281",
+            "entry": "K31"
+          },
+          "field": "normalized.description",
+          "value": "Med hjemmesideekspertskolen lærer du å lage flotte og funksjonelle hjemmesider med programmet 1st Page."
+        },
+        {
+          "kind": "observed",
+          "source_ref": {
+            "manifest": "sha256:ae29b1d2976ee7c7439b2e12fe18b774d1d57e77c9a20bc3567d2e5079257281",
+            "entry": "K31",
+            "path": "WebExpert/WebExpert.pdf"
+          },
+          "field": "file_content_review",
+          "value": {
+            "sha256": "f04ba13664e5a3ae065ad3cde0b50ef0f6129288f162d6e9daf019eb4f53de33",
+            "summary": "Reviewed PDF opening page; confirms the named course or guide."
+          }
+        }
+      ]
+    },
+    {
+      "schema": "bootdisk-catalog-0.1",
+      "type": "identification",
+      "id": "identification:fc3386381c69d626df225b14d161790b3b0b057c2c7d5b658fc0ad04710f6570",
+      "package_id": "package:sha256:03519d4916b2f9d5e4f81ebc070ae761c25a6db2aea354ca0af6e290b8cca50b",
+      "software_release_id": "release:panorama-factory:2.3",
+      "status": "curated",
+      "distribution_kind": "trial",
+      "evidence": [
+        {
+          "kind": "observed",
+          "source_ref": {
+            "manifest": "sha256:ae29b1d2976ee7c7439b2e12fe18b774d1d57e77c9a20bc3567d2e5079257281",
+            "entry": "K17"
+          },
+          "field": "normalized.title",
+          "value": "Panorama Factory"
+        },
+        {
+          "kind": "observed",
+          "source_ref": {
+            "manifest": "sha256:ae29b1d2976ee7c7439b2e12fe18b774d1d57e77c9a20bc3567d2e5079257281",
+            "entry": "K17"
+          },
+          "field": "normalized.description",
+          "value": "Klipp sammen feriebildene til flotte panoramaer med programmet Panorama Factory. De ferdige bildene kan lagres i flere bildeformater."
+        },
+        {
+          "kind": "observed",
+          "source_ref": {
+            "manifest": "sha256:ae29b1d2976ee7c7439b2e12fe18b774d1d57e77c9a20bc3567d2e5079257281",
+            "entry": "K17",
+            "path": "Panorama Factory/README.TXT"
+          },
+          "field": "file_content_review",
+          "value": {
+            "sha256": "a2cd9d5f8e412429b14656d5d1f1dc2b8992eedcb0043f5158a95527d2b39e69",
+            "summary": "The Panorama Factory V2.3 Standard Edition; evaluation up to 30 days before registration."
+          }
+        }
+      ]
+    },
+    {
       "id": "software:1st-page",
       "name": "1st Page",
       "schema": "bootdisk-catalog-0.1",
-      "type": "software"
+      "type": "software",
+      "content_kind": "application"
     },
     {
       "id": "software:acrobat-reader",
       "name": "Acrobat Reader",
       "schema": "bootdisk-catalog-0.1",
-      "type": "software"
+      "type": "software",
+      "content_kind": "application"
+    },
+    {
+      "schema": "bootdisk-catalog-0.1",
+      "type": "software",
+      "id": "software:aliens-vs-predator-2",
+      "name": "Aliens vs. Predator 2",
+      "content_kind": "game"
     },
     {
       "id": "software:avg-antivirus",
       "name": "AVG Antivirus",
       "schema": "bootdisk-catalog-0.1",
-      "type": "software"
+      "type": "software",
+      "content_kind": "application"
+    },
+    {
+      "schema": "bootdisk-catalog-0.1",
+      "type": "software",
+      "id": "software:bille-og-trille",
+      "name": "Bille og Trille",
+      "content_kind": "game"
+    },
+    {
+      "schema": "bootdisk-catalog-0.1",
+      "type": "software",
+      "id": "software:blockout",
+      "name": "Blockout",
+      "content_kind": "game"
+    },
+    {
+      "schema": "bootdisk-catalog-0.1",
+      "type": "software",
+      "id": "software:bruk-photo-objects",
+      "name": "Bruk Photo-Objects",
+      "content_kind": "course"
+    },
+    {
+      "schema": "bootdisk-catalog-0.1",
+      "type": "software",
+      "id": "software:bugnosis",
+      "name": "Bugnosis",
+      "content_kind": "application"
+    },
+    {
+      "schema": "bootdisk-catalog-0.1",
+      "type": "software",
+      "id": "software:clickpuzzle",
+      "name": "ClickPuzzle",
+      "content_kind": "game"
+    },
+    {
+      "schema": "bootdisk-catalog-0.1",
+      "type": "software",
+      "id": "software:cpu-z",
+      "name": "CPU-Z",
+      "content_kind": "application"
     },
     {
       "id": "software:deer-avenger",
       "name": "Deer Avenger",
       "schema": "bootdisk-catalog-0.1",
-      "type": "software"
+      "type": "software",
+      "content_kind": "game"
+    },
+    {
+      "schema": "bootdisk-catalog-0.1",
+      "type": "software",
+      "id": "software:digitalkameraskolen",
+      "name": "Digitalkameraskolen",
+      "content_kind": "course"
+    },
+    {
+      "schema": "bootdisk-catalog-0.1",
+      "type": "software",
+      "id": "software:docucom-pdf-driver",
+      "name": "DocuCom PDF Driver",
+      "content_kind": "application"
+    },
+    {
+      "schema": "bootdisk-catalog-0.1",
+      "type": "software",
+      "id": "software:dr-goo",
+      "name": "Dr. Goo",
+      "content_kind": "game"
+    },
+    {
+      "schema": "bootdisk-catalog-0.1",
+      "type": "software",
+      "id": "software:fire-fighter",
+      "name": "Fire Fighter",
+      "content_kind": "game"
+    },
+    {
+      "schema": "bootdisk-catalog-0.1",
+      "type": "software",
+      "id": "software:floppy-image",
+      "name": "Floppy Image",
+      "content_kind": "application"
+    },
+    {
+      "schema": "bootdisk-catalog-0.1",
+      "type": "software",
+      "id": "software:font-xplorer-lite",
+      "name": "Font Xplorer Lite",
+      "content_kind": "application"
+    },
+    {
+      "schema": "bootdisk-catalog-0.1",
+      "type": "software",
+      "id": "software:hjemmesideskolen-ekspert",
+      "name": "Hjemmesideskolen – ekspert",
+      "content_kind": "course"
+    },
+    {
+      "schema": "bootdisk-catalog-0.1",
+      "type": "software",
+      "id": "software:ice-breaker",
+      "name": "Ice Breaker",
+      "content_kind": "game"
     },
     {
       "id": "software:internet-explorer",
       "name": "Internet Explorer",
       "schema": "bootdisk-catalog-0.1",
-      "type": "software"
+      "type": "software",
+      "content_kind": "application"
+    },
+    {
+      "schema": "bootdisk-catalog-0.1",
+      "type": "software",
+      "id": "software:kfa-arsregister",
+      "name": "Komputer for alles årsregister",
+      "content_kind": "reference"
+    },
+    {
+      "schema": "bootdisk-catalog-0.1",
+      "type": "software",
+      "id": "software:larabie-fonts-kcd15-2001",
+      "name": "Larabie Fonts – K-CD 15/2001",
+      "content_kind": "font_collection"
     },
     {
       "id": "software:mechcommander",
       "name": "MechCommander",
       "schema": "bootdisk-catalog-0.1",
-      "type": "software"
+      "type": "software",
+      "content_kind": "game"
     },
     {
       "id": "software:mutant-xpiders",
       "name": "Mutant Xpiders",
       "schema": "bootdisk-catalog-0.1",
-      "type": "software"
+      "type": "software",
+      "content_kind": "game"
+    },
+    {
+      "schema": "bootdisk-catalog-0.1",
+      "type": "software",
+      "id": "software:outlookskolen",
+      "name": "Outlook Express-skolen",
+      "content_kind": "course"
+    },
+    {
+      "schema": "bootdisk-catalog-0.1",
+      "type": "software",
+      "id": "software:panorama-factory",
+      "name": "The Panorama Factory",
+      "content_kind": "application"
+    },
+    {
+      "schema": "bootdisk-catalog-0.1",
+      "type": "software",
+      "id": "software:pf-eksempelbilder",
+      "name": "Panorama Factory – eksempelbilder",
+      "content_kind": "image_collection"
+    },
+    {
+      "schema": "bootdisk-catalog-0.1",
+      "type": "software",
+      "id": "software:photo-objects-sampler",
+      "name": "Photo-Objects Sampler",
+      "content_kind": "image_collection"
+    },
+    {
+      "schema": "bootdisk-catalog-0.1",
+      "type": "software",
+      "id": "software:powerpoint-skolen",
+      "name": "PowerPoint-skolen",
+      "content_kind": "course"
+    },
+    {
+      "schema": "bootdisk-catalog-0.1",
+      "type": "software",
+      "id": "software:puzzlejig",
+      "name": "PuzzleJig",
+      "content_kind": "game"
+    },
+    {
+      "schema": "bootdisk-catalog-0.1",
+      "type": "software",
+      "id": "software:red-faction",
+      "name": "Red Faction",
+      "content_kind": "game"
+    },
+    {
+      "schema": "bootdisk-catalog-0.1",
+      "type": "software",
+      "id": "software:resize-browser",
+      "name": "Resize Browser",
+      "content_kind": "application"
     },
     {
       "id": "software:shoot-and-relax",
       "name": "Shoot & Relax",
       "schema": "bootdisk-catalog-0.1",
-      "type": "software"
+      "type": "software",
+      "content_kind": "game"
     },
     {
       "id": "software:winamp",
       "name": "Winamp",
       "schema": "bootdisk-catalog-0.1",
-      "type": "software"
+      "type": "software",
+      "content_kind": "application"
     },
     {
       "id": "software:winzip",
       "name": "WinZip",
       "schema": "bootdisk-catalog-0.1",
-      "type": "software"
+      "type": "software",
+      "content_kind": "application"
+    },
+    {
+      "schema": "bootdisk-catalog-0.1",
+      "type": "software",
+      "id": "software:word-ekspert-skolen",
+      "name": "Word Ekspert-skolen",
+      "content_kind": "course"
+    },
+    {
+      "schema": "bootdisk-catalog-0.1",
+      "type": "software",
+      "id": "software:wordskolen",
+      "name": "Wordskolen",
+      "content_kind": "course"
+    },
+    {
+      "schema": "bootdisk-catalog-0.1",
+      "type": "software",
+      "id": "software:workpace",
+      "name": "WorkPace",
+      "content_kind": "application"
     },
     {
       "id": "software:xnview",
       "name": "XnView",
       "schema": "bootdisk-catalog-0.1",
-      "type": "software"
+      "type": "software",
+      "content_kind": "application"
     },
     {
       "id": "release:1st-page:2000",
@@ -560,11 +2872,60 @@
       "version": "5.0"
     },
     {
+      "schema": "bootdisk-catalog-0.1",
+      "type": "software_release",
+      "id": "release:aliens-vs-predator-2:unknown",
+      "software_id": "software:aliens-vs-predator-2",
+      "version": "unknown"
+    },
+    {
       "id": "release:avg-antivirus:6.0",
       "schema": "bootdisk-catalog-0.1",
       "software_id": "software:avg-antivirus",
       "type": "software_release",
       "version": "6.0"
+    },
+    {
+      "schema": "bootdisk-catalog-0.1",
+      "type": "software_release",
+      "id": "release:bille-og-trille:unknown",
+      "software_id": "software:bille-og-trille",
+      "version": "unknown"
+    },
+    {
+      "schema": "bootdisk-catalog-0.1",
+      "type": "software_release",
+      "id": "release:blockout:unknown",
+      "software_id": "software:blockout",
+      "version": "unknown"
+    },
+    {
+      "schema": "bootdisk-catalog-0.1",
+      "type": "software_release",
+      "id": "release:bruk-photo-objects:unknown",
+      "software_id": "software:bruk-photo-objects",
+      "version": "unknown"
+    },
+    {
+      "schema": "bootdisk-catalog-0.1",
+      "type": "software_release",
+      "id": "release:bugnosis:unknown",
+      "software_id": "software:bugnosis",
+      "version": "unknown"
+    },
+    {
+      "schema": "bootdisk-catalog-0.1",
+      "type": "software_release",
+      "id": "release:clickpuzzle:unknown",
+      "software_id": "software:clickpuzzle",
+      "version": "unknown"
+    },
+    {
+      "schema": "bootdisk-catalog-0.1",
+      "type": "software_release",
+      "id": "release:cpu-z:unknown",
+      "software_id": "software:cpu-z",
+      "version": "unknown"
     },
     {
       "id": "release:deer-avenger:4",
@@ -574,11 +2935,81 @@
       "version": "4"
     },
     {
+      "schema": "bootdisk-catalog-0.1",
+      "type": "software_release",
+      "id": "release:digitalkameraskolen:unknown",
+      "software_id": "software:digitalkameraskolen",
+      "version": "unknown"
+    },
+    {
+      "schema": "bootdisk-catalog-0.1",
+      "type": "software_release",
+      "id": "release:docucom-pdf-driver:unknown",
+      "software_id": "software:docucom-pdf-driver",
+      "version": "unknown"
+    },
+    {
+      "schema": "bootdisk-catalog-0.1",
+      "type": "software_release",
+      "id": "release:dr-goo:unknown",
+      "software_id": "software:dr-goo",
+      "version": "unknown"
+    },
+    {
+      "schema": "bootdisk-catalog-0.1",
+      "type": "software_release",
+      "id": "release:fire-fighter:unknown",
+      "software_id": "software:fire-fighter",
+      "version": "unknown"
+    },
+    {
+      "schema": "bootdisk-catalog-0.1",
+      "type": "software_release",
+      "id": "release:floppy-image:unknown",
+      "software_id": "software:floppy-image",
+      "version": "unknown"
+    },
+    {
+      "schema": "bootdisk-catalog-0.1",
+      "type": "software_release",
+      "id": "release:font-xplorer-lite:unknown",
+      "software_id": "software:font-xplorer-lite",
+      "version": "unknown"
+    },
+    {
+      "schema": "bootdisk-catalog-0.1",
+      "type": "software_release",
+      "id": "release:hjemmesideskolen-ekspert:unknown",
+      "software_id": "software:hjemmesideskolen-ekspert",
+      "version": "unknown"
+    },
+    {
+      "schema": "bootdisk-catalog-0.1",
+      "type": "software_release",
+      "id": "release:ice-breaker:unknown",
+      "software_id": "software:ice-breaker",
+      "version": "unknown"
+    },
+    {
       "id": "release:internet-explorer:5.5",
       "schema": "bootdisk-catalog-0.1",
       "software_id": "software:internet-explorer",
       "type": "software_release",
       "version": "5.5"
+    },
+    {
+      "schema": "bootdisk-catalog-0.1",
+      "type": "software_release",
+      "id": "release:kfa-arsregister:unknown",
+      "software_id": "software:kfa-arsregister",
+      "version": "unknown"
+    },
+    {
+      "schema": "bootdisk-catalog-0.1",
+      "type": "software_release",
+      "id": "release:larabie-fonts-kcd15-2001:unknown",
+      "software_id": "software:larabie-fonts-kcd15-2001",
+      "version": "unknown"
     },
     {
       "id": "release:mechcommander:2",
@@ -588,10 +3019,66 @@
       "version": "2"
     },
     {
-      "id": "release:mutant-xpiders:unknown",
+      "id": "release:mutant-xpiders:1.5",
       "schema": "bootdisk-catalog-0.1",
       "software_id": "software:mutant-xpiders",
       "type": "software_release",
+      "version": "1.5"
+    },
+    {
+      "schema": "bootdisk-catalog-0.1",
+      "type": "software_release",
+      "id": "release:outlookskolen:unknown",
+      "software_id": "software:outlookskolen",
+      "version": "unknown"
+    },
+    {
+      "schema": "bootdisk-catalog-0.1",
+      "type": "software_release",
+      "id": "release:panorama-factory:2.3",
+      "software_id": "software:panorama-factory",
+      "version": "2.3"
+    },
+    {
+      "schema": "bootdisk-catalog-0.1",
+      "type": "software_release",
+      "id": "release:pf-eksempelbilder:unknown",
+      "software_id": "software:pf-eksempelbilder",
+      "version": "unknown"
+    },
+    {
+      "schema": "bootdisk-catalog-0.1",
+      "type": "software_release",
+      "id": "release:photo-objects-sampler:unknown",
+      "software_id": "software:photo-objects-sampler",
+      "version": "unknown"
+    },
+    {
+      "schema": "bootdisk-catalog-0.1",
+      "type": "software_release",
+      "id": "release:powerpoint-skolen:unknown",
+      "software_id": "software:powerpoint-skolen",
+      "version": "unknown"
+    },
+    {
+      "schema": "bootdisk-catalog-0.1",
+      "type": "software_release",
+      "id": "release:puzzlejig:unknown",
+      "software_id": "software:puzzlejig",
+      "version": "unknown"
+    },
+    {
+      "schema": "bootdisk-catalog-0.1",
+      "type": "software_release",
+      "id": "release:red-faction:unknown",
+      "software_id": "software:red-faction",
+      "version": "unknown"
+    },
+    {
+      "schema": "bootdisk-catalog-0.1",
+      "type": "software_release",
+      "id": "release:resize-browser:unknown",
+      "software_id": "software:resize-browser",
       "version": "unknown"
     },
     {
@@ -614,6 +3101,27 @@
       "software_id": "software:winzip",
       "type": "software_release",
       "version": "8.0"
+    },
+    {
+      "schema": "bootdisk-catalog-0.1",
+      "type": "software_release",
+      "id": "release:word-ekspert-skolen:unknown",
+      "software_id": "software:word-ekspert-skolen",
+      "version": "unknown"
+    },
+    {
+      "schema": "bootdisk-catalog-0.1",
+      "type": "software_release",
+      "id": "release:wordskolen:unknown",
+      "software_id": "software:wordskolen",
+      "version": "unknown"
+    },
+    {
+      "schema": "bootdisk-catalog-0.1",
+      "type": "software_release",
+      "id": "release:workpace:unknown",
+      "software_id": "software:workpace",
+      "version": "unknown"
     },
     {
       "id": "release:xnview:1.21",
