@@ -69,7 +69,7 @@ class ReferenceCurationTests(unittest.TestCase):
                     encoding="utf-8",
                 )
 
-            self.assertEqual(restore_bundle(root, bundle), 20)
+            self.assertEqual(restore_bundle(root, bundle), 28)
             restored = Catalog.load(root)
 
         self.assertEqual(
@@ -96,6 +96,12 @@ class ReferenceCurationTests(unittest.TestCase):
         self.assertEqual(
             restored.record("software:internet-explorer")["name"],
             "Internet Explorer",
+        )
+        self.assertEqual(
+            restored.record("release:1st-page:2000")["version"], "2000"
+        )
+        self.assertEqual(
+            restored.record("release:avg-antivirus:6.0")["version"], "6.0"
         )
         self.assertEqual(
             restored.record("release:xnview:1.21")["version"], "1.21"
