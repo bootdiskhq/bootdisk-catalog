@@ -69,7 +69,7 @@ class ReferenceCurationTests(unittest.TestCase):
                     encoding="utf-8",
                 )
 
-            self.assertEqual(restore_bundle(root, bundle), 36)
+            self.assertEqual(restore_bundle(root, bundle), 44)
             restored = Catalog.load(root)
 
         self.assertEqual(
@@ -114,6 +114,16 @@ class ReferenceCurationTests(unittest.TestCase):
                 "identification:4822034cc446f1e546e18d6191171bb75acf463fa2ad1ff242b35611142836d1"
             )["distribution_kind"],
             "demo",
+        )
+        self.assertEqual(
+            restored.record("release:mutant-xpiders:unknown")["version"],
+            "unknown",
+        )
+        self.assertEqual(
+            restored.record(
+                "identification:714c6783ac29c407b801817b3f60a00dea5c315cb99e7cfc01a4fcb69a242bd4"
+            )["distribution_kind"],
+            "unknown",
         )
         self.assertEqual(
             restored.record("release:xnview:1.21")["version"], "1.21"

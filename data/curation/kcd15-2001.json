@@ -7,6 +7,46 @@
           "field": "normalized.description",
           "kind": "curated",
           "source_ref": {
+            "entry": "K15",
+            "manifest": "sha256:ae29b1d2976ee7c7439b2e12fe18b774d1d57e77c9a20bc3567d2e5079257281"
+          },
+          "value": "Spillet er en variant over Spaceinvaders. Her er det imidlertid ikke fiendtlige romskip, men grønne, giftige edderkopper som skal skytes ned fra nettet sitt."
+        }
+      ],
+      "id": "description:release:mutant-xpiders:unknown:nb-NO",
+      "language": "nb-NO",
+      "schema": "bootdisk-catalog-0.1",
+      "status": "curated",
+      "subject_id": "release:mutant-xpiders:unknown",
+      "text": "Mutant Xpiders er en variant av Space Invaders der spilleren skyter grønne edderkopper i stedet for romskip. Versjonen på K-CD-en er foreløpig ukjent.",
+      "type": "description"
+    },
+    {
+      "evidence": [
+        {
+          "field": "normalized.description",
+          "kind": "curated",
+          "source_ref": {
+            "entry": "K22",
+            "manifest": "sha256:ae29b1d2976ee7c7439b2e12fe18b774d1d57e77c9a20bc3567d2e5079257281"
+          },
+          "value": "Nå skal du en tur på skytebanen. Du må være både rask og nøyaktig med musen. Du skal treffe virvlende skyteskiver og ting og tang som flyr gjennom luften."
+        }
+      ],
+      "id": "description:release:shoot-and-relax:unknown:nb-NO",
+      "language": "nb-NO",
+      "schema": "bootdisk-catalog-0.1",
+      "status": "curated",
+      "subject_id": "release:shoot-and-relax:unknown",
+      "text": "Shoot & Relax er et skytebanespill der spilleren bruker musen til å treffe bevegelige skiver og gjenstander. Versjonen på K-CD-en er foreløpig ukjent.",
+      "type": "description"
+    },
+    {
+      "evidence": [
+        {
+          "field": "normalized.description",
+          "kind": "curated",
+          "source_ref": {
             "entry": "K8",
             "manifest": "sha256:ae29b1d2976ee7c7439b2e12fe18b774d1d57e77c9a20bc3567d2e5079257281"
           },
@@ -180,6 +220,64 @@
       "subject_id": "release:xnview:1.21",
       "text": "XnView 1.21 brukes til å sortere og finne bilder på datamaskinen.",
       "type": "description"
+    },
+    {
+      "artifact_id": "artifact:sha256:c635e44cc91e797e4f5056d8316e66369df112255458c3a381f69b0385a809f5",
+      "distribution_kind": "unknown",
+      "evidence": [
+        {
+          "field": "normalized.title",
+          "kind": "observed",
+          "source_ref": {
+            "entry": "K15",
+            "manifest": "sha256:ae29b1d2976ee7c7439b2e12fe18b774d1d57e77c9a20bc3567d2e5079257281"
+          },
+          "value": "Mutant Xpiders"
+        },
+        {
+          "field": "normalized.run",
+          "kind": "observed",
+          "source_ref": {
+            "entry": "K15",
+            "manifest": "sha256:ae29b1d2976ee7c7439b2e12fe18b774d1d57e77c9a20bc3567d2e5079257281"
+          },
+          "value": "Mutant Xpiders/Mut_xpid.exe"
+        }
+      ],
+      "id": "identification:1f80e426cf66cc411a3f4fafe380ccca8c85bedceabdd85ba10b519f68b46968",
+      "schema": "bootdisk-catalog-0.1",
+      "software_release_id": "release:mutant-xpiders:unknown",
+      "status": "curated",
+      "type": "identification"
+    },
+    {
+      "artifact_id": "artifact:sha256:ad499debd7f8f3e3ab9f59b0376acd7de39bb31fcce0c5829466c1a24467d88c",
+      "distribution_kind": "unknown",
+      "evidence": [
+        {
+          "field": "normalized.title",
+          "kind": "observed",
+          "source_ref": {
+            "entry": "K22",
+            "manifest": "sha256:ae29b1d2976ee7c7439b2e12fe18b774d1d57e77c9a20bc3567d2e5079257281"
+          },
+          "value": "Shoot && Relax"
+        },
+        {
+          "field": "normalized.run",
+          "kind": "observed",
+          "source_ref": {
+            "entry": "K22",
+            "manifest": "sha256:ae29b1d2976ee7c7439b2e12fe18b774d1d57e77c9a20bc3567d2e5079257281"
+          },
+          "value": "Shoot/Shoot.exe"
+        }
+      ],
+      "id": "identification:714c6783ac29c407b801817b3f60a00dea5c315cb99e7cfc01a4fcb69a242bd4",
+      "schema": "bootdisk-catalog-0.1",
+      "software_release_id": "release:shoot-and-relax:unknown",
+      "status": "curated",
+      "type": "identification"
     },
     {
       "artifact_id": "artifact:sha256:43a95930506c15f6119acbc2648673aa3730bd5aa04f7d21ea8d9f964e4df348",
@@ -418,6 +516,18 @@
       "type": "software"
     },
     {
+      "id": "software:mutant-xpiders",
+      "name": "Mutant Xpiders",
+      "schema": "bootdisk-catalog-0.1",
+      "type": "software"
+    },
+    {
+      "id": "software:shoot-and-relax",
+      "name": "Shoot & Relax",
+      "schema": "bootdisk-catalog-0.1",
+      "type": "software"
+    },
+    {
       "id": "software:winamp",
       "name": "Winamp",
       "schema": "bootdisk-catalog-0.1",
@@ -476,6 +586,20 @@
       "software_id": "software:mechcommander",
       "type": "software_release",
       "version": "2"
+    },
+    {
+      "id": "release:mutant-xpiders:unknown",
+      "schema": "bootdisk-catalog-0.1",
+      "software_id": "software:mutant-xpiders",
+      "type": "software_release",
+      "version": "unknown"
+    },
+    {
+      "id": "release:shoot-and-relax:unknown",
+      "schema": "bootdisk-catalog-0.1",
+      "software_id": "software:shoot-and-relax",
+      "type": "software_release",
+      "version": "unknown"
     },
     {
       "id": "release:winamp:2.76",
