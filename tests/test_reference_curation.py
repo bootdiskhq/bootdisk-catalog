@@ -69,7 +69,7 @@ class ReferenceCurationTests(unittest.TestCase):
                     encoding="utf-8",
                 )
 
-            self.assertEqual(restore_bundle(root, bundle), 28)
+            self.assertEqual(restore_bundle(root, bundle), 36)
             restored = Catalog.load(root)
 
         self.assertEqual(
@@ -102,6 +102,18 @@ class ReferenceCurationTests(unittest.TestCase):
         )
         self.assertEqual(
             restored.record("release:avg-antivirus:6.0")["version"], "6.0"
+        )
+        self.assertEqual(
+            restored.record(
+                "identification:97d24b579d31b2de327d72be88917bcd0ad7b99ed340418f4d065d07facb961d"
+            )["distribution_kind"],
+            "demo",
+        )
+        self.assertEqual(
+            restored.record(
+                "identification:4822034cc446f1e546e18d6191171bb75acf463fa2ad1ff242b35611142836d1"
+            )["distribution_kind"],
+            "demo",
         )
         self.assertEqual(
             restored.record("release:xnview:1.21")["version"], "1.21"
