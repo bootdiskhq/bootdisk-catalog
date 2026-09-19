@@ -52,6 +52,7 @@ class PresentationProjectionTests(unittest.TestCase):
         self._write("identifications/one.json", {
             "schema": SCHEMA, "type": "identification", "id": f"identification:{'c' * 64}",
             "artifact_id": ARTIFACT_ID, "software_release_id": "release:one:1.0", "status": "curated",
+            "distribution_kind": "demo",
             "evidence": [{
                 "kind": "observed",
                 "source_ref": {"manifest": manifest_ref, "entry": "K1"},
@@ -88,6 +89,7 @@ class PresentationProjectionTests(unittest.TestCase):
         self.assertEqual(cards[0]["software"][0]["software_id"], "software:one")
         self.assertEqual(cards[0]["software"][0]["software_name"], "Program One")
         self.assertEqual(cards[0]["software"][0]["version"], "1.0")
+        self.assertEqual(cards[0]["software"][0]["distribution_kind"], "demo")
         self.assertEqual(
             cards[0]["software"][0]["descriptions"],
             [{

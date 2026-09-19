@@ -49,6 +49,7 @@ def _identified_releases(catalog: Catalog, identification_ids: list[str]) -> lis
                 "version": release["version"],
                 "identification_id": identification["id"],
                 "status": identification["status"],
+                "distribution_kind": identification.get("distribution_kind"),
                 "descriptions": _curated_descriptions(catalog, release["id"]),
             }
         )

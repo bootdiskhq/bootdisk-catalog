@@ -11,6 +11,7 @@
         "version": "2.76",
         "identification_id": "identification:<sha256>",
         "status": "curated",
+        "distribution_kind": "full",
         "descriptions": [
           {
             "description_id": "description:release:winamp:2.76:nb-NO",
