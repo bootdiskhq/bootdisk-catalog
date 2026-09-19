@@ -236,3 +236,12 @@ This component does not currently provide:
 - external preservation-manifest semantic resolution beyond immutable references.
 
 The goal is to keep the catalog boundary explicit: ingest tells Catalog what was observed; Catalog adds interpretation without rewriting preservation evidence.
+
+## Source-entry packages
+
+Whole-manifest import also reconstructs `package` records from entry inventory
+references when present. Use `--package package:sha256:... --manifest MANIFEST`
+instead of `--artifact` when identifying a multi-file source entry. A package and
+an individual file are separate identities; shared installer launchers do not imply
+shared software identity. See [ADR-003](docs/adr-003-source-entry-packages.md) for
+scope, validation, compatibility, and why an entry package includes editorial files.

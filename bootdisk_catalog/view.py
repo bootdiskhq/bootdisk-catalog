@@ -69,6 +69,7 @@ def software_view(catalog: Catalog, software_id: str) -> dict[str, Any]:
                 "id": release["id"],
                 "version": release["version"],
                 "artifacts": artifacts,
+                "packages": [dict(p) for p in catalog.packages_for_release(release["id"])],
             }
         )
 
@@ -90,6 +91,11 @@ def format_software_view(view: dict[str, Any]) -> str:
 
     for release in view["releases"]:
         lines.extend(["", "Release:", f"  {release['version']} ({release['id']})"])
+
+        for package in release.get("packages", []):
+            lines.extend(["", "Package:", f"  {package['id']}",
+                          f"  files: {len(package['members'])}",
+                          f"  size: {package['total_size']}"])
 
         if not release["artifacts"]:
             lines.extend(["", "Artifact:", "  none"])

@@ -287,6 +287,9 @@ def import_manifest(
         artifact_ids.add(artifact["id"])
         occurrence_count += 1
 
+    from .packages import import_packages
+    import_packages(manifest, output)
+
     # Validate the complete graph only after all references have been materialized.
     Catalog.load(output)
     return len(artifact_ids), occurrence_count

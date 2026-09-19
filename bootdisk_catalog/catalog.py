@@ -10,6 +10,7 @@ from __future__ import annotations
 from collections import defaultdict
 from dataclasses import dataclass
 import json
+import hashlib
 from pathlib import Path
 import re
 from typing import Any, Iterable
@@ -23,12 +24,12 @@ REQUIRED_FIELDS: dict[str, tuple[str, ...]] = {
     "software": ("schema", "type", "id", "name"),
     "software_release": ("schema", "type", "id", "software_id", "version"),
     "artifact": ("schema", "type", "id", "sha256", "size"),
+    "package": ("schema", "type", "id", "members", "total_size"),
     "occurrence": ("schema", "type", "id", "artifact_id", "source_ref"),
     "identification": (
         "schema",
         "type",
         "id",
-        "artifact_id",
         "software_release_id",
         "status",
         "evidence",
@@ -49,6 +50,7 @@ ID_PREFIXES = {
     "software": "software:",
     "software_release": "release:",
     "artifact": "artifact:sha256:",
+    "package": "package:sha256:",
     "occurrence": "occurrence:",
     "identification": "identification:",
     "description": "description:",
@@ -145,7 +147,7 @@ class Catalog:
         return tuple(
             record
             for record in self._by_type["identification"]
-            if record["artifact_id"] == artifact_id
+            if record.get("artifact_id") == artifact_id
         )
 
     def artifacts_for_release(
@@ -155,7 +157,7 @@ class Catalog:
         artifact_ids = {
             record["artifact_id"]
             for record in self._by_type["identification"]
-            if record["software_release_id"] == software_release_id
+            if record["software_release_id"] == software_release_id and "artifact_id" in record
         }
         return tuple(self._records[record_id] for record_id in sorted(artifact_ids))
 
@@ -166,7 +168,7 @@ class Catalog:
         return tuple(
             record
             for record in self._by_type["occurrence"]
-            if record["artifact_id"] == artifact_id
+            if record.get("artifact_id") == artifact_id
         )
 
     def release_for_identification(self, identification_id: str) -> dict[str, Any]:
@@ -175,6 +177,8 @@ class Catalog:
 
     def artifact_for_identification(self, identification_id: str) -> dict[str, Any]:
         identification = self._require_type(identification_id, "identification")
+        if "artifact_id" not in identification:
+            raise CatalogError("identification targets a package, not a single artifact")
         return self._records[identification["artifact_id"]]
 
     def descriptions_for_subject(
@@ -234,6 +238,8 @@ class Catalog:
 
         if record_type == "artifact":
             self._validate_artifact(record, path)
+        elif record_type == "package":
+            self._validate_package(record, path)
         elif record_type == "occurrence":
             self._validate_source_ref(record["source_ref"], path, "source_ref")
         elif record_type == "identification":
@@ -256,9 +262,54 @@ class Catalog:
         if not isinstance(size, int) or isinstance(size, bool) or size < 0:
             raise CatalogValidationError(f"invalid artifact size in {path}: {size!r}")
 
+    def packages_for_release(self, release_id):
+        self._require_type(release_id, "software_release")
+        ids = {r["package_id"] for r in self._by_type["identification"]
+               if r["software_release_id"] == release_id and "package_id" in r}
+        return tuple(self._records[i] for i in sorted(ids))
+
+    def _validate_package(self, record, path):
+        members = record["members"]
+        if not isinstance(members, list) or not members:
+            raise CatalogValidationError("package members must be a non-empty list")
+        paths = set()
+        frames = []
+        total = 0
+        for member in members:
+            if not isinstance(member, dict):
+                raise CatalogValidationError("package member must be an object")
+            name = member.get("path")
+            artifact_id = member.get("artifact_id")
+            if not isinstance(artifact_id, str):
+                raise CatalogValidationError("package member requires an artifact_id")
+            digest = artifact_id.removeprefix("artifact:sha256:")
+            size = member.get("size")
+            if (not isinstance(name, str) or not name or name in paths
+                    or any(c in name for c in "\0\n\r")
+                    or name.startswith("/") or ".." in name.split("/")):
+                raise CatalogValidationError("invalid or duplicate package member path")
+            if (not SHA256_RE.fullmatch(digest)
+                    or member.get("artifact_id") != "artifact:sha256:" + digest
+                    or not isinstance(size, int) or isinstance(size, bool) or size < 0):
+                raise CatalogValidationError("invalid package member identity or size")
+            paths.add(name)
+            frames.append((name, digest))
+            total += size
+        digest = hashlib.sha256("".join(
+            name + "\0" + value + "\n" for name, value in sorted(frames)
+        ).encode("utf-8")).hexdigest()
+        if record["id"] != "package:sha256:" + digest:
+            raise CatalogValidationError("package id must match its member inventory")
+        if (not isinstance(record["total_size"], int)
+                or isinstance(record["total_size"], bool) or record["total_size"] != total):
+            raise CatalogValidationError("package total_size must match its members")
+
     def _validate_identification(
         self, record: dict[str, Any], path: Path
     ) -> None:
+        targets = [key for key in ("artifact_id", "package_id") if key in record]
+        if len(targets) != 1:
+            raise CatalogValidationError("identification requires exactly one artifact_id or package_id")
         status = record["status"]
         if status not in IDENTIFICATION_STATUSES:
             raise CatalogValidationError(
@@ -379,10 +430,17 @@ class Catalog:
             self._expect_reference(occurrence, "artifact_id", "artifact")
 
         for identification in self._by_type["identification"]:
-            self._expect_reference(identification, "artifact_id", "artifact")
+            target = "package" if "package_id" in identification else "artifact"
+            self._expect_reference(identification, target + "_id", target)
             self._expect_reference(
                 identification, "software_release_id", "software_release"
             )
+
+        for package in self._by_type["package"]:
+            for member in package["members"]:
+                artifact = self._require_type(member["artifact_id"], "artifact")
+                if artifact["size"] != member["size"]:
+                    raise CatalogValidationError("package member size differs from artifact")
 
         for description in self._by_type["description"]:
             target_id = description.get("subject_id")
