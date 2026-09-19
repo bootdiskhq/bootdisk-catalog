@@ -12,3 +12,15 @@ must not infer Software identity from filenames, hashes, or editorial titles.
 This is workflow polish, not a blocker for the frontend prototype: the frontend can
 already consume identified entries through the presentation projection while
 pending entries retain honest editorial source context.
+
+## Distribution-kind roadmap
+
+K-CD media may contain complete commercial programs, freeware, demos, trials and
+updates. Catalog can record this distinction on an Identification as `full`,
+`demo`, `trial`, `update` or `unknown`.
+
+A later ingest/curation assistant should propose a distribution kind from preserved
+evidence such as installer names, executable metadata, README and license files,
+and the source publication's description. A proposal must remain `unknown` until a
+curator accepts the evidence. Absence of words such as “demo” is not evidence that
+an artifact is a full version.

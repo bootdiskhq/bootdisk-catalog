@@ -7,6 +7,46 @@
           "field": "normalized.description",
           "kind": "curated",
           "source_ref": {
+            "entry": "K8",
+            "manifest": "sha256:ae29b1d2976ee7c7439b2e12fe18b774d1d57e77c9a20bc3567d2e5079257281"
+          },
+          "value": "Her blir tingene snudd på hodet. En bevæpnet, humoristisk og veltalende hjort går på jakt etter skytegale jegere. I dette 3D-skytespillet styrer du hjorten rundt i de store skogene."
+        }
+      ],
+      "id": "description:release:deer-avenger:4:nb-NO",
+      "language": "nb-NO",
+      "schema": "bootdisk-catalog-0.1",
+      "status": "curated",
+      "subject_id": "release:deer-avenger:4",
+      "text": "Deer Avenger 4 er et humoristisk 3D-skytespill der en bevæpnet hjort jakter på jegere. K-CD-en inneholder en demo.",
+      "type": "description"
+    },
+    {
+      "evidence": [
+        {
+          "field": "normalized.description",
+          "kind": "curated",
+          "source_ref": {
+            "entry": "K13",
+            "manifest": "sha256:ae29b1d2976ee7c7439b2e12fe18b774d1d57e77c9a20bc3567d2e5079257281"
+          },
+          "value": "Du skal ta kontroll over et kompani store MechWarriors som blir styrt av modige piloter. Her får du en stor demo av MechCommander 2."
+        }
+      ],
+      "id": "description:release:mechcommander:2:nb-NO",
+      "language": "nb-NO",
+      "schema": "bootdisk-catalog-0.1",
+      "status": "curated",
+      "subject_id": "release:mechcommander:2",
+      "text": "MechCommander 2 lar spilleren lede en avdeling MechWarriors. K-CD-en inneholder en demo av spillet.",
+      "type": "description"
+    },
+    {
+      "evidence": [
+        {
+          "field": "normalized.description",
+          "kind": "curated",
+          "source_ref": {
             "entry": "K30",
             "manifest": "sha256:ae29b1d2976ee7c7439b2e12fe18b774d1d57e77c9a20bc3567d2e5079257281"
           },
@@ -140,6 +180,64 @@
       "subject_id": "release:xnview:1.21",
       "text": "XnView 1.21 brukes til å sortere og finne bilder på datamaskinen.",
       "type": "description"
+    },
+    {
+      "artifact_id": "artifact:sha256:43a95930506c15f6119acbc2648673aa3730bd5aa04f7d21ea8d9f964e4df348",
+      "distribution_kind": "demo",
+      "evidence": [
+        {
+          "field": "normalized.title",
+          "kind": "observed",
+          "source_ref": {
+            "entry": "K8",
+            "manifest": "sha256:ae29b1d2976ee7c7439b2e12fe18b774d1d57e77c9a20bc3567d2e5079257281"
+          },
+          "value": "Deer Avenger 4"
+        },
+        {
+          "field": "normalized.installer",
+          "kind": "observed",
+          "source_ref": {
+            "entry": "K8",
+            "manifest": "sha256:ae29b1d2976ee7c7439b2e12fe18b774d1d57e77c9a20bc3567d2e5079257281"
+          },
+          "value": "Deer Avenger/DA4_Demo_Install.exe"
+        }
+      ],
+      "id": "identification:97d24b579d31b2de327d72be88917bcd0ad7b99ed340418f4d065d07facb961d",
+      "schema": "bootdisk-catalog-0.1",
+      "software_release_id": "release:deer-avenger:4",
+      "status": "curated",
+      "type": "identification"
+    },
+    {
+      "artifact_id": "artifact:sha256:7e21eebd1a09d6096ddc1491e40c4126262abd0162135a309ec0fe727d44dd7d",
+      "distribution_kind": "demo",
+      "evidence": [
+        {
+          "field": "normalized.title",
+          "kind": "observed",
+          "source_ref": {
+            "entry": "K13",
+            "manifest": "sha256:ae29b1d2976ee7c7439b2e12fe18b774d1d57e77c9a20bc3567d2e5079257281"
+          },
+          "value": "MechCommander 2"
+        },
+        {
+          "field": "normalized.description",
+          "kind": "observed",
+          "source_ref": {
+            "entry": "K13",
+            "manifest": "sha256:ae29b1d2976ee7c7439b2e12fe18b774d1d57e77c9a20bc3567d2e5079257281"
+          },
+          "value": "Her får du en stor demo av MechCommander 2."
+        }
+      ],
+      "id": "identification:4822034cc446f1e546e18d6191171bb75acf463fa2ad1ff242b35611142836d1",
+      "schema": "bootdisk-catalog-0.1",
+      "software_release_id": "release:mechcommander:2",
+      "status": "curated",
+      "type": "identification"
     },
     {
       "artifact_id": "artifact:sha256:26adea53490125fd31e300da97ef48b9ddc583753789051746b9a31406b418cf",
@@ -302,8 +400,20 @@
       "type": "software"
     },
     {
+      "id": "software:deer-avenger",
+      "name": "Deer Avenger",
+      "schema": "bootdisk-catalog-0.1",
+      "type": "software"
+    },
+    {
       "id": "software:internet-explorer",
       "name": "Internet Explorer",
+      "schema": "bootdisk-catalog-0.1",
+      "type": "software"
+    },
+    {
+      "id": "software:mechcommander",
+      "name": "MechCommander",
       "schema": "bootdisk-catalog-0.1",
       "type": "software"
     },
@@ -347,11 +457,25 @@
       "version": "6.0"
     },
     {
+      "id": "release:deer-avenger:4",
+      "schema": "bootdisk-catalog-0.1",
+      "software_id": "software:deer-avenger",
+      "type": "software_release",
+      "version": "4"
+    },
+    {
       "id": "release:internet-explorer:5.5",
       "schema": "bootdisk-catalog-0.1",
       "software_id": "software:internet-explorer",
       "type": "software_release",
       "version": "5.5"
+    },
+    {
+      "id": "release:mechcommander:2",
+      "schema": "bootdisk-catalog-0.1",
+      "software_id": "software:mechcommander",
+      "type": "software_release",
+      "version": "2"
     },
     {
       "id": "release:winamp:2.76",
