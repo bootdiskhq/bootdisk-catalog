@@ -27,3 +27,12 @@ focused single-file imports retain their prior behavior.
 
 A successful import validates previously observed metadata. It does not certify a
 fresh read of the media or remove an unresolved media-read error.
+
+## Non-program resources
+
+The existing `software` and `software_release` record names remain the graph's
+compatibility vocabulary for cataloged digital works. Optional `content_kind`
+explicitly distinguishes applications, games, courses, image collections, font
+collections and reference resources. A course release describes that document,
+never a release of the application taught by it. `unknown` remains valid for a
+resource version or distribution status that the source does not establish.

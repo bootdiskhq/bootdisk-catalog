@@ -58,6 +58,7 @@ ID_PREFIXES = {
 
 IDENTIFICATION_STATUSES = {"interpreted", "curated"}
 IDENTIFICATION_DISTRIBUTION_KINDS = {"full", "demo", "trial", "update", "unknown"}
+CONTENT_KINDS = {"application", "game", "course", "image_collection", "font_collection", "reference"}
 DESCRIPTION_STATUSES = {"draft", "curated"}
 EVIDENCE_KINDS = {"observed", "derived", "interpreted", "curated"}
 LANGUAGE_TAG_RE = re.compile(r"^[a-z]{2,3}(?:-[A-Z]{2})?$")
@@ -236,6 +237,9 @@ class Catalog:
                 f"invalid id for {record_type} in {path}: {record_id!r}"
             )
 
+        if record_type == "software" and "content_kind" in record:
+            if record["content_kind"] not in CONTENT_KINDS:
+                raise CatalogValidationError("invalid content_kind")
         if record_type == "artifact":
             self._validate_artifact(record, path)
         elif record_type == "package":
