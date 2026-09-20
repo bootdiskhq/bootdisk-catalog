@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.2.0-dev2 — local curator service
+
+- Loopback HTTP service for all seven curator operations, with same-origin/session checks.
+- Small static-file allowlist; workspace files and source media are never served.
+- Readable decision history and optional manifest-bound historical inspection issues.
+- Integration with the live frontend adapter; no public website deployment.
+
 ## 0.2.0-dev1 — backend foundation for Bootdisk 1.2
 
 - Isolated, atomic review workspace with durable drafts, queues and resume bookmarks.

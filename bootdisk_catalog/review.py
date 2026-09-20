@@ -213,6 +213,18 @@ class ReviewWorkspace:
             self.write(dict(schema=WORKSPACE_SCHEMA, records=records, entries=entries, events=[], operations={}, resume={}))
         return len(entries)
 
+    @staticmethod
+    def document(state, entry):
+        result = deepcopy(entry)
+        result['defer_reason'] = entry.get('defer_reason')
+        result['history'] = [dict(kind=e['method'], decision_id=e['id'], at=e['timestamp'],
+                                  reason=e.get('reason'), actor=e['actor'],
+                                  previous_claims=(e['before'].get('accepted') or {}).get('claims'),
+                                  new_claims=(e['after'].get('accepted') or {}).get('claims'))
+                             for e in state['events'] if e['key'] == entry['key']
+                             and e['method'] in ('approve', 'defer', 'undo')]
+        return result
+
     def call(self, method, request, *, actor='local-curator'):
         with self.locked():
             state = self.read()
@@ -236,7 +248,7 @@ class ReviewWorkspace:
                 raise ReviewError('validation_failed', 'Ukjent kildepost.')
             entry = state['entries'][entry_id]
             if method == 'getEntry':
-                return deepcopy(entry)
+                return self.document(state, entry)
             if method == 'setResume':
                 state['resume'][entry['key']['manifest']] = entry['key']
                 self.write(state)
@@ -253,7 +265,7 @@ class ReviewWorkspace:
                     raise ReviewError('operation_id_reused', 'Operasjons-ID er allerede brukt med annet innhold.')
                 return deepcopy(previous['receipt'])
             if request.get('expected_revision') != entry['revision']:
-                raise ReviewError('revision_conflict', 'Posten er endret siden du åpnet den.', current=deepcopy(entry))
+                raise ReviewError('revision_conflict', 'Posten er endret siden du åpnet den.', current=self.document(state, entry))
             before = deepcopy(entry)
             records_before = deepcopy(state['records'])
             decision_id = None
@@ -301,7 +313,7 @@ class ReviewWorkspace:
                                         before=before, after=deepcopy(entry),
                                         records_before=records_before if decision_id else None,
                                         records_after=deepcopy(state['records']) if decision_id else None))
-            receipt = dict(schema=SCHEMA, operation_id=op, entry=deepcopy(entry), decision_id=decision_id)
+            receipt = dict(schema=SCHEMA, operation_id=op, entry=self.document(state, entry), decision_id=decision_id)
             state['operations'][op] = dict(request=fingerprint, receipt=receipt)
             self.write(state)
             return receipt

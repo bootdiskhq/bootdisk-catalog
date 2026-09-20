@@ -138,3 +138,11 @@ reason linking it to the selected evidence (`validation_failed` otherwise).
 See [backend limits and setup](review-workspace-dev1.md), including conservative
 undo conflicts after subsequent graph changes. These details do not rename any
 adapter method or require new frontend-generated catalog IDs.
+
+## Local transport (0.2.0-dev2)
+
+The [local service](local-curator-service.md) implements the adapter over HTTP.
+Entries additionally expose `history`: approve/defer/undo events with `kind`,
+`decision_id`, `at`, `actor`, `reason`, `previous_claims`, `new_claims`. Draft saves
+are retained in the workspace audit but excluded from this UI history. Existing
+adapter method names and request shapes are unchanged.

@@ -256,4 +256,7 @@ records unresolved claims and media exceptions for all 39 entries.
 
 Catalog `0.2.0-dev1` supplies the transactional review workspace for Bootdisk 1.2.
 See [setup, guarantees and remaining integration work](docs/review-workspace-dev1.md).
-The HTTP service and live browser adapter are still pending.
+The HTTP service and live browser adapter are available in the dev2 integration below.
+
+The [local curator service](docs/local-curator-service.md) in `0.2.0-dev2` connects
+the web curator to that workspace, including decision history and recorded source issues.
