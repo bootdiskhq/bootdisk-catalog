@@ -97,12 +97,46 @@ def validate_claims(draft, entry, *, approving=False):
             prior = (entry['accepted'] or {}).get('claims', {}).get(field)
             if claim['assessment'] == 'accepted' and (not prior or prior['value'] != value or prior['assessment'] != 'accepted') and not claim['reason'].strip():
                 errors[field] = 'Begrunn den nye påstanden med valgt kildebelegg.'
+    if approving and not errors:
+        for field in classification_review_fields(dict(entry, draft=draft)):
+            errors[field] = 'Velg kildebelegg og forklar hvordan det støtter vurderingen. Lisens alene fastslår ikke distribusjonsutgaven.'
     if errors:
         raise ReviewError('validation_failed', 'Kontroller feltene før lagring.', fields=errors)
 
 
+def classification_review_fields(entry):
+    if not entry.get('classification_evidence_v1'):
+        return []
+    return [field for field in ('content_kind', 'distribution_kind')
+            if entry['draft']['claims'][field]['assessment'] == 'accepted'
+            and (not entry['draft']['claims'][field]['reason'].strip()
+                 or not entry['draft']['claims'][field]['evidence_ids'])]
+
+
+def add_source_evidence(entry, source):
+    """Add immutable observations, never infer an edition or alter a user's claim."""
+    observations = [
+        ('normalized.categories', category) for category in source['normalized'].get('categories', [])
+    ]
+    license_value = source.get('raw', {}).get('Licens') or source['normalized'].get('license')
+    if license_value:
+        observations.append(('raw.Licens', license_value))
+    description = source['normalized'].get('description')
+    if description:
+        observations.append(('normalized.description', description))
+    for field, value in observations:
+        item = dict(source_ref=deepcopy(entry['key']), field=field, observation=value)
+        item['id'] = 'e:' + hashlib.sha256(canonical(item).encode()).hexdigest()
+        if item not in entry['evidence']:
+            entry['evidence'].append(item)
+    entry['classification_evidence_v1'] = True
+
+
 def refresh_issues(entry):
     issues = [i for i in entry['issues'] if i['field'] is None]
+    for field in classification_review_fields(entry):
+        issues.append(dict(code='classification_review_required', field=field,
+                           message='Tidligere Belagt-vurdering må kontrolleres: velg relevant kildebelegg og begrunn sammenhengen.'))
     codes = {'identity': 'identity_provisional', 'version': 'version_unknown', 'distribution_kind': 'distribution_unknown'}
     for field, claim in entry['draft']['claims'].items():
         if claim['assessment'] == 'unresolved':
@@ -205,6 +239,7 @@ class ReviewWorkspace:
                                      members=[inventory[p] for p in source['files']['inventory_refs']]),
                          accepted=dict(identification_status=ident['status'], claims=deepcopy(claims)),
                          draft=dict(claims=claims), proposals=[], evidence=evidence, issues=[], undo=None, defer_reason=None)
+            add_source_evidence(entry, source)
             refresh_issues(entry)
             entries[key_id(key)] = entry
         with self.locked():
@@ -212,6 +247,37 @@ class ReviewWorkspace:
                 raise ReviewError('validation_failed', 'Arbeidsområdet finnes allerede.')
             self.write(dict(schema=WORKSPACE_SCHEMA, records=records, entries=entries, events=[], operations={}, resume={}))
         return len(entries)
+
+    def enrich_sources(self, manifest_path):
+        """Idempotent, locked migration with an exact pre-migration backup.
+
+        Revisions invalidate stale browser writes. Drafts, accepted claims, records,
+        decisions, receipts and resume position are not rewritten.
+        """
+        raw = Path(manifest_path).read_bytes()
+        digest = 'sha256:' + hashlib.sha256(raw).hexdigest()
+        sources = {s['source_id']: s for s in json.loads(raw)['entries']}
+        with self.locked():
+            state = self.read()
+            if any(e['key']['manifest'] != digest or e['key']['entry'] not in sources
+                   for e in state['entries'].values()):
+                raise ReviewError('validation_failed', 'Manifestet tilhører ikke dette arbeidsområdet.')
+            changed = 0
+            for entry in state['entries'].values():
+                if entry.get('classification_evidence_v1'):
+                    continue
+                add_source_evidence(entry, sources[entry['key']['entry']])
+                refresh_issues(entry)
+                entry['revision'] = token()
+                changed += 1
+            if changed:
+                backup = self.root / ('before-source-evidence-' + token() + '.json')
+                with backup.open('xb') as f:
+                    f.write(self.path.read_bytes())
+                    f.flush()
+                    os.fsync(f.fileno())
+                self.write(state)
+            return dict(updated=changed)
 
     @staticmethod
     def document(state, entry):
@@ -237,6 +303,7 @@ class ReviewWorkspace:
                     if e['key']['manifest'] != request['manifest']:
                         continue
                     fields = [f for f, c in e['draft']['claims'].items() if c['assessment'] == 'unresolved']
+                    fields.extend(f for f in classification_review_fields(e) if f not in fields)
                     if mode not in ('all', 'open_fields') and e['queue_state'] != mode or mode == 'open_fields' and not fields:
                         continue
                     items.append(dict(key=e['key'], title=e['source']['title'], queue_state=e['queue_state'],
@@ -364,6 +431,7 @@ def main(argv=None):
     parser.add_argument('workspace', type=Path)
     sub = parser.add_subparsers(dest='command', required=True)
     init = sub.add_parser('init'); init.add_argument('catalog'); init.add_argument('manifest')
+    sub.add_parser('enrich-sources').add_argument('manifest')
     call = sub.add_parser('call'); call.add_argument('method'); call.add_argument('request', type=Path)
     for name in ('export', 'backup', 'restore'):
         sub.add_parser(name).add_argument('path', type=Path)
@@ -371,6 +439,7 @@ def main(argv=None):
     workspace = ReviewWorkspace(args.workspace)
     try:
         if args.command == 'init': result = workspace.initialize(args.catalog, args.manifest)
+        elif args.command == 'enrich-sources': result = workspace.enrich_sources(args.manifest)
         elif args.command == 'call': result = workspace.call(args.method, json.loads(args.request.read_text()))
         elif args.command == 'export': result = workspace.export_catalog(args.path)
         elif args.command == 'backup': result = workspace.backup(args.path)

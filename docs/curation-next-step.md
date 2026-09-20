@@ -54,7 +54,7 @@ classification.
 Required for 1.2.0, reported during Stian's curator acceptance session: content kind
 can currently appear as “Belagt” without the original CD category being available
 among the readable evidence choices. Generic checked sources do not explain that
-classification. This requirement is planned, not yet implemented.
+classification. Implemented in the local workspace and curator; final user acceptance of the additions remains.
 
 - **Catalog owns the change.** Expose the preserved original CD category as a source
   observation, with its exact wording and source-entry provenance. Link the
@@ -85,7 +85,7 @@ PR/test/review/green-CI merge workflow before the 1.2.0 release.
 
 The same 1.2.0 release gate applies to distribution (demo, full, trial, update,
 unknown). Show the preserved CD statement that supports the assessment, not just
-an evidence ID or unrelated checked observations. This is planned work.
+an evidence ID or unrelated checked observations. Implemented locally; final user acceptance remains.
 
 The existing ingest parser preserves raw `Licens` as `normalized.license` and
 `Global` as `normalized.description`. The preserved K13 description explicitly
@@ -111,6 +111,9 @@ without decisive edition evidence, missing information and conflicting sources.
 No automatic promotion from a license label to full/demo/trial. Check readable
 provenance, selection, rationale, approval, restart/export and migration preservation.
 Deliver with the category-evidence work before 1.2.0 through PR/test/review/green CI.
+
+Hosted curation is separately gated by [ADR-006](adr-006-hosted-curator-access.md).
+The local release does not open curator access on the internet.
 
 ## Acceptance session with Stian
 
