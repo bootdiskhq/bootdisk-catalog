@@ -62,7 +62,7 @@
       "id": "description:bille-og-trille:unknown:nb-NO",
       "subject_id": "release:bille-og-trille:unknown",
       "language": "nb-NO",
-      "text": "Barnespill med Bille og Trille. CD-en inneholder en kjørbar fil med Demo i filnavnet; utgaven er ikke endelig avklart.",
+      "text": "Bille og Trille er et barnespill med de to barnehagebarna. Den medfølgende Director-filen har norske demo-markører og figurreferanser som støtter identiteten. Nøyaktig spillutgave og omfang er fortsatt ikke fastslått.",
       "status": "curated",
       "evidence": [
         {
@@ -82,6 +82,70 @@
           },
           "field": "normalized.description",
           "value": "Bille & Trille er to helt vanlige barn som går i barnehagen. De har masser av fantasi, så det skjer saker og ting i barnehagen."
+        },
+        {
+          "kind": "observed",
+          "source_ref": {
+            "manifest": "sha256:ae29b1d2976ee7c7439b2e12fe18b774d1d57e77c9a20bc3567d2e5079257281",
+            "entry": "K3",
+            "path": "BilleTrille/DATA/DT1demo.dxr"
+          },
+          "field": "payload_observation",
+          "value": {
+            "method": "literal_bytes",
+            "offset": 708021,
+            "text": "Demo forside no",
+            "encoding": "ascii",
+            "sha256": "fb026659b7e1010f97895ec11f8ffb29d9455a37fa4d8acf2925f68087368212"
+          }
+        },
+        {
+          "kind": "observed",
+          "source_ref": {
+            "manifest": "sha256:ae29b1d2976ee7c7439b2e12fe18b774d1d57e77c9a20bc3567d2e5079257281",
+            "entry": "K3",
+            "path": "BilleTrille/DATA/DT1demo.dxr"
+          },
+          "field": "payload_observation",
+          "value": {
+            "method": "literal_bytes",
+            "offset": 615505,
+            "text": "Norsk DemoDt1_source:DATA:",
+            "encoding": "ascii",
+            "sha256": "fb026659b7e1010f97895ec11f8ffb29d9455a37fa4d8acf2925f68087368212"
+          }
+        },
+        {
+          "kind": "observed",
+          "source_ref": {
+            "manifest": "sha256:ae29b1d2976ee7c7439b2e12fe18b774d1d57e77c9a20bc3567d2e5079257281",
+            "entry": "K3",
+            "path": "BilleTrille/DATA/DT1demo.dxr"
+          },
+          "field": "payload_observation",
+          "value": {
+            "method": "literal_bytes",
+            "offset": 388035,
+            "text": "bille-loeber-a",
+            "encoding": "ascii",
+            "sha256": "fb026659b7e1010f97895ec11f8ffb29d9455a37fa4d8acf2925f68087368212"
+          }
+        },
+        {
+          "kind": "observed",
+          "source_ref": {
+            "manifest": "sha256:ae29b1d2976ee7c7439b2e12fe18b774d1d57e77c9a20bc3567d2e5079257281",
+            "entry": "K3",
+            "path": "BilleTrille/DATA/DT1demo.dxr"
+          },
+          "field": "payload_observation",
+          "value": {
+            "method": "literal_bytes",
+            "offset": 388329,
+            "text": "trille-loeber-a",
+            "encoding": "ascii",
+            "sha256": "fb026659b7e1010f97895ec11f8ffb29d9455a37fa4d8acf2925f68087368212"
+          }
         }
       ]
     },
@@ -230,10 +294,10 @@
     {
       "schema": "bootdisk-catalog-0.1",
       "type": "description",
-      "id": "description:cpu-z:unknown:nb-NO",
-      "subject_id": "release:cpu-z:unknown",
+      "id": "description:cpu-z:1.10:nb-NO",
+      "subject_id": "release:cpu-z:1.10",
       "language": "nb-NO",
-      "text": "Verktøy som viser informasjon om prosessoren og datamaskinens maskinvare.",
+      "text": "CPU-Z 1.10 viser informasjon om prosessoren og maskinvaren. Versjonen er bekreftet i programmets rapporttekst og i den identiske programfilen inne i ZIP-pakken.",
       "status": "curated",
       "evidence": [
         {
@@ -253,6 +317,38 @@
           },
           "field": "normalized.description",
           "value": "Dette programmet forteller deg alt om CPU-en din. Du kan se modell, revisjon, frekvens, ramtype, om den er overklokket samt få mange andre nyttige eller interessante opplysninger om hjertet i datamaskinen."
+        },
+        {
+          "kind": "observed",
+          "source_ref": {
+            "manifest": "sha256:ae29b1d2976ee7c7439b2e12fe18b774d1d57e77c9a20bc3567d2e5079257281",
+            "entry": "K23",
+            "path": "Tools/CPUZ/CPUZ.EXE"
+          },
+          "field": "payload_observation",
+          "value": {
+            "method": "literal_bytes",
+            "offset": 195690,
+            "text": "Cpu-Z version <b>1.10</b>",
+            "encoding": "ascii",
+            "sha256": "b6686d16c3d3656960112b6da2c170ad27be1d9b5b3f1eff0bc15a0acb20db34"
+          }
+        },
+        {
+          "kind": "observed",
+          "source_ref": {
+            "manifest": "sha256:ae29b1d2976ee7c7439b2e12fe18b774d1d57e77c9a20bc3567d2e5079257281",
+            "entry": "K23",
+            "path": "Tools/CPUZ/cpu-z-110.zip"
+          },
+          "field": "payload_observation",
+          "value": {
+            "method": "zip_member",
+            "member": "cpuz.exe",
+            "member_sha256": "b6686d16c3d3656960112b6da2c170ad27be1d9b5b3f1eff0bc15a0acb20db34",
+            "text": "Cpu-Z version <b>1.10</b>",
+            "sha256": "443987a85fafd81e9ee7a48793ae6e8f28f9051f0d48c6d9bca630de394afc3e"
+          }
         }
       ]
     },
@@ -417,7 +513,7 @@
       "id": "description:floppy-image:unknown:nb-NO",
       "subject_id": "release:floppy-image:unknown",
       "language": "nb-NO",
-      "text": "Verktøy for å lagre og gjenopprette diskettavbildninger.",
+      "text": "Floppy Image lager sikkerhetskopier av disketter på harddisken. Navnet er bekreftet i installasjonspakkens oppsettstittel og interne programfilnavn; versjonen er fortsatt ukjent.",
       "status": "curated",
       "evidence": [
         {
@@ -437,16 +533,48 @@
           },
           "field": "normalized.description",
           "value": "Kulde, varme, trykk og fuktighet kan medføre at du mister verdifull informasjon. Nå kan du med et par klikk lage sikkerhetskopier av diskettene og trygt legge dem på harddisken."
+        },
+        {
+          "kind": "observed",
+          "source_ref": {
+            "manifest": "sha256:ae29b1d2976ee7c7439b2e12fe18b774d1d57e77c9a20bc3567d2e5079257281",
+            "entry": "K10",
+            "path": "FloppyImage/Setup.exe"
+          },
+          "field": "payload_observation",
+          "value": {
+            "method": "literal_bytes",
+            "offset": 18596,
+            "text": "FloppyImage - Setup",
+            "encoding": "ascii",
+            "sha256": "e20b0caf9e8b175d4b9075876f0e184513ccf783988f3e0fe5fd068e7691ec5d"
+          }
+        },
+        {
+          "kind": "observed",
+          "source_ref": {
+            "manifest": "sha256:ae29b1d2976ee7c7439b2e12fe18b774d1d57e77c9a20bc3567d2e5079257281",
+            "entry": "K10",
+            "path": "FloppyImage/Setup.exe"
+          },
+          "field": "payload_observation",
+          "value": {
+            "method": "literal_bytes",
+            "offset": 281150,
+            "text": "M:\\Software\\FloppyImage\\Floppy Image.exe",
+            "encoding": "ascii",
+            "sha256": "e20b0caf9e8b175d4b9075876f0e184513ccf783988f3e0fe5fd068e7691ec5d"
+          }
         }
       ]
     },
     {
       "schema": "bootdisk-catalog-0.1",
       "type": "description",
-      "id": "description:font-xplorer-lite:unknown:nb-NO",
-      "subject_id": "release:font-xplorer-lite:unknown",
+      "id": "description:font-xplorer-lite:1.2.2:nb-NO",
+      "subject_id": "release:font-xplorer-lite:1.2.2",
       "language": "nb-NO",
-      "text": "Verktøy for å få oversikt over skrifter. Installasjonsfilen oppgir navnet Font Xplorer Lite.",
+      "text": "Font Xplorer Lite 1.2.2 fra Moon Software viser og administrerer installerte skrifter. Pakkens README beskriver Lite-utgaven som freeware og skiller den fra den betalte Font Xplorer-utgaven.",
       "status": "curated",
       "evidence": [
         {
@@ -466,6 +594,44 @@
           },
           "field": "normalized.description",
           "value": "Nå slipper du å prøve deg frem. Her får du en oversikt over samtlige skrifttyper som er installert på pc-en. Sammenlign dem, skriv ut oversiktene og les om de forskjellige skriftene."
+        },
+        {
+          "kind": "observed",
+          "source_ref": {
+            "manifest": "sha256:ae29b1d2976ee7c7439b2e12fe18b774d1d57e77c9a20bc3567d2e5079257281",
+            "entry": "K11",
+            "path": "FontExplorer Lite/fxplo122lite.exe"
+          },
+          "field": "payload_observation",
+          "value": {
+            "method": "raw_deflate_crc32",
+            "offset": 119547,
+            "compressed_size": 1415,
+            "size": 3169,
+            "crc32": "a9644026",
+            "payload_sha256": "c748ea72471cb1f00dcd9e2124fd5ddf36a35b633481a8691148eecf6d63ec34",
+            "text": "Font Xplorer Lite, version 1.2.2",
+            "sha256": "f95abcd122296f667d208d84a20e6536f961bc577c606fa03d9966ab96807297"
+          }
+        },
+        {
+          "kind": "observed",
+          "source_ref": {
+            "manifest": "sha256:ae29b1d2976ee7c7439b2e12fe18b774d1d57e77c9a20bc3567d2e5079257281",
+            "entry": "K11",
+            "path": "FontExplorer Lite/fxplo122lite.exe"
+          },
+          "field": "payload_observation",
+          "value": {
+            "method": "raw_deflate_crc32",
+            "offset": 120966,
+            "compressed_size": 1425,
+            "size": 3169,
+            "crc32": "625dcca8",
+            "payload_sha256": "8318e356b5ea08fd103d1e42a5cf3bb9358b5490404f7d838146db31371d7517",
+            "text": "END-USER LICENSE AGREEMENT FOR MOON SOFTWARE FREEWARE PRODUCTS",
+            "sha256": "f95abcd122296f667d208d84a20e6536f961bc577c606fa03d9966ab96807297"
+          }
         }
       ]
     },
@@ -514,10 +680,10 @@
     {
       "schema": "bootdisk-catalog-0.1",
       "type": "description",
-      "id": "description:ice-breaker:unknown:nb-NO",
-      "subject_id": "release:ice-breaker:unknown",
+      "id": "description:ice-breaker:1.2.1:nb-NO",
+      "subject_id": "release:ice-breaker:1.2.1",
       "language": "nb-NO",
-      "text": "Spilloppføring for Ice Breaker. Filnavnet antyder 1.2.1, men versjonen er foreløpig ikke bekreftet.",
+      "text": "Icebreaker er et spill der spilleren deler opp et isfjell for å fange pingviner. Installasjonspakken inneholder kildekode og endringslogg for 1.2.1; den ferdigbygde spillfilens versjon er ikke kontrollert separat.",
       "status": "curated",
       "evidence": [
         {
@@ -537,6 +703,38 @@
           },
           "field": "normalized.description",
           "value": "Et spill for de minste eller til en kort pause foran skjermen. Bruk musen og sperr veien for pingvinene slik at du gjør isfjellet deres så lite som mulig."
+        },
+        {
+          "kind": "observed",
+          "source_ref": {
+            "manifest": "sha256:ae29b1d2976ee7c7439b2e12fe18b774d1d57e77c9a20bc3567d2e5079257281",
+            "entry": "K12",
+            "path": "Icebreaker/icebreaker-1.2.1.exe"
+          },
+          "field": "payload_observation",
+          "value": {
+            "method": "zip_member",
+            "member": "icebreaker-1.2.1-src/ChangeLog",
+            "member_sha256": "6e02d70e3d94090d43f93a688bfdd33f8fc28a58801179d46ed34a46303ad6a3",
+            "text": "July 30, 2001: released v1.2.1",
+            "sha256": "420fb692a9bdcdedb50a59c4f095aaf9f3ad44367dffd7d2a9c2dcb5c7ff7945"
+          }
+        },
+        {
+          "kind": "observed",
+          "source_ref": {
+            "manifest": "sha256:ae29b1d2976ee7c7439b2e12fe18b774d1d57e77c9a20bc3567d2e5079257281",
+            "entry": "K12",
+            "path": "Icebreaker/icebreaker-1.2.1.exe"
+          },
+          "field": "payload_observation",
+          "value": {
+            "method": "zip_member",
+            "member": "icebreaker-1.2.1-src/icebreaker.spec",
+            "member_sha256": "b67f06b0ee0ea3b0d7e6275aea99f478619ea4da85b68b60a4aed40c4987cdb9",
+            "text": "Version:\t1.2.1",
+            "sha256": "420fb692a9bdcdedb50a59c4f095aaf9f3ad44367dffd7d2a9c2dcb5c7ff7945"
+          }
         }
       ]
     },
@@ -546,7 +744,7 @@
       "id": "description:kfa-arsregister:unknown:nb-NO",
       "subject_id": "release:kfa-arsregister:unknown",
       "language": "nb-NO",
-      "text": "Register over artikler og programmer fra Komputer for alle.",
+      "text": "Komputer for alles årsregister gir oversikt over artikler og programmer. Installasjonspakken navngir registeret og inneholder en referanse til den norske hjelpefilen. Nøyaktig utgave er ikke bekreftet.",
       "status": "curated",
       "evidence": [
         {
@@ -566,6 +764,38 @@
           },
           "field": "normalized.description",
           "value": "Med Komputer for alles komplette årsregister kan du finne frem til samtlige artikler og programmer i bladet og på KCD-en."
+        },
+        {
+          "kind": "observed",
+          "source_ref": {
+            "manifest": "sha256:ae29b1d2976ee7c7439b2e12fe18b774d1d57e77c9a20bc3567d2e5079257281",
+            "entry": "K26",
+            "path": "Register/Setup.exe"
+          },
+          "field": "payload_observation",
+          "value": {
+            "method": "literal_bytes",
+            "offset": 18596,
+            "text": "Komputer for alle register - Setup",
+            "encoding": "ascii",
+            "sha256": "0417bf766c7e27b9adbf886218c6000e4de8af8949473528cf490861fca39bea"
+          }
+        },
+        {
+          "kind": "observed",
+          "source_ref": {
+            "manifest": "sha256:ae29b1d2976ee7c7439b2e12fe18b774d1d57e77c9a20bc3567d2e5079257281",
+            "entry": "K26",
+            "path": "Register/Setup.exe"
+          },
+          "field": "payload_observation",
+          "value": {
+            "method": "literal_bytes",
+            "offset": 1330510,
+            "text": "E:\\Artikelindex\\sommer2001\\norsk 2001\\Kfa register.hlp",
+            "encoding": "ascii",
+            "sha256": "0417bf766c7e27b9adbf886218c6000e4de8af8949473528cf490861fca39bea"
+          }
         }
       ]
     },
@@ -701,7 +931,7 @@
       "id": "description:pf-eksempelbilder:unknown:nb-NO",
       "subject_id": "release:pf-eksempelbilder:unknown",
       "language": "nb-NO",
-      "text": "Eksempelbilder fra Marselisborg Marina ved Århus, ment for øvelsene med Panorama Factory.",
+      "text": "Eksempelpakken til Panorama Factory inneholder interne filreferanser til Pan1.jpg–Pan7.jpg. K-CD-teksten beskriver motivene som Marselisborg Marina ved Århus. Installerens interne danske mappenavn beholdes som kildeevidens.",
       "status": "curated",
       "evidence": [
         {
@@ -721,6 +951,118 @@
           },
           "field": "normalized.description",
           "value": "Prøv eksemplene fra bladet. Alle bildene ligger på KCD-en. Bildene stammer fra Marselisborg Marina ved Århus en vakker sommerdag."
+        },
+        {
+          "kind": "observed",
+          "source_ref": {
+            "manifest": "sha256:ae29b1d2976ee7c7439b2e12fe18b774d1d57e77c9a20bc3567d2e5079257281",
+            "entry": "K18",
+            "path": "PF Eksempelfiler/Setup.exe"
+          },
+          "field": "payload_observation",
+          "value": {
+            "method": "literal_bytes",
+            "offset": 281258,
+            "text": "M:\\Dansk\\PF Eksempelfiler\\Pan1.jpg",
+            "encoding": "ascii",
+            "sha256": "85bf7efe3b4b032d226df796d3ffd1dd42c393637b6e1be56f3fcd5e4c65f79b"
+          }
+        },
+        {
+          "kind": "observed",
+          "source_ref": {
+            "manifest": "sha256:ae29b1d2976ee7c7439b2e12fe18b774d1d57e77c9a20bc3567d2e5079257281",
+            "entry": "K18",
+            "path": "PF Eksempelfiler/Setup.exe"
+          },
+          "field": "payload_observation",
+          "value": {
+            "method": "literal_bytes",
+            "offset": 1647641,
+            "text": "M:\\Dansk\\PF Eksempelfiler\\Pan2.jpg",
+            "encoding": "ascii",
+            "sha256": "85bf7efe3b4b032d226df796d3ffd1dd42c393637b6e1be56f3fcd5e4c65f79b"
+          }
+        },
+        {
+          "kind": "observed",
+          "source_ref": {
+            "manifest": "sha256:ae29b1d2976ee7c7439b2e12fe18b774d1d57e77c9a20bc3567d2e5079257281",
+            "entry": "K18",
+            "path": "PF Eksempelfiler/Setup.exe"
+          },
+          "field": "payload_observation",
+          "value": {
+            "method": "literal_bytes",
+            "offset": 3059047,
+            "text": "M:\\Dansk\\PF Eksempelfiler\\Pan3.jpg",
+            "encoding": "ascii",
+            "sha256": "85bf7efe3b4b032d226df796d3ffd1dd42c393637b6e1be56f3fcd5e4c65f79b"
+          }
+        },
+        {
+          "kind": "observed",
+          "source_ref": {
+            "manifest": "sha256:ae29b1d2976ee7c7439b2e12fe18b774d1d57e77c9a20bc3567d2e5079257281",
+            "entry": "K18",
+            "path": "PF Eksempelfiler/Setup.exe"
+          },
+          "field": "payload_observation",
+          "value": {
+            "method": "literal_bytes",
+            "offset": 4245137,
+            "text": "M:\\Dansk\\PF Eksempelfiler\\Pan4.jpg",
+            "encoding": "ascii",
+            "sha256": "85bf7efe3b4b032d226df796d3ffd1dd42c393637b6e1be56f3fcd5e4c65f79b"
+          }
+        },
+        {
+          "kind": "observed",
+          "source_ref": {
+            "manifest": "sha256:ae29b1d2976ee7c7439b2e12fe18b774d1d57e77c9a20bc3567d2e5079257281",
+            "entry": "K18",
+            "path": "PF Eksempelfiler/Setup.exe"
+          },
+          "field": "payload_observation",
+          "value": {
+            "method": "literal_bytes",
+            "offset": 5319252,
+            "text": "M:\\Dansk\\PF Eksempelfiler\\Pan5.jpg",
+            "encoding": "ascii",
+            "sha256": "85bf7efe3b4b032d226df796d3ffd1dd42c393637b6e1be56f3fcd5e4c65f79b"
+          }
+        },
+        {
+          "kind": "observed",
+          "source_ref": {
+            "manifest": "sha256:ae29b1d2976ee7c7439b2e12fe18b774d1d57e77c9a20bc3567d2e5079257281",
+            "entry": "K18",
+            "path": "PF Eksempelfiler/Setup.exe"
+          },
+          "field": "payload_observation",
+          "value": {
+            "method": "literal_bytes",
+            "offset": 6416817,
+            "text": "M:\\Dansk\\PF Eksempelfiler\\Pan6.jpg",
+            "encoding": "ascii",
+            "sha256": "85bf7efe3b4b032d226df796d3ffd1dd42c393637b6e1be56f3fcd5e4c65f79b"
+          }
+        },
+        {
+          "kind": "observed",
+          "source_ref": {
+            "manifest": "sha256:ae29b1d2976ee7c7439b2e12fe18b774d1d57e77c9a20bc3567d2e5079257281",
+            "entry": "K18",
+            "path": "PF Eksempelfiler/Setup.exe"
+          },
+          "field": "payload_observation",
+          "value": {
+            "method": "literal_bytes",
+            "offset": 7531653,
+            "text": "M:\\Dansk\\PF Eksempelfiler\\Pan7.jpg",
+            "encoding": "ascii",
+            "sha256": "85bf7efe3b4b032d226df796d3ffd1dd42c393637b6e1be56f3fcd5e4c65f79b"
+          }
         }
       ]
     },
@@ -730,7 +1072,7 @@
       "id": "description:photo-objects-sampler:unknown:nb-NO",
       "subject_id": "release:photo-objects-sampler:unknown",
       "language": "nb-NO",
-      "text": "Samling med fotografiske utklippsbilder og tilhørende bildeprogram.",
+      "text": "Hemera Photo-Objects Sampler er en samling fotografiske utklippsbilder med tilhørende bildeprogram. Produktnavnet er bekreftet i installasjonens oppsettfil; K-CD-teksten beskriver et utvalg på 101 bilder.",
       "status": "curated",
       "evidence": [
         {
@@ -750,6 +1092,22 @@
           },
           "field": "normalized.description",
           "value": "Disse 101 flotte bildene er eksempler på en omfattende samling fotoclipart fra Hemera med 50 000 bilder."
+        },
+        {
+          "kind": "observed",
+          "source_ref": {
+            "manifest": "sha256:ae29b1d2976ee7c7439b2e12fe18b774d1d57e77c9a20bc3567d2e5079257281",
+            "entry": "K40",
+            "path": "Clipart/INSTALL/SETUP.INI"
+          },
+          "field": "payload_observation",
+          "value": {
+            "method": "literal_bytes",
+            "offset": 11,
+            "text": "AppName=Hemera Photo-Objects Sampler",
+            "encoding": "ascii",
+            "sha256": "5411d9003c474f11f700fa4f919909e6381a53cbb4c32e238878bd6b7da13f11"
+          }
         }
       ]
     },
@@ -1337,10 +1695,132 @@
     {
       "schema": "bootdisk-catalog-0.1",
       "type": "identification",
+      "id": "identification:14bdbc409be9a6b0bbae7f8ac7d843eadd1b5d81e73a91e714329abc5d3db2ab",
+      "package_id": "package:sha256:5b3cdb1e94ebfe46cdfeeeacfd430d3c6377731f050117bd42e727b915e0aaff",
+      "software_release_id": "release:ice-breaker:1.2.1",
+      "status": "curated",
+      "distribution_kind": "unknown",
+      "evidence": [
+        {
+          "kind": "observed",
+          "source_ref": {
+            "manifest": "sha256:ae29b1d2976ee7c7439b2e12fe18b774d1d57e77c9a20bc3567d2e5079257281",
+            "entry": "K12"
+          },
+          "field": "normalized.title",
+          "value": "Ice Breaker"
+        },
+        {
+          "kind": "observed",
+          "source_ref": {
+            "manifest": "sha256:ae29b1d2976ee7c7439b2e12fe18b774d1d57e77c9a20bc3567d2e5079257281",
+            "entry": "K12"
+          },
+          "field": "normalized.description",
+          "value": "Et spill for de minste eller til en kort pause foran skjermen. Bruk musen og sperr veien for pingvinene slik at du gjør isfjellet deres så lite som mulig."
+        },
+        {
+          "kind": "observed",
+          "source_ref": {
+            "manifest": "sha256:ae29b1d2976ee7c7439b2e12fe18b774d1d57e77c9a20bc3567d2e5079257281",
+            "entry": "K12",
+            "path": "Icebreaker/icebreaker-1.2.1.exe"
+          },
+          "field": "payload_observation",
+          "value": {
+            "method": "zip_member",
+            "member": "icebreaker-1.2.1-src/ChangeLog",
+            "member_sha256": "6e02d70e3d94090d43f93a688bfdd33f8fc28a58801179d46ed34a46303ad6a3",
+            "text": "July 30, 2001: released v1.2.1",
+            "sha256": "420fb692a9bdcdedb50a59c4f095aaf9f3ad44367dffd7d2a9c2dcb5c7ff7945"
+          }
+        },
+        {
+          "kind": "observed",
+          "source_ref": {
+            "manifest": "sha256:ae29b1d2976ee7c7439b2e12fe18b774d1d57e77c9a20bc3567d2e5079257281",
+            "entry": "K12",
+            "path": "Icebreaker/icebreaker-1.2.1.exe"
+          },
+          "field": "payload_observation",
+          "value": {
+            "method": "zip_member",
+            "member": "icebreaker-1.2.1-src/icebreaker.spec",
+            "member_sha256": "b67f06b0ee0ea3b0d7e6275aea99f478619ea4da85b68b60a4aed40c4987cdb9",
+            "text": "Version:\t1.2.1",
+            "sha256": "420fb692a9bdcdedb50a59c4f095aaf9f3ad44367dffd7d2a9c2dcb5c7ff7945"
+          }
+        }
+      ]
+    },
+    {
+      "schema": "bootdisk-catalog-0.1",
+      "type": "identification",
+      "id": "identification:1b01386104d8235178fcf53a7bcd03e6414c0fbbf6c6a3ed568a1028ad6f35fd",
+      "package_id": "package:sha256:5dc2a1d9fcd72c75b876a6db69c4e9a3466dc65c998d1affc14c6b5d246f6d40",
+      "software_release_id": "release:cpu-z:1.10",
+      "status": "curated",
+      "distribution_kind": "unknown",
+      "evidence": [
+        {
+          "kind": "observed",
+          "source_ref": {
+            "manifest": "sha256:ae29b1d2976ee7c7439b2e12fe18b774d1d57e77c9a20bc3567d2e5079257281",
+            "entry": "K23"
+          },
+          "field": "normalized.title",
+          "value": "Cpu-Z"
+        },
+        {
+          "kind": "observed",
+          "source_ref": {
+            "manifest": "sha256:ae29b1d2976ee7c7439b2e12fe18b774d1d57e77c9a20bc3567d2e5079257281",
+            "entry": "K23"
+          },
+          "field": "normalized.description",
+          "value": "Dette programmet forteller deg alt om CPU-en din. Du kan se modell, revisjon, frekvens, ramtype, om den er overklokket samt få mange andre nyttige eller interessante opplysninger om hjertet i datamaskinen."
+        },
+        {
+          "kind": "observed",
+          "source_ref": {
+            "manifest": "sha256:ae29b1d2976ee7c7439b2e12fe18b774d1d57e77c9a20bc3567d2e5079257281",
+            "entry": "K23",
+            "path": "Tools/CPUZ/CPUZ.EXE"
+          },
+          "field": "payload_observation",
+          "value": {
+            "method": "literal_bytes",
+            "offset": 195690,
+            "text": "Cpu-Z version <b>1.10</b>",
+            "encoding": "ascii",
+            "sha256": "b6686d16c3d3656960112b6da2c170ad27be1d9b5b3f1eff0bc15a0acb20db34"
+          }
+        },
+        {
+          "kind": "observed",
+          "source_ref": {
+            "manifest": "sha256:ae29b1d2976ee7c7439b2e12fe18b774d1d57e77c9a20bc3567d2e5079257281",
+            "entry": "K23",
+            "path": "Tools/CPUZ/cpu-z-110.zip"
+          },
+          "field": "payload_observation",
+          "value": {
+            "method": "zip_member",
+            "member": "cpuz.exe",
+            "member_sha256": "b6686d16c3d3656960112b6da2c170ad27be1d9b5b3f1eff0bc15a0acb20db34",
+            "text": "Cpu-Z version <b>1.10</b>",
+            "sha256": "443987a85fafd81e9ee7a48793ae6e8f28f9051f0d48c6d9bca630de394afc3e"
+          }
+        }
+      ]
+    },
+    {
+      "schema": "bootdisk-catalog-0.1",
+      "type": "identification",
       "id": "identification:1f18d5fbf7ac2fc2e138844449e194f4bded442a723e2e3ee3895a2c09999d06",
       "package_id": "package:sha256:52166234f6cabf44a6761296ca74b25f37e24ea443edddc86a5ac0ce22828ebd",
       "software_release_id": "release:floppy-image:unknown",
-      "status": "interpreted",
+      "status": "curated",
       "distribution_kind": "unknown",
       "evidence": [
         {
@@ -1360,6 +1840,38 @@
           },
           "field": "normalized.description",
           "value": "Kulde, varme, trykk og fuktighet kan medføre at du mister verdifull informasjon. Nå kan du med et par klikk lage sikkerhetskopier av diskettene og trygt legge dem på harddisken."
+        },
+        {
+          "kind": "observed",
+          "source_ref": {
+            "manifest": "sha256:ae29b1d2976ee7c7439b2e12fe18b774d1d57e77c9a20bc3567d2e5079257281",
+            "entry": "K10",
+            "path": "FloppyImage/Setup.exe"
+          },
+          "field": "payload_observation",
+          "value": {
+            "method": "literal_bytes",
+            "offset": 18596,
+            "text": "FloppyImage - Setup",
+            "encoding": "ascii",
+            "sha256": "e20b0caf9e8b175d4b9075876f0e184513ccf783988f3e0fe5fd068e7691ec5d"
+          }
+        },
+        {
+          "kind": "observed",
+          "source_ref": {
+            "manifest": "sha256:ae29b1d2976ee7c7439b2e12fe18b774d1d57e77c9a20bc3567d2e5079257281",
+            "entry": "K10",
+            "path": "FloppyImage/Setup.exe"
+          },
+          "field": "payload_observation",
+          "value": {
+            "method": "literal_bytes",
+            "offset": 281150,
+            "text": "M:\\Software\\FloppyImage\\Floppy Image.exe",
+            "encoding": "ascii",
+            "sha256": "e20b0caf9e8b175d4b9075876f0e184513ccf783988f3e0fe5fd068e7691ec5d"
+          }
         }
       ]
     },
@@ -1369,7 +1881,7 @@
       "id": "identification:27d93305e8a93b5c62a210778d5e6036d6455551bc648d94fd662412a5cc705a",
       "package_id": "package:sha256:1cfc6405ebd314e739f8bb82b50e46055357ed270f1e7d589d90c2ef48692569",
       "software_release_id": "release:kfa-arsregister:unknown",
-      "status": "interpreted",
+      "status": "curated",
       "distribution_kind": "unknown",
       "evidence": [
         {
@@ -1389,6 +1901,38 @@
           },
           "field": "normalized.description",
           "value": "Med Komputer for alles komplette årsregister kan du finne frem til samtlige artikler og programmer i bladet og på KCD-en."
+        },
+        {
+          "kind": "observed",
+          "source_ref": {
+            "manifest": "sha256:ae29b1d2976ee7c7439b2e12fe18b774d1d57e77c9a20bc3567d2e5079257281",
+            "entry": "K26",
+            "path": "Register/Setup.exe"
+          },
+          "field": "payload_observation",
+          "value": {
+            "method": "literal_bytes",
+            "offset": 18596,
+            "text": "Komputer for alle register - Setup",
+            "encoding": "ascii",
+            "sha256": "0417bf766c7e27b9adbf886218c6000e4de8af8949473528cf490861fca39bea"
+          }
+        },
+        {
+          "kind": "observed",
+          "source_ref": {
+            "manifest": "sha256:ae29b1d2976ee7c7439b2e12fe18b774d1d57e77c9a20bc3567d2e5079257281",
+            "entry": "K26",
+            "path": "Register/Setup.exe"
+          },
+          "field": "payload_observation",
+          "value": {
+            "method": "literal_bytes",
+            "offset": 1330510,
+            "text": "E:\\Artikelindex\\sommer2001\\norsk 2001\\Kfa register.hlp",
+            "encoding": "ascii",
+            "sha256": "0417bf766c7e27b9adbf886218c6000e4de8af8949473528cf490861fca39bea"
+          }
         }
       ]
     },
@@ -1440,7 +1984,7 @@
       "id": "identification:30f20696f3fed7bce3b88d7879bbfd190e98017523ea5726df4999f71f17e076",
       "package_id": "package:sha256:63a175b57102879b7a6c8987715071b5e3182db624b39e74f62af32fb386658e",
       "software_release_id": "release:photo-objects-sampler:unknown",
-      "status": "interpreted",
+      "status": "curated",
       "distribution_kind": "unknown",
       "evidence": [
         {
@@ -1460,6 +2004,22 @@
           },
           "field": "normalized.description",
           "value": "Disse 101 flotte bildene er eksempler på en omfattende samling fotoclipart fra Hemera med 50 000 bilder."
+        },
+        {
+          "kind": "observed",
+          "source_ref": {
+            "manifest": "sha256:ae29b1d2976ee7c7439b2e12fe18b774d1d57e77c9a20bc3567d2e5079257281",
+            "entry": "K40",
+            "path": "Clipart/INSTALL/SETUP.INI"
+          },
+          "field": "payload_observation",
+          "value": {
+            "method": "literal_bytes",
+            "offset": 11,
+            "text": "AppName=Hemera Photo-Objects Sampler",
+            "encoding": "ascii",
+            "sha256": "5411d9003c474f11f700fa4f919909e6381a53cbb4c32e238878bd6b7da13f11"
+          }
         }
       ]
     },
@@ -1705,39 +2265,10 @@
     {
       "schema": "bootdisk-catalog-0.1",
       "type": "identification",
-      "id": "identification:53f88f3024aa296a3855ea581d2a917f7504e8d86985072f0bb7cbd0d3172e27",
-      "package_id": "package:sha256:5dc2a1d9fcd72c75b876a6db69c4e9a3466dc65c998d1affc14c6b5d246f6d40",
-      "software_release_id": "release:cpu-z:unknown",
-      "status": "interpreted",
-      "distribution_kind": "unknown",
-      "evidence": [
-        {
-          "kind": "observed",
-          "source_ref": {
-            "manifest": "sha256:ae29b1d2976ee7c7439b2e12fe18b774d1d57e77c9a20bc3567d2e5079257281",
-            "entry": "K23"
-          },
-          "field": "normalized.title",
-          "value": "Cpu-Z"
-        },
-        {
-          "kind": "observed",
-          "source_ref": {
-            "manifest": "sha256:ae29b1d2976ee7c7439b2e12fe18b774d1d57e77c9a20bc3567d2e5079257281",
-            "entry": "K23"
-          },
-          "field": "normalized.description",
-          "value": "Dette programmet forteller deg alt om CPU-en din. Du kan se modell, revisjon, frekvens, ramtype, om den er overklokket samt få mange andre nyttige eller interessante opplysninger om hjertet i datamaskinen."
-        }
-      ]
-    },
-    {
-      "schema": "bootdisk-catalog-0.1",
-      "type": "identification",
       "id": "identification:5c995038ace5d72fa6d24edf48d2abc1ff6bf2235ebeb4cb899280c11b21df91",
       "package_id": "package:sha256:107c5490106a7f0eaedabacd09db14ea3738dd750cf822621f17cad7687944ea",
       "software_release_id": "release:bille-og-trille:unknown",
-      "status": "interpreted",
+      "status": "curated",
       "distribution_kind": "unknown",
       "evidence": [
         {
@@ -1757,6 +2288,70 @@
           },
           "field": "normalized.description",
           "value": "Bille & Trille er to helt vanlige barn som går i barnehagen. De har masser av fantasi, så det skjer saker og ting i barnehagen."
+        },
+        {
+          "kind": "observed",
+          "source_ref": {
+            "manifest": "sha256:ae29b1d2976ee7c7439b2e12fe18b774d1d57e77c9a20bc3567d2e5079257281",
+            "entry": "K3",
+            "path": "BilleTrille/DATA/DT1demo.dxr"
+          },
+          "field": "payload_observation",
+          "value": {
+            "method": "literal_bytes",
+            "offset": 708021,
+            "text": "Demo forside no",
+            "encoding": "ascii",
+            "sha256": "fb026659b7e1010f97895ec11f8ffb29d9455a37fa4d8acf2925f68087368212"
+          }
+        },
+        {
+          "kind": "observed",
+          "source_ref": {
+            "manifest": "sha256:ae29b1d2976ee7c7439b2e12fe18b774d1d57e77c9a20bc3567d2e5079257281",
+            "entry": "K3",
+            "path": "BilleTrille/DATA/DT1demo.dxr"
+          },
+          "field": "payload_observation",
+          "value": {
+            "method": "literal_bytes",
+            "offset": 615505,
+            "text": "Norsk DemoDt1_source:DATA:",
+            "encoding": "ascii",
+            "sha256": "fb026659b7e1010f97895ec11f8ffb29d9455a37fa4d8acf2925f68087368212"
+          }
+        },
+        {
+          "kind": "observed",
+          "source_ref": {
+            "manifest": "sha256:ae29b1d2976ee7c7439b2e12fe18b774d1d57e77c9a20bc3567d2e5079257281",
+            "entry": "K3",
+            "path": "BilleTrille/DATA/DT1demo.dxr"
+          },
+          "field": "payload_observation",
+          "value": {
+            "method": "literal_bytes",
+            "offset": 388035,
+            "text": "bille-loeber-a",
+            "encoding": "ascii",
+            "sha256": "fb026659b7e1010f97895ec11f8ffb29d9455a37fa4d8acf2925f68087368212"
+          }
+        },
+        {
+          "kind": "observed",
+          "source_ref": {
+            "manifest": "sha256:ae29b1d2976ee7c7439b2e12fe18b774d1d57e77c9a20bc3567d2e5079257281",
+            "entry": "K3",
+            "path": "BilleTrille/DATA/DT1demo.dxr"
+          },
+          "field": "payload_observation",
+          "value": {
+            "method": "literal_bytes",
+            "offset": 388329,
+            "text": "trille-loeber-a",
+            "encoding": "ascii",
+            "sha256": "fb026659b7e1010f97895ec11f8ffb29d9455a37fa4d8acf2925f68087368212"
+          }
         }
       ]
     },
@@ -1973,6 +2568,73 @@
           },
           "field": "normalized.description",
           "value": "Et artig og enkelt spill for hele familien. Du skal styre den lille brannmannen rundt i skogen før alle trærne og husene brenner ned, eller tiden utløper."
+        }
+      ]
+    },
+    {
+      "schema": "bootdisk-catalog-0.1",
+      "type": "identification",
+      "id": "identification:7de2716d246119dfd79fc5e4800a3d0e29e83dfbc738b113f88266843900f65b",
+      "package_id": "package:sha256:c13b61f6d169fa1ba073288b72a56d2262f6c86fa301e4f0ae6aac0cfab640b5",
+      "software_release_id": "release:font-xplorer-lite:1.2.2",
+      "status": "curated",
+      "distribution_kind": "unknown",
+      "evidence": [
+        {
+          "kind": "observed",
+          "source_ref": {
+            "manifest": "sha256:ae29b1d2976ee7c7439b2e12fe18b774d1d57e77c9a20bc3567d2e5079257281",
+            "entry": "K11"
+          },
+          "field": "normalized.title",
+          "value": "FontExplorer Lite"
+        },
+        {
+          "kind": "observed",
+          "source_ref": {
+            "manifest": "sha256:ae29b1d2976ee7c7439b2e12fe18b774d1d57e77c9a20bc3567d2e5079257281",
+            "entry": "K11"
+          },
+          "field": "normalized.description",
+          "value": "Nå slipper du å prøve deg frem. Her får du en oversikt over samtlige skrifttyper som er installert på pc-en. Sammenlign dem, skriv ut oversiktene og les om de forskjellige skriftene."
+        },
+        {
+          "kind": "observed",
+          "source_ref": {
+            "manifest": "sha256:ae29b1d2976ee7c7439b2e12fe18b774d1d57e77c9a20bc3567d2e5079257281",
+            "entry": "K11",
+            "path": "FontExplorer Lite/fxplo122lite.exe"
+          },
+          "field": "payload_observation",
+          "value": {
+            "method": "raw_deflate_crc32",
+            "offset": 119547,
+            "compressed_size": 1415,
+            "size": 3169,
+            "crc32": "a9644026",
+            "payload_sha256": "c748ea72471cb1f00dcd9e2124fd5ddf36a35b633481a8691148eecf6d63ec34",
+            "text": "Font Xplorer Lite, version 1.2.2",
+            "sha256": "f95abcd122296f667d208d84a20e6536f961bc577c606fa03d9966ab96807297"
+          }
+        },
+        {
+          "kind": "observed",
+          "source_ref": {
+            "manifest": "sha256:ae29b1d2976ee7c7439b2e12fe18b774d1d57e77c9a20bc3567d2e5079257281",
+            "entry": "K11",
+            "path": "FontExplorer Lite/fxplo122lite.exe"
+          },
+          "field": "payload_observation",
+          "value": {
+            "method": "raw_deflate_crc32",
+            "offset": 120966,
+            "compressed_size": 1425,
+            "size": 3169,
+            "crc32": "625dcca8",
+            "payload_sha256": "8318e356b5ea08fd103d1e42a5cf3bb9358b5490404f7d838146db31371d7517",
+            "text": "END-USER LICENSE AGREEMENT FOR MOON SOFTWARE FREEWARE PRODUCTS",
+            "sha256": "f95abcd122296f667d208d84a20e6536f961bc577c606fa03d9966ab96807297"
+          }
         }
       ]
     },
@@ -2229,35 +2891,6 @@
     {
       "schema": "bootdisk-catalog-0.1",
       "type": "identification",
-      "id": "identification:b993c0efae57713d4cc17507e94514401dade14ef85d9a2d3ead3a5b56e5e1c3",
-      "package_id": "package:sha256:5b3cdb1e94ebfe46cdfeeeacfd430d3c6377731f050117bd42e727b915e0aaff",
-      "software_release_id": "release:ice-breaker:unknown",
-      "status": "interpreted",
-      "distribution_kind": "unknown",
-      "evidence": [
-        {
-          "kind": "observed",
-          "source_ref": {
-            "manifest": "sha256:ae29b1d2976ee7c7439b2e12fe18b774d1d57e77c9a20bc3567d2e5079257281",
-            "entry": "K12"
-          },
-          "field": "normalized.title",
-          "value": "Ice Breaker"
-        },
-        {
-          "kind": "observed",
-          "source_ref": {
-            "manifest": "sha256:ae29b1d2976ee7c7439b2e12fe18b774d1d57e77c9a20bc3567d2e5079257281",
-            "entry": "K12"
-          },
-          "field": "normalized.description",
-          "value": "Et spill for de minste eller til en kort pause foran skjermen. Bruk musen og sperr veien for pingvinene slik at du gjør isfjellet deres så lite som mulig."
-        }
-      ]
-    },
-    {
-      "schema": "bootdisk-catalog-0.1",
-      "type": "identification",
       "id": "identification:c14648d27c8461a787768b09f3c54fce53731303be4600085b1990ba457fcc2e",
       "package_id": "package:sha256:bb2a45675a7fff472aec5f6e024a8d608a55719e6b85260cf7460cfdb11013dc",
       "software_release_id": "release:powerpoint-skolen:unknown",
@@ -2294,35 +2927,6 @@
             "sha256": "ebe93778e98c7efb0258190693d852575ecc2e83ff7c98a617cfc67d4b57346c",
             "summary": "Reviewed PDF opening page; confirms the named course or guide."
           }
-        }
-      ]
-    },
-    {
-      "schema": "bootdisk-catalog-0.1",
-      "type": "identification",
-      "id": "identification:c72a570a72333228aff9db23b616ad4cf735d290b5af2d1e68f67782ad41d65a",
-      "package_id": "package:sha256:c13b61f6d169fa1ba073288b72a56d2262f6c86fa301e4f0ae6aac0cfab640b5",
-      "software_release_id": "release:font-xplorer-lite:unknown",
-      "status": "interpreted",
-      "distribution_kind": "unknown",
-      "evidence": [
-        {
-          "kind": "observed",
-          "source_ref": {
-            "manifest": "sha256:ae29b1d2976ee7c7439b2e12fe18b774d1d57e77c9a20bc3567d2e5079257281",
-            "entry": "K11"
-          },
-          "field": "normalized.title",
-          "value": "FontExplorer Lite"
-        },
-        {
-          "kind": "observed",
-          "source_ref": {
-            "manifest": "sha256:ae29b1d2976ee7c7439b2e12fe18b774d1d57e77c9a20bc3567d2e5079257281",
-            "entry": "K11"
-          },
-          "field": "normalized.description",
-          "value": "Nå slipper du å prøve deg frem. Her får du en oversikt over samtlige skrifttyper som er installert på pc-en. Sammenlign dem, skriv ut oversiktene og les om de forskjellige skriftene."
         }
       ]
     },
@@ -2393,7 +2997,7 @@
       "id": "identification:cc25df742868c7fa586bbf3e30127c16a58f6347901dab9913704b23e69ed88b",
       "package_id": "package:sha256:d8c6dc1129e03b00bfcfb0afc5e6429a26864311c1e687e424c1d0b71afa594c",
       "software_release_id": "release:pf-eksempelbilder:unknown",
-      "status": "interpreted",
+      "status": "curated",
       "distribution_kind": "unknown",
       "evidence": [
         {
@@ -2413,6 +3017,118 @@
           },
           "field": "normalized.description",
           "value": "Prøv eksemplene fra bladet. Alle bildene ligger på KCD-en. Bildene stammer fra Marselisborg Marina ved Århus en vakker sommerdag."
+        },
+        {
+          "kind": "observed",
+          "source_ref": {
+            "manifest": "sha256:ae29b1d2976ee7c7439b2e12fe18b774d1d57e77c9a20bc3567d2e5079257281",
+            "entry": "K18",
+            "path": "PF Eksempelfiler/Setup.exe"
+          },
+          "field": "payload_observation",
+          "value": {
+            "method": "literal_bytes",
+            "offset": 281258,
+            "text": "M:\\Dansk\\PF Eksempelfiler\\Pan1.jpg",
+            "encoding": "ascii",
+            "sha256": "85bf7efe3b4b032d226df796d3ffd1dd42c393637b6e1be56f3fcd5e4c65f79b"
+          }
+        },
+        {
+          "kind": "observed",
+          "source_ref": {
+            "manifest": "sha256:ae29b1d2976ee7c7439b2e12fe18b774d1d57e77c9a20bc3567d2e5079257281",
+            "entry": "K18",
+            "path": "PF Eksempelfiler/Setup.exe"
+          },
+          "field": "payload_observation",
+          "value": {
+            "method": "literal_bytes",
+            "offset": 1647641,
+            "text": "M:\\Dansk\\PF Eksempelfiler\\Pan2.jpg",
+            "encoding": "ascii",
+            "sha256": "85bf7efe3b4b032d226df796d3ffd1dd42c393637b6e1be56f3fcd5e4c65f79b"
+          }
+        },
+        {
+          "kind": "observed",
+          "source_ref": {
+            "manifest": "sha256:ae29b1d2976ee7c7439b2e12fe18b774d1d57e77c9a20bc3567d2e5079257281",
+            "entry": "K18",
+            "path": "PF Eksempelfiler/Setup.exe"
+          },
+          "field": "payload_observation",
+          "value": {
+            "method": "literal_bytes",
+            "offset": 3059047,
+            "text": "M:\\Dansk\\PF Eksempelfiler\\Pan3.jpg",
+            "encoding": "ascii",
+            "sha256": "85bf7efe3b4b032d226df796d3ffd1dd42c393637b6e1be56f3fcd5e4c65f79b"
+          }
+        },
+        {
+          "kind": "observed",
+          "source_ref": {
+            "manifest": "sha256:ae29b1d2976ee7c7439b2e12fe18b774d1d57e77c9a20bc3567d2e5079257281",
+            "entry": "K18",
+            "path": "PF Eksempelfiler/Setup.exe"
+          },
+          "field": "payload_observation",
+          "value": {
+            "method": "literal_bytes",
+            "offset": 4245137,
+            "text": "M:\\Dansk\\PF Eksempelfiler\\Pan4.jpg",
+            "encoding": "ascii",
+            "sha256": "85bf7efe3b4b032d226df796d3ffd1dd42c393637b6e1be56f3fcd5e4c65f79b"
+          }
+        },
+        {
+          "kind": "observed",
+          "source_ref": {
+            "manifest": "sha256:ae29b1d2976ee7c7439b2e12fe18b774d1d57e77c9a20bc3567d2e5079257281",
+            "entry": "K18",
+            "path": "PF Eksempelfiler/Setup.exe"
+          },
+          "field": "payload_observation",
+          "value": {
+            "method": "literal_bytes",
+            "offset": 5319252,
+            "text": "M:\\Dansk\\PF Eksempelfiler\\Pan5.jpg",
+            "encoding": "ascii",
+            "sha256": "85bf7efe3b4b032d226df796d3ffd1dd42c393637b6e1be56f3fcd5e4c65f79b"
+          }
+        },
+        {
+          "kind": "observed",
+          "source_ref": {
+            "manifest": "sha256:ae29b1d2976ee7c7439b2e12fe18b774d1d57e77c9a20bc3567d2e5079257281",
+            "entry": "K18",
+            "path": "PF Eksempelfiler/Setup.exe"
+          },
+          "field": "payload_observation",
+          "value": {
+            "method": "literal_bytes",
+            "offset": 6416817,
+            "text": "M:\\Dansk\\PF Eksempelfiler\\Pan6.jpg",
+            "encoding": "ascii",
+            "sha256": "85bf7efe3b4b032d226df796d3ffd1dd42c393637b6e1be56f3fcd5e4c65f79b"
+          }
+        },
+        {
+          "kind": "observed",
+          "source_ref": {
+            "manifest": "sha256:ae29b1d2976ee7c7439b2e12fe18b774d1d57e77c9a20bc3567d2e5079257281",
+            "entry": "K18",
+            "path": "PF Eksempelfiler/Setup.exe"
+          },
+          "field": "payload_observation",
+          "value": {
+            "method": "literal_bytes",
+            "offset": 7531653,
+            "text": "M:\\Dansk\\PF Eksempelfiler\\Pan7.jpg",
+            "encoding": "ascii",
+            "sha256": "85bf7efe3b4b032d226df796d3ffd1dd42c393637b6e1be56f3fcd5e4c65f79b"
+          }
         }
       ]
     },
@@ -2923,9 +3639,9 @@
     {
       "schema": "bootdisk-catalog-0.1",
       "type": "software_release",
-      "id": "release:cpu-z:unknown",
+      "id": "release:cpu-z:1.10",
       "software_id": "software:cpu-z",
-      "version": "unknown"
+      "version": "1.10"
     },
     {
       "id": "release:deer-avenger:4",
@@ -2972,9 +3688,9 @@
     {
       "schema": "bootdisk-catalog-0.1",
       "type": "software_release",
-      "id": "release:font-xplorer-lite:unknown",
+      "id": "release:font-xplorer-lite:1.2.2",
       "software_id": "software:font-xplorer-lite",
-      "version": "unknown"
+      "version": "1.2.2"
     },
     {
       "schema": "bootdisk-catalog-0.1",
@@ -2986,9 +3702,9 @@
     {
       "schema": "bootdisk-catalog-0.1",
       "type": "software_release",
-      "id": "release:ice-breaker:unknown",
+      "id": "release:ice-breaker:1.2.1",
       "software_id": "software:ice-breaker",
-      "version": "unknown"
+      "version": "1.2.1"
     },
     {
       "id": "release:internet-explorer:5.5",
