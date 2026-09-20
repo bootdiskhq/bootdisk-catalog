@@ -1,0 +1,425 @@
+{
+  "audit_date": "2026-09-20",
+  "scope": "Snapshot of recorded claims, not a new full-disc verification or a license audit",
+  "bundle_sha256": "ffb62fb237e7fc750eaf8806d18921ffb5684f36025351bcca1071b64deb0226",
+  "entries": [
+    {
+      "entry": "K1",
+      "software_id": "software:aliens-vs-predator-2",
+      "identification_status": "curated",
+      "version": "unknown",
+      "distribution_kind": "demo",
+      "open_fields": [
+        "version_unknown"
+      ]
+    },
+    {
+      "entry": "K3",
+      "software_id": "software:bille-og-trille",
+      "identification_status": "curated",
+      "version": "unknown",
+      "distribution_kind": "unknown",
+      "open_fields": [
+        "version_unknown",
+        "distribution_unknown"
+      ]
+    },
+    {
+      "entry": "K4",
+      "software_id": "software:blockout",
+      "identification_status": "interpreted",
+      "version": "unknown",
+      "distribution_kind": "unknown",
+      "open_fields": [
+        "identity_provisional",
+        "version_unknown",
+        "distribution_unknown"
+      ]
+    },
+    {
+      "entry": "K5",
+      "software_id": "software:bugnosis",
+      "identification_status": "curated",
+      "version": "unknown",
+      "distribution_kind": "unknown",
+      "open_fields": [
+        "version_unknown",
+        "distribution_unknown"
+      ]
+    },
+    {
+      "entry": "K6",
+      "software_id": "software:clickpuzzle",
+      "identification_status": "interpreted",
+      "version": "unknown",
+      "distribution_kind": "unknown",
+      "open_fields": [
+        "identity_provisional",
+        "version_unknown",
+        "distribution_unknown"
+      ]
+    },
+    {
+      "entry": "K7",
+      "software_id": "software:dr-goo",
+      "identification_status": "curated",
+      "version": "unknown",
+      "distribution_kind": "unknown",
+      "open_fields": [
+        "version_unknown",
+        "distribution_unknown"
+      ]
+    },
+    {
+      "entry": "K8",
+      "software_id": "software:deer-avenger",
+      "identification_status": "curated",
+      "version": "4",
+      "distribution_kind": "demo",
+      "open_fields": []
+    },
+    {
+      "entry": "K9",
+      "software_id": "software:fire-fighter",
+      "identification_status": "interpreted",
+      "version": "unknown",
+      "distribution_kind": "unknown",
+      "open_fields": [
+        "identity_provisional",
+        "version_unknown",
+        "distribution_unknown"
+      ]
+    },
+    {
+      "entry": "K10",
+      "software_id": "software:floppy-image",
+      "identification_status": "curated",
+      "version": "unknown",
+      "distribution_kind": "unknown",
+      "open_fields": [
+        "version_unknown",
+        "distribution_unknown"
+      ]
+    },
+    {
+      "entry": "K11",
+      "software_id": "software:font-xplorer-lite",
+      "identification_status": "curated",
+      "version": "1.2.2",
+      "distribution_kind": "unknown",
+      "open_fields": [
+        "distribution_unknown"
+      ]
+    },
+    {
+      "entry": "K12",
+      "software_id": "software:ice-breaker",
+      "identification_status": "curated",
+      "version": "1.2.1",
+      "distribution_kind": "unknown",
+      "open_fields": [
+        "distribution_unknown"
+      ]
+    },
+    {
+      "entry": "K13",
+      "software_id": "software:mechcommander",
+      "identification_status": "curated",
+      "version": "2",
+      "distribution_kind": "demo",
+      "open_fields": []
+    },
+    {
+      "entry": "K14",
+      "software_id": "software:workpace",
+      "identification_status": "curated",
+      "version": "unknown",
+      "distribution_kind": "unknown",
+      "open_fields": [
+        "version_unknown",
+        "distribution_unknown"
+      ]
+    },
+    {
+      "entry": "K15",
+      "software_id": "software:mutant-xpiders",
+      "identification_status": "curated",
+      "version": "1.5",
+      "distribution_kind": "unknown",
+      "open_fields": [
+        "distribution_unknown"
+      ]
+    },
+    {
+      "entry": "K16",
+      "software_id": "software:docucom-pdf-driver",
+      "identification_status": "curated",
+      "version": "unknown",
+      "distribution_kind": "unknown",
+      "open_fields": [
+        "version_unknown",
+        "distribution_unknown"
+      ]
+    },
+    {
+      "entry": "K17",
+      "software_id": "software:panorama-factory",
+      "identification_status": "curated",
+      "version": "2.3",
+      "distribution_kind": "trial",
+      "open_fields": []
+    },
+    {
+      "entry": "K18",
+      "software_id": "software:pf-eksempelbilder",
+      "identification_status": "curated",
+      "version": "unknown",
+      "distribution_kind": "unknown",
+      "open_fields": [
+        "version_unknown",
+        "distribution_unknown"
+      ]
+    },
+    {
+      "entry": "K19",
+      "software_id": "software:puzzlejig",
+      "identification_status": "interpreted",
+      "version": "unknown",
+      "distribution_kind": "unknown",
+      "open_fields": [
+        "identity_provisional",
+        "version_unknown",
+        "distribution_unknown"
+      ]
+    },
+    {
+      "entry": "K20",
+      "software_id": "software:red-faction",
+      "identification_status": "curated",
+      "version": "unknown",
+      "distribution_kind": "demo",
+      "open_fields": [
+        "version_unknown"
+      ]
+    },
+    {
+      "entry": "K21",
+      "software_id": "software:resize-browser",
+      "identification_status": "curated",
+      "version": "unknown",
+      "distribution_kind": "unknown",
+      "open_fields": [
+        "version_unknown",
+        "distribution_unknown"
+      ]
+    },
+    {
+      "entry": "K22",
+      "software_id": "software:shoot-and-relax",
+      "identification_status": "curated",
+      "version": "unknown",
+      "distribution_kind": "trial",
+      "open_fields": [
+        "version_unknown"
+      ]
+    },
+    {
+      "entry": "K23",
+      "software_id": "software:cpu-z",
+      "identification_status": "curated",
+      "version": "1.10",
+      "distribution_kind": "unknown",
+      "open_fields": [
+        "distribution_unknown"
+      ]
+    },
+    {
+      "entry": "K24",
+      "software_id": "software:acrobat-reader",
+      "identification_status": "curated",
+      "version": "5.0",
+      "distribution_kind": "unknown",
+      "open_fields": [
+        "distribution_unknown"
+      ]
+    },
+    {
+      "entry": "K25",
+      "software_id": "software:digitalkameraskolen",
+      "identification_status": "curated",
+      "version": "unknown",
+      "distribution_kind": "unknown",
+      "open_fields": [
+        "version_unknown",
+        "distribution_unknown"
+      ]
+    },
+    {
+      "entry": "K26",
+      "software_id": "software:kfa-arsregister",
+      "identification_status": "curated",
+      "version": "unknown",
+      "distribution_kind": "unknown",
+      "open_fields": [
+        "version_unknown",
+        "distribution_unknown"
+      ]
+    },
+    {
+      "entry": "K27",
+      "software_id": "software:powerpoint-skolen",
+      "identification_status": "curated",
+      "version": "unknown",
+      "distribution_kind": "unknown",
+      "open_fields": [
+        "version_unknown",
+        "distribution_unknown"
+      ]
+    },
+    {
+      "entry": "K29",
+      "software_id": "software:internet-explorer",
+      "identification_status": "curated",
+      "version": "5.5",
+      "distribution_kind": "unknown",
+      "open_fields": [
+        "distribution_unknown"
+      ]
+    },
+    {
+      "entry": "K30",
+      "software_id": "software:1st-page",
+      "identification_status": "curated",
+      "version": "2000",
+      "distribution_kind": "unknown",
+      "open_fields": [
+        "distribution_unknown"
+      ]
+    },
+    {
+      "entry": "K31",
+      "software_id": "software:hjemmesideskolen-ekspert",
+      "identification_status": "curated",
+      "version": "unknown",
+      "distribution_kind": "unknown",
+      "open_fields": [
+        "version_unknown",
+        "distribution_unknown"
+      ]
+    },
+    {
+      "entry": "K32",
+      "software_id": "software:wordskolen",
+      "identification_status": "curated",
+      "version": "unknown",
+      "distribution_kind": "unknown",
+      "open_fields": [
+        "version_unknown",
+        "distribution_unknown"
+      ]
+    },
+    {
+      "entry": "K33",
+      "software_id": "software:word-ekspert-skolen",
+      "identification_status": "curated",
+      "version": "unknown",
+      "distribution_kind": "unknown",
+      "open_fields": [
+        "version_unknown",
+        "distribution_unknown"
+      ]
+    },
+    {
+      "entry": "K34",
+      "software_id": "software:outlookskolen",
+      "identification_status": "curated",
+      "version": "unknown",
+      "distribution_kind": "unknown",
+      "open_fields": [
+        "version_unknown",
+        "distribution_unknown"
+      ]
+    },
+    {
+      "entry": "K35",
+      "software_id": "software:avg-antivirus",
+      "identification_status": "curated",
+      "version": "6.0",
+      "distribution_kind": "unknown",
+      "open_fields": [
+        "distribution_unknown"
+      ]
+    },
+    {
+      "entry": "K37",
+      "software_id": "software:winamp",
+      "identification_status": "curated",
+      "version": "2.76",
+      "distribution_kind": "unknown",
+      "open_fields": [
+        "distribution_unknown"
+      ]
+    },
+    {
+      "entry": "K38",
+      "software_id": "software:winzip",
+      "identification_status": "curated",
+      "version": "8.0",
+      "distribution_kind": "unknown",
+      "open_fields": [
+        "distribution_unknown"
+      ]
+    },
+    {
+      "entry": "K39",
+      "software_id": "software:xnview",
+      "identification_status": "curated",
+      "version": "1.21",
+      "distribution_kind": "unknown",
+      "open_fields": [
+        "distribution_unknown"
+      ]
+    },
+    {
+      "entry": "K40",
+      "software_id": "software:photo-objects-sampler",
+      "identification_status": "curated",
+      "version": "unknown",
+      "distribution_kind": "unknown",
+      "open_fields": [
+        "version_unknown",
+        "distribution_unknown"
+      ]
+    },
+    {
+      "entry": "K41",
+      "software_id": "software:bruk-photo-objects",
+      "identification_status": "curated",
+      "version": "unknown",
+      "distribution_kind": "unknown",
+      "open_fields": [
+        "version_unknown",
+        "distribution_unknown"
+      ]
+    },
+    {
+      "entry": "K42",
+      "software_id": "software:larabie-fonts-kcd15-2001",
+      "identification_status": "curated",
+      "version": "unknown",
+      "distribution_kind": "unknown",
+      "open_fields": [
+        "version_unknown",
+        "distribution_unknown"
+      ]
+    }
+  ],
+  "media_exceptions": [
+    {
+      "path": "FirstPage/DATA1.CAB",
+      "code": "read_permission_denied",
+      "impact": "Current full-disc byte verification remains incomplete; earlier manifest is preserved.",
+      "next_step": "Use a separately readable copy supplied by the owner; do not retry automatically."
+    }
+  ]
+}

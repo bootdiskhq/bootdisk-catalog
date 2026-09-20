@@ -1,5 +1,11 @@
 # Changelog
 
+## Unreleased
+
+- Hash-bound 39-entry review audit with unresolved identity, version and distribution fields.
+- Explicit 1.2.0 human-curation delivery gate before the next K-CD import.
+- Gentee payload boundary triage and remaining media/extraction exceptions.
+
 ## 0.1.0-rc1
 
 First Bootdisk Catalog release candidate.
