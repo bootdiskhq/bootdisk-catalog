@@ -7,7 +7,7 @@
       "id": "description:aliens-vs-predator-2:unknown:nb-NO",
       "subject_id": "release:aliens-vs-predator-2:unknown",
       "language": "nb-NO",
-      "text": "Magasindemo av Aliens vs. Predator 2 med et utdrag fra en enspilleroppgave som marinesoldat.",
+      "text": "På jakt etter vanvittige, siklende monstre i mørke ganger om bord på et romskip lysår unna jorden i en fjern fremtid. Det er med andre ord lagt opp til en skikkelig kosekveld.",
       "status": "curated",
       "evidence": [
         {
@@ -53,6 +53,15 @@
             "sha256": "ce03ae39a7beda9769290cc613c13d5e31add606bebfc38f06f176ebf535574c",
             "summary": "AppName=Aliens vs. Predator 2 Demo"
           }
+        },
+        {
+          "kind": "observed",
+          "source_ref": {
+            "manifest": "sha256:ae29b1d2976ee7c7439b2e12fe18b774d1d57e77c9a20bc3567d2e5079257281",
+            "entry": "K1"
+          },
+          "field": "raw.Global",
+          "value": "På jakt etter vanvittige, siklende monstre i mørke ganger om bord på et romskip lysår unna jorden i en fjern fremtid. Det er med andre ord lagt opp til en skikkelig kosekveld."
         }
       ]
     },
@@ -62,7 +71,7 @@
       "id": "description:bille-og-trille:unknown:nb-NO",
       "subject_id": "release:bille-og-trille:unknown",
       "language": "nb-NO",
-      "text": "Bille og Trille er et barnespill med de to barnehagebarna. Den medfølgende Director-filen har norske demo-markører og figurreferanser som støtter identiteten. Nøyaktig spillutgave og omfang er fortsatt ikke fastslått.",
+      "text": "Bille & Trille er to helt vanlige barn som går i barnehagen. De har masser av fantasi, så det skjer saker og ting i barnehagen.",
       "status": "curated",
       "evidence": [
         {
@@ -146,6 +155,15 @@
             "encoding": "ascii",
             "sha256": "fb026659b7e1010f97895ec11f8ffb29d9455a37fa4d8acf2925f68087368212"
           }
+        },
+        {
+          "kind": "observed",
+          "source_ref": {
+            "manifest": "sha256:ae29b1d2976ee7c7439b2e12fe18b774d1d57e77c9a20bc3567d2e5079257281",
+            "entry": "K3"
+          },
+          "field": "raw.Global",
+          "value": "Bille & Trille er to helt vanlige barn som går i barnehagen. De har masser av fantasi, så det skjer saker og ting i barnehagen."
         }
       ]
     },
@@ -155,7 +173,7 @@
       "id": "description:blockout:unknown:nb-NO",
       "subject_id": "release:blockout:unknown",
       "language": "nb-NO",
-      "text": "Spilloppføring for Blockout, bevart med installasjonsfil og redaksjonelt materiale.",
+      "text": "Nå er det på tide med et vanedannende spill igjen som tester hvor raskt og logisk du tenker. Dette spillet minner om Tetris i en 3D-utgave.",
       "status": "curated",
       "evidence": [
         {
@@ -175,6 +193,15 @@
           },
           "field": "normalized.description",
           "value": "Nå er det på tide med et vanedannende spill igjen som tester hvor raskt og logisk du tenker. Dette spillet minner om Tetris i en 3D-utgave."
+        },
+        {
+          "kind": "observed",
+          "source_ref": {
+            "manifest": "sha256:ae29b1d2976ee7c7439b2e12fe18b774d1d57e77c9a20bc3567d2e5079257281",
+            "entry": "K4"
+          },
+          "field": "raw.Global",
+          "value": "Nå er det på tide med et vanedannende spill igjen som tester hvor raskt og logisk du tenker. Dette spillet minner om Tetris i en 3D-utgave."
         }
       ]
     },
@@ -184,7 +211,7 @@
       "id": "description:bruk-photo-objects:unknown:nb-NO",
       "subject_id": "release:bruk-photo-objects:unknown",
       "language": "nb-NO",
-      "text": "PDF-veiledning i å installere og bruke Photo-Objects Sampler.",
+      "text": "I galleriet finner du 101 flotte bilder du kan bruke fritt. Denne veiledningen viser deg hvordan du finner de bildene du vil bruke.",
       "status": "curated",
       "evidence": [
         {
@@ -217,6 +244,15 @@
             "sha256": "0125797c6604eae6c1abe47304be54b464fa5686c61911c4a81b56e2f3e84f56",
             "summary": "Reviewed PDF opening page; confirms the named course or guide."
           }
+        },
+        {
+          "kind": "observed",
+          "source_ref": {
+            "manifest": "sha256:ae29b1d2976ee7c7439b2e12fe18b774d1d57e77c9a20bc3567d2e5079257281",
+            "entry": "K41"
+          },
+          "field": "raw.Global",
+          "value": "I galleriet finner du 101 flotte bilder du kan bruke fritt. Denne veiledningen viser deg hvordan du finner de bildene du vil bruke."
         }
       ]
     },
@@ -226,7 +262,7 @@
       "id": "description:bugnosis:unknown:nb-NO",
       "subject_id": "release:bugnosis:unknown",
       "language": "nb-NO",
-      "text": "Verktøy for å oppdage sporingsbilder på nettsider, distribuert her som en flerfilinstallasjon.",
+      "text": "Med Bugnosis vil du kunne oppdage de usynlige spionene som holder øye med hvor du beveger deg på internett.",
       "status": "curated",
       "evidence": [
         {
@@ -259,6 +295,15 @@
             "sha256": "c505c3ab1a0982f46b58243418d7774f940057f1d413806da51eae0ba250f7dd",
             "summary": "AppName=Web bugs detector; generic installer identity is insufficient."
           }
+        },
+        {
+          "kind": "observed",
+          "source_ref": {
+            "manifest": "sha256:ae29b1d2976ee7c7439b2e12fe18b774d1d57e77c9a20bc3567d2e5079257281",
+            "entry": "K5"
+          },
+          "field": "raw.Global",
+          "value": "Med Bugnosis vil du kunne oppdage de usynlige spionene som holder øye med hvor du beveger deg på internett."
         }
       ]
     },
@@ -268,7 +313,7 @@
       "id": "description:clickpuzzle:unknown:nb-NO",
       "subject_id": "release:clickpuzzle:unknown",
       "language": "nb-NO",
-      "text": "Puslespill der brikker fjernes ved å klikke på dem.",
+      "text": "Her skal du ved hjelp av ditt våkne blikk for kompliserte sammenhenger fjerne så mange firkanter som mulig. Reglene er enkle, men oppgaven er ikke lett.",
       "status": "curated",
       "evidence": [
         {
@@ -288,6 +333,15 @@
           },
           "field": "normalized.description",
           "value": "Her skal du ved hjelp av ditt våkne blikk for kompliserte sammenhenger fjerne så mange firkanter som mulig. Reglene er enkle, men oppgaven er ikke lett."
+        },
+        {
+          "kind": "observed",
+          "source_ref": {
+            "manifest": "sha256:ae29b1d2976ee7c7439b2e12fe18b774d1d57e77c9a20bc3567d2e5079257281",
+            "entry": "K6"
+          },
+          "field": "raw.Global",
+          "value": "Her skal du ved hjelp av ditt våkne blikk for kompliserte sammenhenger fjerne så mange firkanter som mulig. Reglene er enkle, men oppgaven er ikke lett."
         }
       ]
     },
@@ -297,7 +351,7 @@
       "id": "description:cpu-z:1.10:nb-NO",
       "subject_id": "release:cpu-z:1.10",
       "language": "nb-NO",
-      "text": "CPU-Z 1.10 viser informasjon om prosessoren og maskinvaren. Versjonen er bekreftet i programmets rapporttekst og i den identiske programfilen inne i ZIP-pakken.",
+      "text": "Dette programmet forteller deg alt om CPU-en din. Du kan se modell, revisjon, frekvens, ramtype, om den er overklokket samt få mange andre nyttige eller interessante opplysninger om hjertet i datamaskinen.",
       "status": "curated",
       "evidence": [
         {
@@ -349,6 +403,15 @@
             "text": "Cpu-Z version <b>1.10</b>",
             "sha256": "443987a85fafd81e9ee7a48793ae6e8f28f9051f0d48c6d9bca630de394afc3e"
           }
+        },
+        {
+          "kind": "observed",
+          "source_ref": {
+            "manifest": "sha256:ae29b1d2976ee7c7439b2e12fe18b774d1d57e77c9a20bc3567d2e5079257281",
+            "entry": "K23"
+          },
+          "field": "raw.Global",
+          "value": "Dette programmet forteller deg alt om CPU-en din. Du kan se modell, revisjon, frekvens, ramtype, om den er overklokket samt få mange andre nyttige eller interessante opplysninger om hjertet i datamaskinen."
         }
       ]
     },
@@ -358,7 +421,7 @@
       "id": "description:digitalkameraskolen:unknown:nb-NO",
       "subject_id": "release:digitalkameraskolen:unknown",
       "language": "nb-NO",
-      "text": "PDF-kurs om digital fotografering og bruk av digitalkamera.",
+      "text": "Hvis du har et digitalkamera, eller du overveier å kjøpe et, får du tips om hvordan du bruker det riktig.",
       "status": "curated",
       "evidence": [
         {
@@ -391,6 +454,15 @@
             "sha256": "65381c166a71a952d6d8f3f121e23c920b22325b98faa0b7cfa3aeef6af93f0a",
             "summary": "Reviewed PDF opening page; confirms the named course or guide."
           }
+        },
+        {
+          "kind": "observed",
+          "source_ref": {
+            "manifest": "sha256:ae29b1d2976ee7c7439b2e12fe18b774d1d57e77c9a20bc3567d2e5079257281",
+            "entry": "K25"
+          },
+          "field": "raw.Global",
+          "value": "Hvis du har et digitalkamera, eller du overveier å kjøpe et, får du tips om hvordan du bruker det riktig."
         }
       ]
     },
@@ -400,7 +472,7 @@
       "id": "description:docucom-pdf-driver:unknown:nb-NO",
       "subject_id": "release:docucom-pdf-driver:unknown",
       "language": "nb-NO",
-      "text": "Skriverdriver for å lage PDF-dokumenter. K-CD-teksten oppgir 4.61; produktversjonen er foreløpig ikke bekreftet uavhengig.",
+      "text": "Med DocuCom PDF Driver 4.61 kan du opprette dine egne PDF-dokumenter. PDF er et filformat som kan åpnes og leses på andre datamaskiner, uansett om operativsystemet er Windows eller Mac OS.",
       "status": "curated",
       "evidence": [
         {
@@ -433,6 +505,15 @@
             "sha256": "441fe3426f68cf974b178f60718b72bf4710af7b356039ee87bf2479e39fd88f",
             "summary": "AppName=DocuCom PDF Driver; installer version is not the product version."
           }
+        },
+        {
+          "kind": "observed",
+          "source_ref": {
+            "manifest": "sha256:ae29b1d2976ee7c7439b2e12fe18b774d1d57e77c9a20bc3567d2e5079257281",
+            "entry": "K16"
+          },
+          "field": "raw.Global",
+          "value": "Med DocuCom PDF Driver 4.61 kan du opprette dine egne PDF-dokumenter. PDF er et filformat som kan åpnes og leses på andre datamaskiner, uansett om operativsystemet er Windows eller Mac OS."
         }
       ]
     },
@@ -442,7 +523,7 @@
       "id": "description:dr-goo:unknown:nb-NO",
       "subject_id": "release:dr-goo:unknown",
       "language": "nb-NO",
-      "text": "Plattformspill med strategiske elementer, bevart med installasjonsfiler og spilldata.",
+      "text": "Nå skal du redde liv. I dette lille plattformspillet må frosken Dr. Goo finne de fem medisinveskene som kan redde lille Johnny. Pass på! Tiden er kostbar, og den går.",
       "status": "curated",
       "evidence": [
         {
@@ -475,6 +556,15 @@
             "sha256": "2eaa2703895e17480fe243b08aefbcf7db73e9a7d81ad61c6f6529b05fae1b31",
             "summary": "Describes the product as a strategy platformer."
           }
+        },
+        {
+          "kind": "observed",
+          "source_ref": {
+            "manifest": "sha256:ae29b1d2976ee7c7439b2e12fe18b774d1d57e77c9a20bc3567d2e5079257281",
+            "entry": "K7"
+          },
+          "field": "raw.Global",
+          "value": "Nå skal du redde liv. I dette lille plattformspillet må frosken Dr. Goo finne de fem medisinveskene som kan redde lille Johnny. Pass på! Tiden er kostbar, og den går."
         }
       ]
     },
@@ -484,7 +574,7 @@
       "id": "description:fire-fighter:unknown:nb-NO",
       "subject_id": "release:fire-fighter:unknown",
       "language": "nb-NO",
-      "text": "Spill med brannslokking som tema, distribuert som Fire Fighter på K-CD-en.",
+      "text": "Et artig og enkelt spill for hele familien. Du skal styre den lille brannmannen rundt i skogen før alle trærne og husene brenner ned, eller tiden utløper.",
       "status": "curated",
       "evidence": [
         {
@@ -504,6 +594,15 @@
           },
           "field": "normalized.description",
           "value": "Et artig og enkelt spill for hele familien. Du skal styre den lille brannmannen rundt i skogen før alle trærne og husene brenner ned, eller tiden utløper."
+        },
+        {
+          "kind": "observed",
+          "source_ref": {
+            "manifest": "sha256:ae29b1d2976ee7c7439b2e12fe18b774d1d57e77c9a20bc3567d2e5079257281",
+            "entry": "K9"
+          },
+          "field": "raw.Global",
+          "value": "Et artig og enkelt spill for hele familien. Du skal styre den lille brannmannen rundt i skogen før alle trærne og husene brenner ned, eller tiden utløper."
         }
       ]
     },
@@ -513,7 +612,7 @@
       "id": "description:floppy-image:unknown:nb-NO",
       "subject_id": "release:floppy-image:unknown",
       "language": "nb-NO",
-      "text": "Floppy Image lager sikkerhetskopier av disketter på harddisken. Navnet er bekreftet i installasjonspakkens oppsettstittel og interne programfilnavn; versjonen er fortsatt ukjent.",
+      "text": "Kulde, varme, trykk og fuktighet kan medføre at du mister verdifull informasjon. Nå kan du med et par klikk lage sikkerhetskopier av diskettene og trygt legge dem på harddisken.",
       "status": "curated",
       "evidence": [
         {
@@ -565,6 +664,15 @@
             "encoding": "ascii",
             "sha256": "e20b0caf9e8b175d4b9075876f0e184513ccf783988f3e0fe5fd068e7691ec5d"
           }
+        },
+        {
+          "kind": "observed",
+          "source_ref": {
+            "manifest": "sha256:ae29b1d2976ee7c7439b2e12fe18b774d1d57e77c9a20bc3567d2e5079257281",
+            "entry": "K10"
+          },
+          "field": "raw.Global",
+          "value": "Kulde, varme, trykk og fuktighet kan medføre at du mister verdifull informasjon. Nå kan du med et par klikk lage sikkerhetskopier av diskettene og trygt legge dem på harddisken."
         }
       ]
     },
@@ -574,7 +682,7 @@
       "id": "description:font-xplorer-lite:1.2.2:nb-NO",
       "subject_id": "release:font-xplorer-lite:1.2.2",
       "language": "nb-NO",
-      "text": "Font Xplorer Lite 1.2.2 fra Moon Software viser og administrerer installerte skrifter. Pakkens README beskriver Lite-utgaven som freeware og skiller den fra den betalte Font Xplorer-utgaven.",
+      "text": "Nå slipper du å prøve deg frem. Her får du en oversikt over samtlige skrifttyper som er installert på pc-en. Sammenlign dem, skriv ut oversiktene og les om de forskjellige skriftene.",
       "status": "curated",
       "evidence": [
         {
@@ -632,6 +740,15 @@
             "text": "END-USER LICENSE AGREEMENT FOR MOON SOFTWARE FREEWARE PRODUCTS",
             "sha256": "f95abcd122296f667d208d84a20e6536f961bc577c606fa03d9966ab96807297"
           }
+        },
+        {
+          "kind": "observed",
+          "source_ref": {
+            "manifest": "sha256:ae29b1d2976ee7c7439b2e12fe18b774d1d57e77c9a20bc3567d2e5079257281",
+            "entry": "K11"
+          },
+          "field": "raw.Global",
+          "value": "Nå slipper du å prøve deg frem. Her får du en oversikt over samtlige skrifttyper som er installert på pc-en. Sammenlign dem, skriv ut oversiktene og les om de forskjellige skriftene."
         }
       ]
     },
@@ -641,7 +758,7 @@
       "id": "description:hjemmesideskolen-ekspert:unknown:nb-NO",
       "subject_id": "release:hjemmesideskolen-ekspert:unknown",
       "language": "nb-NO",
-      "text": "PDF-kurs om HTML og hjemmesider med 1st Page 2000.",
+      "text": "Med hjemmesideekspertskolen lærer du å lage flotte og funksjonelle hjemmesider med programmet 1st Page.",
       "status": "curated",
       "evidence": [
         {
@@ -674,6 +791,15 @@
             "sha256": "f04ba13664e5a3ae065ad3cde0b50ef0f6129288f162d6e9daf019eb4f53de33",
             "summary": "Reviewed PDF opening page; confirms the named course or guide."
           }
+        },
+        {
+          "kind": "observed",
+          "source_ref": {
+            "manifest": "sha256:ae29b1d2976ee7c7439b2e12fe18b774d1d57e77c9a20bc3567d2e5079257281",
+            "entry": "K31"
+          },
+          "field": "raw.Global",
+          "value": "Med hjemmesideekspertskolen lærer du å lage flotte og funksjonelle hjemmesider med programmet 1st Page."
         }
       ]
     },
@@ -683,7 +809,7 @@
       "id": "description:ice-breaker:1.2.1:nb-NO",
       "subject_id": "release:ice-breaker:1.2.1",
       "language": "nb-NO",
-      "text": "Icebreaker er et spill der spilleren deler opp et isfjell for å fange pingviner. Installasjonspakken inneholder kildekode og endringslogg for 1.2.1; den ferdigbygde spillfilens versjon er ikke kontrollert separat.",
+      "text": "Et spill for de minste eller til en kort pause foran skjermen. Bruk musen og sperr veien for pingvinene slik at du gjør isfjellet deres så lite som mulig.",
       "status": "curated",
       "evidence": [
         {
@@ -735,6 +861,15 @@
             "text": "Version:\t1.2.1",
             "sha256": "420fb692a9bdcdedb50a59c4f095aaf9f3ad44367dffd7d2a9c2dcb5c7ff7945"
           }
+        },
+        {
+          "kind": "observed",
+          "source_ref": {
+            "manifest": "sha256:ae29b1d2976ee7c7439b2e12fe18b774d1d57e77c9a20bc3567d2e5079257281",
+            "entry": "K12"
+          },
+          "field": "raw.Global",
+          "value": "Et spill for de minste eller til en kort pause foran skjermen. Bruk musen og sperr veien for pingvinene slik at du gjør isfjellet deres så lite som mulig."
         }
       ]
     },
@@ -744,7 +879,7 @@
       "id": "description:kfa-arsregister:unknown:nb-NO",
       "subject_id": "release:kfa-arsregister:unknown",
       "language": "nb-NO",
-      "text": "Komputer for alles årsregister gir oversikt over artikler og programmer. Installasjonspakken navngir registeret og inneholder en referanse til den norske hjelpefilen. Nøyaktig utgave er ikke bekreftet.",
+      "text": "Med Komputer for alles komplette årsregister kan du finne frem til samtlige artikler og programmer i bladet og på KCD-en.",
       "status": "curated",
       "evidence": [
         {
@@ -796,6 +931,15 @@
             "encoding": "ascii",
             "sha256": "0417bf766c7e27b9adbf886218c6000e4de8af8949473528cf490861fca39bea"
           }
+        },
+        {
+          "kind": "observed",
+          "source_ref": {
+            "manifest": "sha256:ae29b1d2976ee7c7439b2e12fe18b774d1d57e77c9a20bc3567d2e5079257281",
+            "entry": "K26"
+          },
+          "field": "raw.Global",
+          "value": "Med Komputer for alles komplette årsregister kan du finne frem til samtlige artikler og programmer i bladet og på KCD-en."
         }
       ]
     },
@@ -805,7 +949,7 @@
       "id": "description:larabie-fonts-kcd15-2001:unknown:nb-NO",
       "subject_id": "release:larabie-fonts-kcd15-2001:unknown",
       "language": "nb-NO",
-      "text": "Skriftpakke fra Larabie Fonts. Medfølgende tekst beskriver skriftene som freeware.",
+      "text": "Disse to skriftene kan fritt installeres og brukes i alle dokumentene dine.",
       "status": "curated",
       "evidence": [
         {
@@ -838,6 +982,15 @@
             "sha256": "3a0f8be398b661c3a5c8765ef81249d47f2146408adcbe8f2f82264b40943b81",
             "summary": "Identifies Larabie Fonts and describes the enclosed fonts as freeware."
           }
+        },
+        {
+          "kind": "observed",
+          "source_ref": {
+            "manifest": "sha256:ae29b1d2976ee7c7439b2e12fe18b774d1d57e77c9a20bc3567d2e5079257281",
+            "entry": "K42"
+          },
+          "field": "raw.Global",
+          "value": "Disse to skriftene kan fritt installeres og brukes i alle dokumentene dine."
         }
       ]
     },
@@ -847,7 +1000,7 @@
       "id": "description:outlookskolen:unknown:nb-NO",
       "subject_id": "release:outlookskolen:unknown",
       "language": "nb-NO",
-      "text": "PDF-kurs om e-post og adressebok i Outlook Express.",
+      "text": "E-postprogrammet Outlook Express er både gratis og nyttig. Dette kurset gir deg en oversikt over programmets funksjoner og muligheter. Du lærer både å sende og motta e-post på pc-en.",
       "status": "curated",
       "evidence": [
         {
@@ -880,6 +1033,15 @@
             "sha256": "f51d7d7de0eaba2ccbde6d3ada62631b3c88c9deb46f6bede044f0959de43a2f",
             "summary": "Reviewed PDF opening page; confirms the named course or guide."
           }
+        },
+        {
+          "kind": "observed",
+          "source_ref": {
+            "manifest": "sha256:ae29b1d2976ee7c7439b2e12fe18b774d1d57e77c9a20bc3567d2e5079257281",
+            "entry": "K34"
+          },
+          "field": "raw.Global",
+          "value": "E-postprogrammet Outlook Express er både gratis og nyttig. Dette kurset gir deg en oversikt over programmets funksjoner og muligheter. Du lærer både å sende og motta e-post på pc-en."
         }
       ]
     },
@@ -889,7 +1051,7 @@
       "id": "description:panorama-factory:2.3:nb-NO",
       "subject_id": "release:panorama-factory:2.3",
       "language": "nb-NO",
-      "text": "Syr sammen fotografier til panoramabilder. Standard Edition 2.3 er beskrevet som shareware med 30 dagers evaluering.",
+      "text": "Klipp sammen feriebildene til flotte panoramaer med programmet Panorama Factory. De ferdige bildene kan lagres i flere bildeformater.",
       "status": "curated",
       "evidence": [
         {
@@ -922,6 +1084,15 @@
             "sha256": "a2cd9d5f8e412429b14656d5d1f1dc2b8992eedcb0043f5158a95527d2b39e69",
             "summary": "The Panorama Factory V2.3 Standard Edition; evaluation up to 30 days before registration."
           }
+        },
+        {
+          "kind": "observed",
+          "source_ref": {
+            "manifest": "sha256:ae29b1d2976ee7c7439b2e12fe18b774d1d57e77c9a20bc3567d2e5079257281",
+            "entry": "K17"
+          },
+          "field": "raw.Global",
+          "value": "Klipp sammen feriebildene til flotte panoramaer med programmet Panorama Factory. De ferdige bildene kan lagres i flere bildeformater."
         }
       ]
     },
@@ -931,7 +1102,7 @@
       "id": "description:pf-eksempelbilder:unknown:nb-NO",
       "subject_id": "release:pf-eksempelbilder:unknown",
       "language": "nb-NO",
-      "text": "Eksempelpakken til Panorama Factory inneholder interne filreferanser til Pan1.jpg–Pan7.jpg. K-CD-teksten beskriver motivene som Marselisborg Marina ved Århus. Installerens interne danske mappenavn beholdes som kildeevidens.",
+      "text": "Prøv eksemplene fra bladet. Alle bildene ligger på KCD-en. Bildene stammer fra Marselisborg Marina ved Århus en vakker sommerdag.",
       "status": "curated",
       "evidence": [
         {
@@ -1063,6 +1234,15 @@
             "encoding": "ascii",
             "sha256": "85bf7efe3b4b032d226df796d3ffd1dd42c393637b6e1be56f3fcd5e4c65f79b"
           }
+        },
+        {
+          "kind": "observed",
+          "source_ref": {
+            "manifest": "sha256:ae29b1d2976ee7c7439b2e12fe18b774d1d57e77c9a20bc3567d2e5079257281",
+            "entry": "K18"
+          },
+          "field": "raw.Global",
+          "value": "Prøv eksemplene fra bladet. Alle bildene ligger på KCD-en. Bildene stammer fra Marselisborg Marina ved Århus en vakker sommerdag."
         }
       ]
     },
@@ -1072,7 +1252,7 @@
       "id": "description:photo-objects-sampler:unknown:nb-NO",
       "subject_id": "release:photo-objects-sampler:unknown",
       "language": "nb-NO",
-      "text": "Hemera Photo-Objects Sampler er en samling fotografiske utklippsbilder med tilhørende bildeprogram. Produktnavnet er bekreftet i installasjonens oppsettfil; K-CD-teksten beskriver et utvalg på 101 bilder.",
+      "text": "Disse 101 flotte bildene er eksempler på en omfattende samling fotoclipart fra Hemera med 50 000 bilder.",
       "status": "curated",
       "evidence": [
         {
@@ -1108,6 +1288,15 @@
             "encoding": "ascii",
             "sha256": "5411d9003c474f11f700fa4f919909e6381a53cbb4c32e238878bd6b7da13f11"
           }
+        },
+        {
+          "kind": "observed",
+          "source_ref": {
+            "manifest": "sha256:ae29b1d2976ee7c7439b2e12fe18b774d1d57e77c9a20bc3567d2e5079257281",
+            "entry": "K40"
+          },
+          "field": "raw.Global",
+          "value": "Disse 101 flotte bildene er eksempler på en omfattende samling fotoclipart fra Hemera med 50 000 bilder."
         }
       ]
     },
@@ -1117,7 +1306,7 @@
       "id": "description:powerpoint-skolen:unknown:nb-NO",
       "subject_id": "release:powerpoint-skolen:unknown",
       "language": "nb-NO",
-      "text": "PDF-kurs om å lage presentasjoner i PowerPoint.",
+      "text": "Med PowerPoint-skolen oppdager du fort hvor lett det er å lage flotte animerte presentasjoner på pc-en.",
       "status": "curated",
       "evidence": [
         {
@@ -1150,6 +1339,15 @@
             "sha256": "ebe93778e98c7efb0258190693d852575ecc2e83ff7c98a617cfc67d4b57346c",
             "summary": "Reviewed PDF opening page; confirms the named course or guide."
           }
+        },
+        {
+          "kind": "observed",
+          "source_ref": {
+            "manifest": "sha256:ae29b1d2976ee7c7439b2e12fe18b774d1d57e77c9a20bc3567d2e5079257281",
+            "entry": "K27"
+          },
+          "field": "raw.Global",
+          "value": "Med PowerPoint-skolen oppdager du fort hvor lett det er å lage flotte animerte presentasjoner på pc-en."
         }
       ]
     },
@@ -1159,7 +1357,7 @@
       "id": "description:puzzlejig:unknown:nb-NO",
       "subject_id": "release:puzzlejig:unknown",
       "language": "nb-NO",
-      "text": "Lager puslespill av fotografier og andre bilder.",
+      "text": "Ta et av mesterverkene dine fra fotoalbumet og hent det inn i programmet. Trykk på en knapp, så blir bildet til et puslespill.",
       "status": "curated",
       "evidence": [
         {
@@ -1179,6 +1377,15 @@
           },
           "field": "normalized.description",
           "value": "Ta et av mesterverkene dine fra fotoalbumet og hent det inn i programmet. Trykk på en knapp, så blir bildet til et puslespill."
+        },
+        {
+          "kind": "observed",
+          "source_ref": {
+            "manifest": "sha256:ae29b1d2976ee7c7439b2e12fe18b774d1d57e77c9a20bc3567d2e5079257281",
+            "entry": "K19"
+          },
+          "field": "raw.Global",
+          "value": "Ta et av mesterverkene dine fra fotoalbumet og hent det inn i programmet. Trykk på en knapp, så blir bildet til et puslespill."
         }
       ]
     },
@@ -1188,7 +1395,7 @@
       "id": "description:red-faction:unknown:nb-NO",
       "subject_id": "release:red-faction:unknown",
       "language": "nb-NO",
-      "text": "Internasjonal demo av førstepersonsskytespillet Red Faction.",
+      "text": "Et 3D-skytespill med fantastisk grafikk og våpen tatt ut av den villeste science fiction-film. Før du får lov til å dundre løs på egen hånd, må du igjennom en lærerik treningstur.",
       "status": "curated",
       "evidence": [
         {
@@ -1221,6 +1428,15 @@
             "sha256": "b3f3acbb1d580a848b77976efa7c8389f6cf51c7f596dbf7e5d3e268f9233239",
             "summary": "AppName=Red Faction International Demo"
           }
+        },
+        {
+          "kind": "observed",
+          "source_ref": {
+            "manifest": "sha256:ae29b1d2976ee7c7439b2e12fe18b774d1d57e77c9a20bc3567d2e5079257281",
+            "entry": "K20"
+          },
+          "field": "raw.Global",
+          "value": "Et 3D-skytespill med fantastisk grafikk og våpen tatt ut av den villeste science fiction-film. Før du får lov til å dundre løs på egen hånd, må du igjennom en lærerik treningstur."
         }
       ]
     },
@@ -1234,6 +1450,15 @@
             "manifest": "sha256:ae29b1d2976ee7c7439b2e12fe18b774d1d57e77c9a20bc3567d2e5079257281"
           },
           "value": "Programmet som det arbeides med i ekspert-hjemmesideskolen. Forstå kodespråket HTML. Bygg hjemmesider helt fra bunnen av, eller benytt de innebygde malene i programmet."
+        },
+        {
+          "kind": "observed",
+          "source_ref": {
+            "entry": "K30",
+            "manifest": "sha256:ae29b1d2976ee7c7439b2e12fe18b774d1d57e77c9a20bc3567d2e5079257281"
+          },
+          "field": "raw.Global",
+          "value": "Programmet som det arbeides med i ekspert-hjemmesideskolen. Forstå kodespråket HTML. Bygg hjemmesider helt fra bunnen av, eller benytt de innebygde malene i programmet."
         }
       ],
       "id": "description:release:1st-page:2000:nb-NO",
@@ -1241,7 +1466,7 @@
       "schema": "bootdisk-catalog-0.1",
       "status": "curated",
       "subject_id": "release:1st-page:2000",
-      "text": "1st Page 2000 er et HTML-redigeringsprogram for å bygge hjemmesider fra bunnen av eller med innebygde maler.",
+      "text": "Programmet som det arbeides med i ekspert-hjemmesideskolen. Forstå kodespråket HTML. Bygg hjemmesider helt fra bunnen av, eller benytt de innebygde malene i programmet.",
       "type": "description"
     },
     {
@@ -1254,6 +1479,15 @@
             "manifest": "sha256:ae29b1d2976ee7c7439b2e12fe18b774d1d57e77c9a20bc3567d2e5079257281"
           },
           "value": "Acrobat Reader brukes til å lese elektroniske dokumenter på skjermen. Bruk det f.eks. til å lese veiledningene til programmene på denne siden."
+        },
+        {
+          "kind": "observed",
+          "source_ref": {
+            "entry": "K24",
+            "manifest": "sha256:ae29b1d2976ee7c7439b2e12fe18b774d1d57e77c9a20bc3567d2e5079257281"
+          },
+          "field": "raw.Global",
+          "value": "Acrobat Reader brukes til å lese elektroniske dokumenter på skjermen. Bruk det f.eks. til å lese veiledningene til programmene på denne siden."
         }
       ],
       "id": "description:release:acrobat-reader:5.0:nb-NO",
@@ -1261,7 +1495,7 @@
       "schema": "bootdisk-catalog-0.1",
       "status": "curated",
       "subject_id": "release:acrobat-reader:5.0",
-      "text": "Acrobat Reader 5.0 brukes til å lese elektroniske dokumenter, blant annet programveiledningene på K-CD-en.",
+      "text": "Acrobat Reader brukes til å lese elektroniske dokumenter på skjermen. Bruk det f.eks. til å lese veiledningene til programmene på denne siden.",
       "type": "description"
     },
     {
@@ -1274,6 +1508,15 @@
             "manifest": "sha256:ae29b1d2976ee7c7439b2e12fe18b774d1d57e77c9a20bc3567d2e5079257281"
           },
           "value": "Med Komputer for alle får du gratis virusbeskyttelse. AVG 6.0 gir mulighet for å beskytte datamaskinen mot alle kjente og ukjente virus."
+        },
+        {
+          "kind": "observed",
+          "source_ref": {
+            "entry": "K35",
+            "manifest": "sha256:ae29b1d2976ee7c7439b2e12fe18b774d1d57e77c9a20bc3567d2e5079257281"
+          },
+          "field": "raw.Global",
+          "value": "Med Komputer for alle får du gratis virusbeskyttelse. AVG 6.0 gir mulighet for å beskytte datamaskinen mot alle kjente og ukjente virus."
         }
       ],
       "id": "description:release:avg-antivirus:6.0:nb-NO",
@@ -1281,7 +1524,7 @@
       "schema": "bootdisk-catalog-0.1",
       "status": "curated",
       "subject_id": "release:avg-antivirus:6.0",
-      "text": "AVG Antivirus 6.0 er antivirusprogrammet som ble distribuert som K35 under navnet AVG Antivirus Pro.",
+      "text": "Med Komputer for alle får du gratis virusbeskyttelse. AVG 6.0 gir mulighet for å beskytte datamaskinen mot alle kjente og ukjente virus.",
       "type": "description"
     },
     {
@@ -1294,6 +1537,15 @@
             "manifest": "sha256:ae29b1d2976ee7c7439b2e12fe18b774d1d57e77c9a20bc3567d2e5079257281"
           },
           "value": "Her blir tingene snudd på hodet. En bevæpnet, humoristisk og veltalende hjort går på jakt etter skytegale jegere. I dette 3D-skytespillet styrer du hjorten rundt i de store skogene."
+        },
+        {
+          "kind": "observed",
+          "source_ref": {
+            "entry": "K8",
+            "manifest": "sha256:ae29b1d2976ee7c7439b2e12fe18b774d1d57e77c9a20bc3567d2e5079257281"
+          },
+          "field": "raw.Global",
+          "value": "Her blir tingene snudd på hodet. En bevæpnet, humoristisk og veltalende hjort går på jakt etter skytegale jegere. I dette 3D-skytespillet styrer du hjorten rundt i de store skogene."
         }
       ],
       "id": "description:release:deer-avenger:4:nb-NO",
@@ -1301,7 +1553,7 @@
       "schema": "bootdisk-catalog-0.1",
       "status": "curated",
       "subject_id": "release:deer-avenger:4",
-      "text": "Deer Avenger 4 er et humoristisk 3D-skytespill der en bevæpnet hjort jakter på jegere. K-CD-en inneholder en demo.",
+      "text": "Her blir tingene snudd på hodet. En bevæpnet, humoristisk og veltalende hjort går på jakt etter skytegale jegere. I dette 3D-skytespillet styrer du hjorten rundt i de store skogene.",
       "type": "description"
     },
     {
@@ -1314,6 +1566,15 @@
             "manifest": "sha256:ae29b1d2976ee7c7439b2e12fe18b774d1d57e77c9a20bc3567d2e5079257281"
           },
           "value": "Når du skal surfe på internett, trenger du et godt nettleserprogram. Det mest kjente er Internet Explorer, som du finner den nyeste utgaven av her."
+        },
+        {
+          "kind": "observed",
+          "source_ref": {
+            "entry": "K29",
+            "manifest": "sha256:ae29b1d2976ee7c7439b2e12fe18b774d1d57e77c9a20bc3567d2e5079257281"
+          },
+          "field": "raw.Global",
+          "value": "Når du skal surfe på internett, trenger du et godt nettleserprogram. Det mest kjente er Internet Explorer, som du finner den nyeste utgaven av her."
         }
       ],
       "id": "description:release:internet-explorer:5.5:nb-NO",
@@ -1321,7 +1582,7 @@
       "schema": "bootdisk-catalog-0.1",
       "status": "curated",
       "subject_id": "release:internet-explorer:5.5",
-      "text": "Internet Explorer 5.5 er nettleseren som ble distribuert som program K29 på K-CD 15/2001.",
+      "text": "Når du skal surfe på internett, trenger du et godt nettleserprogram. Det mest kjente er Internet Explorer, som du finner den nyeste utgaven av her.",
       "type": "description"
     },
     {
@@ -1334,6 +1595,15 @@
             "manifest": "sha256:ae29b1d2976ee7c7439b2e12fe18b774d1d57e77c9a20bc3567d2e5079257281"
           },
           "value": "Du skal ta kontroll over et kompani store MechWarriors som blir styrt av modige piloter. Her får du en stor demo av MechCommander 2."
+        },
+        {
+          "kind": "observed",
+          "source_ref": {
+            "entry": "K13",
+            "manifest": "sha256:ae29b1d2976ee7c7439b2e12fe18b774d1d57e77c9a20bc3567d2e5079257281"
+          },
+          "field": "raw.Global",
+          "value": "Du skal ta kontroll over et kompani store MechWarriors som blir styrt av modige piloter. Her får du en stor demo av MechCommander 2."
         }
       ],
       "id": "description:release:mechcommander:2:nb-NO",
@@ -1341,7 +1611,7 @@
       "schema": "bootdisk-catalog-0.1",
       "status": "curated",
       "subject_id": "release:mechcommander:2",
-      "text": "MechCommander 2 lar spilleren lede en avdeling MechWarriors. K-CD-en inneholder en demo av spillet.",
+      "text": "Du skal ta kontroll over et kompani store MechWarriors som blir styrt av modige piloter. Her får du en stor demo av MechCommander 2.",
       "type": "description"
     },
     {
@@ -1367,6 +1637,15 @@
             "sha256": "800d708f92f4d29bc68925a61dcffd8789f49de26860a73737f21f707140d8d6",
             "summary": "Mutant Xpiders by Trevor Lawford, Version 1.5, July 2000."
           }
+        },
+        {
+          "kind": "observed",
+          "source_ref": {
+            "entry": "K15",
+            "manifest": "sha256:ae29b1d2976ee7c7439b2e12fe18b774d1d57e77c9a20bc3567d2e5079257281"
+          },
+          "field": "raw.Global",
+          "value": "Spillet er en variant over Spaceinvaders. Her er det imidlertid ikke fiendtlige romskip, men grønne, giftige edderkopper som skal skytes ned fra nettet sitt."
         }
       ],
       "id": "description:release:mutant-xpiders:1.5:nb-NO",
@@ -1374,7 +1653,7 @@
       "schema": "bootdisk-catalog-0.1",
       "status": "curated",
       "subject_id": "release:mutant-xpiders:1.5",
-      "text": "Mutant Xpiders 1.5 er et arkadespill der spilleren skyter edderkopper. Versjonen er bekreftet i den medfølgende README-filen.",
+      "text": "Spillet er en variant over Spaceinvaders. Her er det imidlertid ikke fiendtlige romskip, men grønne, giftige edderkopper som skal skytes ned fra nettet sitt.",
       "type": "description"
     },
     {
@@ -1387,6 +1666,15 @@
             "manifest": "sha256:ae29b1d2976ee7c7439b2e12fe18b774d1d57e77c9a20bc3567d2e5079257281"
           },
           "value": "Nå skal du en tur på skytebanen. Du må være både rask og nøyaktig med musen. Du skal treffe virvlende skyteskiver og ting og tang som flyr gjennom luften."
+        },
+        {
+          "kind": "observed",
+          "source_ref": {
+            "entry": "K22",
+            "manifest": "sha256:ae29b1d2976ee7c7439b2e12fe18b774d1d57e77c9a20bc3567d2e5079257281"
+          },
+          "field": "raw.Global",
+          "value": "Nå skal du en tur på skytebanen. Du må være både rask og nøyaktig med musen. Du skal treffe virvlende skyteskiver og ting og tang som flyr gjennom luften."
         }
       ],
       "id": "description:release:shoot-and-relax:unknown:nb-NO",
@@ -1394,7 +1682,7 @@
       "schema": "bootdisk-catalog-0.1",
       "status": "curated",
       "subject_id": "release:shoot-and-relax:unknown",
-      "text": "Shoot & Relax er et skytebanespill der spilleren bruker musen til å treffe bevegelige skiver og gjenstander. Versjonen på K-CD-en er foreløpig ukjent.",
+      "text": "Nå skal du en tur på skytebanen. Du må være både rask og nøyaktig med musen. Du skal treffe virvlende skyteskiver og ting og tang som flyr gjennom luften.",
       "type": "description"
     },
     {
@@ -1407,6 +1695,15 @@
             "manifest": "sha256:ae29b1d2976ee7c7439b2e12fe18b774d1d57e77c9a20bc3567d2e5079257281"
           },
           "value": "WinAmp 2.76"
+        },
+        {
+          "kind": "observed",
+          "source_ref": {
+            "entry": "K37",
+            "manifest": "sha256:ae29b1d2976ee7c7439b2e12fe18b774d1d57e77c9a20bc3567d2e5079257281"
+          },
+          "field": "raw.Global",
+          "value": "Med WinAmp kan du spille musikk-cd-er og mp3-filer."
         }
       ],
       "id": "description:release:winamp:2.76:nb-NO",
@@ -1414,7 +1711,7 @@
       "schema": "bootdisk-catalog-0.1",
       "status": "curated",
       "subject_id": "release:winamp:2.76",
-      "text": "Winamp 2.76 er bevart på K-CD 15/2001 som program K37.",
+      "text": "Med WinAmp kan du spille musikk-cd-er og mp3-filer.",
       "type": "description"
     },
     {
@@ -1427,6 +1724,15 @@
             "manifest": "sha256:ae29b1d2976ee7c7439b2e12fe18b774d1d57e77c9a20bc3567d2e5079257281"
           },
           "value": "Det er en fordel å kunne pakke filer som skal lagres eller sendes. Bruk WinZip når du vil pakke filene, slik at de tar mindre plass."
+        },
+        {
+          "kind": "observed",
+          "source_ref": {
+            "entry": "K38",
+            "manifest": "sha256:ae29b1d2976ee7c7439b2e12fe18b774d1d57e77c9a20bc3567d2e5079257281"
+          },
+          "field": "raw.Global",
+          "value": "Det er en fordel å kunne pakke filer som skal lagres eller sendes. Bruk WinZip når du vil pakke filene, slik at de tar mindre plass."
         }
       ],
       "id": "description:release:winzip:8.0:nb-NO",
@@ -1434,7 +1740,7 @@
       "schema": "bootdisk-catalog-0.1",
       "status": "curated",
       "subject_id": "release:winzip:8.0",
-      "text": "WinZip 8.0 brukes til å pakke filer slik at de tar mindre plass ved lagring eller sending.",
+      "text": "Det er en fordel å kunne pakke filer som skal lagres eller sendes. Bruk WinZip når du vil pakke filene, slik at de tar mindre plass.",
       "type": "description"
     },
     {
@@ -1447,6 +1753,15 @@
             "manifest": "sha256:ae29b1d2976ee7c7439b2e12fe18b774d1d57e77c9a20bc3567d2e5079257281"
           },
           "value": "Hvis du har mange bilder på datamaskinen, kan du med fordel bruke XnView til å sortere og finne akkurat de bildene du har bruk for."
+        },
+        {
+          "kind": "observed",
+          "source_ref": {
+            "entry": "K39",
+            "manifest": "sha256:ae29b1d2976ee7c7439b2e12fe18b774d1d57e77c9a20bc3567d2e5079257281"
+          },
+          "field": "raw.Global",
+          "value": "Hvis du har mange bilder på datamaskinen, kan du med fordel bruke XnView til å sortere og finne akkurat de bildene du har bruk for."
         }
       ],
       "id": "description:release:xnview:1.21:nb-NO",
@@ -1454,7 +1769,7 @@
       "schema": "bootdisk-catalog-0.1",
       "status": "curated",
       "subject_id": "release:xnview:1.21",
-      "text": "XnView 1.21 brukes til å sortere og finne bilder på datamaskinen.",
+      "text": "Hvis du har mange bilder på datamaskinen, kan du med fordel bruke XnView til å sortere og finne akkurat de bildene du har bruk for.",
       "type": "description"
     },
     {
@@ -1463,7 +1778,7 @@
       "id": "description:resize-browser:unknown:nb-NO",
       "subject_id": "release:resize-browser:unknown",
       "language": "nb-NO",
-      "text": "RJL Software-verktøy som endrer nettleservinduets størrelse og plassering.",
+      "text": "Med dette lille programmet sørger du for at nettleseren alltid åpner vinduet sitt i den samme størrelsen. Du kan stille inn Resize Browser slik at det plasserer vinduet på det samme stedet på skjermen. Hver gang.",
       "status": "curated",
       "evidence": [
         {
@@ -1496,6 +1811,15 @@
             "sha256": "8d4cca39aaceba8f3ad398430dde87eea8c44558d4f800898e158ce5178635d6",
             "summary": "Identifies Browser Resize by RJL Software."
           }
+        },
+        {
+          "kind": "observed",
+          "source_ref": {
+            "manifest": "sha256:ae29b1d2976ee7c7439b2e12fe18b774d1d57e77c9a20bc3567d2e5079257281",
+            "entry": "K21"
+          },
+          "field": "raw.Global",
+          "value": "Med dette lille programmet sørger du for at nettleseren alltid åpner vinduet sitt i den samme størrelsen. Du kan stille inn Resize Browser slik at det plasserer vinduet på det samme stedet på skjermen. Hver gang."
         }
       ]
     },
@@ -1505,7 +1829,7 @@
       "id": "description:word-ekspert-skolen:unknown:nb-NO",
       "subject_id": "release:word-ekspert-skolen:unknown",
       "language": "nb-NO",
-      "text": "PDF-kurs om avanserte funksjoner, maler og automatisering i Word.",
+      "text": "Word har en rekke avanserte funksjoner. Vi viser deg hvordan du kan gjøre tekstbehandlingen både enklere og bedre.",
       "status": "curated",
       "evidence": [
         {
@@ -1538,6 +1862,15 @@
             "sha256": "3d1b7bf8295e21f5c2f9a7073d0554b723c28840f74dbd7c62ca3fdaa8f0f0fb",
             "summary": "Reviewed PDF opening page; confirms the named course or guide."
           }
+        },
+        {
+          "kind": "observed",
+          "source_ref": {
+            "manifest": "sha256:ae29b1d2976ee7c7439b2e12fe18b774d1d57e77c9a20bc3567d2e5079257281",
+            "entry": "K33"
+          },
+          "field": "raw.Global",
+          "value": "Word har en rekke avanserte funksjoner. Vi viser deg hvordan du kan gjøre tekstbehandlingen både enklere og bedre."
         }
       ]
     },
@@ -1547,7 +1880,7 @@
       "id": "description:wordskolen:unknown:nb-NO",
       "subject_id": "release:wordskolen:unknown",
       "language": "nb-NO",
-      "text": "PDF-kurs med norske veiledninger i tekstbehandling med Word.",
+      "text": "Det kjente tekstbehandlingsprogrammet Word inneholder mange funksjoner. I dette kurset kan du lære hvordan du bruker programmet.",
       "status": "curated",
       "evidence": [
         {
@@ -1580,6 +1913,15 @@
             "sha256": "a8dd7844aa7338e1c9b432c118b3cf86150d02c9d0b8bb418fe0da8f72723979",
             "summary": "Reviewed PDF opening page; confirms the named course or guide."
           }
+        },
+        {
+          "kind": "observed",
+          "source_ref": {
+            "manifest": "sha256:ae29b1d2976ee7c7439b2e12fe18b774d1d57e77c9a20bc3567d2e5079257281",
+            "entry": "K32"
+          },
+          "field": "raw.Global",
+          "value": "Det kjente tekstbehandlingsprogrammet Word inneholder mange funksjoner. I dette kurset kan du lære hvordan du bruker programmet."
         }
       ]
     },
@@ -1589,7 +1931,7 @@
       "id": "description:workpace:unknown:nb-NO",
       "subject_id": "release:workpace:unknown",
       "language": "nb-NO",
-      "text": "Program med påminnelser om pauser ved datamaskinen. Pakken inneholder både Windows-filer og dokumentasjon for DOS-utgaven.",
+      "text": "Programmet WorkPace hjelper deg med å forebygge eller lindre museskader, ømme muskler og kroniske lidelser.",
       "status": "curated",
       "evidence": [
         {
@@ -1622,6 +1964,15 @@
             "sha256": "c0f90db25f62f53364eb3ec0b76b01647056051b4fb8213873305990097524e6",
             "summary": "This README describes WorkPace for DOS; it does not establish the Windows release version."
           }
+        },
+        {
+          "kind": "observed",
+          "source_ref": {
+            "manifest": "sha256:ae29b1d2976ee7c7439b2e12fe18b774d1d57e77c9a20bc3567d2e5079257281",
+            "entry": "K14"
+          },
+          "field": "raw.Global",
+          "value": "Programmet WorkPace hjelper deg med å forebygge eller lindre museskader, ømme muskler og kroniske lidelser."
         }
       ]
     },

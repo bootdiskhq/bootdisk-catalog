@@ -95,3 +95,27 @@ remain historical decisions until the curator explicitly changes or confirms the
 
 Tests cover migration preservation, wrong manifests, stale writes, approval,
 restart and exported evidence. Original media does not need to be remounted.
+
+## Original CD descriptions
+
+Descriptions reproduce the original CD `Global` text verbatim, falling back to the
+preserved normalized description only when raw metadata is unavailable. Spelling
+and punctuation are not rewritten. The curator shows the description read-only;
+server validation also rejects edits. Notes belong in the claim rationale.
+
+New workspaces apply this rule at initialization. To update existing workspaces:
+
+```sh
+python -m bootdisk_catalog.review WORKSPACE restore-descriptions MANIFEST
+```
+
+This explicitly authorized migration updates description text in the approved graph,
+accepted claim and draft, with original-text evidence, and adds per-entry history.
+It takes an exact `before-original-descriptions-*.json` backup first; previous drafts
+and accepted wording are also retained in migration events. It leaves other fields,
+queue state and prior history unchanged. Missing source text, shared descriptions,
+or the wrong manifest fail without writing. Re-running is a no-op. Revisions change,
+so reload a saved browser session after migration. An older undo that would restore
+pre-migration graph text is rejected by the existing graph-conflict check; the backup
+retains that earlier state. Export uses the restored original text. Public deployment
+remains a separate step.
