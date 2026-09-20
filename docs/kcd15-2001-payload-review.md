@@ -40,3 +40,25 @@ skips that test without media, while still checking the reference-bundle rebuild
 
 The source-directory completeness issue is unchanged: FirstPage/DATA1.CAB cannot
 be read on this host. This review does not claim a new full-disc ingest.
+
+## Additional format triage
+
+Static header inspection on 2026-09-20 matches the embedded-PAK layout documented
+by [ScummVM's Gentee reader](https://github.com/scummvm/scummvm/blob/master/common/compression/gentee_installer.cpp).
+The locator at byte 1008 gives DLL offset/compressed size/uncompressed size; the
+following PAK begins with an absolute end position equal to the file size:
+
+| Entry | DLL offset | Compressed size | Uncompressed size | PAK start | PAK EOF / file size |
+| --- | ---: | ---: | ---: | ---: | ---: |
+| K4 | 7680 | 25389 | 48640 | 33069 | 708345 |
+| K6 | 7680 | 28693 | 54272 | 36373 | 282231 |
+| K19 | 7680 | 27356 | 52224 | 35036 | 934468 |
+
+This identifies a concrete decoder candidate, not the packaged product/version.
+The ScummVM reader was inspected, not integrated or used to decode these files.
+Its GPL license requires consideration before code reuse. Retain all three
+provisional identities until decoded evidence supports stronger claims.
+
+The [remaining-work audit](kcd15-2001-remaining-work.md) lists every entry's open
+version/distribution fields and the [1.2 delivery gate](curation-next-step.md)
+turns these investigation steps into the planned curator workflow.
