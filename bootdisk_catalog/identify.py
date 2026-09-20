@@ -224,5 +224,84 @@ def main(argv: list[str] | None = None) -> int:
     return 0
 
 
+
+
+def apply_review_claims(records, entry):
+    """Build and validate a complete candidate graph without performing writes.
+
+    Used by the transactional review workspace; legacy CLI remains append-only.
+    IDs are resolved here, never by the frontend. Ambiguous shared edits fail.
+    """
+    from copy import deepcopy
+    from .catalog import LoadedRecord
+
+    result = {r['id']: deepcopy(r) for r in records}
+    claims = deepcopy(entry['draft']['claims'])
+    target = entry['source']['target']
+    target_field = target['kind'] + '_id'
+    matches = [r for r in result.values() if r['type'] == 'identification' and r.get(target_field) == target['id']]
+    if len(matches) != 1:
+        raise ValueError('Målet har flere eller ingen identitetstolkninger; krever egen gjennomgang.')
+    old = matches[0]
+    old_release = result[old['software_release_id']]
+    old_software = result[old_release['software_id']]
+    identity = claims['identity']['value']
+    software_id = identity['software_id']
+    if software_id is None:
+        # Reuse the existing identity for an unchanged name; new names get stable IDs.
+        software_id = old_software['id'] if identity['name'] == old_software['name'] else 'software:review-' + hashlib.sha256(identity['name'].encode()).hexdigest()
+    if identity['software_id'] is not None and software_id != old_software['id']:
+        raise ValueError('Bytte til en annen eksisterende identitet krever egen gjennomgang.')
+    software = deepcopy(result.get(software_id, dict(schema=SCHEMA, type='software', id=software_id, name=identity['name'])))
+    if software['name'] != identity['name']:
+        raise ValueError('Navnet samsvarer ikke med identiteten. Send en ny navnetolkning uten ID.')
+    if claims['content_kind']['assessment'] == 'accepted':
+        software['content_kind'] = claims['content_kind']['value']
+    shared = [r for r in result.values() if r['type'] == 'identification' and r['id'] != old['id']
+              and result[r['software_release_id']]['software_id'] == software_id]
+    if shared and software != result.get(software_id):
+        raise ValueError('Endringen ville påvirke andre kildeposter med samme programidentitet.')
+    if any(e['source_ref'].get('manifest') != entry['key']['manifest'] or e['source_ref'].get('entry') != entry['key']['entry'] for e in old['evidence']):
+        raise ValueError('Identiteten er delt mellom kildeposter og må gjennomgås separat.')
+    identity['software_id'] = software_id
+    version = claims['version']['value'] if claims['version']['assessment'] == 'accepted' else 'unknown'
+    release_id = old_release['id'] if software_id == old_software['id'] and version == old_release['version'] else 'release:review-' + hashlib.sha256((software_id + '\n' + version).encode()).hexdigest()
+    release = dict(schema=SCHEMA, type='software_release', id=release_id, software_id=software_id, version=version)
+    if release_id in result and result[release_id] != release:
+        raise ValueError('Utgivelsen har eksisterende metadata som krever egen gjennomgang.')
+    evidence = []
+    # Preserve previous observations as well as every explicitly selected source.
+    for e in old['evidence']:
+        if e not in evidence: evidence.append(deepcopy(e))
+    selected = {i for c in claims.values() for i in c['evidence_ids']}
+    for e in entry['evidence']:
+        if e['id'] in selected:
+            item = dict(kind='observed', source_ref=e['source_ref'], field=e['field'], value=e['observation'])
+            if item not in evidence: evidence.append(item)
+    ident = deepcopy(old)
+    ident.update(id=_identification_id(target['id'], release_id), software_release_id=release_id,
+                 status='curated' if claims['identity']['assessment'] == 'accepted' else 'interpreted', evidence=evidence,
+                 distribution_kind=claims['distribution_kind']['value'] if claims['distribution_kind']['assessment'] == 'accepted' else 'unknown')
+    prose = claims['description']
+    descriptions = [r for r in result.values() if r['type'] == 'description' and r['subject_id'] == release_id and r['language'] == 'nb-NO']
+    if len(descriptions) > 1:
+        raise ValueError('Flere beskrivelser krever separat gjennomgang.')
+    description = dict(schema=SCHEMA, type='description',
+                       id=descriptions[0]['id'] if descriptions else 'description:review-' + hashlib.sha256((release_id + '\nnb-NO').encode()).hexdigest(),
+                       subject_id=release_id, language='nb-NO', text=prose['value']['text'],
+                       status='curated' if prose['assessment'] == 'accepted' else 'draft', evidence=deepcopy(evidence))
+    if descriptions:
+        for e in descriptions[0]['evidence']:
+            if e not in description['evidence']: description['evidence'].append(deepcopy(e))
+    if descriptions and descriptions[0] != description and any(r['software_release_id'] == release_id for r in shared):
+        raise ValueError('Beskrivelsen er delt med andre kildeposter.')
+    del result[old['id']]
+    for r in (software, release, ident, description):
+        result[r['id']] = r
+    ordered = sorted(result.values(), key=lambda r: r['id'])
+    Catalog(LoadedRecord(r, Path('<review-candidate>')) for r in ordered)
+    return ordered, claims
+
+
 if __name__ == "__main__":
     raise SystemExit(main())

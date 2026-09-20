@@ -251,3 +251,9 @@ scope, validation, compatibility, and why an entry package includes editorial fi
 The [1.2.0 curator delivery gate](docs/curation-next-step.md) must pass before the
 next K-CD import. The [K-CD 15/2001 review audit](docs/kcd15-2001-remaining-work.md)
 records unresolved claims and media exceptions for all 39 entries.
+
+## Review backend development release
+
+Catalog `0.2.0-dev1` supplies the transactional review workspace for Bootdisk 1.2.
+See [setup, guarantees and remaining integration work](docs/review-workspace-dev1.md).
+The HTTP service and live browser adapter are still pending.

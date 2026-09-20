@@ -127,3 +127,14 @@ This interface is deliberately separate from the frozen public frontend 1.0 data
 contract. HTTP paths, service discovery, disk layout, event journal implementation,
 actor identity, migration and review-workspace backup are backend responsibilities.
 They do not block the fixture frontend; they do block integrated release acceptance.
+
+## Backend development notes (0.2.0-dev1)
+
+The Python workspace implements these operations; HTTP/browser wiring is pending.
+An additive nullable `defer_reason` on entries exposes the saved skip reason.
+Draft text fields may be empty during typing; nonempty values and review reasons
+are enforced on approval. A newly accepted or changed supported claim requires a
+reason linking it to the selected evidence (`validation_failed` otherwise).
+See [backend limits and setup](review-workspace-dev1.md), including conservative
+undo conflicts after subsequent graph changes. These details do not rename any
+adapter method or require new frontend-generated catalog IDs.

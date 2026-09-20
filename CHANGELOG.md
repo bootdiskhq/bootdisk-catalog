@@ -1,6 +1,14 @@
 # Changelog
 
-## Unreleased
+## 0.2.0-dev1 — backend foundation for Bootdisk 1.2
+
+- Isolated, atomic review workspace with durable drafts, queues and resume bookmarks.
+- Explicit approval through the Catalog writer, revision conflicts, idempotent retry and compensating undo.
+- Append-only decision history, full-workspace backup/restore and approved-only catalog export.
+- CLI/Python entry point; HTTP service and browser adapter are not implemented yet.
+- First bootstrap requires one existing identification and Norwegian release description per entry.
+
+## Earlier unreleased documentation
 
 - Hash-bound 39-entry review audit with unresolved identity, version and distribution fields.
 - Explicit 1.2.0 human-curation delivery gate before the next K-CD import.
