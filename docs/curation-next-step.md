@@ -77,3 +77,11 @@ launcher hashes versus whole-package identity; and the unreadable CAB.
 
 The [payload review](kcd15-2001-payload-review.md) records the current investigation.
 The JSON review snapshot is a planning input, not the future review-state schema.
+
+## Parallel implementation handoff
+
+[ADR-004](adr-004-local-curator-boundary.md) assigns frontend and service ownership.
+[ADR-005](adr-005-review-state-and-decisions.md) fixes the draft/decision semantics.
+The [v1 adapter contract](curator-contract-v1.md) and
+[real-entry fixtures](curator-fixtures-v1.json) let frontend work start independently.
+Claude's work order lives in bootdisk-web: `docs/claude-curator-work-order.md`.
