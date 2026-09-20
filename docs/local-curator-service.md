@@ -67,3 +67,31 @@ Next: independent ten-entry usability session with Stian; fuller inspector suppo
 shared-identity resolution and new-disc bootstrap remain follow-up work. The dev1
 conservative undo limit still applies. Approval never publishes to bootdisk.no;
 export and public release remain separate operations.
+
+## Source category and distribution evidence
+
+The workspace includes exact category labels from `normalized.categories`, the CD
+license (`raw.Licens`, falling back to the preserved normalized value), and the CD
+description. No category or license is automatically converted into a decision.
+For accepted content-kind and distribution claims, approval requires selected
+source evidence and a written rationale. A human must judge whether it actually
+supports the claim, including contradictions; validation cannot establish that from
+arbitrary source text. Freeware alone is not evidence of a full edition.
+
+Existing workspaces can be updated with:
+
+```sh
+python -m bootdisk_catalog.review WORKSPACE enrich-sources MANIFEST
+```
+
+Use the original manifest with its exact digest. The operation locks the workspace,
+creates `before-source-evidence-*.json`, adds observations and changes entry
+revisions. It does not change draft/accepted values, evidence selections, decisions,
+retry receipts, graph records or resume position. Repeat calls do nothing. Stale
+browser writes receive a conflict rather than overwriting work; reload after saved
+changes. Existing accepted classifications without rationale are visibly flagged
+for review and included in the open-fields queue, even on reviewed entries. They
+remain historical decisions until the curator explicitly changes or confirms them.
+
+Tests cover migration preservation, wrong manifests, stale writes, approval,
+restart and exported evidence. Original media does not need to be remounted.

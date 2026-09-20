@@ -10,7 +10,7 @@ from unittest.mock import patch
 from bootdisk_catalog.catalog import Catalog
 from bootdisk_catalog.curation_bundle import restore_bundle, export_bundle
 from bootdisk_catalog.import_ingest import import_manifest
-from bootdisk_catalog.review import ReviewWorkspace, ReviewError
+from bootdisk_catalog.review import ReviewWorkspace, ReviewError, refresh_issues, key_id
 
 ROOT = Path(__file__).resolve().parents[1]
 
@@ -42,6 +42,16 @@ class ReviewTests(unittest.TestCase):
         self.workspace = ReviewWorkspace(self.root / 'review')
         self.assertEqual(self.workspace.initialize(catalog, manifest), 39)
         self.key = dict(manifest=self.manifest, entry='K23')
+        # Transaction tests start with explicitly assessed fixture claims. Separate
+        # source-evidence tests below exercise the unreviewed inherited state.
+        state = self.workspace.read()
+        for entry in state['entries'].values():
+            for field in ('content_kind', 'distribution_kind'):
+                for claims in (entry['draft']['claims'], entry['accepted']['claims']):
+                    if claims[field]['assessment'] == 'accepted':
+                        claims[field]['reason'] = 'Testkurator har vurdert valgt kildebelegg for dette feltet.'
+            refresh_issues(entry)
+        self.workspace.write(state)
 
     def get(self, key=None):
         return self.workspace.call('getEntry', dict(key=key or self.key))
@@ -220,3 +230,62 @@ class ReviewTests(unittest.TestCase):
         self.workspace.call('approve', self.request())
         self.assertEqual(export_bundle(Catalog.load(self.catalog)), before)
         self.assert_error('validation_failed', lambda: self.workspace.initialize(self.catalog, ROOT / 'tests/fixtures/kcd15-2001-observations.json'))
+
+
+    def test_source_categories_license_and_no_automatic_edition(self):
+        fresh = ReviewWorkspace(self.root / 'fresh')
+        fresh.initialize(self.catalog, ROOT / 'tests/fixtures/kcd15-2001-observations.json')
+        game = fresh.call('getEntry', {'key': dict(self.key, entry='K13')})
+        self.assertIn(('normalized.categories', 'Spil'), [(e['field'], e['observation']) for e in game['evidence']])
+        self.assertTrue(any(e['field'] == 'normalized.description' and 'demo' in e['observation'] for e in game['evidence']))
+        self.assertEqual({i['field'] for i in game['issues'] if i['code'] == 'classification_review_required'}, {'content_kind', 'distribution_kind'})
+        with self.assertRaises(ReviewError):
+            fresh.call('approve', dict(key=game['key'], expected_revision=game['revision'], operation_id='blocked'))
+        freeware = fresh.call('getEntry', {'key': dict(self.key, entry='K24')})
+        self.assertTrue(any(e['field'] == 'raw.Licens' and e['observation'] == 'Freeware' for e in freeware['evidence']))
+        self.assertEqual(freeware['draft']['claims']['distribution_kind']['assessment'], 'unresolved')
+        for field in ('content_kind', 'distribution_kind'):
+            claim = game['draft']['claims'][field]
+            claim['reason'] = 'Spil støtter spilltypen.' if field == 'content_kind' else 'CD-omtalen sier uttrykkelig demo.'
+            source_field = 'normalized.categories' if field == 'content_kind' else 'normalized.description'
+            claim['evidence_ids'] = [e['id'] for e in game['evidence'] if e['field'] == source_field]
+        saved = fresh.call('saveDraft', dict(key=game['key'], expected_revision=game['revision'], operation_id='save', draft=game['draft']))
+        approved = fresh.call('approve', dict(key=game['key'], expected_revision=saved['entry']['revision'], operation_id='approve'))
+        restarted = ReviewWorkspace(fresh.root).call('getEntry', {'key': game['key']})
+        self.assertEqual(restarted['accepted'], approved['entry']['accepted'])
+        fresh.export_catalog(self.root / 'classified-export')
+        exported = Catalog.load(self.root / 'classified-export')
+        self.assertTrue(any(e['field'] == 'normalized.categories' for r in exported.records_of_type('identification') for e in r['evidence']))
+
+    def test_source_enrichment_preserves_user_work_and_rejects_stale_writes(self):
+        state = self.workspace.read()
+        # Simulate a pre-feature workspace containing saved user work and history.
+        self.workspace.call('approve', self.request('user-approve'))
+        self.workspace.call('setResume', {'key': self.key})
+        draft = self.get()['draft']
+        draft['claims']['description']['value']['text'] = 'Min bevarte kladd'
+        self.workspace.call('saveDraft', self.request('user-save', draft=draft))
+        state = self.workspace.read()
+        for e in state['entries'].values():
+            e.pop('classification_evidence_v1')
+            e['evidence'] = [v for v in e['evidence'] if v['field'] not in ('normalized.categories', 'raw.Licens')]
+        self.workspace.write(state)
+        before = deepcopy(state)
+        stale = self.request('stale', draft=draft)
+        manifest = ROOT / 'tests/fixtures/kcd15-2001-observations.json'
+        self.assertEqual(self.workspace.enrich_sources(manifest), {'updated': 39})
+        after = self.workspace.read()
+        for name in ('records', 'events', 'operations', 'resume'):
+            self.assertEqual(before[name], after[name])
+        for identity, old in before['entries'].items():
+            for name in ('draft', 'accepted', 'queue_state', 'undo', 'defer_reason'):
+                self.assertEqual(old[name], after['entries'][identity][name])
+        backup = next(self.workspace.root.glob('before-source-evidence-*.json'))
+        self.assertEqual(json.loads(backup.read_text()), before)
+        self.assert_error('revision_conflict', lambda: self.workspace.call('saveDraft', stale))
+        self.assertEqual(self.workspace.enrich_sources(manifest), {'updated': 0})
+        self.assertEqual(self.workspace.read(), after)
+        wrong = self.root / 'wrong.json'
+        wrong.write_text(manifest.read_text() + ' ')
+        self.assert_error('validation_failed', lambda: self.workspace.enrich_sources(wrong))
+        self.assertEqual(self.workspace.read(), after)
