@@ -81,6 +81,37 @@ category and an entry without category evidence: neither is automatically marked
 export, and existing user work survives migration. Deliver through the normal
 PR/test/review/green-CI merge workflow before the 1.2.0 release.
 
+## Release requirement: distribution evidence
+
+The same 1.2.0 release gate applies to distribution (demo, full, trial, update,
+unknown). Show the preserved CD statement that supports the assessment, not just
+an evidence ID or unrelated checked observations. This is planned work.
+
+The existing ingest parser preserves raw `Licens` as `normalized.license` and
+`Global` as `normalized.description`. The preserved K13 description explicitly
+calls MechCommander 2 a demo; other entries have Freeware/Shareware license values
+or no license value. Do not assume the CD supplies a definitive edition for every
+entry. Freeware/Shareware describe licensing and do not by themselves establish
+full/demo/trial distribution.
+
+- **Catalog:** expose original license statements and relevant CD description,
+  README or installer text as attributable evidence. Preserve original wording;
+  link the distribution assessment to the supporting observation and rationale.
+  Keep license and distribution as separate concepts. Missing or contradictory
+  evidence requires an explicit unresolved assessment rather than a guessed edition.
+- **Web:** display readable labels such as “Lisens oppgitt på CD-en: Freeware” and
+  the actual demo/trial/full statement beside distribution evidence choices.
+- **Ingest/Publish:** reuse preserved observations; only extend ingest if relevant
+  original information is missing. No publish change expected.
+- Audit inherited “Belagt” distribution claims with the same protection for user
+  drafts, decisions and history as the category-evidence requirement above.
+
+Acceptance: verify an explicit demo statement (K13), a Freeware/Shareware statement
+without decisive edition evidence, missing information and conflicting sources.
+No automatic promotion from a license label to full/demo/trial. Check readable
+provenance, selection, rationale, approval, restart/export and migration preservation.
+Deliver with the category-evidence work before 1.2.0 through PR/test/review/green CI.
+
 ## Acceptance session with Stian
 
 - Starting from the normal app, independently find and curate an unresolved entry;
