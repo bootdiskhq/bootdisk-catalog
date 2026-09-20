@@ -1,3 +1,5 @@
+> Historical 0.1 release boundary. Current development: [0.2.0-dev1 review backend](docs/review-workspace-dev1.md) for Bootdisk 1.2.
+
 # Bootdisk Catalog 0.1 release candidate
 
 The 0.1 release candidate is intentionally small. Its purpose is to provide a
