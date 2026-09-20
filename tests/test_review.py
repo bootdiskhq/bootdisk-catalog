@@ -46,6 +46,7 @@ class ReviewTests(unittest.TestCase):
         # source-evidence tests below exercise the unreviewed inherited state.
         state = self.workspace.read()
         for entry in state['entries'].values():
+            entry.pop('original_description_v1', None)  # Exercise legacy editable-description transaction contract.
             for field in ('content_kind', 'distribution_kind'):
                 for claims in (entry['draft']['claims'], entry['accepted']['claims']):
                     if claims[field]['assessment'] == 'accepted':
@@ -289,3 +290,33 @@ class ReviewTests(unittest.TestCase):
         wrong.write_text(manifest.read_text() + ' ')
         self.assert_error('validation_failed', lambda: self.workspace.enrich_sources(wrong))
         self.assertEqual(self.workspace.read(), after)
+
+
+    def test_original_description_migration_and_locked_text(self):
+        from bootdisk_catalog.review import validate_claims
+        draft = self.get()['draft']
+        draft['claims']['description']['value']['text'] = 'Tidligere omskrevet tekst'
+        self.workspace.call('saveDraft', self.request('old-prose', draft=draft))
+        before = self.workspace.read()
+        manifest = ROOT / 'tests/fixtures/kcd15-2001-observations.json'
+        self.assertEqual(self.workspace.restore_descriptions(manifest), {'updated': 39})
+        after = self.workspace.read()
+        for key, old in before['entries'].items():
+            new = after['entries'][key]
+            for field in ('identity', 'version', 'content_kind', 'distribution_kind'):
+                self.assertEqual(old['draft']['claims'][field], new['draft']['claims'][field])
+                self.assertEqual(old['accepted']['claims'][field], new['accepted']['claims'][field])
+            self.assertEqual(new['draft']['claims']['description']['value']['text'], new['source']['description'])
+            self.assertEqual(old['queue_state'], new['queue_state'])
+        self.assertEqual(json.loads(next(self.workspace.root.glob('before-original-descriptions-*.json')).read_text()), before)
+        self.assertEqual(self.workspace.restore_descriptions(manifest), {'updated': 0})
+        self.assertEqual(self.workspace.read(), after)
+        current = self.get()
+        self.assertEqual(current['history'][-1]['kind'], 'restore_description')
+        self.assertEqual(current['history'][-1]['previous_claims'], before['entries'][key_id(self.key)]['accepted']['claims'])
+        edited = deepcopy(current['draft'])
+        edited['claims']['description']['value']['text'] = 'Ny omskriving'
+        self.assert_error('validation_failed', lambda: validate_claims(edited, current))
+        self.workspace.export_catalog(self.root / 'original-export')
+        records = Catalog.load(self.root / 'original-export').records_of_type('description')
+        self.assertTrue(all(any(e['field'] == 'raw.Global' and e['value'] == r['text'] for e in r['evidence']) for r in records))

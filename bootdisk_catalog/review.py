@@ -79,6 +79,8 @@ def validate_claims(draft, entry, *, approving=False):
         if not valid or claim['assessment'] not in ('accepted', 'unresolved') or not isinstance(claim['reason'], str):
             errors[field] = 'Ugyldig verdi eller vurdering.'
             continue
+        if field == 'description' and entry.get('original_description_v1') and value != {'language': 'nb-NO', 'text': entry['source']['description']}:
+            errors[field] = 'Beskrivelsen skal være lik CD-omtalen. Bruk begrunnelse til egne notater.'
         refs = claim['evidence_ids']
         if not isinstance(refs, list) or any(not isinstance(i, str) or i not in evidence for i in refs):
             errors[field] = 'Kildebelegget finnes ikke på denne posten.'
@@ -130,6 +132,35 @@ def add_source_evidence(entry, source):
         if item not in entry['evidence']:
             entry['evidence'].append(item)
     entry['classification_evidence_v1'] = True
+
+
+def restore_source_description(entry, records, source):
+    text = source.get('raw', {}).get('Global', source['normalized'].get('description'))
+    if not isinstance(text, str) or not text.strip():
+        raise ReviewError('validation_failed', 'Kilden mangler originalomtale; krever separat gjennomgang.')
+    target = entry['source']['target']
+    ids = [r['software_release_id'] for r in records if r['type'] == 'identification'
+           and r.get(target['kind'] + '_id') == target['id']]
+    descriptions = [r for r in records if r['type'] == 'description' and r['subject_id'] in ids and r['language'] == 'nb-NO']
+    if len(ids) != 1 or len(descriptions) != 1:
+        raise ReviewError('validation_failed', 'Beskrivelsen trenger separat gjennomgang.')
+    shared = [r for r in records if r['type'] == 'identification' and r['software_release_id'] == ids[0]
+              and r.get(target['kind'] + '_id') != target['id']]
+    if shared:
+        raise ReviewError('validation_failed', 'Delt beskrivelse må gjennomgås separat.')
+    evidence = dict(source_ref=deepcopy(entry['key']), field='raw.Global', observation=text)
+    evidence['id'] = 'e:' + hashlib.sha256(canonical(evidence).encode()).hexdigest()
+    if evidence not in entry['evidence']:
+        entry['evidence'].append(evidence)
+    entry['source']['description'] = text
+    for claims in (entry['draft']['claims'], entry['accepted']['claims']):
+        claims['description'].update(value=dict(language='nb-NO', text=text), evidence_ids=[evidence['id']],
+                                     reason='Gjengitt ordrett fra CD-omtalen.')
+    descriptions[0]['text'] = text
+    observed = dict(kind='observed', source_ref=deepcopy(entry['key']), field='raw.Global', value=text)
+    if observed not in descriptions[0]['evidence']:
+        descriptions[0]['evidence'].append(observed)
+    entry['original_description_v1'] = True
 
 
 def refresh_issues(entry):
@@ -240,6 +271,7 @@ class ReviewWorkspace:
                          accepted=dict(identification_status=ident['status'], claims=deepcopy(claims)),
                          draft=dict(claims=claims), proposals=[], evidence=evidence, issues=[], undo=None, defer_reason=None)
             add_source_evidence(entry, source)
+            restore_source_description(entry, records, source)
             refresh_issues(entry)
             entries[key_id(key)] = entry
         with self.locked():
@@ -279,6 +311,36 @@ class ReviewWorkspace:
                 self.write(state)
             return dict(updated=changed)
 
+    def restore_descriptions(self, manifest_path):
+        raw = Path(manifest_path).read_bytes()
+        digest = 'sha256:' + hashlib.sha256(raw).hexdigest()
+        sources = {s['source_id']: s for s in json.loads(raw)['entries']}
+        with self.locked():
+            state = self.read()
+            if any(e['key']['manifest'] != digest or e['key']['entry'] not in sources for e in state['entries'].values()):
+                raise ReviewError('validation_failed', 'Manifestet tilhører ikke dette arbeidsområdet.')
+            changed = 0
+            for entry in state['entries'].values():
+                if entry.get('original_description_v1'):
+                    continue
+                before = deepcopy(entry)
+                restore_source_description(entry, state['records'], sources[entry['key']['entry']])
+                refresh_issues(entry)
+                entry['revision'] = token()
+                state['events'].append(dict(id=token(), method='restore_description', key=entry['key'],
+                    actor='source-description-migration', timestamp=datetime.now(timezone.utc).isoformat(),
+                    reason='Beskrivelse tilbakeført til originalomtalen etter eiers beslutning.',
+                    before=before, after=deepcopy(entry), records_before=None, records_after=None))
+                changed += 1
+            if changed:
+                graph(state['records'])
+                with (self.root / ('before-original-descriptions-' + token() + '.json')).open('xb') as f:
+                    f.write(self.path.read_bytes())
+                    f.flush()
+                    os.fsync(f.fileno())
+                self.write(state)
+            return dict(updated=changed)
+
     @staticmethod
     def document(state, entry):
         result = deepcopy(entry)
@@ -288,7 +350,7 @@ class ReviewWorkspace:
                                   previous_claims=(e['before'].get('accepted') or {}).get('claims'),
                                   new_claims=(e['after'].get('accepted') or {}).get('claims'))
                              for e in state['events'] if e['key'] == entry['key']
-                             and e['method'] in ('approve', 'defer', 'undo')]
+                             and e['method'] in ('approve', 'defer', 'undo', 'restore_description')]
         return result
 
     def call(self, method, request, *, actor='local-curator'):
@@ -432,6 +494,7 @@ def main(argv=None):
     sub = parser.add_subparsers(dest='command', required=True)
     init = sub.add_parser('init'); init.add_argument('catalog'); init.add_argument('manifest')
     sub.add_parser('enrich-sources').add_argument('manifest')
+    sub.add_parser('restore-descriptions').add_argument('manifest')
     call = sub.add_parser('call'); call.add_argument('method'); call.add_argument('request', type=Path)
     for name in ('export', 'backup', 'restore'):
         sub.add_parser(name).add_argument('path', type=Path)
@@ -439,6 +502,7 @@ def main(argv=None):
     workspace = ReviewWorkspace(args.workspace)
     try:
         if args.command == 'init': result = workspace.initialize(args.catalog, args.manifest)
+        elif args.command == 'restore-descriptions': result = workspace.restore_descriptions(args.manifest)
         elif args.command == 'enrich-sources': result = workspace.enrich_sources(args.manifest)
         elif args.command == 'call': result = workspace.call(args.method, json.loads(args.request.read_text()))
         elif args.command == 'export': result = workspace.export_catalog(args.path)

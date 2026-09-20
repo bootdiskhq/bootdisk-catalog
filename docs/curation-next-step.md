@@ -115,6 +115,14 @@ Deliver with the category-evidence work before 1.2.0 through PR/test/review/gree
 Hosted curation is separately gated by [ADR-006](adr-006-hosted-curator-access.md).
 The local release does not open curator access on the internet.
 
+## Description fidelity
+
+Stian requires descriptions to reproduce the original CD wording, not assistant
+rewrites. Implemented in Catalog, new/existing local workspaces and a read-only
+curator field. Keep research findings in evidence and rationale. Preserve prior
+wording in migration history and backups. Verify original descriptions in the next
+release export; the existing public site is not automatically redeployed.
+
 ## Acceptance session with Stian
 
 - Starting from the normal app, independently find and curate an unresolved entry;
