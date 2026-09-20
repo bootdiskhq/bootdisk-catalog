@@ -1,0 +1,75 @@
+{
+  "schema": "bootdisk-inspection-issues-v1",
+  "entries": [
+    {
+      "key": {
+        "manifest": "sha256:ae29b1d2976ee7c7439b2e12fe18b774d1d57e77c9a20bc3567d2e5079257281",
+        "entry": "K4"
+      },
+      "issues": [
+        {
+          "code": "unsupported_archive",
+          "field": null,
+          "message": "Tidligere kontroll: Gentee-pakken er ikke dekodet; identiteten er foreløpig.",
+          "observed_on": "2026-09-20"
+        }
+      ]
+    },
+    {
+      "key": {
+        "manifest": "sha256:ae29b1d2976ee7c7439b2e12fe18b774d1d57e77c9a20bc3567d2e5079257281",
+        "entry": "K6"
+      },
+      "issues": [
+        {
+          "code": "unsupported_archive",
+          "field": null,
+          "message": "Tidligere kontroll: Gentee-pakken er ikke dekodet; identiteten er foreløpig.",
+          "observed_on": "2026-09-20"
+        }
+      ]
+    },
+    {
+      "key": {
+        "manifest": "sha256:ae29b1d2976ee7c7439b2e12fe18b774d1d57e77c9a20bc3567d2e5079257281",
+        "entry": "K19"
+      },
+      "issues": [
+        {
+          "code": "unsupported_archive",
+          "field": null,
+          "message": "Tidligere kontroll: Gentee-pakken er ikke dekodet; identiteten er foreløpig.",
+          "observed_on": "2026-09-20"
+        }
+      ]
+    },
+    {
+      "key": {
+        "manifest": "sha256:ae29b1d2976ee7c7439b2e12fe18b774d1d57e77c9a20bc3567d2e5079257281",
+        "entry": "K9"
+      },
+      "issues": [
+        {
+          "code": "unsupported_archive",
+          "field": null,
+          "message": "Tidligere kontroll: installasjonspakken er ikke dekodet; identiteten er foreløpig.",
+          "observed_on": "2026-09-20"
+        }
+      ]
+    },
+    {
+      "key": {
+        "manifest": "sha256:ae29b1d2976ee7c7439b2e12fe18b774d1d57e77c9a20bc3567d2e5079257281",
+        "entry": "K30"
+      },
+      "issues": [
+        {
+          "code": "read_permission_denied",
+          "field": null,
+          "message": "Tidligere kontroll: FirstPage/DATA1.CAB kunne ikke leses på denne maskinen. Full CD-verifisering er fortsatt ufullstendig.",
+          "observed_on": "2026-09-20"
+        }
+      ]
+    }
+  ]
+}
