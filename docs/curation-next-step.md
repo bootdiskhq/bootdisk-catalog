@@ -49,6 +49,38 @@ classification.
    deliver via PR, tests, review and green-CI merge. No next-disc import until the
    acceptance session below passes.
 
+## Release requirement: source category as content-kind evidence
+
+Required for 1.2.0, reported during Stian's curator acceptance session: content kind
+can currently appear as “Belagt” without the original CD category being available
+among the readable evidence choices. Generic checked sources do not explain that
+classification. This requirement is planned, not yet implemented.
+
+- **Catalog owns the change.** Expose the preserved original CD category as a source
+  observation, with its exact wording and source-entry provenance. Link the
+  content-kind assessment to that observation and retain an explicit rationale
+  for mapping the CD category to Catalog's content kind. Do not silently equate
+  broad CD categories with a specific content kind.
+- **Ingest:** first verify where the original category is already preserved. Reuse
+  it without changing existing manifests; change ingest only if preservation is
+  incomplete.
+- **Web:** show “Kategori på CD-en: <original category>” in readable evidence beside
+  the content-kind assessment. Make the original category and the curator's
+  interpretation visibly distinct; keep technical identifiers in details.
+- **Existing workspaces:** audit inherited “Belagt” content-kind claims for an
+  inspectable basis. Surface missing support as unresolved/requiring review; do
+  not overwrite user drafts, decisions or history during migration. A title or
+  other source can support an assessment when the reasoning is explicit; the
+  presence of a category is not a universal prerequisite for manual curation.
+- **Publish:** no change expected unless implementation reveals a projection need.
+
+Acceptance: for a game entry, Stian can see the original CD category, understand
+why it supports “Spill”, and select that evidence. Also test a broad/ambiguous
+category and an entry without category evidence: neither is automatically marked
+“Belagt”. Verify evidence links and rationale survive save, approval, restart and
+export, and existing user work survives migration. Deliver through the normal
+PR/test/review/green-CI merge workflow before the 1.2.0 release.
+
 ## Acceptance session with Stian
 
 - Starting from the normal app, independently find and curate an unresolved entry;
