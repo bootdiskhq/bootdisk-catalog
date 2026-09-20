@@ -38,5 +38,18 @@ class ReferenceCurationTests(unittest.TestCase):
             self.assertEqual(by_entry['K14']['software_release_id'], 'release:workpace:unknown')
             self.assertNotEqual(by_entry['K5']['package_id'], by_entry['K17']['package_id'])
             self.assertNotIn('artifact_id', by_entry['K5'])
-            self.assertEqual(by_entry['K12']['status'], 'interpreted')
-            self.assertEqual(by_entry['K12']['software_release_id'], 'release:ice-breaker:unknown')
+            self.assertEqual(by_entry['K12']['status'], 'curated')
+            self.assertEqual(by_entry['K12']['software_release_id'], 'release:ice-breaker:1.2.1')
+
+    def test_payload_review_retains_uncertainty_and_distinct_versions(self):
+        records = json.loads(BUNDLE.read_text())["records"]
+        identities = [r for r in records if r["type"] == "identification"]
+        by_entry = {r["evidence"][0]["source_ref"]["entry"]: r for r in identities}
+        self.assertEqual(sum(r["status"] == "curated" for r in identities), 35)
+        self.assertEqual({e for e, r in by_entry.items() if r["status"] == "interpreted"},
+                         {"K4", "K6", "K9", "K19"})
+        self.assertEqual(by_entry["K23"]["software_release_id"], "release:cpu-z:1.10")
+        self.assertEqual(by_entry["K11"]["software_release_id"], "release:font-xplorer-lite:1.2.2")
+        for entry in ["K3", "K10", "K11", "K12", "K18", "K23", "K26", "K40"]:
+            self.assertEqual(by_entry[entry]["distribution_kind"], "unknown")
+            self.assertTrue(any(e["field"] == "payload_observation" for e in by_entry[entry]["evidence"]))
