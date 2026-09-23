@@ -1,11 +1,82 @@
-# 1.2.0: independent, fast human curation
+# 1.2.0: automated first pass, human review of exceptions
 
 **Delivery gate: this workflow must be usable before importing the next K-CD.**
 The read-only archive preview is not the curator. This replaces the earlier plan
 that treated curator UI as optional polish. This is planned work, not functionality
 already delivered by 1.1.0-rc2.
 
-## One screen, one decision, next entry
+## Priority change: automate before expanding manual curation
+
+Stian approved the local detail flow, but found entry-by-entry manual curation
+unsustainable. Automatic first-pass processing is now the next development priority,
+not merely faster navigation. Keep the existing detail screen for exceptions.
+Do not require Stian to finish all 39 entries manually before development continues.
+
+### Pilot baseline (2026-09-23, snapshot only)
+
+A read-only routing pilot used the existing workspace and preserved manifest:
+
+- 39 entries; preserve the 18 entries with prior human approval (90 fields).
+- Remaining 21 entries: 29 field-level rule candidates, 32 fields that can remain
+  unknown without repeated confirmation, 21 existing identities to reuse, and
+  23 fields requiring further machine inspection.
+- These counts cover five fields per entry. Candidates are not approved facts;
+  reused identities have not been independently reverified. No new program files
+  were inspected and no catalog decisions or drafts were changed.
+- The pilot artifacts are local, under `local-results/automation-pilot/`
+  (`dry_run.py`, `report.json`, `report.md`); they are not release components.
+  The report records input hashes. Counts will change as the workspace changes.
+
+The 23 inspection fields are a machine work queue, not 23 questions for Stian.
+The number of necessary human decisions is unknown until inspection and conflict
+checking finish. This pilot does not qualify rules for automatic writing.
+
+### Next delivery sequence
+
+1. **Ingest/inspection: collect missing evidence.** Inspect README, setup metadata,
+   executable product versions and supported archive members without running old
+   programs. Preserve readable excerpts, source/member hashes and extraction method.
+   Cache by source hash and inspector version. Missing media, denied reads and
+   unsupported formats produce explicit outcomes, not repeated manual confirmations.
+2. **Catalog: reproducible read-only first pass.** Turn the pilot into tested rules
+   for field-level candidate generation, retained uncertainty and conflict routing.
+   Preserve original descriptions verbatim. Evaluate exact category mappings and
+   explicit edition/version statements only in the correct program context.
+   Never infer full edition from Freeware, version from a product year alone, or
+   product identity from a shared installer. Check contradictory sources before
+   qualifying a rule; model confidence alone is not sufficient evidence.
+3. **Catalog: controlled automatic decisions.** Only after rule validation, add
+   automatic writing through the authoritative writer, with a separate machine
+   actor, rule version, evidence, reason, revision checks, idempotency, history and
+   undo. Never impersonate a human approval. Preserve human decisions and current
+   drafts; new contradictory findings flag them for review rather than overwriting.
+   Unknown is a legitimate retained result, not an automatic claim of certainty.
+4. **Web: exception queue.** Connect Claude's overview to backend summaries of
+   unresolved conflicts and cases that still need a person after machine inspection.
+   Distinguish machine decisions, human decisions, candidates, drafts and uncertainty.
+   Ordinary missing data must not force the same human acknowledgement repeatedly.
+   The current overview PR is a prototype pending review fixes and backend integration.
+5. **Integration and acceptance.** Run the pipeline on these 39 entries, compare
+   the measured human workload with the pilot, then review representative results
+   with Stian before the next disc. Keep public publication separate from curation.
+
+### Automation acceptance gate
+
+- Repeated runs with identical inputs and rule versions are reproducible and do
+  not create duplicate decisions. Changed inputs can be traced to new findings.
+- Prove human drafts/decisions survive, and automatic decisions survive restart,
+  export and restore with provenance and actor intact; verify undo and stale writes.
+- Test contradictory sources, generic launcher versions, product-name numbers,
+  Freeware versus edition, missing version, unreadable media and unsupported formats.
+- Report counts of automatically handled fields, retained unknowns, inspection
+  failures and genuine human exceptions separately. Measure human actions and time,
+  not only processing speed. Agree the workload target with Stian from these results.
+- Automatic processing stays read-only until the write/audit/undo tests pass.
+  Deliver via the established PR, review, tests and green-CI merge workflow.
+- Hosted access remains gated by ADR-006; automation does not authorize internet
+  exposure or automatic public deployment.
+
+## Detail screen for human exceptions
 
 Start with a queue of unresolved entries. Keep source title/description, package
 members, readable evidence and editable interpretation together. Pre-fill proposals
@@ -16,7 +87,8 @@ fields separately: a confirmed identity can still have an unknown version.
 
 Provide keyboard shortcuts with visible hints, predictable focus and no firing while
 typing in an input. Autosave drafts locally with visible saved/error state; explicit
-approval writes authoritative catalog claims. An interrupted save must never show a
+human approval writes authoritative catalog claims. Future qualified machine
+decisions use the separately audited automatic path described above. An interrupted save must never show a
 false success or lose edits. Skipping preserves the draft and a reason, and keeps the
 entry discoverable. Undo restores the previous decision while retaining the history.
 
@@ -27,7 +99,7 @@ an entry fully resolved merely because its identity is curated. Do not bulk-acce
 unsupported guesses. License observations remain evidence, not an invented full/demo
 classification.
 
-## Delivery sequence and ownership
+## Existing foundation and ownership (retained)
 
 1. **Catalog: review state and write contract.** Define drafts, per-field unresolved
    reasons, deferred items and decision history. Reuse the existing identification
@@ -123,7 +195,7 @@ curator field. Keep research findings in evidence and rationale. Preserve prior
 wording in migration history and backups. Verify original descriptions in the next
 release export; the existing public site is not automatically redeployed.
 
-## Acceptance session with Stian
+## Detail-flow regression session with Stian
 
 - Starting from the normal app, independently find and curate an unresolved entry;
   no terminal, assistant, JSON or Git editing is required.
@@ -158,4 +230,7 @@ The JSON review snapshot is a planning input, not the future review-state schema
 [ADR-005](adr-005-review-state-and-decisions.md) fixes the draft/decision semantics.
 The [v1 adapter contract](curator-contract-v1.md) and
 [real-entry fixtures](curator-fixtures-v1.json) let frontend work start independently.
-Claude's work order lives in bootdisk-web: `docs/claude-curator-work-order.md`.
+Claude's current work order lives in bootdisk-web:
+`docs/claude-curator-overview-work-order.md`. The original detail-screen order is
+historical. The overview should support the exception queue; it does not replace
+the automatic first-pass work in Catalog/inspection.
