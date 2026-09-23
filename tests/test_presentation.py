@@ -108,6 +108,25 @@ class PresentationProjectionTests(unittest.TestCase):
         self.assertEqual(cards[1]["occurrences"][0]["path"], "K2/Setup.exe")
 
 class OriginalSourceTests(unittest.TestCase):
+    def test_rtf_observation_binding_and_global_priority(self):
+        import base64
+        from bootdisk_catalog.presentation import source_context
+        from bootdisk_catalog.catalog import CatalogError
+        raw=br'{\rtf1 Original\par }'
+        file={'path':'App/No.rtf','size':len(raw),'sha256':hashlib.sha256(raw).hexdigest()}
+        rtf={**file,'method':'rtf-ansi-text-1','text':'Original\n','raw_base64':base64.b64encode(raw).decode()}
+        entry={'source_id':'K1','raw':{},'files':{'discovered':{'description_rtf':{**file,'exists':True}}},'evidence':{'description_rtf':rtf}}
+        manifest={'entries':[entry],'file_inventory':[file]}
+        with tempfile.TemporaryDirectory() as d:
+            path=Path(d)/'manifest.json';path.write_text(json.dumps(manifest))
+            result=source_context(path)['K1']['description']
+            self.assertEqual(result['value'],'Original\n')
+            self.assertEqual(result['source_ref']['pointer'],'/entries/0/evidence/description_rtf/text')
+            rtf['raw_base64']=base64.b64encode(b'tampered').decode();path.write_text(json.dumps(manifest))
+            with self.assertRaises(CatalogError):source_context(path)
+            entry['raw']['Global']='Original summary';path.write_text(json.dumps(manifest))
+            self.assertEqual(source_context(path)['K1']['description']['value'],'Original summary')
+
     def test_original_wording_is_preserved_without_claim_or_language(self):
         from bootdisk_catalog.presentation import source_context
         with tempfile.TemporaryDirectory() as directory:
