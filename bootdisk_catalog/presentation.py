@@ -8,11 +8,13 @@ content without duplicating the preservation or catalog models.
 from __future__ import annotations
 
 import argparse
+import base64
+import hashlib
 import json
 from pathlib import Path
 from typing import Any
 
-from .catalog import Catalog
+from .catalog import Catalog, CatalogError
 from .curate import curation_queue, _load_manifest
 from .intake import build_candidates, DIRECTOR_SCHEMA
 
@@ -34,9 +36,25 @@ def source_context(manifest_path):
         def observation(value, pointer):
             return {"value": value, "source_ref": {**key, "pointer": f"/entries/{position}/{pointer}"}}
         original = entry.get("raw", {}).get("Global")
+        description = observation(original, "raw/Global") if isinstance(original, str) and original.strip() else None
+        rtf = entry.get("evidence", {}).get("description_rtf")
+        if description is None and isinstance(rtf, dict) and isinstance(rtf.get("text"), str) and rtf["text"].strip():
+            file = entry.get("files", {}).get("discovered", {}).get("description_rtf", {})
+            inventory = [f for f in manifest.get("file_inventory", []) if f.get("path") == rtf.get("path")]
+            try:
+                raw = base64.b64decode(rtf.get("raw_base64", ""), validate=True)
+            except (ValueError, TypeError) as exc:
+                raise CatalogError("invalid RTF source bytes") from exc
+            if not (rtf.get("method") == "rtf-ansi-text-1" and file.get("exists") is True
+                    and rtf.get("path") == file.get("resolved_path", file.get("path"))
+                    and len(inventory) == 1 and rtf.get("size") == len(raw)
+                    and rtf.get("sha256") == hashlib.sha256(raw).hexdigest()
+                    and all(rtf.get(k) == file.get(k) == inventory[0].get(k) for k in ("sha256", "size"))):
+                raise CatalogError("RTF source does not match observed file")
+            description = observation(rtf["text"], "evidence/description_rtf/text")
         result[entry["source_id"]] = {
             "key": key,
-            "description": observation(original, "raw/Global") if isinstance(original, str) and original.strip() else None,
+            "description": description,
             "menu_groups": observation(entry.get("normalized", {}).get("categories", []), "normalized/categories"),
             "issues": observation(entry.get("issues", []), "issues"),
         }
