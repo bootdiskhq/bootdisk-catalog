@@ -1,6 +1,8 @@
 # 1.2.0: automated first pass, human review of exceptions
 
-**Delivery gate: this workflow must be usable before importing the next K-CD.**
+**Delivery gate: qualify automatic decisions before adopting bulk curation.**
+Stian has authorized a controlled K-CD 1/2000 intake while this work proceeds.
+Receiving source observations does not authorize bulk semantic approval or publication.
 The read-only archive preview is not the curator. This replaces the earlier plan
 that treated curator UI as optional polish. This is planned work, not functionality
 already delivered by 1.1.0-rc2.
@@ -33,6 +35,13 @@ checking finish. This pilot does not qualify rules for automatic writing.
 
 ### Next delivery sequence
 
+The first new-disc foundation is now implemented as an isolated
+[candidate intake](candidate-intake.md) ([ADR-007](adr-007-candidate-intake.md)).
+It receives Director observations without pre-existing identifications, preserves
+selected original descriptions and source issues, and avoids creating Packages
+from start-file references. It makes no automatic decisions and is not yet wired
+to the current curator UI. Next, inspect these candidates and qualify field rules.
+
 1. **Ingest/inspection: collect missing evidence.** Inspect README, setup metadata,
    executable product versions and supported archive members without running old
    programs. Preserve readable excerpts, source/member hashes and extraction method.
@@ -58,7 +67,8 @@ checking finish. This pilot does not qualify rules for automatic writing.
    The current overview PR is a prototype pending review fixes and backend integration.
 5. **Integration and acceptance.** Run the pipeline on these 39 entries, compare
    the measured human workload with the pilot, then review representative results
-   with Stian before the next disc. Keep public publication separate from curation.
+   with Stian before enabling bulk decisions. Controlled next-disc observation
+   intake may proceed separately. Keep public publication separate from curation.
 
 ### Automation acceptance gate
 
@@ -118,8 +128,8 @@ classification.
    disconnected service and missing/unmounted media with actionable messages.
 4. **Integration and release.** Rebuild the published view from accepted catalog
    decisions, verify evidence links, exercise the complete flow on K-CD 15/2001, and
-   deliver via PR, tests, review and green-CI merge. No next-disc import until the
-   acceptance session below passes.
+   deliver via PR, tests, review and green-CI merge. The acceptance session below
+   gates bulk semantic decisions, not the authorized next-disc observation trial.
 
 ## Release requirement: source category as content-kind evidence
 
