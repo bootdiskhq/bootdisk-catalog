@@ -107,6 +107,44 @@ class PresentationProjectionTests(unittest.TestCase):
         self.assertEqual(cards[1]["software"], [])
         self.assertEqual(cards[1]["occurrences"][0]["path"], "K2/Setup.exe")
 
+class OriginalSourceTests(unittest.TestCase):
+    def test_original_wording_is_preserved_without_claim_or_language(self):
+        from bootdisk_catalog.presentation import source_context
+        with tempfile.TemporaryDirectory() as directory:
+            path = Path(directory) / 'manifest.json'
+            raw = {'entries': [{'source_id': 'K1', 'raw': {'Global': '  Original\r\ntekst. '},
+                                'normalized': {'description': 'Rewritten', 'categories': ['Spil']}}]}
+            path.write_text(json.dumps(raw))
+            source = source_context(path)['K1']
+            self.assertEqual(source['description']['value'], '  Original\r\ntekst. ')
+            self.assertEqual(source['description']['source_ref']['pointer'], '/entries/0/raw/Global')
+            self.assertNotIn('language', source['description'])
+            self.assertEqual(source['key']['manifest'], 'sha256:' + hashlib.sha256(path.read_bytes()).hexdigest())
+
+    def test_no_normalized_description_fallback(self):
+        from bootdisk_catalog.presentation import source_context
+        with tempfile.TemporaryDirectory() as directory:
+            path = Path(directory) / 'manifest.json'
+            path.write_text(json.dumps({'entries': [{'source_id': 'K1', 'normalized': {'description': 'Do not publish as original'}}]}))
+            self.assertIsNone(source_context(path)['K1']['description'])
+
+    def test_director_original_and_conflicts_are_observations(self):
+        from test_intake import fixture
+        from bootdisk_catalog.import_ingest import import_manifest
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            path = root / 'manifest.json'
+            manifest = fixture()
+            manifest['entries'][0]['issues'] = ['conflicting_launch_targets']
+            path.write_text(json.dumps(manifest))
+            import_manifest(path, root / 'catalog')
+            card = presentation_projection(Catalog.load(root / 'catalog'), path)[0]
+            self.assertEqual(card['curation_status'], 'pending')
+            self.assertEqual(card['software'], [])
+            self.assertEqual(card['source_context']['description']['value'], '  Original omtale\r\n')
+            self.assertEqual(card['source_context']['issues']['value'], ['conflicting_launch_targets'])
+            self.assertEqual(card['source_context']['preservation_scope'], 'launch_files_only')
+
 
 if __name__ == "__main__":
     unittest.main()
