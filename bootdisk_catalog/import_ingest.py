@@ -88,7 +88,29 @@ def _validate_observation(observation: dict[str, Any], role: str) -> dict[str, A
     return observation
 
 
-def _find_file(entry: dict[str, Any], role: str) -> dict[str, Any]:
+def _director_observation(manifest, observation, role):
+    """Resolve Director's existing-file observation against its file inventory.
+
+    Unlike DTX, Director does not emit is_file. It emits a resolved inventory
+    path, possibly different from the requested menu spelling. Require matching
+    bytes/size in exactly one inventory row before importing that observation.
+    """
+    if manifest.get("schema_version") != "kcd-director-experimental-1":
+        return observation
+    if observation.get("exists") is not True:
+        return observation
+    resolved = observation.get("resolved_path")
+    inventory = manifest.get("file_inventory")
+    if not isinstance(resolved, str) or not resolved or not isinstance(inventory, list):
+        raise IngestImportError(f"Director observation needs resolved inventory path: {role}")
+    matches = [f for f in inventory if isinstance(f, dict) and f.get("path") == resolved]
+    if (len(matches) != 1 or observation.get("is_file", True) is not True
+            or any(matches[0].get(k) != observation.get(k) for k in ("sha256", "size"))):
+        raise IngestImportError(f"Director observation disagrees with file inventory: {role}")
+    return dict(observation, path=resolved, is_file=True)
+
+
+def _find_file(entry: dict[str, Any], role: str, manifest: dict[str, Any]) -> dict[str, Any]:
     """Resolve one explicit file observation by semantic role."""
 
     files = entry.get("files")
@@ -113,7 +135,7 @@ def _find_file(entry: dict[str, Any], role: str) -> dict[str, Any]:
     if len(found) > 1:
         raise IngestImportError(f"ambiguous file role in ingest entry: {role}")
 
-    return _validate_observation(found[0], role)
+    return _validate_observation(_director_observation(manifest, found[0], role), role)
 
 
 def _iter_observations(
@@ -161,6 +183,7 @@ def _iter_observations(
                 roles[role] = observation
 
         for role, observation in roles.items():
+            observation = _director_observation(manifest, observation, role)
             # A declared-but-missing file has no byte identity to import.
             if observation.get("exists") is not True or observation.get("is_file") is not True:
                 continue
@@ -209,7 +232,7 @@ def build_records(
 
     manifest, manifest_digest = _read_manifest(Path(manifest_path))
     entry = _find_entry(manifest, source_id)
-    observation = _find_file(entry, role)
+    observation = _find_file(entry, role, manifest)
     return _records_for_observation(manifest_digest, source_id, role, observation)
 
 
@@ -276,6 +299,7 @@ def import_manifest(
 
     manifest, manifest_digest = _read_manifest(Path(manifest_path))
     output = Path(output_root)
+    output.mkdir(parents=True, exist_ok=True)
     artifact_ids: set[str] = set()
     occurrence_count = 0
 

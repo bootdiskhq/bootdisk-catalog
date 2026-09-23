@@ -10,6 +10,10 @@ from .import_ingest import IngestImportError, _write_json
 
 
 def import_packages(manifest, output):
+    # Director inventories contain literal launch targets, not source-entry
+    # folders. Never turn the shared launcher set into a package identity.
+    if manifest.get("schema_version") == "kcd-director-experimental-1":
+        return
     inventory = manifest.get("file_inventory")
     entries = [e for e in manifest["entries"] if "inventory_refs" in e.get("files", {})]
     if not entries:

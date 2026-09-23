@@ -44,6 +44,11 @@ The implementation intentionally uses only the Python standard library.
 
 ## Importing ingest observations
 
+For a newly observed Director CD without identified software, use the
+[candidate intake](docs/candidate-intake.md). It stages original observations and
+file provenance without inventing identities or changing an existing curator
+workspace. Director launch references are not imported as Packages.
+
 `bootdisk_catalog.import_ingest` is the preservation-to-catalog bridge. Its normal mode consumes the complete ingest manifest and imports every explicit preserved regular-file observation under `files.referenced` and `files.discovered`.
 
 For each observation it creates:
