@@ -13,7 +13,34 @@ from pathlib import Path
 from typing import Any
 
 from .catalog import Catalog
-from .curate import curation_queue
+from .curate import curation_queue, _load_manifest
+from .intake import build_candidates, DIRECTOR_SCHEMA
+
+
+def source_context(manifest_path):
+    """Project original wording as observations, never as approved software facts."""
+    path = Path(manifest_path)
+    manifest, manifest_ref = _load_manifest(path)
+    if manifest.get("schema_version") == DIRECTOR_SCHEMA:
+        candidates = build_candidates(path.read_bytes())["candidates"]
+        return {c["key"]["entry"]: {
+            "key": c["key"], "description": c["observations"]["description"],
+            "menu_groups": c["observations"]["menu_groups"],
+            "issues": c["source_issues"], "preservation_scope": "launch_files_only",
+        } for c in candidates}
+    result = {}
+    for position, entry in enumerate(manifest["entries"]):
+        key = {"manifest": manifest_ref, "entry": entry["source_id"]}
+        def observation(value, pointer):
+            return {"value": value, "source_ref": {**key, "pointer": f"/entries/{position}/{pointer}"}}
+        original = entry.get("raw", {}).get("Global")
+        result[entry["source_id"]] = {
+            "key": key,
+            "description": observation(original, "raw/Global") if isinstance(original, str) and original.strip() else None,
+            "menu_groups": observation(entry.get("normalized", {}).get("categories", []), "normalized/categories"),
+            "issues": observation(entry.get("issues", []), "issues"),
+        }
+    return result
 
 
 def _curated_descriptions(catalog: Catalog, subject_id: str) -> list[dict[str, str]]:
@@ -64,6 +91,7 @@ def presentation_projection(
     """Return frontend-ready source cards without creating new catalog facts."""
 
     cards = []
+    contexts = source_context(manifest_path)
     for item in curation_queue(catalog, manifest_path):
         cards.append(
             {
@@ -71,6 +99,7 @@ def presentation_projection(
                 # The title remains explicitly editorial source context. A frontend may
                 # display it even while semantic identification is still pending.
                 "editorial_title": item["title"],
+                "source_context": contexts[item["entry"]],
                 "curation_status": item["status"],
                 "software": _identified_releases(catalog, item["identifications"]),
                 # Paths are source observations. Publish is responsible for turning
