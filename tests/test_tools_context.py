@@ -12,13 +12,16 @@ from test_presentation import PresentationProjectionTests
 
 
 class ToolsContextTests(unittest.TestCase):
-    def fixture(self):
+    def fixture(self, norwegian=True):
         raw = b'[I1]\nNavn=Tool\nInstruksNo=Original omtale\nSpil=Ja\n'
         fields = {'Navn': 'Tool', 'InstruksNo': 'Original omtale', 'Spil': 'Ja'}
+        if not norwegian:
+            raw = raw.replace(b'InstruksNo', b'InstruksDK')
+            fields['InstruksDK'] = fields.pop('InstruksNo')
         file = dict(path='TOOLS.DTX', sha256=hashlib.sha256(raw).hexdigest(), size=len(raw))
         binding = dict(path=file['path'], sha256=file['sha256'], section='I1')
         return dict(entries=[dict(source_id='I1', raw=fields, evidence=dict(metadata_source=binding,
-                    description_tools=dict(**binding, field='InstruksNo', language='nb-NO', text='Original omtale')))],
+                    description_tools=dict(**binding, field='InstruksNo', language='nb-NO', text='Original omtale' if norwegian else None)))],
                     file_inventory=[file], source=dict(supplemental_metadata=[dict(**file,
                     resolved_path='TOOLS.DTX', encoding='cp1252', raw_base64=base64.b64encode(raw).decode(), sections={'I1': fields})]))
 
@@ -33,6 +36,11 @@ class ToolsContextTests(unittest.TestCase):
         self.assertEqual(result['description']['value'], 'Original omtale')
         self.assertEqual(result['description']['source_ref']['pointer'], '/entries/0/evidence/description_tools/text')
         self.assertEqual(result['menu_groups']['value'], [])
+
+    def test_missing_norwegian_text_has_no_language_or_rtf_fallback(self):
+        m = self.fixture(norwegian=False)
+        m['entries'][0]['evidence']['description_rtf'] = {'text': 'Not the Tools source'}
+        self.assertIsNone(self.project(m)['description'])
 
     def test_forged_text_bytes_or_binding_are_rejected(self):
         for change in ('text', 'bytes', 'section', 'inventory', 'raw'):

@@ -78,9 +78,10 @@ def source_context(manifest_path):
         tools = _tools_description(manifest, entry)
         original = entry.get("raw", {}).get("Global")
         description = observation(original, "raw/Global") if isinstance(original, str) and original.strip() else None
-        if tools is not None:
-            description = observation(tools, "evidence/description_tools/text")
-        rtf = entry.get("evidence", {}).get("description_rtf")
+        is_tools = "description_tools" in entry.get("evidence", {})
+        if is_tools:
+            description = observation(tools, "evidence/description_tools/text") if tools is not None else None
+        rtf = None if is_tools else entry.get("evidence", {}).get("description_rtf")
         if description is None and isinstance(rtf, dict) and isinstance(rtf.get("text"), str) and rtf["text"].strip():
             file = entry.get("files", {}).get("discovered", {}).get("description_rtf", {})
             inventory = [f for f in manifest.get("file_inventory", []) if f.get("path") == rtf.get("path")]
@@ -155,7 +156,7 @@ def presentation_projection(
     contexts = source_context(manifest_path)
     inherited = {}
     if previous_manifest is not None:
-        old, old_ref = _load_manifest(Path(previous_manifest))
+        old, _ = _load_manifest(Path(previous_manifest))
         new, _ = _load_manifest(Path(manifest_path))
         old_entries = old["entries"]
         new_entries = new["entries"]
