@@ -244,3 +244,16 @@ Claude's current work order lives in bootdisk-web:
 `docs/claude-curator-overview-work-order.md`. The original detail-screen order is
 historical. The overview should support the exception queue; it does not replace
 the automatic first-pass work in Catalog/inspection.
+
+## First-pass development delivery (2026-09-24)
+
+The tested Director producer now lives in `bootdisk_catalog.first_pass`, rather
+than the local pilot script. It emits immutable field candidates, retained unknowns
+and machine tasks; it does not write approvals or inspect binaries. See
+[the implementation boundary](automatic-first-pass.md), [ADR-008](adr-008-automatic-first-pass.md)
+and [the queue contract](automation-queue-v1.md). Claude can build the read-only
+exception overview against the contract and its explicitly synthetic fixture.
+
+Next backend priority remains actual program-context inspection, followed by DTX
+support and integration with protected human work. No workload reduction or fully
+automated curation is claimed from first-pass routing alone.
