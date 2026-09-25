@@ -9,6 +9,7 @@ import shutil
 import tempfile
 from .catalog import Catalog, SCHEMA
 from .import_ingest import _records_for_observation
+from .image_resources import resource_slice
 
 
 def require(condition,message):
@@ -31,20 +32,30 @@ def import_images(images_path,manifest_path,catalog_root,output):
         require(entry in entries and kind in ('icon','screenshot') and (entry,kind) not in seen,'unknown/duplicate image entry')
         seen.add((entry,kind))
         require(item.get('source_ref')=={'manifest':'sha256:'+digest,'entry':entry},'image source reference mismatch')
-        for part,tag in (('pixels','BITD'),('palette','CLUT'),('metadata','CASt')):
+        direct=item.get('raster',{}).get('encoding')=='argb32-d6-rle257-or-raw'
+        if direct:require(item.get('palette') is None,'direct color must not specify a palette')
+        parts=(('pixels','BITD'),('metadata','CASt')) if direct else (('pixels','BITD'),('palette','CLUT'),('metadata','CASt'))
+        for part,tag in parts:
             resource=item[part];parent=resource['container'];source=inventory.get(parent['path'])
             require(source is not None and all(source[k]==parent[k] for k in ('size','sha256')),'image container mismatch')
             sha=resource['sha256'];size=resource['size'];offset=resource['offset']
             require(isinstance(sha,str) and re.fullmatch('[0-9a-f]{64}',sha) and type(size) is int and size>=0,'invalid image identity')
-            require(type(offset) is int and offset>=0 and offset+size<=parent['size'] and resource.get('tag')==tag,'invalid image range/type')
+            require(type(offset) is int and offset>=0 and ('compression' in resource or offset+size<=parent['size']) and resource.get('tag')==tag,'invalid image range/type')
             require(resource.get('object_path')=='resources/'+sha,'invalid image object path')
             path=(images_path.parent/resource['object_path']).resolve()
             require(path.is_relative_to(images_path.parent.resolve()) and path.is_file() and path.stat().st_size==size,'missing image bytes')
             require(hashlib.sha256(path.read_bytes()).hexdigest()==sha,'image bytes changed')
+            if 'compression' in resource:
+                container=(images_path.parent/'containers'/parent['sha256']).resolve()
+                require(container.is_relative_to(images_path.parent.resolve()) and container.is_file() and container.stat().st_size==parent['size'],'missing image container')
+                original=container.read_bytes()
+                require(hashlib.sha256(original).hexdigest()==parent['sha256'],'image container changed')
+                require(resource_slice(original,resource)==path.read_bytes(),'compressed resource does not match container')
             observed_path=parent['path']+'#'+tag+':'+str(resource['resource_id'])
             artifact,occurrence=_records_for_observation(report_digest,entry,'embedded-'+kind+'-'+part,{'sha256':sha,'size':size,'path':observed_path})
             occurrence['source_ref'].update({'manifest':'sha256:'+digest,'image_manifest':'sha256:'+report_digest,
                 'container_sha256':parent['sha256'],'offset':offset,'size':size,'resource_id':resource['resource_id']})
+            occurrence['source_ref'].update({k:resource[k] for k in ('compression','compressed_size','expanded_size','payload_offset') if k in resource})
             for record in (artifact,occurrence):
                 require(record['id'] not in records or records[record['id']]==record,'conflicting catalog record')
                 records[record['id']]=record
