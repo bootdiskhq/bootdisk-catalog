@@ -1,0 +1,729 @@
+{
+  "date": "2026-09-29",
+  "entries": [
+    {
+      "edition_note": null,
+      "identification_id": "identification:744b4d31adbb6ca8aead0496a8b815d8546d471e5d624673d6110ff56267f3bc",
+      "identity": "Super Desk",
+      "key": {
+        "entry": "Tool53757065724465736b",
+        "manifest": "sha256:d41fc8423030eebf0a86c198d20e2da50a246bc17a6be75fd26dedbde130a989"
+      },
+      "launch_sha256": "a4b95ef577f540f798500676d6e5c6c3f9c2400b937fabd0577bacb8be6ada08",
+      "medium": "kcd-1-2000",
+      "source_path": "Tools/SuperDesk/Readme.txt",
+      "source_sha256": "0148e054dabfbe2ced10738063bb1fae6f6fad872e81e4e72da8b81d64a0469a",
+      "version": "2.1"
+    },
+    {
+      "edition_note": null,
+      "identification_id": "identification:73d30fa554254cc7a084cae8fba7e68c7ed15e03444d7dbd4a914a6d45da12d8",
+      "identity": "Any Speed",
+      "key": {
+        "entry": "Tool416e795370656564",
+        "manifest": "sha256:d41fc8423030eebf0a86c198d20e2da50a246bc17a6be75fd26dedbde130a989"
+      },
+      "launch_sha256": "dc65cf4b64aa1e1ecca09d150bc286ff1404a838c5b8a8a7cf70ea9ab22796a7",
+      "medium": "kcd-1-2000",
+      "source_path": "Tools/AnySpeed/Readme.txt",
+      "source_sha256": "c1c80cf9e479f4dfd073acc6f2fa3a6ed885cc3ea5a37abfa19f747a1c3441df",
+      "version": "1.3"
+    },
+    {
+      "edition_note": null,
+      "identification_id": "identification:42ff3392f67387641a8a1ccdf00586fe36196f0d9f4bbf19f428603ec819b7cd",
+      "identity": "Password Keeper for Windows 95/NT",
+      "key": {
+        "entry": "Tool50617373776f7264204b6565706572",
+        "manifest": "sha256:d41fc8423030eebf0a86c198d20e2da50a246bc17a6be75fd26dedbde130a989"
+      },
+      "launch_sha256": "5629671ebf1a6438aac2fcef43196c7b7656209bf8edd483119ded02ec4cde94",
+      "medium": "kcd-1-2000",
+      "source_path": "Tools/Password Keeper/passkeep.ini",
+      "source_sha256": "eaceaf3b102b05f7655cb6e8aab71487833b2f7cacdf96389766b8fff32c1bcd",
+      "version": "2.7"
+    },
+    {
+      "edition_note": null,
+      "identification_id": "identification:41cdbb6fd7b9ac1811d32a5ebc90e1f9facbb9f262cd7916025574012cb385f5",
+      "identity": "Associate",
+      "key": {
+        "entry": "Tool4173736f6369617465",
+        "manifest": "sha256:d41fc8423030eebf0a86c198d20e2da50a246bc17a6be75fd26dedbde130a989"
+      },
+      "launch_sha256": "8b3403eb297f40e4b789e66269f08e3acfe63d2924aa08ff82119e68ebca3e09",
+      "medium": "kcd-1-2000",
+      "source_path": "Tools/Associate/associate.txt",
+      "source_sha256": "26ca334b1c02bbf49214723d7afa1187cdef8bd04797a0a4562e144dd2507d71",
+      "version": "1.3"
+    },
+    {
+      "edition_note": null,
+      "identification_id": "identification:f13435c9836854ef3fd72397d3db0a1713a9574558868233b784e01f92447279",
+      "identity": "Intercent 98",
+      "key": {
+        "entry": "Tool496e74657243656e74",
+        "manifest": "sha256:d41fc8423030eebf0a86c198d20e2da50a246bc17a6be75fd26dedbde130a989"
+      },
+      "launch_sha256": "321f5230b44b427cf691254f16e8b96c9828c39b016d94ee8084b8bdadb8c723",
+      "medium": "kcd-1-2000",
+      "source_path": "Tools/InterCent/!readme.txt",
+      "source_sha256": "c538f238804688a7e21bcd003aa18366ccb4e17f83f8eb022d6b74224bdb7e9f",
+      "version": "2.2"
+    },
+    {
+      "edition_note": null,
+      "identification_id": "identification:630108a7f29e1e9f1985c34a7040d09381ac5ba511b9ef56764581f40dd9f1c7",
+      "identity": "SafeClean Utilities",
+      "key": {
+        "entry": "Tool53616665436c65616e",
+        "manifest": "sha256:d41fc8423030eebf0a86c198d20e2da50a246bc17a6be75fd26dedbde130a989"
+      },
+      "launch_sha256": "82611c215d173610e0d43ca596a2900fa637ad6efcaffb2989f8510d9c849e47",
+      "medium": "kcd-1-2000",
+      "source_path": "Tools/SafeClean/readme.txt",
+      "source_sha256": "05ec55d88bbab8568e3d9983dd1d5d4c0662ee553e7ba3755deb9092ae66a101",
+      "version": "2.0"
+    },
+    {
+      "edition_note": null,
+      "identification_id": "identification:493e9b249d8edeb96529c1060dffd14b79c429c3d735ff5c791883ea46e3d4a4",
+      "identity": "HJ-TreePad",
+      "key": {
+        "entry": "Tool54726565506164",
+        "manifest": "sha256:d41fc8423030eebf0a86c198d20e2da50a246bc17a6be75fd26dedbde130a989"
+      },
+      "launch_sha256": "813d192eac0ddc095a77625a5e5f11b99547e2e0fe210d256ba63f084d5b6f1a",
+      "medium": "kcd-1-2000",
+      "source_path": "Tools/treepad/readme.txt",
+      "source_sha256": "86f020607998d8947ad48def15ec5d0d2478515da4b93cb2010e5db71e29dad7",
+      "version": "2.6"
+    },
+    {
+      "edition_note": "trial",
+      "identification_id": "identification:c7ba1b644ee6417cd6a431cdfb9f025458443a62185fa3f0043c2b70b1652973",
+      "identity": "SuperCat",
+      "key": {
+        "entry": "Tool5375706572436174",
+        "manifest": "sha256:d41fc8423030eebf0a86c198d20e2da50a246bc17a6be75fd26dedbde130a989"
+      },
+      "launch_sha256": "c9fba3f76f42bdcfa5f122bc6358ceeccda15e7883a0286c5b28fa2bdf4062ad",
+      "medium": "kcd-1-2000",
+      "source_path": "Tools/SuperCat/readme.txt",
+      "source_sha256": "b2bdffc96ef003b03b952bedab76f0a5a014f52bd250cd9b688e2028ddcd456a",
+      "version": "3.1"
+    },
+    {
+      "edition_note": "special edition",
+      "identification_id": "identification:9bfdaaf8b9d5f10533e1b372f2bc2b7a97cd5861ceac17b0df61a1a271652423",
+      "identity": "Packager MK1",
+      "key": {
+        "entry": "Tool4d4b31",
+        "manifest": "sha256:d41fc8423030eebf0a86c198d20e2da50a246bc17a6be75fd26dedbde130a989"
+      },
+      "launch_sha256": "3196a2ed70e01b4b7e789f84457c1e4d5dc49fec174abf9fa6d3acf95fb41df5",
+      "medium": "kcd-1-2000",
+      "source_path": "Tools/Packager MK1/readme.txt",
+      "source_sha256": "502a485c46c25ea842675d2a377c62e6cd8251a87f15dd63f0f6ce97adb97c24",
+      "version": "2"
+    },
+    {
+      "edition_note": null,
+      "identification_id": "identification:bf7947b1674c264708946cda6d295022c29ee5df1bfc672cbcc9139a0d1aa163",
+      "identity": "Password Keeper for Windows 95/NT",
+      "key": {
+        "entry": "Tool50617373776f7264204b6565706572",
+        "manifest": "sha256:a97d1734f36d18143126fcea22401340937c83e920523660e0d591ca7f10e337"
+      },
+      "launch_sha256": "5629671ebf1a6438aac2fcef43196c7b7656209bf8edd483119ded02ec4cde94",
+      "medium": "kcd-1-2001",
+      "source_path": "Tools/Password Keeper/passkeep.ini",
+      "source_sha256": "eaceaf3b102b05f7655cb6e8aab71487833b2f7cacdf96389766b8fff32c1bcd",
+      "version": "2.7"
+    },
+    {
+      "edition_note": null,
+      "identification_id": "identification:e39bcb22b717df2a19afd7d1ad9948fc5c25963832569fad831b9bdedf318714",
+      "identity": "SafeClean Utilities",
+      "key": {
+        "entry": "Tool53616665436c65616e",
+        "manifest": "sha256:a97d1734f36d18143126fcea22401340937c83e920523660e0d591ca7f10e337"
+      },
+      "launch_sha256": "82611c215d173610e0d43ca596a2900fa637ad6efcaffb2989f8510d9c849e47",
+      "medium": "kcd-1-2001",
+      "source_path": "Tools/SafeClean/readme.txt",
+      "source_sha256": "05ec55d88bbab8568e3d9983dd1d5d4c0662ee553e7ba3755deb9092ae66a101",
+      "version": "2.0"
+    },
+    {
+      "edition_note": "trial",
+      "identification_id": "identification:05f790601e7477863c6aa70149fc3ec780e050a1235dddfba78fc079f0c28454",
+      "identity": "SuperCat",
+      "key": {
+        "entry": "Tool5375706572436174",
+        "manifest": "sha256:a97d1734f36d18143126fcea22401340937c83e920523660e0d591ca7f10e337"
+      },
+      "launch_sha256": "c9fba3f76f42bdcfa5f122bc6358ceeccda15e7883a0286c5b28fa2bdf4062ad",
+      "medium": "kcd-1-2001",
+      "source_path": "Tools/SuperCat/readme.txt",
+      "source_sha256": "b2bdffc96ef003b03b952bedab76f0a5a014f52bd250cd9b688e2028ddcd456a",
+      "version": "3.1"
+    },
+    {
+      "edition_note": null,
+      "identification_id": "identification:24b5ba3d0f611984e09989564a4ba10be064e32fa24684ed8ba5011d6c950a20",
+      "identity": "vSubst",
+      "key": {
+        "entry": "Tool765375627374",
+        "manifest": "sha256:a97d1734f36d18143126fcea22401340937c83e920523660e0d591ca7f10e337"
+      },
+      "launch_sha256": "da835ac65fa76e61c94d44ac938d0b53030e02b5e787d12f0ee27f51f71bd187",
+      "medium": "kcd-1-2001",
+      "source_path": "Tools/vsubst/Vsubst.exe",
+      "source_sha256": "c384cdf730b20c6faf4080aa1f7400f3f00d1b0e5b6b7c3fce747c5089adb3d9",
+      "version": "1.4.0.0"
+    },
+    {
+      "edition_note": null,
+      "identification_id": "identification:cdf5a2cbc53b25ce3284c7c650cf37a466c934b6718671fc746ce2169344c375",
+      "identity": "HJ-TreePad",
+      "key": {
+        "entry": "Tool54726565506164",
+        "manifest": "sha256:a97d1734f36d18143126fcea22401340937c83e920523660e0d591ca7f10e337"
+      },
+      "launch_sha256": "813d192eac0ddc095a77625a5e5f11b99547e2e0fe210d256ba63f084d5b6f1a",
+      "medium": "kcd-1-2001",
+      "source_path": "Tools/treepad/readme.txt",
+      "source_sha256": "86f020607998d8947ad48def15ec5d0d2478515da4b93cb2010e5db71e29dad7",
+      "version": "2.6"
+    },
+    {
+      "edition_note": "special edition",
+      "identification_id": "identification:4609feb750a13699cab9f199d1731ef1f12419bd9889a7e843cf4c4b6b988ef9",
+      "identity": "Packager MK1",
+      "key": {
+        "entry": "Tool4d4b31",
+        "manifest": "sha256:a97d1734f36d18143126fcea22401340937c83e920523660e0d591ca7f10e337"
+      },
+      "launch_sha256": "3196a2ed70e01b4b7e789f84457c1e4d5dc49fec174abf9fa6d3acf95fb41df5",
+      "medium": "kcd-1-2001",
+      "source_path": "Tools/Packager MK1/readme.txt",
+      "source_sha256": "502a485c46c25ea842675d2a377c62e6cd8251a87f15dd63f0f6ce97adb97c24",
+      "version": "2"
+    },
+    {
+      "edition_note": null,
+      "identification_id": "identification:85cf51be09822e425afe64f084657a561669a8f3ab54b1c850b5f0aeaf6de6b3",
+      "identity": "Any Speed",
+      "key": {
+        "entry": "Tool416e795370656564",
+        "manifest": "sha256:13e520c97edd5869b07eafd3348e854c838a2082663342cabd314c16bb1f4ce2"
+      },
+      "launch_sha256": "dc65cf4b64aa1e1ecca09d150bc286ff1404a838c5b8a8a7cf70ea9ab22796a7",
+      "medium": "kcd-13-2000",
+      "source_path": "Tools/AnySpeed/Readme.txt",
+      "source_sha256": "c1c80cf9e479f4dfd073acc6f2fa3a6ed885cc3ea5a37abfa19f747a1c3441df",
+      "version": "1.3"
+    },
+    {
+      "edition_note": null,
+      "identification_id": "identification:20c4abb1de87bf0ad918aa942853efc96db008b845b8dd859987a2be77e78846",
+      "identity": "Password Keeper for Windows 95/NT",
+      "key": {
+        "entry": "Tool50617373776f7264204b6565706572",
+        "manifest": "sha256:13e520c97edd5869b07eafd3348e854c838a2082663342cabd314c16bb1f4ce2"
+      },
+      "launch_sha256": "5629671ebf1a6438aac2fcef43196c7b7656209bf8edd483119ded02ec4cde94",
+      "medium": "kcd-13-2000",
+      "source_path": "Tools/Password Keeper/passkeep.ini",
+      "source_sha256": "eaceaf3b102b05f7655cb6e8aab71487833b2f7cacdf96389766b8fff32c1bcd",
+      "version": "2.7"
+    },
+    {
+      "edition_note": null,
+      "identification_id": "identification:5b1373d36431986122eecddb14b01b89dd26bf7f694698682c01e690f6e5149f",
+      "identity": "SafeClean Utilities",
+      "key": {
+        "entry": "Tool53616665436c65616e",
+        "manifest": "sha256:13e520c97edd5869b07eafd3348e854c838a2082663342cabd314c16bb1f4ce2"
+      },
+      "launch_sha256": "82611c215d173610e0d43ca596a2900fa637ad6efcaffb2989f8510d9c849e47",
+      "medium": "kcd-13-2000",
+      "source_path": "Tools/SafeClean/readme.txt",
+      "source_sha256": "05ec55d88bbab8568e3d9983dd1d5d4c0662ee553e7ba3755deb9092ae66a101",
+      "version": "2.0"
+    },
+    {
+      "edition_note": null,
+      "identification_id": "identification:4073623186f2e916fd0d84a64b69cd680c7fe92b7c73a3b0bd451772fcc240e6",
+      "identity": "vSubst",
+      "key": {
+        "entry": "Tool567375627374",
+        "manifest": "sha256:13e520c97edd5869b07eafd3348e854c838a2082663342cabd314c16bb1f4ce2"
+      },
+      "launch_sha256": "da835ac65fa76e61c94d44ac938d0b53030e02b5e787d12f0ee27f51f71bd187",
+      "medium": "kcd-13-2000",
+      "source_path": "Tools/vsubst/Vsubst.exe",
+      "source_sha256": "c384cdf730b20c6faf4080aa1f7400f3f00d1b0e5b6b7c3fce747c5089adb3d9",
+      "version": "1.4.0.0"
+    },
+    {
+      "edition_note": "trial",
+      "identification_id": "identification:3345541802af5eeb98ea45b425b9508738ddc4c7b4af25113f171fe6c7684563",
+      "identity": "SuperCat",
+      "key": {
+        "entry": "Tool5375706572436174",
+        "manifest": "sha256:13e520c97edd5869b07eafd3348e854c838a2082663342cabd314c16bb1f4ce2"
+      },
+      "launch_sha256": "c9fba3f76f42bdcfa5f122bc6358ceeccda15e7883a0286c5b28fa2bdf4062ad",
+      "medium": "kcd-13-2000",
+      "source_path": "Tools/SuperCat/readme.txt",
+      "source_sha256": "b2bdffc96ef003b03b952bedab76f0a5a014f52bd250cd9b688e2028ddcd456a",
+      "version": "3.1"
+    },
+    {
+      "edition_note": null,
+      "identification_id": "identification:3e1b07fb3607f9ca5a1b12cbef1fbdaaaead5e46d9807e63961e89be7b105f00",
+      "identity": "MBProbe",
+      "key": {
+        "entry": "Tool4d4250726f6265",
+        "manifest": "sha256:13e520c97edd5869b07eafd3348e854c838a2082663342cabd314c16bb1f4ce2"
+      },
+      "launch_sha256": "5428ef2928161b39adf68d39ec54c5616777c08745f3ceac0a4ea715289693c9",
+      "medium": "kcd-13-2000",
+      "source_path": "Tools/MBProbe/readme.txt",
+      "source_sha256": "5fc5dc88275a194532174159aa0244ad411a6769f611db4e913f492a7db23035",
+      "version": "1.00"
+    },
+    {
+      "edition_note": null,
+      "identification_id": "identification:4e17dc97059188b80c32df871e849cd404163194d7818bd25118bf935630f435",
+      "identity": "HJ-TreePad",
+      "key": {
+        "entry": "Tool54726565506164",
+        "manifest": "sha256:13e520c97edd5869b07eafd3348e854c838a2082663342cabd314c16bb1f4ce2"
+      },
+      "launch_sha256": "813d192eac0ddc095a77625a5e5f11b99547e2e0fe210d256ba63f084d5b6f1a",
+      "medium": "kcd-13-2000",
+      "source_path": "Tools/treepad/readme.txt",
+      "source_sha256": "86f020607998d8947ad48def15ec5d0d2478515da4b93cb2010e5db71e29dad7",
+      "version": "2.6"
+    },
+    {
+      "edition_note": "special edition",
+      "identification_id": "identification:f1da9549719ecfb0c69529c979306e5c85a987c687cd5700c7c55fe6ffa34602",
+      "identity": "Packager MK1",
+      "key": {
+        "entry": "Tool4d4b31",
+        "manifest": "sha256:13e520c97edd5869b07eafd3348e854c838a2082663342cabd314c16bb1f4ce2"
+      },
+      "launch_sha256": "3196a2ed70e01b4b7e789f84457c1e4d5dc49fec174abf9fa6d3acf95fb41df5",
+      "medium": "kcd-13-2000",
+      "source_path": "Tools/Packager MK1/readme.txt",
+      "source_sha256": "502a485c46c25ea842675d2a377c62e6cd8251a87f15dd63f0f6ce97adb97c24",
+      "version": "2"
+    },
+    {
+      "edition_note": null,
+      "identification_id": "identification:9656cfb0a11ed8789224a8d7e46eef80bcf378843a743bafe2aad902a4a0f69a",
+      "identity": "Any Speed",
+      "key": {
+        "entry": "Tool416e795370656564",
+        "manifest": "sha256:c433899341a492cb6c472842f312b6f46fc693ba981b8679593eba67de906f12"
+      },
+      "launch_sha256": "dc65cf4b64aa1e1ecca09d150bc286ff1404a838c5b8a8a7cf70ea9ab22796a7",
+      "medium": "kcd-4-2000",
+      "source_path": "Tools/AnySpeed/Readme.txt",
+      "source_sha256": "c1c80cf9e479f4dfd073acc6f2fa3a6ed885cc3ea5a37abfa19f747a1c3441df",
+      "version": "1.3"
+    },
+    {
+      "edition_note": null,
+      "identification_id": "identification:c9b83cc3b3b0a89ad4c6829f670e3b93f9789213ca42277d074d2c7df633e040",
+      "identity": "Password Keeper for Windows 95/NT",
+      "key": {
+        "entry": "Tool50617373776f7264204b6565706572",
+        "manifest": "sha256:c433899341a492cb6c472842f312b6f46fc693ba981b8679593eba67de906f12"
+      },
+      "launch_sha256": "5629671ebf1a6438aac2fcef43196c7b7656209bf8edd483119ded02ec4cde94",
+      "medium": "kcd-4-2000",
+      "source_path": "Tools/Password Keeper/passkeep.ini",
+      "source_sha256": "eaceaf3b102b05f7655cb6e8aab71487833b2f7cacdf96389766b8fff32c1bcd",
+      "version": "2.7"
+    },
+    {
+      "edition_note": null,
+      "identification_id": "identification:6fb9e80ef7e19ee954bb2e39be0b96068445d789d33aac4354995227a570cd57",
+      "identity": "Associate",
+      "key": {
+        "entry": "Tool4173736f6369617465",
+        "manifest": "sha256:c433899341a492cb6c472842f312b6f46fc693ba981b8679593eba67de906f12"
+      },
+      "launch_sha256": "8b3403eb297f40e4b789e66269f08e3acfe63d2924aa08ff82119e68ebca3e09",
+      "medium": "kcd-4-2000",
+      "source_path": "Tools/Associate/associate.txt",
+      "source_sha256": "26ca334b1c02bbf49214723d7afa1187cdef8bd04797a0a4562e144dd2507d71",
+      "version": "1.3"
+    },
+    {
+      "edition_note": null,
+      "identification_id": "identification:e1ff14c618af452cc2fa4a8f90fec061ae51c595ff1bdb7fd5b544e0d3f4ddae",
+      "identity": "Modem Monitor Graph",
+      "key": {
+        "entry": "Tool4d6f64656d4d6f6e69746f72",
+        "manifest": "sha256:c433899341a492cb6c472842f312b6f46fc693ba981b8679593eba67de906f12"
+      },
+      "launch_sha256": "495114fbaeb48ebea3de00700c14898542e6bd3cfec769cffff56ea480b08922",
+      "medium": "kcd-4-2000",
+      "source_path": "Tools/ModemMonitor/MODEMGPH.TXT",
+      "source_sha256": "015fd9f8d3ec0a03417bc7d235695c3e24db320cd9996b4d9533114e5fc4c6dc",
+      "version": "3.3"
+    },
+    {
+      "edition_note": null,
+      "identification_id": "identification:2c2e60c50fd56a1ff3f05ee33ca473037b4a403b678fc8acd8f7dca227a49ade",
+      "identity": "Intercent 98",
+      "key": {
+        "entry": "Tool496e74657243656e74",
+        "manifest": "sha256:c433899341a492cb6c472842f312b6f46fc693ba981b8679593eba67de906f12"
+      },
+      "launch_sha256": "321f5230b44b427cf691254f16e8b96c9828c39b016d94ee8084b8bdadb8c723",
+      "medium": "kcd-4-2000",
+      "source_path": "Tools/InterCent/!readme.txt",
+      "source_sha256": "c538f238804688a7e21bcd003aa18366ccb4e17f83f8eb022d6b74224bdb7e9f",
+      "version": "2.2"
+    },
+    {
+      "edition_note": null,
+      "identification_id": "identification:10af8592d1d829fff72a89a5d7c0df3f87a186b9280d21de09c7f8a802f34195",
+      "identity": "SafeClean Utilities",
+      "key": {
+        "entry": "Tool53616665436c65616e",
+        "manifest": "sha256:c433899341a492cb6c472842f312b6f46fc693ba981b8679593eba67de906f12"
+      },
+      "launch_sha256": "82611c215d173610e0d43ca596a2900fa637ad6efcaffb2989f8510d9c849e47",
+      "medium": "kcd-4-2000",
+      "source_path": "Tools/SafeClean/readme.txt",
+      "source_sha256": "05ec55d88bbab8568e3d9983dd1d5d4c0662ee553e7ba3755deb9092ae66a101",
+      "version": "2.0"
+    },
+    {
+      "edition_note": "trial",
+      "identification_id": "identification:85d4ba2b3f8a98cf54b83e6e68aedd070200cfbd8dbadeef9646ba13bc6b5bc8",
+      "identity": "SuperCat",
+      "key": {
+        "entry": "Tool5375706572436174",
+        "manifest": "sha256:c433899341a492cb6c472842f312b6f46fc693ba981b8679593eba67de906f12"
+      },
+      "launch_sha256": "c9fba3f76f42bdcfa5f122bc6358ceeccda15e7883a0286c5b28fa2bdf4062ad",
+      "medium": "kcd-4-2000",
+      "source_path": "Tools/SuperCat/readme.txt",
+      "source_sha256": "b2bdffc96ef003b03b952bedab76f0a5a014f52bd250cd9b688e2028ddcd456a",
+      "version": "3.1"
+    },
+    {
+      "edition_note": null,
+      "identification_id": "identification:3e0294f43d30d2211df84eb536c931309d992a23ebb15f176c677987f397b861",
+      "identity": "MBProbe",
+      "key": {
+        "entry": "Tool4d4250726f6265",
+        "manifest": "sha256:c433899341a492cb6c472842f312b6f46fc693ba981b8679593eba67de906f12"
+      },
+      "launch_sha256": "5428ef2928161b39adf68d39ec54c5616777c08745f3ceac0a4ea715289693c9",
+      "medium": "kcd-4-2000",
+      "source_path": "Tools/MBProbe/readme.txt",
+      "source_sha256": "5fc5dc88275a194532174159aa0244ad411a6769f611db4e913f492a7db23035",
+      "version": "1.00"
+    },
+    {
+      "edition_note": null,
+      "identification_id": "identification:378c026c97c529d4850f18960f5546f57057717fcd3fe9d9aedd9e4c3818e5a9",
+      "identity": "HJ-TreePad",
+      "key": {
+        "entry": "Tool54726565506164",
+        "manifest": "sha256:c433899341a492cb6c472842f312b6f46fc693ba981b8679593eba67de906f12"
+      },
+      "launch_sha256": "813d192eac0ddc095a77625a5e5f11b99547e2e0fe210d256ba63f084d5b6f1a",
+      "medium": "kcd-4-2000",
+      "source_path": "Tools/treepad/readme.txt",
+      "source_sha256": "86f020607998d8947ad48def15ec5d0d2478515da4b93cb2010e5db71e29dad7",
+      "version": "2.6"
+    },
+    {
+      "edition_note": "special edition",
+      "identification_id": "identification:8c7980e1d5706b8bc29a1d76873e5daf79fe7c66ea7bbeac2e1a119679d32ffe",
+      "identity": "Packager MK1",
+      "key": {
+        "entry": "Tool4d4b31",
+        "manifest": "sha256:c433899341a492cb6c472842f312b6f46fc693ba981b8679593eba67de906f12"
+      },
+      "launch_sha256": "3196a2ed70e01b4b7e789f84457c1e4d5dc49fec174abf9fa6d3acf95fb41df5",
+      "medium": "kcd-4-2000",
+      "source_path": "Tools/Packager MK1/readme.txt",
+      "source_sha256": "502a485c46c25ea842675d2a377c62e6cd8251a87f15dd63f0f6ce97adb97c24",
+      "version": "2"
+    },
+    {
+      "edition_note": null,
+      "identification_id": "identification:b8e11c4333717ccfc3d21494831cfad4d8bb51dd271c331b869c6e2ecb9fdfaf",
+      "identity": "Password Keeper for Windows 95/NT",
+      "key": {
+        "entry": "Tool50617373776f7264204b6565706572",
+        "manifest": "sha256:a4f0f99672722f1468df487b0379251c5e84cc945f8716c5746fc27fe3a3aada"
+      },
+      "launch_sha256": "5629671ebf1a6438aac2fcef43196c7b7656209bf8edd483119ded02ec4cde94",
+      "medium": "kcd-8-2001",
+      "source_path": "Tools/Password Keeper/passkeep.ini",
+      "source_sha256": "eaceaf3b102b05f7655cb6e8aab71487833b2f7cacdf96389766b8fff32c1bcd",
+      "version": "2.7"
+    },
+    {
+      "edition_note": null,
+      "identification_id": "identification:1f956f297df427db4f3c967def954438b4fa7e54285b9f32f8dd0e1decb11dc0",
+      "identity": "SafeClean Utilities",
+      "key": {
+        "entry": "Tool53616665436c65616e",
+        "manifest": "sha256:a4f0f99672722f1468df487b0379251c5e84cc945f8716c5746fc27fe3a3aada"
+      },
+      "launch_sha256": "83441525fb5aebe10892cfbc931395e2bb1f68c8720e49bb58749cb95981f06d",
+      "medium": "kcd-8-2001",
+      "source_path": "Tools/SafeClean/readme.txt",
+      "source_sha256": "976a9228d08e853902196766b61de3a867296c40738e67b263275bdb0aed3e99",
+      "version": "3.02"
+    },
+    {
+      "edition_note": "trial",
+      "identification_id": "identification:c48ab275dc10ec043f6037177d639df2885aac59ca5f7d15105de16276bc1bf3",
+      "identity": "SuperCat",
+      "key": {
+        "entry": "Tool5375706572436174",
+        "manifest": "sha256:a4f0f99672722f1468df487b0379251c5e84cc945f8716c5746fc27fe3a3aada"
+      },
+      "launch_sha256": "c9fba3f76f42bdcfa5f122bc6358ceeccda15e7883a0286c5b28fa2bdf4062ad",
+      "medium": "kcd-8-2001",
+      "source_path": "Tools/SuperCat/readme.txt",
+      "source_sha256": "b2bdffc96ef003b03b952bedab76f0a5a014f52bd250cd9b688e2028ddcd456a",
+      "version": "3.1"
+    },
+    {
+      "edition_note": null,
+      "identification_id": "identification:9c272bf0a7aecdcdcdfb0a3bb51aeb76dafdf0f176f2c2959015f9dbee1fa3b5",
+      "identity": "Configuration LifeGuard",
+      "key": {
+        "entry": "Tool4669726562616c6c",
+        "manifest": "sha256:a4f0f99672722f1468df487b0379251c5e84cc945f8716c5746fc27fe3a3aada"
+      },
+      "launch_sha256": "961ebe31e3563f80d57e9a693dfdbfb35864f5a0e14fecefec5901e6a80b982d",
+      "medium": "kcd-8-2001",
+      "source_path": "Tools/Configuration Lifeguard/ReadMe.txt",
+      "source_sha256": "3ccf4636f31ed1743e86ee321ce40d7e67ffd15a49b9fc3b5528322fe02e8d31",
+      "version": "3.7"
+    },
+    {
+      "edition_note": null,
+      "identification_id": "identification:0883ac23b78fbd9bb2640bd34001ea598994a255dd1542fa483e3c5a33fc553f",
+      "identity": "vSubst",
+      "key": {
+        "entry": "Tool765375627374",
+        "manifest": "sha256:a4f0f99672722f1468df487b0379251c5e84cc945f8716c5746fc27fe3a3aada"
+      },
+      "launch_sha256": "da835ac65fa76e61c94d44ac938d0b53030e02b5e787d12f0ee27f51f71bd187",
+      "medium": "kcd-8-2001",
+      "source_path": "Tools/vsubst/Vsubst.exe",
+      "source_sha256": "c384cdf730b20c6faf4080aa1f7400f3f00d1b0e5b6b7c3fce747c5089adb3d9",
+      "version": "1.4.0.0"
+    },
+    {
+      "edition_note": null,
+      "identification_id": "identification:6604866beaae1287aca7946458df30eac11b9b2acd9928d15b9557e877021d20",
+      "identity": "HJ-TreePad",
+      "key": {
+        "entry": "Tool54726565506164",
+        "manifest": "sha256:a4f0f99672722f1468df487b0379251c5e84cc945f8716c5746fc27fe3a3aada"
+      },
+      "launch_sha256": "813d192eac0ddc095a77625a5e5f11b99547e2e0fe210d256ba63f084d5b6f1a",
+      "medium": "kcd-8-2001",
+      "source_path": "Tools/treepad/readme.txt",
+      "source_sha256": "86f020607998d8947ad48def15ec5d0d2478515da4b93cb2010e5db71e29dad7",
+      "version": "2.6"
+    },
+    {
+      "edition_note": "special edition",
+      "identification_id": "identification:8ef4e9ffe34c7f609c7fe4db0b2cfb558f233b596eaea04b6637569ffe8de3c4",
+      "identity": "Packager MK1",
+      "key": {
+        "entry": "Tool4d4b31",
+        "manifest": "sha256:a4f0f99672722f1468df487b0379251c5e84cc945f8716c5746fc27fe3a3aada"
+      },
+      "launch_sha256": "3196a2ed70e01b4b7e789f84457c1e4d5dc49fec174abf9fa6d3acf95fb41df5",
+      "medium": "kcd-8-2001",
+      "source_path": "Tools/Packager MK1/readme.txt",
+      "source_sha256": "502a485c46c25ea842675d2a377c62e6cd8251a87f15dd63f0f6ce97adb97c24",
+      "version": "2"
+    },
+    {
+      "edition_note": null,
+      "identification_id": "identification:2c7de2e70fae8b293395157e27b6d9d067fac347c0140dcd15385f10d43bf3b8",
+      "identity": "Any Speed",
+      "key": {
+        "entry": "Tool416e795370656564",
+        "manifest": "sha256:83d64f148704f965abd3ebbf8e6c5ca98428eb088310d792d10e39a9e6f9a2bf"
+      },
+      "launch_sha256": "dc65cf4b64aa1e1ecca09d150bc286ff1404a838c5b8a8a7cf70ea9ab22796a7",
+      "medium": "kcd-9-2000",
+      "source_path": "Tools/AnySpeed/Readme.txt",
+      "source_sha256": "c1c80cf9e479f4dfd073acc6f2fa3a6ed885cc3ea5a37abfa19f747a1c3441df",
+      "version": "1.3"
+    },
+    {
+      "edition_note": null,
+      "identification_id": "identification:68a547f53a4c28e04e633e08d5d39570b6c6052c1f4de02ba7663c3fb8b1ffde",
+      "identity": "Password Keeper for Windows 95/NT",
+      "key": {
+        "entry": "Tool50617373776f7264204b6565706572",
+        "manifest": "sha256:83d64f148704f965abd3ebbf8e6c5ca98428eb088310d792d10e39a9e6f9a2bf"
+      },
+      "launch_sha256": "5629671ebf1a6438aac2fcef43196c7b7656209bf8edd483119ded02ec4cde94",
+      "medium": "kcd-9-2000",
+      "source_path": "Tools/Password Keeper/passkeep.ini",
+      "source_sha256": "eaceaf3b102b05f7655cb6e8aab71487833b2f7cacdf96389766b8fff32c1bcd",
+      "version": "2.7"
+    },
+    {
+      "edition_note": null,
+      "identification_id": "identification:d2a6f2605793586d15d72976c4bfc374ae2741b33984b7c82a6d9380c95cf23b",
+      "identity": "Associate",
+      "key": {
+        "entry": "Tool4173736f6369617465",
+        "manifest": "sha256:83d64f148704f965abd3ebbf8e6c5ca98428eb088310d792d10e39a9e6f9a2bf"
+      },
+      "launch_sha256": "8b3403eb297f40e4b789e66269f08e3acfe63d2924aa08ff82119e68ebca3e09",
+      "medium": "kcd-9-2000",
+      "source_path": "Tools/Associate/associate.txt",
+      "source_sha256": "26ca334b1c02bbf49214723d7afa1187cdef8bd04797a0a4562e144dd2507d71",
+      "version": "1.3"
+    },
+    {
+      "edition_note": null,
+      "identification_id": "identification:91ced06999d82c273aa608480486f10d28b36e6abc3b0b47cb66ead5dc0ac51a",
+      "identity": "SafeClean Utilities",
+      "key": {
+        "entry": "Tool53616665436c65616e",
+        "manifest": "sha256:83d64f148704f965abd3ebbf8e6c5ca98428eb088310d792d10e39a9e6f9a2bf"
+      },
+      "launch_sha256": "82611c215d173610e0d43ca596a2900fa637ad6efcaffb2989f8510d9c849e47",
+      "medium": "kcd-9-2000",
+      "source_path": "Tools/SafeClean/readme.txt",
+      "source_sha256": "05ec55d88bbab8568e3d9983dd1d5d4c0662ee553e7ba3755deb9092ae66a101",
+      "version": "2.0"
+    },
+    {
+      "edition_note": null,
+      "identification_id": "identification:acf116decd57a29628248a5c4d6cde039b46646282c0727e0934fe1cd2705c91",
+      "identity": "vSubst",
+      "key": {
+        "entry": "Tool567375627374",
+        "manifest": "sha256:83d64f148704f965abd3ebbf8e6c5ca98428eb088310d792d10e39a9e6f9a2bf"
+      },
+      "launch_sha256": "da835ac65fa76e61c94d44ac938d0b53030e02b5e787d12f0ee27f51f71bd187",
+      "medium": "kcd-9-2000",
+      "source_path": "Tools/vsubst/Vsubst.exe",
+      "source_sha256": "c384cdf730b20c6faf4080aa1f7400f3f00d1b0e5b6b7c3fce747c5089adb3d9",
+      "version": "1.4.0.0"
+    },
+    {
+      "edition_note": "trial",
+      "identification_id": "identification:c1ce38da61bc4448298d1a5504a1c4139668d9fa5fff03dea98b12393179c037",
+      "identity": "SuperCat",
+      "key": {
+        "entry": "Tool5375706572436174",
+        "manifest": "sha256:83d64f148704f965abd3ebbf8e6c5ca98428eb088310d792d10e39a9e6f9a2bf"
+      },
+      "launch_sha256": "c9fba3f76f42bdcfa5f122bc6358ceeccda15e7883a0286c5b28fa2bdf4062ad",
+      "medium": "kcd-9-2000",
+      "source_path": "Tools/SuperCat/readme.txt",
+      "source_sha256": "b2bdffc96ef003b03b952bedab76f0a5a014f52bd250cd9b688e2028ddcd456a",
+      "version": "3.1"
+    },
+    {
+      "edition_note": null,
+      "identification_id": "identification:cd01ccf267b4092814691133f36e15b2383739ee526ca9a67b40abb69e875d94",
+      "identity": "Modem Monitor Graph",
+      "key": {
+        "entry": "Tool4d6f64656d4d6f6e69746f72",
+        "manifest": "sha256:83d64f148704f965abd3ebbf8e6c5ca98428eb088310d792d10e39a9e6f9a2bf"
+      },
+      "launch_sha256": "495114fbaeb48ebea3de00700c14898542e6bd3cfec769cffff56ea480b08922",
+      "medium": "kcd-9-2000",
+      "source_path": "Tools/ModemMonitor/MODEMGPH.TXT",
+      "source_sha256": "015fd9f8d3ec0a03417bc7d235695c3e24db320cd9996b4d9533114e5fc4c6dc",
+      "version": "3.3"
+    },
+    {
+      "edition_note": null,
+      "identification_id": "identification:bdbedb31e2e5e11b8e7794bcb55b46bb9a44e28d07a9eb28f522bcb91607819c",
+      "identity": "MBProbe",
+      "key": {
+        "entry": "Tool4d4250726f6265",
+        "manifest": "sha256:83d64f148704f965abd3ebbf8e6c5ca98428eb088310d792d10e39a9e6f9a2bf"
+      },
+      "launch_sha256": "5428ef2928161b39adf68d39ec54c5616777c08745f3ceac0a4ea715289693c9",
+      "medium": "kcd-9-2000",
+      "source_path": "Tools/MBProbe/readme.txt",
+      "source_sha256": "5fc5dc88275a194532174159aa0244ad411a6769f611db4e913f492a7db23035",
+      "version": "1.00"
+    },
+    {
+      "edition_note": null,
+      "identification_id": "identification:4771407dede4b974cb90aed43b1860b3514de5252186928f0ef28c154f2c8653",
+      "identity": "HJ-TreePad",
+      "key": {
+        "entry": "Tool54726565506164",
+        "manifest": "sha256:83d64f148704f965abd3ebbf8e6c5ca98428eb088310d792d10e39a9e6f9a2bf"
+      },
+      "launch_sha256": "813d192eac0ddc095a77625a5e5f11b99547e2e0fe210d256ba63f084d5b6f1a",
+      "medium": "kcd-9-2000",
+      "source_path": "Tools/treepad/readme.txt",
+      "source_sha256": "86f020607998d8947ad48def15ec5d0d2478515da4b93cb2010e5db71e29dad7",
+      "version": "2.6"
+    },
+    {
+      "edition_note": "special edition",
+      "identification_id": "identification:4c6aeab3ea5db0120830c8200d555fcd3a5a06334df71c96c134125fb628bed6",
+      "identity": "Packager MK1",
+      "key": {
+        "entry": "Tool4d4b31",
+        "manifest": "sha256:83d64f148704f965abd3ebbf8e6c5ca98428eb088310d792d10e39a9e6f9a2bf"
+      },
+      "launch_sha256": "3196a2ed70e01b4b7e789f84457c1e4d5dc49fec174abf9fa6d3acf95fb41df5",
+      "medium": "kcd-9-2000",
+      "source_path": "Tools/Packager MK1/readme.txt",
+      "source_sha256": "502a485c46c25ea842675d2a377c62e6cd8251a87f15dd63f0f6ce97adb97c24",
+      "version": "2"
+    }
+  ],
+  "review_brief_sha256": "6f105f496b8dd0ed8420eeffd1f9c93de7411191df89a39c2f54c172568270a8",
+  "reviewer": "Stian",
+  "schema": "bootdisk-workshop-review-audit-1",
+  "source_issues": [
+    {
+      "key": {
+        "entry": "Tool41646452656d6f7665",
+        "manifest": "sha256:a97d1734f36d18143126fcea22401340937c83e920523660e0d591ca7f10e337"
+      },
+      "medium": "kcd-1-2001",
+      "reason": "Manglende programmappe og startfil på denne CD-en. Bevar menyomtalen; ikke kopier programtilknytning fra en annen CD.",
+      "title": "Add/Remove"
+    },
+    {
+      "key": {
+        "entry": "Tool53757065724465736b",
+        "manifest": "sha256:c433899341a492cb6c472842f312b6f46fc693ba981b8679593eba67de906f12"
+      },
+      "medium": "kcd-4-2000",
+      "reason": "Manglende programmappe og startfil på denne CD-en. Bevar menyomtalen; ikke kopier programtilknytning fra en annen CD.",
+      "title": "SuperDesk"
+    }
+  ],
+  "unresolved_entries": 110
+}
