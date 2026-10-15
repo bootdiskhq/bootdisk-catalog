@@ -170,6 +170,8 @@ def presentation_projection(
 
     cards = []
     contexts = source_context(manifest_path)
+    from .source_readiness import assess_manifest
+    readiness = assess_manifest(manifest_path)
     inherited = {}
     if previous_manifest is not None:
         old, _ = _load_manifest(Path(previous_manifest))
@@ -193,6 +195,7 @@ def presentation_projection(
                 # display it even while semantic identification is still pending.
                 "editorial_title": item["title"],
                 "source_context": contexts[item["entry"]],
+                "source_catalog": readiness[item["entry"]],
                 "curation_status": item["status"],
                 "software": _identified_releases(catalog, item["identifications"]),
                 # Paths are source observations. Publish is responsible for turning
