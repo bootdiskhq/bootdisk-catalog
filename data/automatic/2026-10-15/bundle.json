@@ -1,0 +1,2762 @@
+{
+  "catalog_schema": "bootdisk-catalog-0.1",
+  "records": [
+    {
+      "artifact_id": "artifact:sha256:b6ccb202d86457955f980237d2e4d6033b369c2497154414daf349926309cd4d",
+      "distribution_kind": "unknown",
+      "evidence": [
+        {
+          "field": "automatic_source_identity",
+          "kind": "interpreted",
+          "source_ref": {
+            "entry": "I35",
+            "manifest": "sha256:2e5f128883b3a0afea67604f1fd2518397e4b5c1fb128c2cd3f9d33aac6b3f50"
+          },
+          "value": {
+            "actor": "machine",
+            "basis": "CD title repeated in original description and one verified launch file",
+            "description": {
+              "source_ref": {
+                "entry": "I35",
+                "manifest": "sha256:2e5f128883b3a0afea67604f1fd2518397e4b5c1fb128c2cd3f9d33aac6b3f50",
+                "pointer": "/entries/66/evidence/description_tools/text"
+              },
+              "value": "Tiny Personal Firewall sikrer deg mot innbrudd i datamaskinen via internett. Det"
+            },
+            "launch": {
+              "path": "Tools/Firewall/Setup.exe",
+              "sha256": "b6ccb202d86457955f980237d2e4d6033b369c2497154414daf349926309cd4d",
+              "size": 54784
+            },
+            "rule": "cd-source-identity-1",
+            "scope": "source-attributed identity; installed payload and version not established",
+            "title": "Tiny Personal Firewall",
+            "title_pointer": "/entries/66/normalized/title"
+          }
+        }
+      ],
+      "id": "identification:auto-00322dd208ca3aff54de9c609014d16ffc7a81751b720fcf6919cf6bb4429d4d",
+      "schema": "bootdisk-catalog-0.1",
+      "software_release_id": "release:auto-00322dd208ca3aff54de9c609014d16ffc7a81751b720fcf6919cf6bb4429d4d",
+      "status": "interpreted",
+      "type": "identification"
+    },
+    {
+      "artifact_id": "artifact:sha256:7f27601d9dc5bbcfbc579f5e22234712d883c2c5a9248e11a4691b2d3f4678de",
+      "distribution_kind": "unknown",
+      "evidence": [
+        {
+          "field": "automatic_source_identity",
+          "kind": "interpreted",
+          "source_ref": {
+            "entry": "I33",
+            "manifest": "sha256:2e5f128883b3a0afea67604f1fd2518397e4b5c1fb128c2cd3f9d33aac6b3f50"
+          },
+          "value": {
+            "actor": "machine",
+            "basis": "CD title repeated in original description and one verified launch file",
+            "description": {
+              "source_ref": {
+                "entry": "I33",
+                "manifest": "sha256:2e5f128883b3a0afea67604f1fd2518397e4b5c1fb128c2cd3f9d33aac6b3f50",
+                "pointer": "/entries/64/evidence/description_tools/text"
+              },
+              "value": "Uninstall Manager hjelper med å rydde opp etter sjuskete installasjonsprogrammer, som lager rot i Windows."
+            },
+            "launch": {
+              "path": "Tools/Uninstall Manager/UM321.EXE",
+              "sha256": "7f27601d9dc5bbcfbc579f5e22234712d883c2c5a9248e11a4691b2d3f4678de",
+              "size": 505056
+            },
+            "rule": "cd-source-identity-1",
+            "scope": "source-attributed identity; installed payload and version not established",
+            "title": "Uninstall Manager",
+            "title_pointer": "/entries/64/normalized/title"
+          }
+        }
+      ],
+      "id": "identification:auto-03e6964dde3db06f9d2c15b65ab2418c4ead5e0519a47a599fa6e4f54ab0cc87",
+      "schema": "bootdisk-catalog-0.1",
+      "software_release_id": "release:auto-03e6964dde3db06f9d2c15b65ab2418c4ead5e0519a47a599fa6e4f54ab0cc87",
+      "status": "interpreted",
+      "type": "identification"
+    },
+    {
+      "artifact_id": "artifact:sha256:5eb5ec0e525d6a439f6f584785f87b2423399a15256442430b92956d29129c43",
+      "distribution_kind": "unknown",
+      "evidence": [
+        {
+          "field": "automatic_source_identity",
+          "kind": "interpreted",
+          "source_ref": {
+            "entry": "I12",
+            "manifest": "sha256:2e5f128883b3a0afea67604f1fd2518397e4b5c1fb128c2cd3f9d33aac6b3f50"
+          },
+          "value": {
+            "actor": "machine",
+            "basis": "CD title repeated in original description and one verified launch file",
+            "description": {
+              "source_ref": {
+                "entry": "I12",
+                "manifest": "sha256:2e5f128883b3a0afea67604f1fd2518397e4b5c1fb128c2cd3f9d33aac6b3f50",
+                "pointer": "/entries/48/evidence/description_tools/text"
+              },
+              "value": "Med NVmax får du maksimalt ut av et TNT eller Geforce grafikkort."
+            },
+            "launch": {
+              "path": "Tools/NVMax/NVmax.exe",
+              "sha256": "5eb5ec0e525d6a439f6f584785f87b2423399a15256442430b92956d29129c43",
+              "size": 150752
+            },
+            "rule": "cd-source-identity-1",
+            "scope": "source-attributed identity; installed payload and version not established",
+            "title": "NVmax",
+            "title_pointer": "/entries/48/normalized/title"
+          }
+        }
+      ],
+      "id": "identification:auto-06df52eed3821b28e2544d60bb6c02211f2ebaffcccd1835513ead07de9d06d7",
+      "schema": "bootdisk-catalog-0.1",
+      "software_release_id": "release:auto-06df52eed3821b28e2544d60bb6c02211f2ebaffcccd1835513ead07de9d06d7",
+      "status": "interpreted",
+      "type": "identification"
+    },
+    {
+      "artifact_id": "artifact:sha256:83441525fb5aebe10892cfbc931395e2bb1f68c8720e49bb58749cb95981f06d",
+      "distribution_kind": "unknown",
+      "evidence": [
+        {
+          "field": "automatic_source_identity",
+          "kind": "interpreted",
+          "source_ref": {
+            "entry": "I26",
+            "manifest": "sha256:2e5f128883b3a0afea67604f1fd2518397e4b5c1fb128c2cd3f9d33aac6b3f50"
+          },
+          "value": {
+            "actor": "machine",
+            "basis": "CD title repeated in original description and one verified launch file",
+            "description": {
+              "source_ref": {
+                "entry": "I26",
+                "manifest": "sha256:2e5f128883b3a0afea67604f1fd2518397e4b5c1fb128c2cd3f9d33aac6b3f50",
+                "pointer": "/entries/57/evidence/description_tools/text"
+              },
+              "value": "SafeClean Utilities går gjennom datamaskinen for å finne overflødige filer,lenker med mer, og fjerner dem på en sikker måte."
+            },
+            "launch": {
+              "path": "Tools/SafeClean/SETUP.EXE",
+              "sha256": "83441525fb5aebe10892cfbc931395e2bb1f68c8720e49bb58749cb95981f06d",
+              "size": 59904
+            },
+            "rule": "cd-source-identity-1",
+            "scope": "source-attributed identity; installed payload and version not established",
+            "title": "SafeClean Utilities",
+            "title_pointer": "/entries/57/normalized/title"
+          }
+        }
+      ],
+      "id": "identification:auto-1262fa484f6a49fd85dea450d4ecc0c4ac54414746b377d05ca46fcff2cacc53",
+      "schema": "bootdisk-catalog-0.1",
+      "software_release_id": "release:auto-1262fa484f6a49fd85dea450d4ecc0c4ac54414746b377d05ca46fcff2cacc53",
+      "status": "interpreted",
+      "type": "identification"
+    },
+    {
+      "artifact_id": "artifact:sha256:3196a2ed70e01b4b7e789f84457c1e4d5dc49fec174abf9fa6d3acf95fb41df5",
+      "distribution_kind": "unknown",
+      "evidence": [
+        {
+          "field": "automatic_source_identity",
+          "kind": "interpreted",
+          "source_ref": {
+            "entry": "I22",
+            "manifest": "sha256:2e5f128883b3a0afea67604f1fd2518397e4b5c1fb128c2cd3f9d33aac6b3f50"
+          },
+          "value": {
+            "actor": "machine",
+            "basis": "CD title repeated in original description and one verified launch file",
+            "description": {
+              "source_ref": {
+                "entry": "I22",
+                "manifest": "sha256:2e5f128883b3a0afea67604f1fd2518397e4b5c1fb128c2cd3f9d33aac6b3f50",
+                "pointer": "/entries/56/evidence/description_tools/text"
+              },
+              "value": "Med Packager MK1 kan du dele opp store filer slik at de får en størrelse som passer til å bli lagt på disketter. Programmet sørger også for at mottakeren kan pakke dem ut, uten selv å ha programmet."
+            },
+            "launch": {
+              "path": "Tools/Packager MK1/SETUP.EXE",
+              "sha256": "3196a2ed70e01b4b7e789f84457c1e4d5dc49fec174abf9fa6d3acf95fb41df5",
+              "size": 49152
+            },
+            "rule": "cd-source-identity-1",
+            "scope": "source-attributed identity; installed payload and version not established",
+            "title": "Packager MK1",
+            "title_pointer": "/entries/56/normalized/title"
+          }
+        }
+      ],
+      "id": "identification:auto-19a09876cfa235d94dc8d44bd5eb8e45d3946469f892de16caf8122feb747199",
+      "schema": "bootdisk-catalog-0.1",
+      "software_release_id": "release:auto-19a09876cfa235d94dc8d44bd5eb8e45d3946469f892de16caf8122feb747199",
+      "status": "interpreted",
+      "type": "identification"
+    },
+    {
+      "artifact_id": "artifact:sha256:7052d75548d0f34e290baf29aa7281b44b4eb38327a9078354e15a3dc8749da4",
+      "distribution_kind": "unknown",
+      "evidence": [
+        {
+          "field": "automatic_source_identity",
+          "kind": "interpreted",
+          "source_ref": {
+            "entry": "I19",
+            "manifest": "sha256:2e5f128883b3a0afea67604f1fd2518397e4b5c1fb128c2cd3f9d33aac6b3f50"
+          },
+          "value": {
+            "actor": "machine",
+            "basis": "CD title repeated in original description and one verified launch file",
+            "description": {
+              "source_ref": {
+                "entry": "I19",
+                "manifest": "sha256:2e5f128883b3a0afea67604f1fd2518397e4b5c1fb128c2cd3f9d33aac6b3f50",
+                "pointer": "/entries/54/evidence/description_tools/text"
+              },
+              "value": "Med Meracl Fontmap får du oversikt over hvilke skrifttyper du har installert på datamaskinen, og hvordan teksten ser ut i forskjellige skriftsnitt."
+            },
+            "launch": {
+              "path": "Tools/Meracl/SETUP.EXE",
+              "sha256": "7052d75548d0f34e290baf29aa7281b44b4eb38327a9078354e15a3dc8749da4",
+              "size": 139776
+            },
+            "rule": "cd-source-identity-1",
+            "scope": "source-attributed identity; installed payload and version not established",
+            "title": "Meracl Fontmap",
+            "title_pointer": "/entries/54/normalized/title"
+          }
+        }
+      ],
+      "id": "identification:auto-24b20fc59853525ba20d213c90cbb78dace37c2643028c025fb4e02421025bff",
+      "schema": "bootdisk-catalog-0.1",
+      "software_release_id": "release:auto-24b20fc59853525ba20d213c90cbb78dace37c2643028c025fb4e02421025bff",
+      "status": "interpreted",
+      "type": "identification"
+    },
+    {
+      "artifact_id": "artifact:sha256:1f00db591a9a22a953b2bd015f054197ce0bb4e31dca76f3f15aad3dcab54534",
+      "distribution_kind": "unknown",
+      "evidence": [
+        {
+          "field": "automatic_source_identity",
+          "kind": "interpreted",
+          "source_ref": {
+            "entry": "I16",
+            "manifest": "sha256:2e5f128883b3a0afea67604f1fd2518397e4b5c1fb128c2cd3f9d33aac6b3f50"
+          },
+          "value": {
+            "actor": "machine",
+            "basis": "CD title repeated in original description and one verified launch file",
+            "description": {
+              "source_ref": {
+                "entry": "I16",
+                "manifest": "sha256:2e5f128883b3a0afea67604f1fd2518397e4b5c1fb128c2cd3f9d33aac6b3f50",
+                "pointer": "/entries/51/evidence/description_tools/text"
+              },
+              "value": "Med Google Toolbar har du alltid et søkevindu i nettleseren. Du taster bare inn et par søkeord og trykker på Enter, så får du Googles beste svar på et øyeblikk."
+            },
+            "launch": {
+              "path": "Tools/Google/GoogleToolbarInstaller.exe",
+              "sha256": "1f00db591a9a22a953b2bd015f054197ce0bb4e31dca76f3f15aad3dcab54534",
+              "size": 308296
+            },
+            "rule": "cd-source-identity-1",
+            "scope": "source-attributed identity; installed payload and version not established",
+            "title": "Google Toolbar",
+            "title_pointer": "/entries/51/normalized/title"
+          }
+        }
+      ],
+      "id": "identification:auto-308d8f37059b98f67a062bc93300fe7143187be314e74f6976ea8d4421317459",
+      "schema": "bootdisk-catalog-0.1",
+      "software_release_id": "release:auto-308d8f37059b98f67a062bc93300fe7143187be314e74f6976ea8d4421317459",
+      "status": "interpreted",
+      "type": "identification"
+    },
+    {
+      "artifact_id": "artifact:sha256:cf2affe9aa465a3db667f2475b35efbb7c36081beb585aa354174fc60eb25ec3",
+      "distribution_kind": "unknown",
+      "evidence": [
+        {
+          "field": "automatic_source_identity",
+          "kind": "interpreted",
+          "source_ref": {
+            "entry": "I18",
+            "manifest": "sha256:2e5f128883b3a0afea67604f1fd2518397e4b5c1fb128c2cd3f9d33aac6b3f50"
+          },
+          "value": {
+            "actor": "machine",
+            "basis": "CD title repeated in original description and one verified launch file",
+            "description": {
+              "source_ref": {
+                "entry": "I18",
+                "manifest": "sha256:2e5f128883b3a0afea67604f1fd2518397e4b5c1fb128c2cd3f9d33aac6b3f50",
+                "pointer": "/entries/53/evidence/description_tools/text"
+              },
+              "value": "Checkscreen er det ultimate prøvebildet til datamaskinen. Her kan du fort oppdage dårlig fokus, fargeskjevheter eller manglende piksler."
+            },
+            "launch": {
+              "path": "Tools/Matter/CSInstal.exe",
+              "sha256": "cf2affe9aa465a3db667f2475b35efbb7c36081beb585aa354174fc60eb25ec3",
+              "size": 462394
+            },
+            "rule": "cd-source-identity-1",
+            "scope": "source-attributed identity; installed payload and version not established",
+            "title": "CheckScreen",
+            "title_pointer": "/entries/53/normalized/title"
+          }
+        }
+      ],
+      "id": "identification:auto-3acdd22c0beda8c66f3d0b05aab0724da46fa57a0cea7fb967f5d2db7a069136",
+      "schema": "bootdisk-catalog-0.1",
+      "software_release_id": "release:auto-3acdd22c0beda8c66f3d0b05aab0724da46fa57a0cea7fb967f5d2db7a069136",
+      "status": "interpreted",
+      "type": "identification"
+    },
+    {
+      "artifact_id": "artifact:sha256:d75d2969f54dcef9eefcc66357c358476ee31c6063005ab9dce216521b2da631",
+      "distribution_kind": "unknown",
+      "evidence": [
+        {
+          "field": "automatic_source_identity",
+          "kind": "interpreted",
+          "source_ref": {
+            "entry": "I20",
+            "manifest": "sha256:2e5f128883b3a0afea67604f1fd2518397e4b5c1fb128c2cd3f9d33aac6b3f50"
+          },
+          "value": {
+            "actor": "machine",
+            "basis": "CD title repeated in original description and one verified launch file",
+            "description": {
+              "source_ref": {
+                "entry": "I20",
+                "manifest": "sha256:2e5f128883b3a0afea67604f1fd2518397e4b5c1fb128c2cd3f9d33aac6b3f50",
+                "pointer": "/entries/55/evidence/description_tools/text"
+              },
+              "value": "Bandwidth Meter forteller deg hvor raske nettverksforbindelsene dine er - på internett så vel som på lokalnettet."
+            },
+            "launch": {
+              "path": "Tools/Bandwidth/BWMeter.exe",
+              "sha256": "d75d2969f54dcef9eefcc66357c358476ee31c6063005ab9dce216521b2da631",
+              "size": 1886002
+            },
+            "rule": "cd-source-identity-1",
+            "scope": "source-attributed identity; installed payload and version not established",
+            "title": "Bandwidth Meter",
+            "title_pointer": "/entries/55/normalized/title"
+          }
+        }
+      ],
+      "id": "identification:auto-44c855b29e6281b2d9d07c1d33f32e2d24150ba93a54c13c0f39d0512d12b61a",
+      "schema": "bootdisk-catalog-0.1",
+      "software_release_id": "release:auto-44c855b29e6281b2d9d07c1d33f32e2d24150ba93a54c13c0f39d0512d12b61a",
+      "status": "interpreted",
+      "type": "identification"
+    },
+    {
+      "artifact_id": "artifact:sha256:6884fb36f2af4c12fffbc9ae0d2c742771686a7212bbf4447959d24cbab6d67a",
+      "distribution_kind": "unknown",
+      "evidence": [
+        {
+          "field": "automatic_source_identity",
+          "kind": "interpreted",
+          "source_ref": {
+            "entry": "I5",
+            "manifest": "sha256:2e5f128883b3a0afea67604f1fd2518397e4b5c1fb128c2cd3f9d33aac6b3f50"
+          },
+          "value": {
+            "actor": "machine",
+            "basis": "CD title repeated in original description and one verified launch file",
+            "description": {
+              "source_ref": {
+                "entry": "I5",
+                "manifest": "sha256:2e5f128883b3a0afea67604f1fd2518397e4b5c1fb128c2cd3f9d33aac6b3f50",
+                "pointer": "/entries/41/evidence/description_tools/text"
+              },
+              "value": "Med AutoRun Manager kan du styre hvilke programmer som skal starte sammen med Windows - også de programmene som ikke legger seg i startmenyen kan du kontrollere herfra."
+            },
+            "launch": {
+              "path": "Tools/AutoRunMan/SETUP.EXE",
+              "sha256": "6884fb36f2af4c12fffbc9ae0d2c742771686a7212bbf4447959d24cbab6d67a",
+              "size": 491125
+            },
+            "rule": "cd-source-identity-1",
+            "scope": "source-attributed identity; installed payload and version not established",
+            "title": "AutoRun Manager",
+            "title_pointer": "/entries/41/normalized/title"
+          }
+        }
+      ],
+      "id": "identification:auto-47ef9f2dc61d1e794a5f1d7b9aa4efae5788cfc46359c4d2ee0a62dac4215e92",
+      "schema": "bootdisk-catalog-0.1",
+      "software_release_id": "release:auto-47ef9f2dc61d1e794a5f1d7b9aa4efae5788cfc46359c4d2ee0a62dac4215e92",
+      "status": "interpreted",
+      "type": "identification"
+    },
+    {
+      "artifact_id": "artifact:sha256:3f7dae7e40e3500f4750ed9b9eba4255bc766541565f1cc8470bfb281bad10f8",
+      "distribution_kind": "unknown",
+      "evidence": [
+        {
+          "field": "automatic_source_identity",
+          "kind": "interpreted",
+          "source_ref": {
+            "entry": "I7",
+            "manifest": "sha256:2e5f128883b3a0afea67604f1fd2518397e4b5c1fb128c2cd3f9d33aac6b3f50"
+          },
+          "value": {
+            "actor": "machine",
+            "basis": "CD title repeated in original description and one verified launch file",
+            "description": {
+              "source_ref": {
+                "entry": "I7",
+                "manifest": "sha256:2e5f128883b3a0afea67604f1fd2518397e4b5c1fb128c2cd3f9d33aac6b3f50",
+                "pointer": "/entries/43/evidence/description_tools/text"
+              },
+              "value": "Med Start menu Cleaner kan du i en håndvending rydde opp i startmenyen og kvitte deg med døde lenker og tomme grupper."
+            },
+            "launch": {
+              "path": "Tools/Cleaner/Setup.exe",
+              "sha256": "3f7dae7e40e3500f4750ed9b9eba4255bc766541565f1cc8470bfb281bad10f8",
+              "size": 1302491
+            },
+            "rule": "cd-source-identity-1",
+            "scope": "source-attributed identity; installed payload and version not established",
+            "title": "Start Menu Cleaner",
+            "title_pointer": "/entries/43/normalized/title"
+          }
+        }
+      ],
+      "id": "identification:auto-60a5921758887f0d2f9ba9472f7c71e6bdfbad650fe49e978826defdce81f454",
+      "schema": "bootdisk-catalog-0.1",
+      "software_release_id": "release:auto-60a5921758887f0d2f9ba9472f7c71e6bdfbad650fe49e978826defdce81f454",
+      "status": "interpreted",
+      "type": "identification"
+    },
+    {
+      "artifact_id": "artifact:sha256:6d6532759f552683fa86f40c2c29b353d1e50bbf8af2b2ae797cd7fe37e95cdf",
+      "distribution_kind": "unknown",
+      "evidence": [
+        {
+          "field": "automatic_source_identity",
+          "kind": "interpreted",
+          "source_ref": {
+            "entry": "I15",
+            "manifest": "sha256:2e5f128883b3a0afea67604f1fd2518397e4b5c1fb128c2cd3f9d33aac6b3f50"
+          },
+          "value": {
+            "actor": "machine",
+            "basis": "CD title repeated in original description and one verified launch file",
+            "description": {
+              "source_ref": {
+                "entry": "I15",
+                "manifest": "sha256:2e5f128883b3a0afea67604f1fd2518397e4b5c1fb128c2cd3f9d33aac6b3f50",
+                "pointer": "/entries/67/evidence/description_tools/text"
+              },
+              "value": "Med LetterBox kan du sjekke den elektroniske postkassen før du henter ned ev. post til datamaskinen. Bruk den til å finne viktige brev og til å avvise uønsket post."
+            },
+            "launch": {
+              "path": "Tools/LetterBox/SETUP.EXE",
+              "sha256": "6d6532759f552683fa86f40c2c29b353d1e50bbf8af2b2ae797cd7fe37e95cdf",
+              "size": 139776
+            },
+            "rule": "cd-source-identity-1",
+            "scope": "source-attributed identity; installed payload and version not established",
+            "title": "LetterBox",
+            "title_pointer": "/entries/67/normalized/title"
+          }
+        }
+      ],
+      "id": "identification:auto-61a4d19ed5bdcc5600c27e48122f653b2bd6e547b5ce270e7a3ac6d81feb3c8f",
+      "schema": "bootdisk-catalog-0.1",
+      "software_release_id": "release:auto-61a4d19ed5bdcc5600c27e48122f653b2bd6e547b5ce270e7a3ac6d81feb3c8f",
+      "status": "interpreted",
+      "type": "identification"
+    },
+    {
+      "artifact_id": "artifact:sha256:78ec55681a45689ba7479e0badcf6b4bfbf6cf334643d7483d0c6c115d3db5e9",
+      "distribution_kind": "unknown",
+      "evidence": [
+        {
+          "field": "automatic_source_identity",
+          "kind": "interpreted",
+          "source_ref": {
+            "entry": "I10",
+            "manifest": "sha256:2e5f128883b3a0afea67604f1fd2518397e4b5c1fb128c2cd3f9d33aac6b3f50"
+          },
+          "value": {
+            "actor": "machine",
+            "basis": "CD title repeated in original description and one verified launch file",
+            "description": {
+              "source_ref": {
+                "entry": "I10",
+                "manifest": "sha256:2e5f128883b3a0afea67604f1fd2518397e4b5c1fb128c2cd3f9d33aac6b3f50",
+                "pointer": "/entries/46/evidence/description_tools/text"
+              },
+              "value": "Dimension 4 sørger for at pc-klokken går helt riktig ved å synkronisere den med et atomur fra internett."
+            },
+            "launch": {
+              "path": "Tools/D4/Setup.exe",
+              "sha256": "78ec55681a45689ba7479e0badcf6b4bfbf6cf334643d7483d0c6c115d3db5e9",
+              "size": 299624
+            },
+            "rule": "cd-source-identity-1",
+            "scope": "source-attributed identity; installed payload and version not established",
+            "title": "Dimension 4",
+            "title_pointer": "/entries/46/normalized/title"
+          }
+        }
+      ],
+      "id": "identification:auto-64205ace19a02713ffcd5259aaf3a01bbcf320d43c7f678dcf30b20a36774b13",
+      "schema": "bootdisk-catalog-0.1",
+      "software_release_id": "release:auto-64205ace19a02713ffcd5259aaf3a01bbcf320d43c7f678dcf30b20a36774b13",
+      "status": "interpreted",
+      "type": "identification"
+    },
+    {
+      "artifact_id": "artifact:sha256:b25c2184b6d618c867fa7eb9144f19cc6f662ae9fa0280dbd367c4953d849a1a",
+      "distribution_kind": "unknown",
+      "evidence": [
+        {
+          "field": "automatic_source_identity",
+          "kind": "interpreted",
+          "source_ref": {
+            "entry": "I14",
+            "manifest": "sha256:2e5f128883b3a0afea67604f1fd2518397e4b5c1fb128c2cd3f9d33aac6b3f50"
+          },
+          "value": {
+            "actor": "machine",
+            "basis": "CD title repeated in original description and one verified launch file",
+            "description": {
+              "source_ref": {
+                "entry": "I14",
+                "manifest": "sha256:2e5f128883b3a0afea67604f1fd2518397e4b5c1fb128c2cd3f9d33aac6b3f50",
+                "pointer": "/entries/50/evidence/description_tools/text"
+              },
+              "value": "Med FlashGet får du større orden på nedlastingene. Du kan hente filer raskere, og hvis overføringen blir avbrutt underveis, kan du hente resten av filen senere."
+            },
+            "launch": {
+              "path": "Tools/FlashGet/SETUP.EXE",
+              "sha256": "b25c2184b6d618c867fa7eb9144f19cc6f662ae9fa0280dbd367c4953d849a1a",
+              "size": 1373995
+            },
+            "rule": "cd-source-identity-1",
+            "scope": "source-attributed identity; installed payload and version not established",
+            "title": "FlashGet",
+            "title_pointer": "/entries/50/normalized/title"
+          }
+        }
+      ],
+      "id": "identification:auto-681dfd70f8efb1114036aa56fcbb59e7e188708493bf829ca97ea0b6bbca4baf",
+      "schema": "bootdisk-catalog-0.1",
+      "software_release_id": "release:auto-681dfd70f8efb1114036aa56fcbb59e7e188708493bf829ca97ea0b6bbca4baf",
+      "status": "interpreted",
+      "type": "identification"
+    },
+    {
+      "artifact_id": "artifact:sha256:da2e1de1843b7cb85f8b671086b0a45c19a1047cdf425f0393431770ea48585a",
+      "distribution_kind": "unknown",
+      "evidence": [
+        {
+          "field": "automatic_source_identity",
+          "kind": "interpreted",
+          "source_ref": {
+            "entry": "I34",
+            "manifest": "sha256:2e5f128883b3a0afea67604f1fd2518397e4b5c1fb128c2cd3f9d33aac6b3f50"
+          },
+          "value": {
+            "actor": "machine",
+            "basis": "CD title repeated in original description and one verified launch file",
+            "description": {
+              "source_ref": {
+                "entry": "I34",
+                "manifest": "sha256:2e5f128883b3a0afea67604f1fd2518397e4b5c1fb128c2cd3f9d33aac6b3f50",
+                "pointer": "/entries/65/evidence/description_tools/text"
+              },
+              "value": "WebWasher fjerner pop-up-vinduer, bannerreklame og annet rot slik at du får en raskere nettleser og mindre rot på skjermen."
+            },
+            "launch": {
+              "path": "Tools/WebWasher/Webwasher.exe",
+              "sha256": "da2e1de1843b7cb85f8b671086b0a45c19a1047cdf425f0393431770ea48585a",
+              "size": 1051787
+            },
+            "rule": "cd-source-identity-1",
+            "scope": "source-attributed identity; installed payload and version not established",
+            "title": "WebWasher",
+            "title_pointer": "/entries/65/normalized/title"
+          }
+        }
+      ],
+      "id": "identification:auto-7658ba5c7a5792009e03ed66d709bc9866bf0f94c69c61e5779ef76fe5f1b449",
+      "schema": "bootdisk-catalog-0.1",
+      "software_release_id": "release:auto-7658ba5c7a5792009e03ed66d709bc9866bf0f94c69c61e5779ef76fe5f1b449",
+      "status": "interpreted",
+      "type": "identification"
+    },
+    {
+      "artifact_id": "artifact:sha256:3196a2ed70e01b4b7e789f84457c1e4d5dc49fec174abf9fa6d3acf95fb41df5",
+      "distribution_kind": "unknown",
+      "evidence": [
+        {
+          "field": "automatic_source_identity",
+          "kind": "interpreted",
+          "source_ref": {
+            "entry": "I8",
+            "manifest": "sha256:2e5f128883b3a0afea67604f1fd2518397e4b5c1fb128c2cd3f9d33aac6b3f50"
+          },
+          "value": {
+            "actor": "machine",
+            "basis": "CD title repeated in original description and one verified launch file",
+            "description": {
+              "source_ref": {
+                "entry": "I8",
+                "manifest": "sha256:2e5f128883b3a0afea67604f1fd2518397e4b5c1fb128c2cd3f9d33aac6b3f50",
+                "pointer": "/entries/44/evidence/description_tools/text"
+              },
+              "value": "ClipCache er en utvidelse til Windows' utklippstavle, som lagrer hver eneste ting du kopierer slik at du fort kan få tak i det igjen."
+            },
+            "launch": {
+              "path": "Tools/ClipCache/SETUP.EXE",
+              "sha256": "3196a2ed70e01b4b7e789f84457c1e4d5dc49fec174abf9fa6d3acf95fb41df5",
+              "size": 49152
+            },
+            "rule": "cd-source-identity-1",
+            "scope": "source-attributed identity; installed payload and version not established",
+            "title": "ClipCache",
+            "title_pointer": "/entries/44/normalized/title"
+          }
+        }
+      ],
+      "id": "identification:auto-b18c3ef210451c6909fa73d70753afe6c3c301e8af5f77443955a35472bef98a",
+      "schema": "bootdisk-catalog-0.1",
+      "software_release_id": "release:auto-b18c3ef210451c6909fa73d70753afe6c3c301e8af5f77443955a35472bef98a",
+      "status": "interpreted",
+      "type": "identification"
+    },
+    {
+      "artifact_id": "artifact:sha256:19299884af18046a94520dd11af8c3ed772fb8843b7a0dc3c436dd0bf9e2a29f",
+      "distribution_kind": "unknown",
+      "evidence": [
+        {
+          "field": "automatic_source_identity",
+          "kind": "interpreted",
+          "source_ref": {
+            "entry": "I13",
+            "manifest": "sha256:2e5f128883b3a0afea67604f1fd2518397e4b5c1fb128c2cd3f9d33aac6b3f50"
+          },
+          "value": {
+            "actor": "machine",
+            "basis": "CD title repeated in original description and one verified launch file",
+            "description": {
+              "source_ref": {
+                "entry": "I13",
+                "manifest": "sha256:2e5f128883b3a0afea67604f1fd2518397e4b5c1fb128c2cd3f9d33aac6b3f50",
+                "pointer": "/entries/49/evidence/description_tools/text"
+              },
+              "value": "File Investigator undersøker filenes innhold og forteller deg hvilken type det er, uanset hvad den hedder."
+            },
+            "launch": {
+              "path": "Tools/File Investigator/FI150SW.EXE",
+              "sha256": "19299884af18046a94520dd11af8c3ed772fb8843b7a0dc3c436dd0bf9e2a29f",
+              "size": 595968
+            },
+            "rule": "cd-source-identity-1",
+            "scope": "source-attributed identity; installed payload and version not established",
+            "title": "File Investigator",
+            "title_pointer": "/entries/49/normalized/title"
+          }
+        }
+      ],
+      "id": "identification:auto-c1df0cb3c935d8b1e0699559cd89a087de7aac3bf39b663127adef5f522ba2a5",
+      "schema": "bootdisk-catalog-0.1",
+      "software_release_id": "release:auto-c1df0cb3c935d8b1e0699559cd89a087de7aac3bf39b663127adef5f522ba2a5",
+      "status": "interpreted",
+      "type": "identification"
+    },
+    {
+      "artifact_id": "artifact:sha256:eda6cf11dd35909a8c6e3428eee65688890f205807ab8f4335a2a2a44b16944d",
+      "distribution_kind": "unknown",
+      "evidence": [
+        {
+          "field": "automatic_source_identity",
+          "kind": "interpreted",
+          "source_ref": {
+            "entry": "I31",
+            "manifest": "sha256:2e5f128883b3a0afea67604f1fd2518397e4b5c1fb128c2cd3f9d33aac6b3f50"
+          },
+          "value": {
+            "actor": "machine",
+            "basis": "CD title repeated in original description and one verified launch file",
+            "description": {
+              "source_ref": {
+                "entry": "I31",
+                "manifest": "sha256:2e5f128883b3a0afea67604f1fd2518397e4b5c1fb128c2cd3f9d33aac6b3f50",
+                "pointer": "/entries/62/evidence/description_tools/text"
+              },
+              "value": "Tool Pro er en stor samling av små, nyttige verktøy kombinert i et program som ligger som et diskré ikon i statusfeltet."
+            },
+            "launch": {
+              "path": "Tools/Tool Pro/TPRO.EXE",
+              "sha256": "eda6cf11dd35909a8c6e3428eee65688890f205807ab8f4335a2a2a44b16944d",
+              "size": 498912
+            },
+            "rule": "cd-source-identity-1",
+            "scope": "source-attributed identity; installed payload and version not established",
+            "title": "Tool Pro",
+            "title_pointer": "/entries/62/normalized/title"
+          }
+        }
+      ],
+      "id": "identification:auto-c58241e2471c7505ba9dedc0965931176bd9ef7ea7377e1b9ac14aa9d538c46e",
+      "schema": "bootdisk-catalog-0.1",
+      "software_release_id": "release:auto-c58241e2471c7505ba9dedc0965931176bd9ef7ea7377e1b9ac14aa9d538c46e",
+      "status": "interpreted",
+      "type": "identification"
+    },
+    {
+      "artifact_id": "artifact:sha256:829c5354d3ab662adfbe51aec33aefd8682a27c1e847579aac63c12c21801ad6",
+      "distribution_kind": "unknown",
+      "evidence": [
+        {
+          "field": "automatic_source_identity",
+          "kind": "interpreted",
+          "source_ref": {
+            "entry": "I32",
+            "manifest": "sha256:2e5f128883b3a0afea67604f1fd2518397e4b5c1fb128c2cd3f9d33aac6b3f50"
+          },
+          "value": {
+            "actor": "machine",
+            "basis": "CD title repeated in original description and one verified launch file",
+            "description": {
+              "source_ref": {
+                "entry": "I32",
+                "manifest": "sha256:2e5f128883b3a0afea67604f1fd2518397e4b5c1fb128c2cd3f9d33aac6b3f50",
+                "pointer": "/entries/63/evidence/description_tools/text"
+              },
+              "value": "Tweaking Toolbox er en utvidelse av Windows' Kontrollpanel der du har muligheten til å se og endre mange ting du ikke umiddelbart kan røre i Windows."
+            },
+            "launch": {
+              "path": "Tools/Tweaking Toolbox/TTWInstall.exe",
+              "sha256": "829c5354d3ab662adfbe51aec33aefd8682a27c1e847579aac63c12c21801ad6",
+              "size": 467672
+            },
+            "rule": "cd-source-identity-1",
+            "scope": "source-attributed identity; installed payload and version not established",
+            "title": "Tweaking Toolbox",
+            "title_pointer": "/entries/63/normalized/title"
+          }
+        }
+      ],
+      "id": "identification:auto-c6644c9e661a4098c1178c12bf833b7bb8bacffb7cd8117aff5eb31a233ecd74",
+      "schema": "bootdisk-catalog-0.1",
+      "software_release_id": "release:auto-c6644c9e661a4098c1178c12bf833b7bb8bacffb7cd8117aff5eb31a233ecd74",
+      "status": "interpreted",
+      "type": "identification"
+    },
+    {
+      "artifact_id": "artifact:sha256:23df73f98b4d65d555d57742afe5a7ed84e72383cef6241b7ccbe49419e97614",
+      "distribution_kind": "unknown",
+      "evidence": [
+        {
+          "field": "automatic_source_identity",
+          "kind": "interpreted",
+          "source_ref": {
+            "entry": "I17",
+            "manifest": "sha256:2e5f128883b3a0afea67604f1fd2518397e4b5c1fb128c2cd3f9d33aac6b3f50"
+          },
+          "value": {
+            "actor": "machine",
+            "basis": "CD title repeated in original description and one verified launch file",
+            "description": {
+              "source_ref": {
+                "entry": "I17",
+                "manifest": "sha256:2e5f128883b3a0afea67604f1fd2518397e4b5c1fb128c2cd3f9d33aac6b3f50",
+                "pointer": "/entries/52/evidence/description_tools/text"
+              },
+              "value": "Med Intercent får du vite hvor mye penger du bruker på å ringe opp til internett. Programmet teller automatisk hvor lang tid du er online, og regner det om til kroner og øre."
+            },
+            "launch": {
+              "path": "Tools/InterCent/Setup.exe",
+              "sha256": "23df73f98b4d65d555d57742afe5a7ed84e72383cef6241b7ccbe49419e97614",
+              "size": 45312
+            },
+            "rule": "cd-source-identity-1",
+            "scope": "source-attributed identity; installed payload and version not established",
+            "title": "Intercent",
+            "title_pointer": "/entries/52/normalized/title"
+          }
+        }
+      ],
+      "id": "identification:auto-d1f384a29efe63384f2d6ed23b72825d485c4ca09d7347f01dcfe87ac2825bf8",
+      "schema": "bootdisk-catalog-0.1",
+      "software_release_id": "release:auto-d1f384a29efe63384f2d6ed23b72825d485c4ca09d7347f01dcfe87ac2825bf8",
+      "status": "interpreted",
+      "type": "identification"
+    },
+    {
+      "artifact_id": "artifact:sha256:961ebe31e3563f80d57e9a693dfdbfb35864f5a0e14fecefec5901e6a80b982d",
+      "distribution_kind": "unknown",
+      "evidence": [
+        {
+          "field": "automatic_source_identity",
+          "kind": "interpreted",
+          "source_ref": {
+            "entry": "I9",
+            "manifest": "sha256:2e5f128883b3a0afea67604f1fd2518397e4b5c1fb128c2cd3f9d33aac6b3f50"
+          },
+          "value": {
+            "actor": "machine",
+            "basis": "CD title repeated in original description and one verified launch file",
+            "description": {
+              "source_ref": {
+                "entry": "I9",
+                "manifest": "sha256:2e5f128883b3a0afea67604f1fd2518397e4b5c1fb128c2cd3f9d33aac6b3f50",
+                "pointer": "/entries/45/evidence/description_tools/text"
+              },
+              "value": "Configuration Lifeguard tar sikkerhetskopi av registreringsdatabasen og andre essensielle innstillinger i Windows, slik at du kan få Windows til å fungere igjen dersom det blir skadet."
+            },
+            "launch": {
+              "path": "Tools/Configuration Lifeguard/Clg37.exe",
+              "sha256": "961ebe31e3563f80d57e9a693dfdbfb35864f5a0e14fecefec5901e6a80b982d",
+              "size": 499275
+            },
+            "rule": "cd-source-identity-1",
+            "scope": "source-attributed identity; installed payload and version not established",
+            "title": "Configuration Lifeguard",
+            "title_pointer": "/entries/45/normalized/title"
+          }
+        }
+      ],
+      "id": "identification:auto-eb7f0cb80f75f0d2dadbc61c23b04b9a8a276ac5321203464f3c45222fce7f79",
+      "schema": "bootdisk-catalog-0.1",
+      "software_release_id": "release:auto-eb7f0cb80f75f0d2dadbc61c23b04b9a8a276ac5321203464f3c45222fce7f79",
+      "status": "interpreted",
+      "type": "identification"
+    },
+    {
+      "artifact_id": "artifact:sha256:a367f38eba2b06da106296c7903e5e48aa4aeb826250d9436c7b42c7294f8070",
+      "distribution_kind": "unknown",
+      "evidence": [
+        {
+          "field": "automatic_source_identity",
+          "kind": "interpreted",
+          "source_ref": {
+            "entry": "I11",
+            "manifest": "sha256:2e5f128883b3a0afea67604f1fd2518397e4b5c1fb128c2cd3f9d33aac6b3f50"
+          },
+          "value": {
+            "actor": "machine",
+            "basis": "CD title repeated in original description and one verified launch file",
+            "description": {
+              "source_ref": {
+                "entry": "I11",
+                "manifest": "sha256:2e5f128883b3a0afea67604f1fd2518397e4b5c1fb128c2cd3f9d33aac6b3f50",
+                "pointer": "/entries/47/evidence/description_tools/text"
+              },
+              "value": "DiskSpace gir deg et diskré ikon i statusfeltet nederst til høyre, der du hele tiden kan følge med på hvor mye plass du har igjen på harddisken."
+            },
+            "launch": {
+              "path": "Tools/diskspace/Setup.exe",
+              "sha256": "a367f38eba2b06da106296c7903e5e48aa4aeb826250d9436c7b42c7294f8070",
+              "size": 299522
+            },
+            "rule": "cd-source-identity-1",
+            "scope": "source-attributed identity; installed payload and version not established",
+            "title": "Diskspace",
+            "title_pointer": "/entries/47/normalized/title"
+          }
+        }
+      ],
+      "id": "identification:auto-ee9614273098532de9406be5da8df5af3e25bc033838674e3074817949834216",
+      "schema": "bootdisk-catalog-0.1",
+      "software_release_id": "release:auto-ee9614273098532de9406be5da8df5af3e25bc033838674e3074817949834216",
+      "status": "interpreted",
+      "type": "identification"
+    },
+    {
+      "id": "release:auto-00322dd208ca3aff54de9c609014d16ffc7a81751b720fcf6919cf6bb4429d4d",
+      "schema": "bootdisk-catalog-0.1",
+      "software_id": "software:auto-00322dd208ca3aff54de9c609014d16ffc7a81751b720fcf6919cf6bb4429d4d",
+      "type": "software_release",
+      "version": "unknown"
+    },
+    {
+      "id": "release:auto-03e6964dde3db06f9d2c15b65ab2418c4ead5e0519a47a599fa6e4f54ab0cc87",
+      "schema": "bootdisk-catalog-0.1",
+      "software_id": "software:auto-03e6964dde3db06f9d2c15b65ab2418c4ead5e0519a47a599fa6e4f54ab0cc87",
+      "type": "software_release",
+      "version": "unknown"
+    },
+    {
+      "id": "release:auto-06df52eed3821b28e2544d60bb6c02211f2ebaffcccd1835513ead07de9d06d7",
+      "schema": "bootdisk-catalog-0.1",
+      "software_id": "software:auto-06df52eed3821b28e2544d60bb6c02211f2ebaffcccd1835513ead07de9d06d7",
+      "type": "software_release",
+      "version": "unknown"
+    },
+    {
+      "id": "release:auto-1262fa484f6a49fd85dea450d4ecc0c4ac54414746b377d05ca46fcff2cacc53",
+      "schema": "bootdisk-catalog-0.1",
+      "software_id": "software:auto-1262fa484f6a49fd85dea450d4ecc0c4ac54414746b377d05ca46fcff2cacc53",
+      "type": "software_release",
+      "version": "unknown"
+    },
+    {
+      "id": "release:auto-19a09876cfa235d94dc8d44bd5eb8e45d3946469f892de16caf8122feb747199",
+      "schema": "bootdisk-catalog-0.1",
+      "software_id": "software:auto-19a09876cfa235d94dc8d44bd5eb8e45d3946469f892de16caf8122feb747199",
+      "type": "software_release",
+      "version": "unknown"
+    },
+    {
+      "id": "release:auto-24b20fc59853525ba20d213c90cbb78dace37c2643028c025fb4e02421025bff",
+      "schema": "bootdisk-catalog-0.1",
+      "software_id": "software:auto-24b20fc59853525ba20d213c90cbb78dace37c2643028c025fb4e02421025bff",
+      "type": "software_release",
+      "version": "unknown"
+    },
+    {
+      "id": "release:auto-308d8f37059b98f67a062bc93300fe7143187be314e74f6976ea8d4421317459",
+      "schema": "bootdisk-catalog-0.1",
+      "software_id": "software:auto-308d8f37059b98f67a062bc93300fe7143187be314e74f6976ea8d4421317459",
+      "type": "software_release",
+      "version": "unknown"
+    },
+    {
+      "id": "release:auto-3acdd22c0beda8c66f3d0b05aab0724da46fa57a0cea7fb967f5d2db7a069136",
+      "schema": "bootdisk-catalog-0.1",
+      "software_id": "software:auto-3acdd22c0beda8c66f3d0b05aab0724da46fa57a0cea7fb967f5d2db7a069136",
+      "type": "software_release",
+      "version": "unknown"
+    },
+    {
+      "id": "release:auto-44c855b29e6281b2d9d07c1d33f32e2d24150ba93a54c13c0f39d0512d12b61a",
+      "schema": "bootdisk-catalog-0.1",
+      "software_id": "software:auto-44c855b29e6281b2d9d07c1d33f32e2d24150ba93a54c13c0f39d0512d12b61a",
+      "type": "software_release",
+      "version": "unknown"
+    },
+    {
+      "id": "release:auto-47ef9f2dc61d1e794a5f1d7b9aa4efae5788cfc46359c4d2ee0a62dac4215e92",
+      "schema": "bootdisk-catalog-0.1",
+      "software_id": "software:auto-47ef9f2dc61d1e794a5f1d7b9aa4efae5788cfc46359c4d2ee0a62dac4215e92",
+      "type": "software_release",
+      "version": "unknown"
+    },
+    {
+      "id": "release:auto-60a5921758887f0d2f9ba9472f7c71e6bdfbad650fe49e978826defdce81f454",
+      "schema": "bootdisk-catalog-0.1",
+      "software_id": "software:auto-60a5921758887f0d2f9ba9472f7c71e6bdfbad650fe49e978826defdce81f454",
+      "type": "software_release",
+      "version": "unknown"
+    },
+    {
+      "id": "release:auto-61a4d19ed5bdcc5600c27e48122f653b2bd6e547b5ce270e7a3ac6d81feb3c8f",
+      "schema": "bootdisk-catalog-0.1",
+      "software_id": "software:auto-61a4d19ed5bdcc5600c27e48122f653b2bd6e547b5ce270e7a3ac6d81feb3c8f",
+      "type": "software_release",
+      "version": "unknown"
+    },
+    {
+      "id": "release:auto-64205ace19a02713ffcd5259aaf3a01bbcf320d43c7f678dcf30b20a36774b13",
+      "schema": "bootdisk-catalog-0.1",
+      "software_id": "software:auto-64205ace19a02713ffcd5259aaf3a01bbcf320d43c7f678dcf30b20a36774b13",
+      "type": "software_release",
+      "version": "unknown"
+    },
+    {
+      "id": "release:auto-681dfd70f8efb1114036aa56fcbb59e7e188708493bf829ca97ea0b6bbca4baf",
+      "schema": "bootdisk-catalog-0.1",
+      "software_id": "software:auto-681dfd70f8efb1114036aa56fcbb59e7e188708493bf829ca97ea0b6bbca4baf",
+      "type": "software_release",
+      "version": "unknown"
+    },
+    {
+      "id": "release:auto-7658ba5c7a5792009e03ed66d709bc9866bf0f94c69c61e5779ef76fe5f1b449",
+      "schema": "bootdisk-catalog-0.1",
+      "software_id": "software:auto-7658ba5c7a5792009e03ed66d709bc9866bf0f94c69c61e5779ef76fe5f1b449",
+      "type": "software_release",
+      "version": "unknown"
+    },
+    {
+      "id": "release:auto-b18c3ef210451c6909fa73d70753afe6c3c301e8af5f77443955a35472bef98a",
+      "schema": "bootdisk-catalog-0.1",
+      "software_id": "software:auto-b18c3ef210451c6909fa73d70753afe6c3c301e8af5f77443955a35472bef98a",
+      "type": "software_release",
+      "version": "unknown"
+    },
+    {
+      "id": "release:auto-c1df0cb3c935d8b1e0699559cd89a087de7aac3bf39b663127adef5f522ba2a5",
+      "schema": "bootdisk-catalog-0.1",
+      "software_id": "software:auto-c1df0cb3c935d8b1e0699559cd89a087de7aac3bf39b663127adef5f522ba2a5",
+      "type": "software_release",
+      "version": "unknown"
+    },
+    {
+      "id": "release:auto-c58241e2471c7505ba9dedc0965931176bd9ef7ea7377e1b9ac14aa9d538c46e",
+      "schema": "bootdisk-catalog-0.1",
+      "software_id": "software:auto-c58241e2471c7505ba9dedc0965931176bd9ef7ea7377e1b9ac14aa9d538c46e",
+      "type": "software_release",
+      "version": "unknown"
+    },
+    {
+      "id": "release:auto-c6644c9e661a4098c1178c12bf833b7bb8bacffb7cd8117aff5eb31a233ecd74",
+      "schema": "bootdisk-catalog-0.1",
+      "software_id": "software:auto-c6644c9e661a4098c1178c12bf833b7bb8bacffb7cd8117aff5eb31a233ecd74",
+      "type": "software_release",
+      "version": "unknown"
+    },
+    {
+      "id": "release:auto-d1f384a29efe63384f2d6ed23b72825d485c4ca09d7347f01dcfe87ac2825bf8",
+      "schema": "bootdisk-catalog-0.1",
+      "software_id": "software:auto-d1f384a29efe63384f2d6ed23b72825d485c4ca09d7347f01dcfe87ac2825bf8",
+      "type": "software_release",
+      "version": "unknown"
+    },
+    {
+      "id": "release:auto-eb7f0cb80f75f0d2dadbc61c23b04b9a8a276ac5321203464f3c45222fce7f79",
+      "schema": "bootdisk-catalog-0.1",
+      "software_id": "software:auto-eb7f0cb80f75f0d2dadbc61c23b04b9a8a276ac5321203464f3c45222fce7f79",
+      "type": "software_release",
+      "version": "unknown"
+    },
+    {
+      "id": "release:auto-ee9614273098532de9406be5da8df5af3e25bc033838674e3074817949834216",
+      "schema": "bootdisk-catalog-0.1",
+      "software_id": "software:auto-ee9614273098532de9406be5da8df5af3e25bc033838674e3074817949834216",
+      "type": "software_release",
+      "version": "unknown"
+    },
+    {
+      "id": "software:auto-00322dd208ca3aff54de9c609014d16ffc7a81751b720fcf6919cf6bb4429d4d",
+      "name": "Tiny Personal Firewall",
+      "schema": "bootdisk-catalog-0.1",
+      "type": "software"
+    },
+    {
+      "id": "software:auto-03e6964dde3db06f9d2c15b65ab2418c4ead5e0519a47a599fa6e4f54ab0cc87",
+      "name": "Uninstall Manager",
+      "schema": "bootdisk-catalog-0.1",
+      "type": "software"
+    },
+    {
+      "id": "software:auto-06df52eed3821b28e2544d60bb6c02211f2ebaffcccd1835513ead07de9d06d7",
+      "name": "NVmax",
+      "schema": "bootdisk-catalog-0.1",
+      "type": "software"
+    },
+    {
+      "id": "software:auto-1262fa484f6a49fd85dea450d4ecc0c4ac54414746b377d05ca46fcff2cacc53",
+      "name": "SafeClean Utilities",
+      "schema": "bootdisk-catalog-0.1",
+      "type": "software"
+    },
+    {
+      "id": "software:auto-19a09876cfa235d94dc8d44bd5eb8e45d3946469f892de16caf8122feb747199",
+      "name": "Packager MK1",
+      "schema": "bootdisk-catalog-0.1",
+      "type": "software"
+    },
+    {
+      "id": "software:auto-24b20fc59853525ba20d213c90cbb78dace37c2643028c025fb4e02421025bff",
+      "name": "Meracl Fontmap",
+      "schema": "bootdisk-catalog-0.1",
+      "type": "software"
+    },
+    {
+      "id": "software:auto-308d8f37059b98f67a062bc93300fe7143187be314e74f6976ea8d4421317459",
+      "name": "Google Toolbar",
+      "schema": "bootdisk-catalog-0.1",
+      "type": "software"
+    },
+    {
+      "id": "software:auto-3acdd22c0beda8c66f3d0b05aab0724da46fa57a0cea7fb967f5d2db7a069136",
+      "name": "CheckScreen",
+      "schema": "bootdisk-catalog-0.1",
+      "type": "software"
+    },
+    {
+      "id": "software:auto-44c855b29e6281b2d9d07c1d33f32e2d24150ba93a54c13c0f39d0512d12b61a",
+      "name": "Bandwidth Meter",
+      "schema": "bootdisk-catalog-0.1",
+      "type": "software"
+    },
+    {
+      "id": "software:auto-47ef9f2dc61d1e794a5f1d7b9aa4efae5788cfc46359c4d2ee0a62dac4215e92",
+      "name": "AutoRun Manager",
+      "schema": "bootdisk-catalog-0.1",
+      "type": "software"
+    },
+    {
+      "id": "software:auto-60a5921758887f0d2f9ba9472f7c71e6bdfbad650fe49e978826defdce81f454",
+      "name": "Start Menu Cleaner",
+      "schema": "bootdisk-catalog-0.1",
+      "type": "software"
+    },
+    {
+      "id": "software:auto-61a4d19ed5bdcc5600c27e48122f653b2bd6e547b5ce270e7a3ac6d81feb3c8f",
+      "name": "LetterBox",
+      "schema": "bootdisk-catalog-0.1",
+      "type": "software"
+    },
+    {
+      "id": "software:auto-64205ace19a02713ffcd5259aaf3a01bbcf320d43c7f678dcf30b20a36774b13",
+      "name": "Dimension 4",
+      "schema": "bootdisk-catalog-0.1",
+      "type": "software"
+    },
+    {
+      "id": "software:auto-681dfd70f8efb1114036aa56fcbb59e7e188708493bf829ca97ea0b6bbca4baf",
+      "name": "FlashGet",
+      "schema": "bootdisk-catalog-0.1",
+      "type": "software"
+    },
+    {
+      "id": "software:auto-7658ba5c7a5792009e03ed66d709bc9866bf0f94c69c61e5779ef76fe5f1b449",
+      "name": "WebWasher",
+      "schema": "bootdisk-catalog-0.1",
+      "type": "software"
+    },
+    {
+      "id": "software:auto-b18c3ef210451c6909fa73d70753afe6c3c301e8af5f77443955a35472bef98a",
+      "name": "ClipCache",
+      "schema": "bootdisk-catalog-0.1",
+      "type": "software"
+    },
+    {
+      "id": "software:auto-c1df0cb3c935d8b1e0699559cd89a087de7aac3bf39b663127adef5f522ba2a5",
+      "name": "File Investigator",
+      "schema": "bootdisk-catalog-0.1",
+      "type": "software"
+    },
+    {
+      "id": "software:auto-c58241e2471c7505ba9dedc0965931176bd9ef7ea7377e1b9ac14aa9d538c46e",
+      "name": "Tool Pro",
+      "schema": "bootdisk-catalog-0.1",
+      "type": "software"
+    },
+    {
+      "id": "software:auto-c6644c9e661a4098c1178c12bf833b7bb8bacffb7cd8117aff5eb31a233ecd74",
+      "name": "Tweaking Toolbox",
+      "schema": "bootdisk-catalog-0.1",
+      "type": "software"
+    },
+    {
+      "id": "software:auto-d1f384a29efe63384f2d6ed23b72825d485c4ca09d7347f01dcfe87ac2825bf8",
+      "name": "Intercent",
+      "schema": "bootdisk-catalog-0.1",
+      "type": "software"
+    },
+    {
+      "id": "software:auto-eb7f0cb80f75f0d2dadbc61c23b04b9a8a276ac5321203464f3c45222fce7f79",
+      "name": "Configuration Lifeguard",
+      "schema": "bootdisk-catalog-0.1",
+      "type": "software"
+    },
+    {
+      "id": "software:auto-ee9614273098532de9406be5da8df5af3e25bc033838674e3074817949834216",
+      "name": "Diskspace",
+      "schema": "bootdisk-catalog-0.1",
+      "type": "software"
+    },
+    {
+      "artifact_id": "artifact:sha256:321f5230b44b427cf691254f16e8b96c9828c39b016d94ee8084b8bdadb8c723",
+      "distribution_kind": "unknown",
+      "evidence": [
+        {
+          "field": "automatic_source_identity",
+          "kind": "interpreted",
+          "source_ref": {
+            "entry": "K8",
+            "manifest": "sha256:ec196ed229af3375a3f90e69478e2db68e501b8b91360ac6ab6be5ee58465f19"
+          },
+          "value": {
+            "actor": "machine",
+            "basis": "CD title repeated in original description and one verified launch file",
+            "description": {
+              "source_ref": {
+                "entry": "K8",
+                "manifest": "sha256:ec196ed229af3375a3f90e69478e2db68e501b8b91360ac6ab6be5ee58465f19",
+                "pointer": "/entries/20/raw/Global"
+              },
+              "value": "Sett ned ventetiden! Modem Booster får modemet ditt til å jobbe så raskt som mulig. Programmet optimerer innstillingene til de best tenkelige."
+            },
+            "launch": {
+              "path": "Modemboost/SETUP.EXE",
+              "sha256": "321f5230b44b427cf691254f16e8b96c9828c39b016d94ee8084b8bdadb8c723",
+              "size": 47616
+            },
+            "rule": "cd-source-identity-1",
+            "scope": "source-attributed identity; installed payload and version not established",
+            "title": "Modem Booster",
+            "title_pointer": "/entries/20/normalized/title"
+          }
+        }
+      ],
+      "id": "identification:auto-96b59752222ac13423331f3583816007f6b33f99606393369f195706e271dff3",
+      "schema": "bootdisk-catalog-0.1",
+      "software_release_id": "release:auto-96b59752222ac13423331f3583816007f6b33f99606393369f195706e271dff3",
+      "status": "interpreted",
+      "type": "identification"
+    },
+    {
+      "artifact_id": "artifact:sha256:a6d2f8b9173fd43f03aabff0b8cc3fadbd0b15224bcbe5f562a32158a297b502",
+      "distribution_kind": "unknown",
+      "evidence": [
+        {
+          "field": "automatic_source_identity",
+          "kind": "interpreted",
+          "source_ref": {
+            "entry": "K1",
+            "manifest": "sha256:ec196ed229af3375a3f90e69478e2db68e501b8b91360ac6ab6be5ee58465f19"
+          },
+          "value": {
+            "actor": "machine",
+            "basis": "CD title repeated in original description and one verified launch file",
+            "description": {
+              "source_ref": {
+                "entry": "K1",
+                "manifest": "sha256:ec196ed229af3375a3f90e69478e2db68e501b8b91360ac6ab6be5ee58465f19",
+                "pointer": "/entries/15/raw/Global"
+              },
+              "value": "Med CuneiForm kan pc-en din lære å \"lese\". Programmet kan forvandle innskannede bilder av boksider til tekst som du kan jobbe videre med på skjermen."
+            },
+            "launch": {
+              "path": "CuneiForm/Setup.exe",
+              "sha256": "a6d2f8b9173fd43f03aabff0b8cc3fadbd0b15224bcbe5f562a32158a297b502",
+              "size": 71680
+            },
+            "rule": "cd-source-identity-1",
+            "scope": "source-attributed identity; installed payload and version not established",
+            "title": "CuneiForm",
+            "title_pointer": "/entries/15/normalized/title"
+          }
+        }
+      ],
+      "id": "identification:auto-9972664185752ac90ff0931f2e98806b69ef8914af5d69e0010f82b0c9d7a838",
+      "schema": "bootdisk-catalog-0.1",
+      "software_release_id": "release:auto-9972664185752ac90ff0931f2e98806b69ef8914af5d69e0010f82b0c9d7a838",
+      "status": "interpreted",
+      "type": "identification"
+    },
+    {
+      "artifact_id": "artifact:sha256:0879df9d34eb41b81d9b7d0263f52866331ec312984c2930507c7d4e701d37ba",
+      "distribution_kind": "unknown",
+      "evidence": [
+        {
+          "field": "automatic_source_identity",
+          "kind": "interpreted",
+          "source_ref": {
+            "entry": "K14",
+            "manifest": "sha256:ec196ed229af3375a3f90e69478e2db68e501b8b91360ac6ab6be5ee58465f19"
+          },
+          "value": {
+            "actor": "machine",
+            "basis": "CD title repeated in original description and one verified launch file",
+            "description": {
+              "source_ref": {
+                "entry": "K14",
+                "manifest": "sha256:ec196ed229af3375a3f90e69478e2db68e501b8b91360ac6ab6be5ee58465f19",
+                "pointer": "/entries/25/raw/Global"
+              },
+              "value": "SayIt er et lite program som får pc-en til å snakke med en syntetisk datastemme. Programmet uttaler det du skriver, på engelsk."
+            },
+            "launch": {
+              "path": "SayIt/sayiti.exe",
+              "sha256": "0879df9d34eb41b81d9b7d0263f52866331ec312984c2930507c7d4e701d37ba",
+              "size": 247974
+            },
+            "rule": "cd-source-identity-1",
+            "scope": "source-attributed identity; installed payload and version not established",
+            "title": "Sayit",
+            "title_pointer": "/entries/25/normalized/title"
+          }
+        }
+      ],
+      "id": "identification:auto-e39a527b409c83e222bf48f09716574dd11585f03bd7f69221b6313128576d25",
+      "schema": "bootdisk-catalog-0.1",
+      "software_release_id": "release:auto-e39a527b409c83e222bf48f09716574dd11585f03bd7f69221b6313128576d25",
+      "status": "interpreted",
+      "type": "identification"
+    },
+    {
+      "artifact_id": "artifact:sha256:d924284727811bdc0a73f170fa37846676efa851ac4dce5652504317bce158e4",
+      "distribution_kind": "unknown",
+      "evidence": [
+        {
+          "field": "automatic_source_identity",
+          "kind": "interpreted",
+          "source_ref": {
+            "entry": "K5",
+            "manifest": "sha256:ec196ed229af3375a3f90e69478e2db68e501b8b91360ac6ab6be5ee58465f19"
+          },
+          "value": {
+            "actor": "machine",
+            "basis": "CD title repeated in original description and one verified launch file",
+            "description": {
+              "source_ref": {
+                "entry": "K5",
+                "manifest": "sha256:ec196ed229af3375a3f90e69478e2db68e501b8b91360ac6ab6be5ee58465f19",
+                "pointer": "/entries/18/raw/Global"
+              },
+              "value": "Nå kan du skifte ut pauseskjermen din selv. Du fyller bare FreeSaver MP3 med lyd og bilder og angir selv i hvilken rekkefølge de skal rotere."
+            },
+            "launch": {
+              "path": "Freesaver/FreeSaverMP3.exe",
+              "sha256": "d924284727811bdc0a73f170fa37846676efa851ac4dce5652504317bce158e4",
+              "size": 541088
+            },
+            "rule": "cd-source-identity-1",
+            "scope": "source-attributed identity; installed payload and version not established",
+            "title": "Freesaver MP3",
+            "title_pointer": "/entries/18/normalized/title"
+          }
+        }
+      ],
+      "id": "identification:auto-ef37df84372a907fb9ce7411fcc0a7e45221f9c61754823aa3fc4443f5019c01",
+      "schema": "bootdisk-catalog-0.1",
+      "software_release_id": "release:auto-ef37df84372a907fb9ce7411fcc0a7e45221f9c61754823aa3fc4443f5019c01",
+      "status": "interpreted",
+      "type": "identification"
+    },
+    {
+      "id": "release:auto-96b59752222ac13423331f3583816007f6b33f99606393369f195706e271dff3",
+      "schema": "bootdisk-catalog-0.1",
+      "software_id": "software:auto-96b59752222ac13423331f3583816007f6b33f99606393369f195706e271dff3",
+      "type": "software_release",
+      "version": "unknown"
+    },
+    {
+      "id": "release:auto-9972664185752ac90ff0931f2e98806b69ef8914af5d69e0010f82b0c9d7a838",
+      "schema": "bootdisk-catalog-0.1",
+      "software_id": "software:auto-9972664185752ac90ff0931f2e98806b69ef8914af5d69e0010f82b0c9d7a838",
+      "type": "software_release",
+      "version": "unknown"
+    },
+    {
+      "id": "release:auto-e39a527b409c83e222bf48f09716574dd11585f03bd7f69221b6313128576d25",
+      "schema": "bootdisk-catalog-0.1",
+      "software_id": "software:auto-e39a527b409c83e222bf48f09716574dd11585f03bd7f69221b6313128576d25",
+      "type": "software_release",
+      "version": "unknown"
+    },
+    {
+      "id": "release:auto-ef37df84372a907fb9ce7411fcc0a7e45221f9c61754823aa3fc4443f5019c01",
+      "schema": "bootdisk-catalog-0.1",
+      "software_id": "software:auto-ef37df84372a907fb9ce7411fcc0a7e45221f9c61754823aa3fc4443f5019c01",
+      "type": "software_release",
+      "version": "unknown"
+    },
+    {
+      "id": "software:auto-96b59752222ac13423331f3583816007f6b33f99606393369f195706e271dff3",
+      "name": "Modem Booster",
+      "schema": "bootdisk-catalog-0.1",
+      "type": "software"
+    },
+    {
+      "id": "software:auto-9972664185752ac90ff0931f2e98806b69ef8914af5d69e0010f82b0c9d7a838",
+      "name": "CuneiForm",
+      "schema": "bootdisk-catalog-0.1",
+      "type": "software"
+    },
+    {
+      "id": "software:auto-e39a527b409c83e222bf48f09716574dd11585f03bd7f69221b6313128576d25",
+      "name": "Sayit",
+      "schema": "bootdisk-catalog-0.1",
+      "type": "software"
+    },
+    {
+      "id": "software:auto-ef37df84372a907fb9ce7411fcc0a7e45221f9c61754823aa3fc4443f5019c01",
+      "name": "Freesaver MP3",
+      "schema": "bootdisk-catalog-0.1",
+      "type": "software"
+    },
+    {
+      "artifact_id": "artifact:sha256:0c56358f252295b2fda646ba1cc2816ffd44c06c95080a1ddb065c37ced661e7",
+      "distribution_kind": "unknown",
+      "evidence": [
+        {
+          "field": "automatic_source_identity",
+          "kind": "interpreted",
+          "source_ref": {
+            "entry": "K17",
+            "manifest": "sha256:f50e2b8ffb99c25e5d398c9f1ed1b7afd74a53ecff3976f11f6bf4d9f6a6dfcc"
+          },
+          "value": {
+            "actor": "machine",
+            "basis": "CD title repeated in original description and one verified launch file",
+            "description": {
+              "source_ref": {
+                "entry": "K17",
+                "manifest": "sha256:f50e2b8ffb99c25e5d398c9f1ed1b7afd74a53ecff3976f11f6bf4d9f6a6dfcc",
+                "pointer": "/entries/16/evidence/description_rtf/text"
+              },
+              "value": "Wallpaper Calendar\nMed Wallpaper Calendar kan du raskt få oversikten over avtalene dine. Her står alle avtalene på selve skrivebordet.\n\nDette K-programmet er beskrevet i det aktuelle nummeret av Komputer for alle.\n\nI bladet kan du lese mer om hva programmet gjør, og du får en detaljert veiledning som hjelper deg i gang med å bruke det.\n"
+            },
+            "launch": {
+              "path": "Wallcalendar/Setup.exe",
+              "sha256": "0c56358f252295b2fda646ba1cc2816ffd44c06c95080a1ddb065c37ced661e7",
+              "size": 732114
+            },
+            "rule": "cd-source-identity-1",
+            "scope": "source-attributed identity; installed payload and version not established",
+            "title": "Wallpaper Calendar",
+            "title_pointer": "/entries/16/normalized/title"
+          }
+        }
+      ],
+      "id": "identification:auto-0007eea1b7f4e6c3307b98e3861d04e63862c3f149086daa21eba0acb890aef3",
+      "schema": "bootdisk-catalog-0.1",
+      "software_release_id": "release:auto-0007eea1b7f4e6c3307b98e3861d04e63862c3f149086daa21eba0acb890aef3",
+      "status": "interpreted",
+      "type": "identification"
+    },
+    {
+      "artifact_id": "artifact:sha256:36a49a398a3756e5630e95dc29a4334b5314dadf63ddbd817640be9ae7df4881",
+      "distribution_kind": "unknown",
+      "evidence": [
+        {
+          "field": "automatic_source_identity",
+          "kind": "interpreted",
+          "source_ref": {
+            "entry": "K27",
+            "manifest": "sha256:f50e2b8ffb99c25e5d398c9f1ed1b7afd74a53ecff3976f11f6bf4d9f6a6dfcc"
+          },
+          "value": {
+            "actor": "machine",
+            "basis": "CD title repeated in original description and one verified launch file",
+            "description": {
+              "source_ref": {
+                "entry": "K27",
+                "manifest": "sha256:f50e2b8ffb99c25e5d398c9f1ed1b7afd74a53ecff3976f11f6bf4d9f6a6dfcc",
+                "pointer": "/entries/19/evidence/description_rtf/text"
+              },
+              "value": "FrontPage Express 2.02\nHjemmesideskolen er bygd på FrontPage Express, som du kan bruke til å lage hjemmesider med stort sett uten å måtte bry deg med HTML. Med FrontPage Express redigerer du hjemmesidene direkte som de ser ut, og det er guider som hjelper deg med å lage flott layout på svært kort tid.\n\nFor erfarne brukere byr programmet også på mange godbiter. Du kan opprette og redigere tabeller direkte i programmet. Du har muligheten til å lage animasjoner, søkefunksjoner og andre spennende ting på hjemmesiden din. \n\nAlt dette og mye mer kan du lese om i den store hjemmesideskolen, som starter i dette nummeret av Komputer for alle.\n"
+            },
+            "launch": {
+              "path": "FrontPage/Setup.exe",
+              "sha256": "36a49a398a3756e5630e95dc29a4334b5314dadf63ddbd817640be9ae7df4881",
+              "size": 1968348
+            },
+            "rule": "cd-source-identity-1",
+            "scope": "source-attributed identity; installed payload and version not established",
+            "title": "FrontPage Express",
+            "title_pointer": "/entries/19/normalized/title"
+          }
+        }
+      ],
+      "id": "identification:auto-2a9c537bcc1687395ace95cf83513ccca0c19f089061f262ebb8bd196e401ef1",
+      "schema": "bootdisk-catalog-0.1",
+      "software_release_id": "release:auto-2a9c537bcc1687395ace95cf83513ccca0c19f089061f262ebb8bd196e401ef1",
+      "status": "interpreted",
+      "type": "identification"
+    },
+    {
+      "artifact_id": "artifact:sha256:1dd3a737738b316c119bd4e07462c825ecc1553af10211bbcd5574bfc413ab21",
+      "distribution_kind": "unknown",
+      "evidence": [
+        {
+          "field": "automatic_source_identity",
+          "kind": "interpreted",
+          "source_ref": {
+            "entry": "K3",
+            "manifest": "sha256:f50e2b8ffb99c25e5d398c9f1ed1b7afd74a53ecff3976f11f6bf4d9f6a6dfcc"
+          },
+          "value": {
+            "actor": "machine",
+            "basis": "CD title repeated in original description and one verified launch file",
+            "description": {
+              "source_ref": {
+                "entry": "K3",
+                "manifest": "sha256:f50e2b8ffb99c25e5d398c9f1ed1b7afd74a53ecff3976f11f6bf4d9f6a6dfcc",
+                "pointer": "/entries/2/evidence/description_rtf/text"
+              },
+              "value": "FIFA 2001 Demo\nDu har muligheten til å spille en kamp i dette imponerende fotballspillet. Her er spillet så realistisk og spennende at du i hvert fall ikke får tid til å se Sportsrevyen på tv. \n\nDenne demoen starter med litt innledende reklame, og så blir du bedt om å taste en vilkårlig tast. En rask oversikt over tastene vises deretter i et par sekunder på skjermen før du må velge lag. Demoen inneholder et toppoppgjør mellom Manchester United og Arsenal. \n\nI menyen ”Side Select” skal du bruke tastene på joysticken eller piltastene på tastaturet til å velge hvilken side du skal spille på. Bruk høyre eller venstre piltast på tastaturet til å velge lag. Når du har valgt, bruker du musen til å klikke på pilen i høyre hjørne for å komme i gang.\n\nDu bruker tastene A, S og D til å spille med. Spilleren din er markert med en ring og en retningspil. Hvis pilen er grønn, er det en ledig medspiller i akkurat den retningen. \n\nNår du har ballen, kan du bruke A til å sparke ballen videre eller mot mål. S-tasten gjør en kort pasning, mens D-tasten gjør en lang pasning.\n\nNår motstanderen har ballen, kan du skifte fra den aktive spilleren til en annen ved å bruke S-tasten. A-tasten lar spilleren foreta en glidende tackling. D-tasten kan brukes ved nærkontakt, og spilleren foretar en tackling.\n\nMålvakten redder automatisk ballen, men du kan naturligvis også styre ham. De samme tastene brukes til å kaste ut ballen eller foreta utspark. Når du skal foreta frispark, kan du velge hvilken spiller du vil sparke til. Da skifter synsvinklen til en naturlig synsvinkel for den spilleren som skal sparke.\n\nDu taster Esc for å gå ut av spillet, men du må bekrefte med musen ved å klikke på ”Quit match” og ”yes”.\n"
+            },
+            "launch": {
+              "path": "Fifa/AutoRun.exe",
+              "sha256": "1dd3a737738b316c119bd4e07462c825ecc1553af10211bbcd5574bfc413ab21",
+              "size": 253952
+            },
+            "rule": "cd-source-identity-1",
+            "scope": "source-attributed identity; installed payload and version not established",
+            "title": "FIFA 2001 Demo",
+            "title_pointer": "/entries/2/normalized/title"
+          }
+        }
+      ],
+      "id": "identification:auto-47b35d3ed915e631259b694af3e450e90f79c247ba9bef4c7b373421fc263c1e",
+      "schema": "bootdisk-catalog-0.1",
+      "software_release_id": "release:auto-47b35d3ed915e631259b694af3e450e90f79c247ba9bef4c7b373421fc263c1e",
+      "status": "interpreted",
+      "type": "identification"
+    },
+    {
+      "artifact_id": "artifact:sha256:cb579e3e53e65e91e229fe2ae195f02465da4b044ba097c6f9fe97e699936525",
+      "distribution_kind": "unknown",
+      "evidence": [
+        {
+          "field": "automatic_source_identity",
+          "kind": "interpreted",
+          "source_ref": {
+            "entry": "K14",
+            "manifest": "sha256:f50e2b8ffb99c25e5d398c9f1ed1b7afd74a53ecff3976f11f6bf4d9f6a6dfcc"
+          },
+          "value": {
+            "actor": "machine",
+            "basis": "CD title repeated in original description and one verified launch file",
+            "description": {
+              "source_ref": {
+                "entry": "K14",
+                "manifest": "sha256:f50e2b8ffb99c25e5d398c9f1ed1b7afd74a53ecff3976f11f6bf4d9f6a6dfcc",
+                "pointer": "/entries/13/evidence/description_rtf/text"
+              },
+              "value": "Whacky Wheels\nMan kan godt spille to på en og samme datamaskin. Prøv selv i det sprø kappløpet der hver spiller har sine egne taster.\n\nDette K-programmet er beskrevet i det aktuelle nummeret av Komputer for alle.\n\nI bladet kan du lese mer om hva programmet gjør, og du får en detaljert veiledning som hjelper deg i gang med å bruke det.\n"
+            },
+            "launch": {
+              "path": "WWHEELS/Setup/setup.exe",
+              "sha256": "cb579e3e53e65e91e229fe2ae195f02465da4b044ba097c6f9fe97e699936525",
+              "size": 71818
+            },
+            "rule": "cd-source-identity-1",
+            "scope": "source-attributed identity; installed payload and version not established",
+            "title": "Whacky Wheels",
+            "title_pointer": "/entries/13/normalized/title"
+          }
+        }
+      ],
+      "id": "identification:auto-4927c6ac11fac731b54c3b8993f39fd8db76fc0893597516b8c66339ab7d46bb",
+      "schema": "bootdisk-catalog-0.1",
+      "software_release_id": "release:auto-4927c6ac11fac731b54c3b8993f39fd8db76fc0893597516b8c66339ab7d46bb",
+      "status": "interpreted",
+      "type": "identification"
+    },
+    {
+      "artifact_id": "artifact:sha256:03cacf9199912dba9ef3cd85349b21f9494518b4370c2979f5a98cf79605fa85",
+      "distribution_kind": "unknown",
+      "evidence": [
+        {
+          "field": "automatic_source_identity",
+          "kind": "interpreted",
+          "source_ref": {
+            "entry": "K12",
+            "manifest": "sha256:f50e2b8ffb99c25e5d398c9f1ed1b7afd74a53ecff3976f11f6bf4d9f6a6dfcc"
+          },
+          "value": {
+            "actor": "machine",
+            "basis": "CD title repeated in original description and one verified launch file",
+            "description": {
+              "source_ref": {
+                "entry": "K12",
+                "manifest": "sha256:f50e2b8ffb99c25e5d398c9f1ed1b7afd74a53ecff3976f11f6bf4d9f6a6dfcc",
+                "pointer": "/entries/11/evidence/description_rtf/text"
+              },
+              "value": "Copernic 2000\nIkke nok med at Copernic 2000 gjør alt det langtekkelige arbeidet med å søke på flere søkemotorer for deg, du får også en liste med sidene det finner, i prioritert rekkefølge. Og du kan lagre resultatene av søkene dine slik at du alltid kan ta dem frem og jobbe videre med dem senere. \n\nDette K-programmet er beskrevet i det aktuelle nummeret av Komputer for alle.\n\nI bladet kan du lese mer om hva programmet gjør, og du får en detaljert veiledning som hjelper deg i gang med å bruke det.\n"
+            },
+            "launch": {
+              "path": "copernic/Setup.exe",
+              "sha256": "03cacf9199912dba9ef3cd85349b21f9494518b4370c2979f5a98cf79605fa85",
+              "size": 41472
+            },
+            "rule": "cd-source-identity-1",
+            "scope": "source-attributed identity; installed payload and version not established",
+            "title": "Copernic 2000",
+            "title_pointer": "/entries/11/normalized/title"
+          }
+        }
+      ],
+      "id": "identification:auto-69e35c627e896f0f4b8449c4afc20ae1934a8295a3a18ec4c3a4f904055ead8f",
+      "schema": "bootdisk-catalog-0.1",
+      "software_release_id": "release:auto-69e35c627e896f0f4b8449c4afc20ae1934a8295a3a18ec4c3a4f904055ead8f",
+      "status": "interpreted",
+      "type": "identification"
+    },
+    {
+      "artifact_id": "artifact:sha256:b08fc3455ba33b6ff824806407939da4eef8acfbcfa3956a49e3015b6596cb88",
+      "distribution_kind": "unknown",
+      "evidence": [
+        {
+          "field": "automatic_source_identity",
+          "kind": "interpreted",
+          "source_ref": {
+            "entry": "K10",
+            "manifest": "sha256:f50e2b8ffb99c25e5d398c9f1ed1b7afd74a53ecff3976f11f6bf4d9f6a6dfcc"
+          },
+          "value": {
+            "actor": "machine",
+            "basis": "CD title repeated in original description and one verified launch file",
+            "description": {
+              "source_ref": {
+                "entry": "K10",
+                "manifest": "sha256:f50e2b8ffb99c25e5d398c9f1ed1b7afd74a53ecff3976f11f6bf4d9f6a6dfcc",
+                "pointer": "/entries/9/evidence/description_rtf/text"
+              },
+              "value": "Globetrotter\nDenne eksklusive demoen sender deg på en reise til New York. Men først må du finne en jobb og svare på alle spørsmålene.\n\nDette K-programmet er beskrevet i det aktuelle nummeret av Komputer for alle.\n\nI bladet kan du lese mer om hva programmet gjør, og du får en detaljert veiledning som hjelper deg i gang med å bruke det.\n"
+            },
+            "launch": {
+              "path": "Globetrotter/Setup.exe",
+              "sha256": "b08fc3455ba33b6ff824806407939da4eef8acfbcfa3956a49e3015b6596cb88",
+              "size": 1021970
+            },
+            "rule": "cd-source-identity-1",
+            "scope": "source-attributed identity; installed payload and version not established",
+            "title": "Globetrotter",
+            "title_pointer": "/entries/9/normalized/title"
+          }
+        }
+      ],
+      "id": "identification:auto-6ede3260e014c19f7159ea0e6650ac59ad5eae4ebba37e51f6bdc1cbe51fa766",
+      "schema": "bootdisk-catalog-0.1",
+      "software_release_id": "release:auto-6ede3260e014c19f7159ea0e6650ac59ad5eae4ebba37e51f6bdc1cbe51fa766",
+      "status": "interpreted",
+      "type": "identification"
+    },
+    {
+      "artifact_id": "artifact:sha256:ecd793a0fdde6eaafd64f693062cfd2bd37d61f37bacfc526760f72171d8296d",
+      "distribution_kind": "unknown",
+      "evidence": [
+        {
+          "field": "automatic_source_identity",
+          "kind": "interpreted",
+          "source_ref": {
+            "entry": "K1",
+            "manifest": "sha256:f50e2b8ffb99c25e5d398c9f1ed1b7afd74a53ecff3976f11f6bf4d9f6a6dfcc"
+          },
+          "value": {
+            "actor": "machine",
+            "basis": "CD title repeated in original description and one verified launch file",
+            "description": {
+              "source_ref": {
+                "entry": "K1",
+                "manifest": "sha256:f50e2b8ffb99c25e5d398c9f1ed1b7afd74a53ecff3976f11f6bf4d9f6a6dfcc",
+                "pointer": "/entries/0/evidence/description_rtf/text"
+              },
+              "value": "Asterix \nI dette spillet skal du hjelpe Asterix og Obelix med å befri Gallia og løse en rekke oppgaver underveis. \n\nNår du har startet spillet, får du et vindu som i tillegg til ”Play”-knappen også inneholder en ”Settings”-knapp der du kan endre oppsettet for grafikkavviklingen i spillet. Du kan også velge å se den flerspråklige ”Readme”-filen som beskriver spillet i minste detalj. Ignorer knappene ”Update install” og  ”Extras”. \n\nKlikk på ”Play”-knappen, så kommer du til den berømte lille landsbyen i Gallia. På treskiltet kan du velge mellom ”new game”, ”load game”, ”options”, ”practice levels”, ”credits” og ”quit the game”. Du velger naturligvis å starte et nytt spill med ”new game”.\n\nPå landkartet ser du nå de okkuperte byene og den lille frie, gjeve gallerbyen. Du begynner med å helle opptjent trylledrikk i den store gryten i landsbyen. Bruk venstre musetast til å klikke et antall porsjoner ned i gryten. Når du er ferdig, skal du samle krigere ved å klikke med samme venstre musetast på gryten. Da blir sverdet du bærer ladet opp, og du kan angripe en naboby som er okkupert. Antallet krigere har betydning for om du kan overvinne fienden. Pass på at hjembyen din ikke blir blottstilt for fiendens tropper. Du må alltid etterlate en styrke der eller i de byene du etter hvert selv overtar. Du bruker musen til å rekruttere krigere og gå videre til neste naboby.\n\nI noen byer er det mulighet til å spille et plattformspill med enten Obelix eller Asterix, som skal utføre en oppgave. Her bruker du musetasten til å styre figuren rundt, mens A-tasten får figuren til å hoppe, og S-tasten får figuren til å slå ut romerne.\n\nTastene har også en annen funksjon når du kommer til den banen der Obelix skal kaste med romere. I disse spesielle spillbanene kan du øve deg. Velg ”practice levels” før du går i gang med et spill. Her er S-tasten tildelt funksjonen ”snurr Obelix” rundt, mens A-tasten må trykkes akkurat i riktig øyeblikk for at romeren kan kastes oppover banen.\n\nFor å avslutte et spill taster du Esc. Så kan du velge ”quit” fra menyen med piltastene og Enter-tasten.\n"
+            },
+            "launch": {
+              "path": "Asterix/Setup.exe",
+              "sha256": "ecd793a0fdde6eaafd64f693062cfd2bd37d61f37bacfc526760f72171d8296d",
+              "size": 139264
+            },
+            "rule": "cd-source-identity-1",
+            "scope": "source-attributed identity; installed payload and version not established",
+            "title": "Asterix",
+            "title_pointer": "/entries/0/normalized/title"
+          }
+        }
+      ],
+      "id": "identification:auto-71abfbe5fc40f378077ee743713f45d34a9f5c20439b91c33f27d17c9da430af",
+      "schema": "bootdisk-catalog-0.1",
+      "software_release_id": "release:auto-71abfbe5fc40f378077ee743713f45d34a9f5c20439b91c33f27d17c9da430af",
+      "status": "interpreted",
+      "type": "identification"
+    },
+    {
+      "artifact_id": "artifact:sha256:5a5245f0e0e92b5a72c0b772d4a58feea29100ad632059db9254ddf7b01ed3f8",
+      "distribution_kind": "unknown",
+      "evidence": [
+        {
+          "field": "automatic_source_identity",
+          "kind": "interpreted",
+          "source_ref": {
+            "entry": "K6",
+            "manifest": "sha256:f50e2b8ffb99c25e5d398c9f1ed1b7afd74a53ecff3976f11f6bf4d9f6a6dfcc"
+          },
+          "value": {
+            "actor": "machine",
+            "basis": "CD title repeated in original description and one verified launch file",
+            "description": {
+              "source_ref": {
+                "entry": "K6",
+                "manifest": "sha256:f50e2b8ffb99c25e5d398c9f1ed1b7afd74a53ecff3976f11f6bf4d9f6a6dfcc",
+                "pointer": "/entries/5/evidence/description_rtf/text"
+              },
+              "value": "SETI@Home\nDu kan delta i det globale prosjektet SETI, som er et seriøst vitenskapelig prosjekt som søker i verdensrommet etter intelligent liv. Ved å installere denne pauseskjermen setter du datamaskinen til å bearbeide data som blir sendt til din datamaskin fra SETI-prosjektet. \n\nEr du nysgjerrig, kan du følge med i den massive databehandlingen på skjermen. Pauseskjermen håndteres fra ”Egenskaper”, når du høyreklikker på skrivebordet. Velg ”Skjermbeskytter” og ”Innstillinger”. \n\nDu kan også venstreklikke med musen på det lille grønne symbolet på oppgavelinjen. Da starter programmet, som kjører i pauseskjermen, direkte. Tast F1 for å lese om prosjektet og de innstillingene du kan gjøre i programmet.\n\nDenne pauseskjermen krever at du er koblet til internett. Du må nemlig opprette en konto som sender data og resultater mellom datamaskinen og SETI-prosjektet.\n"
+            },
+            "launch": {
+              "path": "SetiAtHome/Setup.exe",
+              "sha256": "5a5245f0e0e92b5a72c0b772d4a58feea29100ad632059db9254ddf7b01ed3f8",
+              "size": 60928
+            },
+            "rule": "cd-source-identity-1",
+            "scope": "source-attributed identity; installed payload and version not established",
+            "title": "SETI@Home",
+            "title_pointer": "/entries/5/normalized/title"
+          }
+        }
+      ],
+      "id": "identification:auto-76cffba3e9cfec53b82c5030e63ce48925b5dac5a9ea226d7ba194e4ff6fd2e0",
+      "schema": "bootdisk-catalog-0.1",
+      "software_release_id": "release:auto-76cffba3e9cfec53b82c5030e63ce48925b5dac5a9ea226d7ba194e4ff6fd2e0",
+      "status": "interpreted",
+      "type": "identification"
+    },
+    {
+      "artifact_id": "artifact:sha256:759aed0ac6334f372cda29b58b0033e9aae06e7e05e836887b87c817f5fde3d3",
+      "distribution_kind": "unknown",
+      "evidence": [
+        {
+          "field": "automatic_source_identity",
+          "kind": "interpreted",
+          "source_ref": {
+            "entry": "K7",
+            "manifest": "sha256:f50e2b8ffb99c25e5d398c9f1ed1b7afd74a53ecff3976f11f6bf4d9f6a6dfcc"
+          },
+          "value": {
+            "actor": "machine",
+            "basis": "CD title repeated in original description and one verified launch file",
+            "description": {
+              "source_ref": {
+                "entry": "K7",
+                "manifest": "sha256:f50e2b8ffb99c25e5d398c9f1ed1b7afd74a53ecff3976f11f6bf4d9f6a6dfcc",
+                "pointer": "/entries/6/evidence/description_rtf/text"
+              },
+              "value": "PacQuest\nPacMan kan også spilles i 3D. Her skal du i det første vinduet velge ”Start” for å komme i gang. Men du skal også velge ”Controls” i menyen ”Game”. Klikk i feltet ”Keyboard” for å kunne bruke piltastene til å styre figuren din. Klikk på ”Ok” for å komme videre.\n\nBruk piltastene til å navigere rundt på flisene. Men pass deg for monstrene. Du skal spise de blå knappene, og når du spiser de røde ballene, kan du også spise monstre.\n\nEsc-tasten fører deg ut til menyen. Her kan du velge ”Exit”. Hvis du ikke vil at spillet skal endre den vanlige websiden din til en reklameside, velger du ”decline” under installasjonen.\n"
+            },
+            "launch": {
+              "path": "PacVenture/pacquest.exe",
+              "sha256": "759aed0ac6334f372cda29b58b0033e9aae06e7e05e836887b87c817f5fde3d3",
+              "size": 11236985
+            },
+            "rule": "cd-source-identity-1",
+            "scope": "source-attributed identity; installed payload and version not established",
+            "title": "PacQuest",
+            "title_pointer": "/entries/6/normalized/title"
+          }
+        }
+      ],
+      "id": "identification:auto-8063f430cc61da00455ca55efb079cecb11d68acdbd471bf151041a25f9c4055",
+      "schema": "bootdisk-catalog-0.1",
+      "software_release_id": "release:auto-8063f430cc61da00455ca55efb079cecb11d68acdbd471bf151041a25f9c4055",
+      "status": "interpreted",
+      "type": "identification"
+    },
+    {
+      "artifact_id": "artifact:sha256:4ad24060a7b9c9b7c1c6e92715c22771f5126a61d10d0780cabe1d87ef701960",
+      "distribution_kind": "unknown",
+      "evidence": [
+        {
+          "field": "automatic_source_identity",
+          "kind": "interpreted",
+          "source_ref": {
+            "entry": "K19",
+            "manifest": "sha256:f50e2b8ffb99c25e5d398c9f1ed1b7afd74a53ecff3976f11f6bf4d9f6a6dfcc"
+          },
+          "value": {
+            "actor": "machine",
+            "basis": "CD title repeated in original description and one verified launch file",
+            "description": {
+              "source_ref": {
+                "entry": "K19",
+                "manifest": "sha256:f50e2b8ffb99c25e5d398c9f1ed1b7afd74a53ecff3976f11f6bf4d9f6a6dfcc",
+                "pointer": "/entries/18/evidence/description_rtf/text"
+              },
+              "value": "EclipseCrossword\nFørste gangen du bruker programmet, er du nødt til å lage et nytt kryssord. Aksepter derfor valget ”I would like to start a new crossword” ved å klikke på ”next” nederst i programvinduet. Neste gang du bruker EclipseCrossword, kan du selvfølgelig arbeide videre på et tidligere lagret kryssord ved å velge punktet ”I would like to open a crossword that I have previously saved”. \n\nPå neste skjermbilde aksepterer du igjen datamaskinens forslag om å opprette en ny liste over ord, ”Let me create a word list from scratch now”, ved å klikke på ”next”. Nok en gang kan du, når du kommer tilbake, i stedet velge å åpne en tidligere lagret ordliste ved å velge ”I already have a word list or saved crossword puzzle that I will use”. \n\nPå neste skjermbilde kan du taste inn de ordene som skal inngå i kryssordoppgaven. I feltet ”Word” skriver du et ord, f.eks. ”EPLE”. I feltet under ”Clue for this word:” skriver du den teksten som skal lede frem til ordet i det ferdige kryssordet, f.eks. ”Adam spiste det”. Når du har gjort det, klikker du på knappen ”Add word to list”. Nå vil ordet stå i rammen på venstre side i vinduet, og du kan tilføye det neste. Når du har en passende mengde ord, heller for mange enn for få, kan du klikke på ”next” igjen. Nå blir du spurt om du vil lagre ordlisten, klikk på ”Yes”, gi ordlisten et navn og lagre den ved å klikke på ”Save”. Neste punkt er å gi kryssordet et navn – gjør det og klikk på ”next”. \n\nPå neste skjermbilde skal du bestemme størrelsen på kryssordet. Bare aksepter forslaget fra programmet ved å klikke på ”next”. På neste skjermbilde kan du se navnet på kryssordet du er i ferd med å lage, hvor mange ord det kan inneholde og størrelsen på det. Hvis det er noe du vil endre, kan du klikke på ”back” for å gå tilbake til tidligere skjermbilder, ellers klikker du på ”next”. Nå kan du se et forslag til et kryssord laget med de ordene du har tastet inn. Er du ikke fornøyd, klikker du på teksten ”Make another puzzle like this one”, så lager programmet et nytt forslag. \n\nNår du er fornøyd, klikker du på ”next”. I det siste skjermbildet har du tre knapper: den øverste ”Save crossword” lagrer kryssordet, den neste ”Create webpage” lagrer kryssordet i HTML-format slik at du kan bruke det på hjemmesiden din senere, og den siste, ”Print crossword”, skriver ut kryssordet. Hvis du klikker i feltet under den siste knappen, vil du få lagd en HTML-fil eller en utskrift, avhengig av hva du velger etterpå, med fasit. Med et ferdig kryssord kan du nå klikke på ”back” for å gå baklengs og lage flere kryssord, eller du kan velge å avslutte programmet ved å klikke på ”close”.\n"
+            },
+            "launch": {
+              "path": "Crossword/setup.exe",
+              "sha256": "4ad24060a7b9c9b7c1c6e92715c22771f5126a61d10d0780cabe1d87ef701960",
+              "size": 87813
+            },
+            "rule": "cd-source-identity-1",
+            "scope": "source-attributed identity; installed payload and version not established",
+            "title": "EclipseCrossword",
+            "title_pointer": "/entries/18/normalized/title"
+          }
+        }
+      ],
+      "id": "identification:auto-ba5d12bca074d07f0cb64ef4d588821bdc962615190a286a21bd64c940956be1",
+      "schema": "bootdisk-catalog-0.1",
+      "software_release_id": "release:auto-ba5d12bca074d07f0cb64ef4d588821bdc962615190a286a21bd64c940956be1",
+      "status": "interpreted",
+      "type": "identification"
+    },
+    {
+      "artifact_id": "artifact:sha256:cdc95afa6ada9fd2192500a10b20de460e526d4ebfc19d5d9098e05e692682bc",
+      "distribution_kind": "unknown",
+      "evidence": [
+        {
+          "field": "automatic_source_identity",
+          "kind": "interpreted",
+          "source_ref": {
+            "entry": "K13",
+            "manifest": "sha256:f50e2b8ffb99c25e5d398c9f1ed1b7afd74a53ecff3976f11f6bf4d9f6a6dfcc"
+          },
+          "value": {
+            "actor": "machine",
+            "basis": "CD title repeated in original description and one verified launch file",
+            "description": {
+              "source_ref": {
+                "entry": "K13",
+                "manifest": "sha256:f50e2b8ffb99c25e5d398c9f1ed1b7afd74a53ecff3976f11f6bf4d9f6a6dfcc",
+                "pointer": "/entries/12/evidence/description_rtf/text"
+              },
+              "value": "Motocross Madness 2\nEt av de morsomste spillene du kan spille i nettverk er Motocross Madness 2. Her kan du dreie gasshåndtaket helt i bånn uten å skitne til støvlene.\n\nDette K-programmet er beskrevet i det aktuelle nummeret av Komputer for alle.\n\nI bladet kan du lese mer om hva programmet gjør, og du får en detaljert veiledning som hjelper deg i gang med å bruke det.\n"
+            },
+            "launch": {
+              "path": "Motocross/MCM2Trial.exe",
+              "sha256": "cdc95afa6ada9fd2192500a10b20de460e526d4ebfc19d5d9098e05e692682bc",
+              "size": 42811450
+            },
+            "rule": "cd-source-identity-1",
+            "scope": "source-attributed identity; installed payload and version not established",
+            "title": "Motocross Madness 2",
+            "title_pointer": "/entries/12/normalized/title"
+          }
+        }
+      ],
+      "id": "identification:auto-bb6fc78ffc2c852bd7449b50ec62058ffe223aeaf690c923ed3e1d1bc169f718",
+      "schema": "bootdisk-catalog-0.1",
+      "software_release_id": "release:auto-bb6fc78ffc2c852bd7449b50ec62058ffe223aeaf690c923ed3e1d1bc169f718",
+      "status": "interpreted",
+      "type": "identification"
+    },
+    {
+      "artifact_id": "artifact:sha256:746730d027631c77ba605cfb16d478866bf96f24b56ab9fcf3b080b0f81351d0",
+      "distribution_kind": "unknown",
+      "evidence": [
+        {
+          "field": "automatic_source_identity",
+          "kind": "interpreted",
+          "source_ref": {
+            "entry": "K4",
+            "manifest": "sha256:f50e2b8ffb99c25e5d398c9f1ed1b7afd74a53ecff3976f11f6bf4d9f6a6dfcc"
+          },
+          "value": {
+            "actor": "machine",
+            "basis": "CD title repeated in original description and one verified launch file",
+            "description": {
+              "source_ref": {
+                "entry": "K4",
+                "manifest": "sha256:f50e2b8ffb99c25e5d398c9f1ed1b7afd74a53ecff3976f11f6bf4d9f6a6dfcc",
+                "pointer": "/entries/3/evidence/description_rtf/text"
+              },
+              "value": "3D Mars Mission \nDu skal bekjempe horder av fiendtlige romferger og raketter. Skyt på alt som rører seg i verdensrommet, og sørg for at romfergen forblir skadefri.\n\nBegynn med å taste Esc for å få en oversikt over menyene. Du kan starte et nytt oppdrag med ”Start new game”. Hvis du har avbrutt et spill midlertidig, kan du fortsette med ”Continue game”. Vil du endre på oppsettet for tastene, kan du velge ”Control setup”. Trenger du å endre innstillingene for lyden, kan du velge ”Sound setup”. Vil du lese nærmere instruksjoner, velger du ”Instructions”. Du kan også lese om spillets produsent ved å velge ”Credits”. Endelig kan du registrere spillet med ”How to register”. Og sist, men ikke minst, kan du velge å avslutte spillet med ”Exit game”. Men så lenge spillet ikke er registrert, vil du bli møtt med en blå skjerm der du kan registrere spillet og velge ”Ok” eller ”Cancel” hvis du ikke vil betale.\n\nDu starter et oppdrag med ”Start new game”. Så losser morskipet romfergen din av midt i krigssonen. Bruk piltastene høyre og venstre til å styre romfergen. Du skyter med laserkanonene med Ctrl-tasten, og du kan avfyre en altødeleggende bombe med mellomroms-tasten. På skjermen kan du dels se poengene dine, hvor mange romferger du har igjen, hvordan det går med skjoldet ditt og hvor mange bomber du har igjen.\n\nDu kan samle blå og grønne energikuler underveis i spillet. De gir mer skjold og bedre våpen. Hold tungen rett i munnen, for her går det unna. Spillet avsluttes når du ikke har flere romferger. Men du kan også taste Esc for å komme til hovedmenyen. Det er en naturlig begrensning i denne shareware-versjonen. Når du har oppnådd toppscoren, avsluttes spillet.\n"
+            },
+            "launch": {
+              "path": "Mission/mission.exe",
+              "sha256": "746730d027631c77ba605cfb16d478866bf96f24b56ab9fcf3b080b0f81351d0",
+              "size": 3818863
+            },
+            "rule": "cd-source-identity-1",
+            "scope": "source-attributed identity; installed payload and version not established",
+            "title": "3D Mars Mission",
+            "title_pointer": "/entries/3/normalized/title"
+          }
+        }
+      ],
+      "id": "identification:auto-fd9ab45233cfcf1498c323056e25a3c580b9cca835d6f1c68f716a4a25114030",
+      "schema": "bootdisk-catalog-0.1",
+      "software_release_id": "release:auto-fd9ab45233cfcf1498c323056e25a3c580b9cca835d6f1c68f716a4a25114030",
+      "status": "interpreted",
+      "type": "identification"
+    },
+    {
+      "id": "release:auto-0007eea1b7f4e6c3307b98e3861d04e63862c3f149086daa21eba0acb890aef3",
+      "schema": "bootdisk-catalog-0.1",
+      "software_id": "software:auto-0007eea1b7f4e6c3307b98e3861d04e63862c3f149086daa21eba0acb890aef3",
+      "type": "software_release",
+      "version": "unknown"
+    },
+    {
+      "id": "release:auto-2a9c537bcc1687395ace95cf83513ccca0c19f089061f262ebb8bd196e401ef1",
+      "schema": "bootdisk-catalog-0.1",
+      "software_id": "software:auto-2a9c537bcc1687395ace95cf83513ccca0c19f089061f262ebb8bd196e401ef1",
+      "type": "software_release",
+      "version": "unknown"
+    },
+    {
+      "id": "release:auto-47b35d3ed915e631259b694af3e450e90f79c247ba9bef4c7b373421fc263c1e",
+      "schema": "bootdisk-catalog-0.1",
+      "software_id": "software:auto-47b35d3ed915e631259b694af3e450e90f79c247ba9bef4c7b373421fc263c1e",
+      "type": "software_release",
+      "version": "unknown"
+    },
+    {
+      "id": "release:auto-4927c6ac11fac731b54c3b8993f39fd8db76fc0893597516b8c66339ab7d46bb",
+      "schema": "bootdisk-catalog-0.1",
+      "software_id": "software:auto-4927c6ac11fac731b54c3b8993f39fd8db76fc0893597516b8c66339ab7d46bb",
+      "type": "software_release",
+      "version": "unknown"
+    },
+    {
+      "id": "release:auto-69e35c627e896f0f4b8449c4afc20ae1934a8295a3a18ec4c3a4f904055ead8f",
+      "schema": "bootdisk-catalog-0.1",
+      "software_id": "software:auto-69e35c627e896f0f4b8449c4afc20ae1934a8295a3a18ec4c3a4f904055ead8f",
+      "type": "software_release",
+      "version": "unknown"
+    },
+    {
+      "id": "release:auto-6ede3260e014c19f7159ea0e6650ac59ad5eae4ebba37e51f6bdc1cbe51fa766",
+      "schema": "bootdisk-catalog-0.1",
+      "software_id": "software:auto-6ede3260e014c19f7159ea0e6650ac59ad5eae4ebba37e51f6bdc1cbe51fa766",
+      "type": "software_release",
+      "version": "unknown"
+    },
+    {
+      "id": "release:auto-71abfbe5fc40f378077ee743713f45d34a9f5c20439b91c33f27d17c9da430af",
+      "schema": "bootdisk-catalog-0.1",
+      "software_id": "software:auto-71abfbe5fc40f378077ee743713f45d34a9f5c20439b91c33f27d17c9da430af",
+      "type": "software_release",
+      "version": "unknown"
+    },
+    {
+      "id": "release:auto-76cffba3e9cfec53b82c5030e63ce48925b5dac5a9ea226d7ba194e4ff6fd2e0",
+      "schema": "bootdisk-catalog-0.1",
+      "software_id": "software:auto-76cffba3e9cfec53b82c5030e63ce48925b5dac5a9ea226d7ba194e4ff6fd2e0",
+      "type": "software_release",
+      "version": "unknown"
+    },
+    {
+      "id": "release:auto-8063f430cc61da00455ca55efb079cecb11d68acdbd471bf151041a25f9c4055",
+      "schema": "bootdisk-catalog-0.1",
+      "software_id": "software:auto-8063f430cc61da00455ca55efb079cecb11d68acdbd471bf151041a25f9c4055",
+      "type": "software_release",
+      "version": "unknown"
+    },
+    {
+      "id": "release:auto-ba5d12bca074d07f0cb64ef4d588821bdc962615190a286a21bd64c940956be1",
+      "schema": "bootdisk-catalog-0.1",
+      "software_id": "software:auto-ba5d12bca074d07f0cb64ef4d588821bdc962615190a286a21bd64c940956be1",
+      "type": "software_release",
+      "version": "unknown"
+    },
+    {
+      "id": "release:auto-bb6fc78ffc2c852bd7449b50ec62058ffe223aeaf690c923ed3e1d1bc169f718",
+      "schema": "bootdisk-catalog-0.1",
+      "software_id": "software:auto-bb6fc78ffc2c852bd7449b50ec62058ffe223aeaf690c923ed3e1d1bc169f718",
+      "type": "software_release",
+      "version": "unknown"
+    },
+    {
+      "id": "release:auto-fd9ab45233cfcf1498c323056e25a3c580b9cca835d6f1c68f716a4a25114030",
+      "schema": "bootdisk-catalog-0.1",
+      "software_id": "software:auto-fd9ab45233cfcf1498c323056e25a3c580b9cca835d6f1c68f716a4a25114030",
+      "type": "software_release",
+      "version": "unknown"
+    },
+    {
+      "id": "software:auto-0007eea1b7f4e6c3307b98e3861d04e63862c3f149086daa21eba0acb890aef3",
+      "name": "Wallpaper Calendar",
+      "schema": "bootdisk-catalog-0.1",
+      "type": "software"
+    },
+    {
+      "id": "software:auto-2a9c537bcc1687395ace95cf83513ccca0c19f089061f262ebb8bd196e401ef1",
+      "name": "FrontPage Express",
+      "schema": "bootdisk-catalog-0.1",
+      "type": "software"
+    },
+    {
+      "id": "software:auto-47b35d3ed915e631259b694af3e450e90f79c247ba9bef4c7b373421fc263c1e",
+      "name": "FIFA 2001 Demo",
+      "schema": "bootdisk-catalog-0.1",
+      "type": "software"
+    },
+    {
+      "id": "software:auto-4927c6ac11fac731b54c3b8993f39fd8db76fc0893597516b8c66339ab7d46bb",
+      "name": "Whacky Wheels",
+      "schema": "bootdisk-catalog-0.1",
+      "type": "software"
+    },
+    {
+      "id": "software:auto-69e35c627e896f0f4b8449c4afc20ae1934a8295a3a18ec4c3a4f904055ead8f",
+      "name": "Copernic 2000",
+      "schema": "bootdisk-catalog-0.1",
+      "type": "software"
+    },
+    {
+      "id": "software:auto-6ede3260e014c19f7159ea0e6650ac59ad5eae4ebba37e51f6bdc1cbe51fa766",
+      "name": "Globetrotter",
+      "schema": "bootdisk-catalog-0.1",
+      "type": "software"
+    },
+    {
+      "id": "software:auto-71abfbe5fc40f378077ee743713f45d34a9f5c20439b91c33f27d17c9da430af",
+      "name": "Asterix",
+      "schema": "bootdisk-catalog-0.1",
+      "type": "software"
+    },
+    {
+      "id": "software:auto-76cffba3e9cfec53b82c5030e63ce48925b5dac5a9ea226d7ba194e4ff6fd2e0",
+      "name": "SETI@Home",
+      "schema": "bootdisk-catalog-0.1",
+      "type": "software"
+    },
+    {
+      "id": "software:auto-8063f430cc61da00455ca55efb079cecb11d68acdbd471bf151041a25f9c4055",
+      "name": "PacQuest",
+      "schema": "bootdisk-catalog-0.1",
+      "type": "software"
+    },
+    {
+      "id": "software:auto-ba5d12bca074d07f0cb64ef4d588821bdc962615190a286a21bd64c940956be1",
+      "name": "EclipseCrossword",
+      "schema": "bootdisk-catalog-0.1",
+      "type": "software"
+    },
+    {
+      "id": "software:auto-bb6fc78ffc2c852bd7449b50ec62058ffe223aeaf690c923ed3e1d1bc169f718",
+      "name": "Motocross Madness 2",
+      "schema": "bootdisk-catalog-0.1",
+      "type": "software"
+    },
+    {
+      "id": "software:auto-fd9ab45233cfcf1498c323056e25a3c580b9cca835d6f1c68f716a4a25114030",
+      "name": "3D Mars Mission",
+      "schema": "bootdisk-catalog-0.1",
+      "type": "software"
+    },
+    {
+      "artifact_id": "artifact:sha256:a20bbdc711ae60619fd8df2aa545b7c2c36bc129e0bf6c9fa1469862100da577",
+      "distribution_kind": "unknown",
+      "evidence": [
+        {
+          "field": "automatic_source_identity",
+          "kind": "interpreted",
+          "source_ref": {
+            "entry": "Tool4434",
+            "manifest": "sha256:d41fc8423030eebf0a86c198d20e2da50a246bc17a6be75fd26dedbde130a989"
+          },
+          "value": {
+            "actor": "machine",
+            "basis": "CD title repeated in original description and one verified launch file",
+            "description": {
+              "source_ref": {
+                "entry": "Tool4434",
+                "manifest": "sha256:d41fc8423030eebf0a86c198d20e2da50a246bc17a6be75fd26dedbde130a989",
+                "pointer": "/entries/4/evidence/description_source/text/cp1252_view"
+              },
+              "value": "Dimension 4 bruker internett til å sikre at klokken i PC-en alltid går riktig. \r\rDe innebygde klokkene i de fleste PC-er er ikke særlig nøyaktige; noen av dem kan saktne seg flere minutter i døgnet.\r \rDimension 4 kan bruke et atomur på internett til å stille PC-klokken etter.\r\rMed Dimension 4 behøver du aldri å bekymre deg om klokken går riktig, verken til daglig eller når det er sommertid."
+            },
+            "launch": {
+              "path": "Tools/D4/Setup.exe",
+              "sha256": "a20bbdc711ae60619fd8df2aa545b7c2c36bc129e0bf6c9fa1469862100da577",
+              "size": 448067
+            },
+            "rule": "cd-source-identity-1",
+            "scope": "source-attributed identity; installed payload and version not established",
+            "title": "Dimension 4",
+            "title_pointer": "/entries/4/normalized/title"
+          }
+        }
+      ],
+      "id": "identification:auto-5573e5a65ea30da6d4cdd387c9624bd018834f445f22abab8028a460cb3a49e7",
+      "schema": "bootdisk-catalog-0.1",
+      "software_release_id": "release:auto-5573e5a65ea30da6d4cdd387c9624bd018834f445f22abab8028a460cb3a49e7",
+      "status": "interpreted",
+      "type": "identification"
+    },
+    {
+      "artifact_id": "artifact:sha256:3f7dae7e40e3500f4750ed9b9eba4255bc766541565f1cc8470bfb281bad10f8",
+      "distribution_kind": "unknown",
+      "evidence": [
+        {
+          "field": "automatic_source_identity",
+          "kind": "interpreted",
+          "source_ref": {
+            "entry": "Tool5374617274436c65616e",
+            "manifest": "sha256:d41fc8423030eebf0a86c198d20e2da50a246bc17a6be75fd26dedbde130a989"
+          },
+          "value": {
+            "actor": "machine",
+            "basis": "CD title repeated in original description and one verified launch file",
+            "description": {
+              "source_ref": {
+                "entry": "Tool5374617274436c65616e",
+                "manifest": "sha256:d41fc8423030eebf0a86c198d20e2da50a246bc17a6be75fd26dedbde130a989",
+                "pointer": "/entries/7/evidence/description_source/text/cp1252_view"
+              },
+              "value": "Når du sletter eller flytter et program, blir det ofte liggende ubrukelige ikoner på Start-menyen. \r\rMed Start Menu Cleaner kan du lynraskt slette alle ubrukelige grupper og ikoner fra menyen.\r\rPå de neste sidene kan du lese hvordan du kan rydde opp på Start-menyen på en rask og effektiv måte. \r"
+            },
+            "launch": {
+              "path": "Tools/Cleaner/Setup.exe",
+              "sha256": "3f7dae7e40e3500f4750ed9b9eba4255bc766541565f1cc8470bfb281bad10f8",
+              "size": 1302491
+            },
+            "rule": "cd-source-identity-1",
+            "scope": "source-attributed identity; installed payload and version not established",
+            "title": "Start Menu Cleaner",
+            "title_pointer": "/entries/7/normalized/title"
+          }
+        }
+      ],
+      "id": "identification:auto-f6a5cd6121d6d1b3fbc6842ba6fa9ac10c56880201dc0d300ae02e4baf8ad961",
+      "schema": "bootdisk-catalog-0.1",
+      "software_release_id": "release:auto-f6a5cd6121d6d1b3fbc6842ba6fa9ac10c56880201dc0d300ae02e4baf8ad961",
+      "status": "interpreted",
+      "type": "identification"
+    },
+    {
+      "id": "release:auto-5573e5a65ea30da6d4cdd387c9624bd018834f445f22abab8028a460cb3a49e7",
+      "schema": "bootdisk-catalog-0.1",
+      "software_id": "software:auto-5573e5a65ea30da6d4cdd387c9624bd018834f445f22abab8028a460cb3a49e7",
+      "type": "software_release",
+      "version": "unknown"
+    },
+    {
+      "id": "release:auto-f6a5cd6121d6d1b3fbc6842ba6fa9ac10c56880201dc0d300ae02e4baf8ad961",
+      "schema": "bootdisk-catalog-0.1",
+      "software_id": "software:auto-f6a5cd6121d6d1b3fbc6842ba6fa9ac10c56880201dc0d300ae02e4baf8ad961",
+      "type": "software_release",
+      "version": "unknown"
+    },
+    {
+      "id": "software:auto-5573e5a65ea30da6d4cdd387c9624bd018834f445f22abab8028a460cb3a49e7",
+      "name": "Dimension 4",
+      "schema": "bootdisk-catalog-0.1",
+      "type": "software"
+    },
+    {
+      "id": "software:auto-f6a5cd6121d6d1b3fbc6842ba6fa9ac10c56880201dc0d300ae02e4baf8ad961",
+      "name": "Start Menu Cleaner",
+      "schema": "bootdisk-catalog-0.1",
+      "type": "software"
+    },
+    {
+      "artifact_id": "artifact:sha256:bedadccbbcc67f9e8a7fa96ca2b7d02a784e8cbaeac309fa108ddb90be53db11",
+      "distribution_kind": "unknown",
+      "evidence": [
+        {
+          "field": "automatic_source_identity",
+          "kind": "interpreted",
+          "source_ref": {
+            "entry": "Tool436f6f6454696d6572",
+            "manifest": "sha256:a97d1734f36d18143126fcea22401340937c83e920523660e0d591ca7f10e337"
+          },
+          "value": {
+            "actor": "machine",
+            "basis": "CD title repeated in original description and one verified launch file",
+            "description": {
+              "source_ref": {
+                "entry": "Tool436f6f6454696d6572",
+                "manifest": "sha256:a97d1734f36d18143126fcea22401340937c83e920523660e0d591ca7f10e337",
+                "pointer": "/entries/12/evidence/description_source/text/cp1252_view"
+              },
+              "value": "Hvis du har behov for å holde øye med tiden, kan et nedtellingsur være svært praktisk.\r\rCoodTimer er et program som slår alarm på et bestemt tidspunkt eller når det har gått en viss tid. Inntil da vil en indikator på skjermen vise hvor lenge det er igjen. \r\rProgrammet har mange muligheter - vi vil nå gi deg en oversikt og vise deg de viktigste."
+            },
+            "launch": {
+              "path": "Tools/CoodTimer/Setup.exe",
+              "sha256": "bedadccbbcc67f9e8a7fa96ca2b7d02a784e8cbaeac309fa108ddb90be53db11",
+              "size": 314881
+            },
+            "rule": "cd-source-identity-1",
+            "scope": "source-attributed identity; installed payload and version not established",
+            "title": "CoodTimer",
+            "title_pointer": "/entries/12/normalized/title"
+          }
+        }
+      ],
+      "id": "identification:auto-4f759ae3aec2f39ef86c84fa841d54f3f664afdeae949fdd7544a4a99c456bde",
+      "schema": "bootdisk-catalog-0.1",
+      "software_release_id": "release:auto-4f759ae3aec2f39ef86c84fa841d54f3f664afdeae949fdd7544a4a99c456bde",
+      "status": "interpreted",
+      "type": "identification"
+    },
+    {
+      "artifact_id": "artifact:sha256:3f7dae7e40e3500f4750ed9b9eba4255bc766541565f1cc8470bfb281bad10f8",
+      "distribution_kind": "unknown",
+      "evidence": [
+        {
+          "field": "automatic_source_identity",
+          "kind": "interpreted",
+          "source_ref": {
+            "entry": "Tool5374617274436c65616e",
+            "manifest": "sha256:a97d1734f36d18143126fcea22401340937c83e920523660e0d591ca7f10e337"
+          },
+          "value": {
+            "actor": "machine",
+            "basis": "CD title repeated in original description and one verified launch file",
+            "description": {
+              "source_ref": {
+                "entry": "Tool5374617274436c65616e",
+                "manifest": "sha256:a97d1734f36d18143126fcea22401340937c83e920523660e0d591ca7f10e337",
+                "pointer": "/entries/8/evidence/description_source/text/cp1252_view"
+              },
+              "value": "Når du sletter eller flytter et program, blir det ofte liggende ubrukelige ikoner på Start-menyen. \r\rMed Start Menu Cleaner kan du lynraskt slette alle ubrukelige grupper og ikoner fra menyen.\r\rPå de neste sidene kan du lese hvordan du kan rydde opp på Start-menyen på en rask og effektiv måte. \r"
+            },
+            "launch": {
+              "path": "Tools/Cleaner/Setup.exe",
+              "sha256": "3f7dae7e40e3500f4750ed9b9eba4255bc766541565f1cc8470bfb281bad10f8",
+              "size": 1302491
+            },
+            "rule": "cd-source-identity-1",
+            "scope": "source-attributed identity; installed payload and version not established",
+            "title": "Start Menu Cleaner",
+            "title_pointer": "/entries/8/normalized/title"
+          }
+        }
+      ],
+      "id": "identification:auto-56e8f37868cae8940d1db09be0385093d5a64b71af3babde05c79bad1ac2ca51",
+      "schema": "bootdisk-catalog-0.1",
+      "software_release_id": "release:auto-56e8f37868cae8940d1db09be0385093d5a64b71af3babde05c79bad1ac2ca51",
+      "status": "interpreted",
+      "type": "identification"
+    },
+    {
+      "artifact_id": "artifact:sha256:a20bbdc711ae60619fd8df2aa545b7c2c36bc129e0bf6c9fa1469862100da577",
+      "distribution_kind": "unknown",
+      "evidence": [
+        {
+          "field": "automatic_source_identity",
+          "kind": "interpreted",
+          "source_ref": {
+            "entry": "Tool4434",
+            "manifest": "sha256:a97d1734f36d18143126fcea22401340937c83e920523660e0d591ca7f10e337"
+          },
+          "value": {
+            "actor": "machine",
+            "basis": "CD title repeated in original description and one verified launch file",
+            "description": {
+              "source_ref": {
+                "entry": "Tool4434",
+                "manifest": "sha256:a97d1734f36d18143126fcea22401340937c83e920523660e0d591ca7f10e337",
+                "pointer": "/entries/2/evidence/description_source/text/cp1252_view"
+              },
+              "value": "Dimension 4 bruker internett til å sikre at klokken i PC-en alltid går riktig. \r\rDe innebygde klokkene i de fleste PC-er er ikke særlig nøyaktige; noen av dem kan saktne seg flere minutter i døgnet.\r \rDimension 4 kan bruke et atomur på internett til å stille PC-klokken etter.\r\rMed Dimension 4 behøver du aldri å bekymre deg om klokken går riktig, verken til daglig eller når det er sommertid."
+            },
+            "launch": {
+              "path": "Tools/D4/Setup.exe",
+              "sha256": "a20bbdc711ae60619fd8df2aa545b7c2c36bc129e0bf6c9fa1469862100da577",
+              "size": 448067
+            },
+            "rule": "cd-source-identity-1",
+            "scope": "source-attributed identity; installed payload and version not established",
+            "title": "Dimension 4",
+            "title_pointer": "/entries/2/normalized/title"
+          }
+        }
+      ],
+      "id": "identification:auto-bd4ab077455b6f6cde77df31d03f030c0ba386782883ad0f58501fe02a1f701c",
+      "schema": "bootdisk-catalog-0.1",
+      "software_release_id": "release:auto-bd4ab077455b6f6cde77df31d03f030c0ba386782883ad0f58501fe02a1f701c",
+      "status": "interpreted",
+      "type": "identification"
+    },
+    {
+      "id": "release:auto-4f759ae3aec2f39ef86c84fa841d54f3f664afdeae949fdd7544a4a99c456bde",
+      "schema": "bootdisk-catalog-0.1",
+      "software_id": "software:auto-4f759ae3aec2f39ef86c84fa841d54f3f664afdeae949fdd7544a4a99c456bde",
+      "type": "software_release",
+      "version": "unknown"
+    },
+    {
+      "id": "release:auto-56e8f37868cae8940d1db09be0385093d5a64b71af3babde05c79bad1ac2ca51",
+      "schema": "bootdisk-catalog-0.1",
+      "software_id": "software:auto-56e8f37868cae8940d1db09be0385093d5a64b71af3babde05c79bad1ac2ca51",
+      "type": "software_release",
+      "version": "unknown"
+    },
+    {
+      "id": "release:auto-bd4ab077455b6f6cde77df31d03f030c0ba386782883ad0f58501fe02a1f701c",
+      "schema": "bootdisk-catalog-0.1",
+      "software_id": "software:auto-bd4ab077455b6f6cde77df31d03f030c0ba386782883ad0f58501fe02a1f701c",
+      "type": "software_release",
+      "version": "unknown"
+    },
+    {
+      "id": "software:auto-4f759ae3aec2f39ef86c84fa841d54f3f664afdeae949fdd7544a4a99c456bde",
+      "name": "CoodTimer",
+      "schema": "bootdisk-catalog-0.1",
+      "type": "software"
+    },
+    {
+      "id": "software:auto-56e8f37868cae8940d1db09be0385093d5a64b71af3babde05c79bad1ac2ca51",
+      "name": "Start Menu Cleaner",
+      "schema": "bootdisk-catalog-0.1",
+      "type": "software"
+    },
+    {
+      "id": "software:auto-bd4ab077455b6f6cde77df31d03f030c0ba386782883ad0f58501fe02a1f701c",
+      "name": "Dimension 4",
+      "schema": "bootdisk-catalog-0.1",
+      "type": "software"
+    },
+    {
+      "artifact_id": "artifact:sha256:3f7dae7e40e3500f4750ed9b9eba4255bc766541565f1cc8470bfb281bad10f8",
+      "distribution_kind": "unknown",
+      "evidence": [
+        {
+          "field": "automatic_source_identity",
+          "kind": "interpreted",
+          "source_ref": {
+            "entry": "Tool5374617274436c65616e",
+            "manifest": "sha256:13e520c97edd5869b07eafd3348e854c838a2082663342cabd314c16bb1f4ce2"
+          },
+          "value": {
+            "actor": "machine",
+            "basis": "CD title repeated in original description and one verified launch file",
+            "description": {
+              "source_ref": {
+                "entry": "Tool5374617274436c65616e",
+                "manifest": "sha256:13e520c97edd5869b07eafd3348e854c838a2082663342cabd314c16bb1f4ce2",
+                "pointer": "/entries/7/evidence/description_source/text/cp1252_view"
+              },
+              "value": "Når du sletter eller flytter et program, blir det ofte liggende ubrukelige ikoner på Start-menyen. \r\rMed Start Menu Cleaner kan du lynraskt slette alle ubrukelige grupper og ikoner fra menyen.\r\rPå de neste sidene kan du lese hvordan du kan rydde opp på Start-menyen på en rask og effektiv måte. \r"
+            },
+            "launch": {
+              "path": "Tools/Cleaner/Setup.exe",
+              "sha256": "3f7dae7e40e3500f4750ed9b9eba4255bc766541565f1cc8470bfb281bad10f8",
+              "size": 1302491
+            },
+            "rule": "cd-source-identity-1",
+            "scope": "source-attributed identity; installed payload and version not established",
+            "title": "Start Menu Cleaner",
+            "title_pointer": "/entries/7/normalized/title"
+          }
+        }
+      ],
+      "id": "identification:auto-5e8020e1450381f87f26870dc1ce62f1a1b983731ab91e64efbda02e6392a270",
+      "schema": "bootdisk-catalog-0.1",
+      "software_release_id": "release:auto-5e8020e1450381f87f26870dc1ce62f1a1b983731ab91e64efbda02e6392a270",
+      "status": "interpreted",
+      "type": "identification"
+    },
+    {
+      "artifact_id": "artifact:sha256:a20bbdc711ae60619fd8df2aa545b7c2c36bc129e0bf6c9fa1469862100da577",
+      "distribution_kind": "unknown",
+      "evidence": [
+        {
+          "field": "automatic_source_identity",
+          "kind": "interpreted",
+          "source_ref": {
+            "entry": "Tool4434",
+            "manifest": "sha256:13e520c97edd5869b07eafd3348e854c838a2082663342cabd314c16bb1f4ce2"
+          },
+          "value": {
+            "actor": "machine",
+            "basis": "CD title repeated in original description and one verified launch file",
+            "description": {
+              "source_ref": {
+                "entry": "Tool4434",
+                "manifest": "sha256:13e520c97edd5869b07eafd3348e854c838a2082663342cabd314c16bb1f4ce2",
+                "pointer": "/entries/2/evidence/description_source/text/cp1252_view"
+              },
+              "value": "Dimension 4 bruker internett til å sikre at klokken i PC-en alltid går riktig. \r\rDe innebygde klokkene i de fleste PC-er er ikke særlig nøyaktige; noen av dem kan saktne seg flere minutter i døgnet.\r \rDimension 4 kan bruke et atomur på internett til å stille PC-klokken etter.\r\rMed Dimension 4 behøver du aldri å bekymre deg om klokken går riktig, verken til daglig eller når det er sommertid."
+            },
+            "launch": {
+              "path": "Tools/D4/Setup.exe",
+              "sha256": "a20bbdc711ae60619fd8df2aa545b7c2c36bc129e0bf6c9fa1469862100da577",
+              "size": 448067
+            },
+            "rule": "cd-source-identity-1",
+            "scope": "source-attributed identity; installed payload and version not established",
+            "title": "Dimension 4",
+            "title_pointer": "/entries/2/normalized/title"
+          }
+        }
+      ],
+      "id": "identification:auto-fa5876df8ebd9a95808646a28d945980fe74e79a6e9ec7be63f5f2ba9dd938e2",
+      "schema": "bootdisk-catalog-0.1",
+      "software_release_id": "release:auto-fa5876df8ebd9a95808646a28d945980fe74e79a6e9ec7be63f5f2ba9dd938e2",
+      "status": "interpreted",
+      "type": "identification"
+    },
+    {
+      "id": "release:auto-5e8020e1450381f87f26870dc1ce62f1a1b983731ab91e64efbda02e6392a270",
+      "schema": "bootdisk-catalog-0.1",
+      "software_id": "software:auto-5e8020e1450381f87f26870dc1ce62f1a1b983731ab91e64efbda02e6392a270",
+      "type": "software_release",
+      "version": "unknown"
+    },
+    {
+      "id": "release:auto-fa5876df8ebd9a95808646a28d945980fe74e79a6e9ec7be63f5f2ba9dd938e2",
+      "schema": "bootdisk-catalog-0.1",
+      "software_id": "software:auto-fa5876df8ebd9a95808646a28d945980fe74e79a6e9ec7be63f5f2ba9dd938e2",
+      "type": "software_release",
+      "version": "unknown"
+    },
+    {
+      "id": "software:auto-5e8020e1450381f87f26870dc1ce62f1a1b983731ab91e64efbda02e6392a270",
+      "name": "Start Menu Cleaner",
+      "schema": "bootdisk-catalog-0.1",
+      "type": "software"
+    },
+    {
+      "id": "software:auto-fa5876df8ebd9a95808646a28d945980fe74e79a6e9ec7be63f5f2ba9dd938e2",
+      "name": "Dimension 4",
+      "schema": "bootdisk-catalog-0.1",
+      "type": "software"
+    },
+    {
+      "artifact_id": "artifact:sha256:a20bbdc711ae60619fd8df2aa545b7c2c36bc129e0bf6c9fa1469862100da577",
+      "distribution_kind": "unknown",
+      "evidence": [
+        {
+          "field": "automatic_source_identity",
+          "kind": "interpreted",
+          "source_ref": {
+            "entry": "Tool4434",
+            "manifest": "sha256:c433899341a492cb6c472842f312b6f46fc693ba981b8679593eba67de906f12"
+          },
+          "value": {
+            "actor": "machine",
+            "basis": "CD title repeated in original description and one verified launch file",
+            "description": {
+              "source_ref": {
+                "entry": "Tool4434",
+                "manifest": "sha256:c433899341a492cb6c472842f312b6f46fc693ba981b8679593eba67de906f12",
+                "pointer": "/entries/4/evidence/description_source/text/cp1252_view"
+              },
+              "value": "Dimension 4 bruker internett til å sikre at klokken i PC-en alltid går riktig. \r\rDe innebygde klokkene i de fleste PC-er er ikke særlig nøyaktige; noen av dem kan saktne seg flere minutter i døgnet.\r \rDimension 4 kan bruke et atomur på internett til å stille PC-klokken etter.\r\rMed Dimension 4 behøver du aldri å bekymre deg om klokken går riktig, verken til daglig eller når det er sommertid."
+            },
+            "launch": {
+              "path": "Tools/D4/Setup.exe",
+              "sha256": "a20bbdc711ae60619fd8df2aa545b7c2c36bc129e0bf6c9fa1469862100da577",
+              "size": 448067
+            },
+            "rule": "cd-source-identity-1",
+            "scope": "source-attributed identity; installed payload and version not established",
+            "title": "Dimension 4",
+            "title_pointer": "/entries/4/normalized/title"
+          }
+        }
+      ],
+      "id": "identification:auto-8ec6b7edde5c8107b6573df89a4865ac28e43fe609b68c7a043ba11af5dd0849",
+      "schema": "bootdisk-catalog-0.1",
+      "software_release_id": "release:auto-8ec6b7edde5c8107b6573df89a4865ac28e43fe609b68c7a043ba11af5dd0849",
+      "status": "interpreted",
+      "type": "identification"
+    },
+    {
+      "artifact_id": "artifact:sha256:3f7dae7e40e3500f4750ed9b9eba4255bc766541565f1cc8470bfb281bad10f8",
+      "distribution_kind": "unknown",
+      "evidence": [
+        {
+          "field": "automatic_source_identity",
+          "kind": "interpreted",
+          "source_ref": {
+            "entry": "Tool5374617274436c65616e",
+            "manifest": "sha256:c433899341a492cb6c472842f312b6f46fc693ba981b8679593eba67de906f12"
+          },
+          "value": {
+            "actor": "machine",
+            "basis": "CD title repeated in original description and one verified launch file",
+            "description": {
+              "source_ref": {
+                "entry": "Tool5374617274436c65616e",
+                "manifest": "sha256:c433899341a492cb6c472842f312b6f46fc693ba981b8679593eba67de906f12",
+                "pointer": "/entries/7/evidence/description_source/text/cp1252_view"
+              },
+              "value": "Når du sletter eller flytter et program, blir det ofte liggende ubrukelige ikoner på Start-menyen. \r\rMed Start Menu Cleaner kan du lynraskt slette alle ubrukelige grupper og ikoner fra menyen.\r\rPå de neste sidene kan du lese hvordan du kan rydde opp på Start-menyen på en rask og effektiv måte. \r"
+            },
+            "launch": {
+              "path": "Tools/Cleaner/Setup.exe",
+              "sha256": "3f7dae7e40e3500f4750ed9b9eba4255bc766541565f1cc8470bfb281bad10f8",
+              "size": 1302491
+            },
+            "rule": "cd-source-identity-1",
+            "scope": "source-attributed identity; installed payload and version not established",
+            "title": "Start Menu Cleaner",
+            "title_pointer": "/entries/7/normalized/title"
+          }
+        }
+      ],
+      "id": "identification:auto-ffa8d75d2016dd68066dccffb8a0d36bfc7d1315442c175ce5b59094145a1ddb",
+      "schema": "bootdisk-catalog-0.1",
+      "software_release_id": "release:auto-ffa8d75d2016dd68066dccffb8a0d36bfc7d1315442c175ce5b59094145a1ddb",
+      "status": "interpreted",
+      "type": "identification"
+    },
+    {
+      "id": "release:auto-8ec6b7edde5c8107b6573df89a4865ac28e43fe609b68c7a043ba11af5dd0849",
+      "schema": "bootdisk-catalog-0.1",
+      "software_id": "software:auto-8ec6b7edde5c8107b6573df89a4865ac28e43fe609b68c7a043ba11af5dd0849",
+      "type": "software_release",
+      "version": "unknown"
+    },
+    {
+      "id": "release:auto-ffa8d75d2016dd68066dccffb8a0d36bfc7d1315442c175ce5b59094145a1ddb",
+      "schema": "bootdisk-catalog-0.1",
+      "software_id": "software:auto-ffa8d75d2016dd68066dccffb8a0d36bfc7d1315442c175ce5b59094145a1ddb",
+      "type": "software_release",
+      "version": "unknown"
+    },
+    {
+      "id": "software:auto-8ec6b7edde5c8107b6573df89a4865ac28e43fe609b68c7a043ba11af5dd0849",
+      "name": "Dimension 4",
+      "schema": "bootdisk-catalog-0.1",
+      "type": "software"
+    },
+    {
+      "id": "software:auto-ffa8d75d2016dd68066dccffb8a0d36bfc7d1315442c175ce5b59094145a1ddb",
+      "name": "Start Menu Cleaner",
+      "schema": "bootdisk-catalog-0.1",
+      "type": "software"
+    },
+    {
+      "artifact_id": "artifact:sha256:3f7dae7e40e3500f4750ed9b9eba4255bc766541565f1cc8470bfb281bad10f8",
+      "distribution_kind": "unknown",
+      "evidence": [
+        {
+          "field": "automatic_source_identity",
+          "kind": "interpreted",
+          "source_ref": {
+            "entry": "Tool5374617274436c65616e",
+            "manifest": "sha256:a4f0f99672722f1468df487b0379251c5e84cc945f8716c5746fc27fe3a3aada"
+          },
+          "value": {
+            "actor": "machine",
+            "basis": "CD title repeated in original description and one verified launch file",
+            "description": {
+              "source_ref": {
+                "entry": "Tool5374617274436c65616e",
+                "manifest": "sha256:a4f0f99672722f1468df487b0379251c5e84cc945f8716c5746fc27fe3a3aada",
+                "pointer": "/entries/6/evidence/description_source/text/cp1252_view"
+              },
+              "value": "Når du sletter eller flytter et program, blir det ofte liggende ubrukelige ikoner på Start-menyen. \r\rMed Start Menu Cleaner kan du lynraskt slette alle ubrukelige grupper og ikoner fra menyen.\r\rPå de neste sidene kan du lese hvordan du kan rydde opp på Start-menyen på en rask og effektiv måte. \r"
+            },
+            "launch": {
+              "path": "Tools/Cleaner/Setup.exe",
+              "sha256": "3f7dae7e40e3500f4750ed9b9eba4255bc766541565f1cc8470bfb281bad10f8",
+              "size": 1302491
+            },
+            "rule": "cd-source-identity-1",
+            "scope": "source-attributed identity; installed payload and version not established",
+            "title": "Start Menu Cleaner",
+            "title_pointer": "/entries/6/normalized/title"
+          }
+        }
+      ],
+      "id": "identification:auto-51a6d6ea81dd3dc7860c566f5a34221b9e18b02a04c234accd1a6ddda9203319",
+      "schema": "bootdisk-catalog-0.1",
+      "software_release_id": "release:auto-51a6d6ea81dd3dc7860c566f5a34221b9e18b02a04c234accd1a6ddda9203319",
+      "status": "interpreted",
+      "type": "identification"
+    },
+    {
+      "artifact_id": "artifact:sha256:bedadccbbcc67f9e8a7fa96ca2b7d02a784e8cbaeac309fa108ddb90be53db11",
+      "distribution_kind": "unknown",
+      "evidence": [
+        {
+          "field": "automatic_source_identity",
+          "kind": "interpreted",
+          "source_ref": {
+            "entry": "Tool436f6f6454696d6572",
+            "manifest": "sha256:a4f0f99672722f1468df487b0379251c5e84cc945f8716c5746fc27fe3a3aada"
+          },
+          "value": {
+            "actor": "machine",
+            "basis": "CD title repeated in original description and one verified launch file",
+            "description": {
+              "source_ref": {
+                "entry": "Tool436f6f6454696d6572",
+                "manifest": "sha256:a4f0f99672722f1468df487b0379251c5e84cc945f8716c5746fc27fe3a3aada",
+                "pointer": "/entries/22/evidence/description_source/text/cp1252_view"
+              },
+              "value": "Hvis du har behov for å holde øye med tiden, kan et nedtellingsur være svært praktisk.\r\rCoodTimer er et program som slår alarm på et bestemt tidspunkt eller når det har gått en viss tid. Inntil da vil en indikator på skjermen vise hvor lenge det er igjen. \r\rProgrammet har mange muligheter - vi vil nå gi deg en oversikt og vise deg de viktigste."
+            },
+            "launch": {
+              "path": "Tools/CoodTimer/Setup.exe",
+              "sha256": "bedadccbbcc67f9e8a7fa96ca2b7d02a784e8cbaeac309fa108ddb90be53db11",
+              "size": 314881
+            },
+            "rule": "cd-source-identity-1",
+            "scope": "source-attributed identity; installed payload and version not established",
+            "title": "CoodTimer",
+            "title_pointer": "/entries/22/normalized/title"
+          }
+        }
+      ],
+      "id": "identification:auto-551184a2822ac3b359af42f798b0b8158c32e3db47110871df77fc04d08304c6",
+      "schema": "bootdisk-catalog-0.1",
+      "software_release_id": "release:auto-551184a2822ac3b359af42f798b0b8158c32e3db47110871df77fc04d08304c6",
+      "status": "interpreted",
+      "type": "identification"
+    },
+    {
+      "artifact_id": "artifact:sha256:a20bbdc711ae60619fd8df2aa545b7c2c36bc129e0bf6c9fa1469862100da577",
+      "distribution_kind": "unknown",
+      "evidence": [
+        {
+          "field": "automatic_source_identity",
+          "kind": "interpreted",
+          "source_ref": {
+            "entry": "Tool4434",
+            "manifest": "sha256:a4f0f99672722f1468df487b0379251c5e84cc945f8716c5746fc27fe3a3aada"
+          },
+          "value": {
+            "actor": "machine",
+            "basis": "CD title repeated in original description and one verified launch file",
+            "description": {
+              "source_ref": {
+                "entry": "Tool4434",
+                "manifest": "sha256:a4f0f99672722f1468df487b0379251c5e84cc945f8716c5746fc27fe3a3aada",
+                "pointer": "/entries/1/evidence/description_source/text/cp1252_view"
+              },
+              "value": "Dimension 4 bruker internett til å sikre at klokken i PC-en alltid går riktig. \r\rDe innebygde klokkene i de fleste PC-er er ikke særlig nøyaktige; noen av dem kan saktne seg flere minutter i døgnet.\r \rDimension 4 kan bruke et atomur på internett til å stille PC-klokken etter.\r\rMed Dimension 4 behøver du aldri å bekymre deg om klokken går riktig, verken til daglig eller når det er sommertid."
+            },
+            "launch": {
+              "path": "Tools/D4/Setup.exe",
+              "sha256": "a20bbdc711ae60619fd8df2aa545b7c2c36bc129e0bf6c9fa1469862100da577",
+              "size": 448067
+            },
+            "rule": "cd-source-identity-1",
+            "scope": "source-attributed identity; installed payload and version not established",
+            "title": "Dimension 4",
+            "title_pointer": "/entries/1/normalized/title"
+          }
+        }
+      ],
+      "id": "identification:auto-99077c1b1241a2352051f2acf8959d1de2fb481a32f2bb13dc5668b914fda8c3",
+      "schema": "bootdisk-catalog-0.1",
+      "software_release_id": "release:auto-99077c1b1241a2352051f2acf8959d1de2fb481a32f2bb13dc5668b914fda8c3",
+      "status": "interpreted",
+      "type": "identification"
+    },
+    {
+      "id": "release:auto-51a6d6ea81dd3dc7860c566f5a34221b9e18b02a04c234accd1a6ddda9203319",
+      "schema": "bootdisk-catalog-0.1",
+      "software_id": "software:auto-51a6d6ea81dd3dc7860c566f5a34221b9e18b02a04c234accd1a6ddda9203319",
+      "type": "software_release",
+      "version": "unknown"
+    },
+    {
+      "id": "release:auto-551184a2822ac3b359af42f798b0b8158c32e3db47110871df77fc04d08304c6",
+      "schema": "bootdisk-catalog-0.1",
+      "software_id": "software:auto-551184a2822ac3b359af42f798b0b8158c32e3db47110871df77fc04d08304c6",
+      "type": "software_release",
+      "version": "unknown"
+    },
+    {
+      "id": "release:auto-99077c1b1241a2352051f2acf8959d1de2fb481a32f2bb13dc5668b914fda8c3",
+      "schema": "bootdisk-catalog-0.1",
+      "software_id": "software:auto-99077c1b1241a2352051f2acf8959d1de2fb481a32f2bb13dc5668b914fda8c3",
+      "type": "software_release",
+      "version": "unknown"
+    },
+    {
+      "id": "software:auto-51a6d6ea81dd3dc7860c566f5a34221b9e18b02a04c234accd1a6ddda9203319",
+      "name": "Start Menu Cleaner",
+      "schema": "bootdisk-catalog-0.1",
+      "type": "software"
+    },
+    {
+      "id": "software:auto-551184a2822ac3b359af42f798b0b8158c32e3db47110871df77fc04d08304c6",
+      "name": "CoodTimer",
+      "schema": "bootdisk-catalog-0.1",
+      "type": "software"
+    },
+    {
+      "id": "software:auto-99077c1b1241a2352051f2acf8959d1de2fb481a32f2bb13dc5668b914fda8c3",
+      "name": "Dimension 4",
+      "schema": "bootdisk-catalog-0.1",
+      "type": "software"
+    },
+    {
+      "artifact_id": "artifact:sha256:a20bbdc711ae60619fd8df2aa545b7c2c36bc129e0bf6c9fa1469862100da577",
+      "distribution_kind": "unknown",
+      "evidence": [
+        {
+          "field": "automatic_source_identity",
+          "kind": "interpreted",
+          "source_ref": {
+            "entry": "Tool4434",
+            "manifest": "sha256:83d64f148704f965abd3ebbf8e6c5ca98428eb088310d792d10e39a9e6f9a2bf"
+          },
+          "value": {
+            "actor": "machine",
+            "basis": "CD title repeated in original description and one verified launch file",
+            "description": {
+              "source_ref": {
+                "entry": "Tool4434",
+                "manifest": "sha256:83d64f148704f965abd3ebbf8e6c5ca98428eb088310d792d10e39a9e6f9a2bf",
+                "pointer": "/entries/0/evidence/description_source/text/cp1252_view"
+              },
+              "value": "Dimension 4 bruker internett til å sikre at klokken i PC-en alltid går riktig. \r\rDe innebygde klokkene i de fleste PC-er er ikke særlig nøyaktige; noen av dem kan saktne seg flere minutter i døgnet.\r \rDimension 4 kan bruke et atomur på internett til å stille PC-klokken etter.\r\rMed Dimension 4 behøver du aldri å bekymre deg om klokken går riktig, verken til daglig eller når det er sommertid."
+            },
+            "launch": {
+              "path": "Tools/D4/Setup.exe",
+              "sha256": "a20bbdc711ae60619fd8df2aa545b7c2c36bc129e0bf6c9fa1469862100da577",
+              "size": 448067
+            },
+            "rule": "cd-source-identity-1",
+            "scope": "source-attributed identity; installed payload and version not established",
+            "title": "Dimension 4",
+            "title_pointer": "/entries/0/normalized/title"
+          }
+        }
+      ],
+      "id": "identification:auto-0733193b5781ac99167de019792a03cf3f1de12ba94e8a05bffa3666a7d12ca7",
+      "schema": "bootdisk-catalog-0.1",
+      "software_release_id": "release:auto-0733193b5781ac99167de019792a03cf3f1de12ba94e8a05bffa3666a7d12ca7",
+      "status": "interpreted",
+      "type": "identification"
+    },
+    {
+      "artifact_id": "artifact:sha256:3f7dae7e40e3500f4750ed9b9eba4255bc766541565f1cc8470bfb281bad10f8",
+      "distribution_kind": "unknown",
+      "evidence": [
+        {
+          "field": "automatic_source_identity",
+          "kind": "interpreted",
+          "source_ref": {
+            "entry": "Tool5374617274436c65616e",
+            "manifest": "sha256:83d64f148704f965abd3ebbf8e6c5ca98428eb088310d792d10e39a9e6f9a2bf"
+          },
+          "value": {
+            "actor": "machine",
+            "basis": "CD title repeated in original description and one verified launch file",
+            "description": {
+              "source_ref": {
+                "entry": "Tool5374617274436c65616e",
+                "manifest": "sha256:83d64f148704f965abd3ebbf8e6c5ca98428eb088310d792d10e39a9e6f9a2bf",
+                "pointer": "/entries/5/evidence/description_source/text/cp1252_view"
+              },
+              "value": "Når du sletter eller flytter et program, blir det ofte liggende ubrukelige ikoner på Start-menyen. \r\rMed Start Menu Cleaner kan du lynraskt slette alle ubrukelige grupper og ikoner fra menyen.\r\rPå de neste sidene kan du lese hvordan du kan rydde opp på Start-menyen på en rask og effektiv måte. \r"
+            },
+            "launch": {
+              "path": "Tools/Cleaner/Setup.exe",
+              "sha256": "3f7dae7e40e3500f4750ed9b9eba4255bc766541565f1cc8470bfb281bad10f8",
+              "size": 1302491
+            },
+            "rule": "cd-source-identity-1",
+            "scope": "source-attributed identity; installed payload and version not established",
+            "title": "Start Menu Cleaner",
+            "title_pointer": "/entries/5/normalized/title"
+          }
+        }
+      ],
+      "id": "identification:auto-5e4a3048d2234e7da017a44f5a77cb0f599c0c4f2b8e21cf4ab02b4a9531185f",
+      "schema": "bootdisk-catalog-0.1",
+      "software_release_id": "release:auto-5e4a3048d2234e7da017a44f5a77cb0f599c0c4f2b8e21cf4ab02b4a9531185f",
+      "status": "interpreted",
+      "type": "identification"
+    },
+    {
+      "id": "release:auto-0733193b5781ac99167de019792a03cf3f1de12ba94e8a05bffa3666a7d12ca7",
+      "schema": "bootdisk-catalog-0.1",
+      "software_id": "software:auto-0733193b5781ac99167de019792a03cf3f1de12ba94e8a05bffa3666a7d12ca7",
+      "type": "software_release",
+      "version": "unknown"
+    },
+    {
+      "id": "release:auto-5e4a3048d2234e7da017a44f5a77cb0f599c0c4f2b8e21cf4ab02b4a9531185f",
+      "schema": "bootdisk-catalog-0.1",
+      "software_id": "software:auto-5e4a3048d2234e7da017a44f5a77cb0f599c0c4f2b8e21cf4ab02b4a9531185f",
+      "type": "software_release",
+      "version": "unknown"
+    },
+    {
+      "id": "software:auto-0733193b5781ac99167de019792a03cf3f1de12ba94e8a05bffa3666a7d12ca7",
+      "name": "Dimension 4",
+      "schema": "bootdisk-catalog-0.1",
+      "type": "software"
+    },
+    {
+      "id": "software:auto-5e4a3048d2234e7da017a44f5a77cb0f599c0c4f2b8e21cf4ab02b4a9531185f",
+      "name": "Start Menu Cleaner",
+      "schema": "bootdisk-catalog-0.1",
+      "type": "software"
+    }
+  ],
+  "schema": "bootdisk-catalog-curation-0.1"
+}
