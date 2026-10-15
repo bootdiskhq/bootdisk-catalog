@@ -77,6 +77,19 @@ class SourceReadinessTests(unittest.TestCase):
         manifest["entries"][0]["files"]["referenced"] = {"run": {"path": "Course.pdf", "exists": True}}
         self.assertEqual(self.assess(manifest)["machine_tasks"], [])
 
+    def test_explained_missing_alternative_retains_source_warning(self):
+        from test_file_association import FileAssociationTests
+        manifest = self.manifest()
+        manifest['entries'][0].update(FileAssociationTests().alternative())
+        result = self.assess(manifest)
+        self.assertEqual(result['file_association']['status'], 'observed')
+        self.assertEqual(result['file_association']['missing'], ['old.exe'])
+        self.assertIn('missing_launch_file', result['file_association']['issues'])
+        self.assertFalse(result['file_association']['runtime_verified'])
+        self.assertEqual(result['machine_tasks'], [])
+        self.assertEqual(result['status'], 'documented')
+        self.assertEqual(result['human_questions'], [])
+
     def test_unknown_schema_has_no_title_binding(self):
         manifest = self.manifest()
         manifest["schema_version"] = "future"

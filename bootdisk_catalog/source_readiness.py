@@ -12,8 +12,9 @@ import json
 from pathlib import Path
 
 from .catalog import CatalogError
+from .file_association import explain_references
 
-RULE = "source-catalog-readiness-1"
+RULE = "source-catalog-readiness-2"
 KNOWN_ISSUES = {
     "conflicting_launch_targets", "missing_launch_file",
     "missing_auxiliary_launch_file", "unresolved_warning_continue_launch",
@@ -95,6 +96,9 @@ def assess_manifest(manifest_path):
             association = "observed"
         else:
             association = "not_applicable_or_unrecorded"
+        explanation = explain_references(entry)
+        if explanation:
+            association = "observed"
         # Technical exceptions go to machine inspection first. A human queue
         # must contain a concrete unanswered question, not every unknown field.
         tasks = []
@@ -112,7 +116,9 @@ def assess_manifest(manifest_path):
                 "original": title.get("original", title["value"]),
                 "normalization": "whitespace; workshop shelf uses first line"} if title else None),
             "description": contexts[entry["source_id"]].get("description"),
-            "file_association": {"status": association, "issues": issues, "missing": missing},
+            "file_association": {"status": association, "issues": issues, "missing": missing,
+                                 "explanation": explanation,
+                                 "runtime_verified": False},
             "machine_tasks": tasks,
             "human_questions": [],
             "scope": "CD source entry only; no installed-product, version or edition claim",
