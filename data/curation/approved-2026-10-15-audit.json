@@ -1,0 +1,1435 @@
+{
+  "approval": {
+    "approved_entries": 88,
+    "conditions": "Ni slutninger beholdes som slutninger. Ukjente og motstridende versjoner forblir unknown. De 23 teknisk uavklarte postene utsettes.",
+    "date": "2026-10-15",
+    "deferred_entries": 23,
+    "findings_sha256": "187f3fc9ddaa2c5abf0236e9d5a38224fc0207c0b6ffbbb4987ad09c00d323f1",
+    "inferred_entries": 9,
+    "publication_authorization": "Bra! Lagrer du det i katalogen og publiserer det?",
+    "reviewer": "Stian",
+    "schema": "bootdisk-review-acceptance-1",
+    "unknown_versions": 14,
+    "user_statement": "Jeg støtter forslagene dine.."
+  },
+  "deferred": [
+    {
+      "key": {
+        "entry": "Tool4434",
+        "manifest": "sha256:d41fc8423030eebf0a86c198d20e2da50a246bc17a6be75fd26dedbde130a989"
+      },
+      "medium": "kcd-1-2000",
+      "title": "Dimension 4"
+    },
+    {
+      "key": {
+        "entry": "Tool5374617274436c65616e",
+        "manifest": "sha256:d41fc8423030eebf0a86c198d20e2da50a246bc17a6be75fd26dedbde130a989"
+      },
+      "medium": "kcd-1-2000",
+      "title": "Start Menu Cleaner"
+    },
+    {
+      "key": {
+        "entry": "Tool506965",
+        "manifest": "sha256:d41fc8423030eebf0a86c198d20e2da50a246bc17a6be75fd26dedbde130a989"
+      },
+      "medium": "kcd-1-2000",
+      "title": "Pie"
+    },
+    {
+      "key": {
+        "entry": "Tool4434",
+        "manifest": "sha256:a97d1734f36d18143126fcea22401340937c83e920523660e0d591ca7f10e337"
+      },
+      "medium": "kcd-1-2001",
+      "title": "Dimension 4"
+    },
+    {
+      "key": {
+        "entry": "Tool5374617274436c65616e",
+        "manifest": "sha256:a97d1734f36d18143126fcea22401340937c83e920523660e0d591ca7f10e337"
+      },
+      "medium": "kcd-1-2001",
+      "title": "Start Menu Cleaner"
+    },
+    {
+      "key": {
+        "entry": "Tool436f6f6454696d6572",
+        "manifest": "sha256:a97d1734f36d18143126fcea22401340937c83e920523660e0d591ca7f10e337"
+      },
+      "medium": "kcd-1-2001",
+      "title": "CoodTimer"
+    },
+    {
+      "key": {
+        "entry": "Tool506965",
+        "manifest": "sha256:a97d1734f36d18143126fcea22401340937c83e920523660e0d591ca7f10e337"
+      },
+      "medium": "kcd-1-2001",
+      "title": "Pie"
+    },
+    {
+      "key": {
+        "entry": "Tool4434",
+        "manifest": "sha256:13e520c97edd5869b07eafd3348e854c838a2082663342cabd314c16bb1f4ce2"
+      },
+      "medium": "kcd-13-2000",
+      "title": "Dimension 4"
+    },
+    {
+      "key": {
+        "entry": "Tool5374617274436c65616e",
+        "manifest": "sha256:13e520c97edd5869b07eafd3348e854c838a2082663342cabd314c16bb1f4ce2"
+      },
+      "medium": "kcd-13-2000",
+      "title": "Start Menu Cleaner"
+    },
+    {
+      "key": {
+        "entry": "Tool4472616756696577",
+        "manifest": "sha256:13e520c97edd5869b07eafd3348e854c838a2082663342cabd314c16bb1f4ce2"
+      },
+      "medium": "kcd-13-2000",
+      "title": "Drag 'n View"
+    },
+    {
+      "key": {
+        "entry": "Tool506965",
+        "manifest": "sha256:13e520c97edd5869b07eafd3348e854c838a2082663342cabd314c16bb1f4ce2"
+      },
+      "medium": "kcd-13-2000",
+      "title": "Pie"
+    },
+    {
+      "key": {
+        "entry": "Tool4434",
+        "manifest": "sha256:c433899341a492cb6c472842f312b6f46fc693ba981b8679593eba67de906f12"
+      },
+      "medium": "kcd-4-2000",
+      "title": "Dimension 4"
+    },
+    {
+      "key": {
+        "entry": "Tool5374617274436c65616e",
+        "manifest": "sha256:c433899341a492cb6c472842f312b6f46fc693ba981b8679593eba67de906f12"
+      },
+      "medium": "kcd-4-2000",
+      "title": "Start Menu Cleaner"
+    },
+    {
+      "key": {
+        "entry": "Tool4472616756696577",
+        "manifest": "sha256:c433899341a492cb6c472842f312b6f46fc693ba981b8679593eba67de906f12"
+      },
+      "medium": "kcd-4-2000",
+      "title": "Drag 'n View"
+    },
+    {
+      "key": {
+        "entry": "Tool506965",
+        "manifest": "sha256:c433899341a492cb6c472842f312b6f46fc693ba981b8679593eba67de906f12"
+      },
+      "medium": "kcd-4-2000",
+      "title": "Pie"
+    },
+    {
+      "key": {
+        "entry": "Tool4434",
+        "manifest": "sha256:a4f0f99672722f1468df487b0379251c5e84cc945f8716c5746fc27fe3a3aada"
+      },
+      "medium": "kcd-8-2001",
+      "title": "Dimension 4"
+    },
+    {
+      "key": {
+        "entry": "Tool5374617274436c65616e",
+        "manifest": "sha256:a4f0f99672722f1468df487b0379251c5e84cc945f8716c5746fc27fe3a3aada"
+      },
+      "medium": "kcd-8-2001",
+      "title": "Start Menu Cleaner"
+    },
+    {
+      "key": {
+        "entry": "Tool436f6f6454696d6572",
+        "manifest": "sha256:a4f0f99672722f1468df487b0379251c5e84cc945f8716c5746fc27fe3a3aada"
+      },
+      "medium": "kcd-8-2001",
+      "title": "CoodTimer"
+    },
+    {
+      "key": {
+        "entry": "Tool506965",
+        "manifest": "sha256:a4f0f99672722f1468df487b0379251c5e84cc945f8716c5746fc27fe3a3aada"
+      },
+      "medium": "kcd-8-2001",
+      "title": "Pie"
+    },
+    {
+      "key": {
+        "entry": "Tool4434",
+        "manifest": "sha256:83d64f148704f965abd3ebbf8e6c5ca98428eb088310d792d10e39a9e6f9a2bf"
+      },
+      "medium": "kcd-9-2000",
+      "title": "Dimension 4"
+    },
+    {
+      "key": {
+        "entry": "Tool5374617274436c65616e",
+        "manifest": "sha256:83d64f148704f965abd3ebbf8e6c5ca98428eb088310d792d10e39a9e6f9a2bf"
+      },
+      "medium": "kcd-9-2000",
+      "title": "Start Menu Cleaner"
+    },
+    {
+      "key": {
+        "entry": "Tool4472616756696577",
+        "manifest": "sha256:83d64f148704f965abd3ebbf8e6c5ca98428eb088310d792d10e39a9e6f9a2bf"
+      },
+      "medium": "kcd-9-2000",
+      "title": "Drag 'n View"
+    },
+    {
+      "key": {
+        "entry": "Tool506965",
+        "manifest": "sha256:83d64f148704f965abd3ebbf8e6c5ca98428eb088310d792d10e39a9e6f9a2bf"
+      },
+      "medium": "kcd-9-2000",
+      "title": "Pie"
+    }
+  ],
+  "entries": [
+    {
+      "distribution": "unknown",
+      "identification_id": "identification:1df5aa78e141e5874ff5f1c6ccba002913494a32f420786e8fdeccc21fb875d4",
+      "inferred": false,
+      "key": {
+        "entry": "Tool426c61636b426f78",
+        "manifest": "sha256:d41fc8423030eebf0a86c198d20e2da50a246bc17a6be75fd26dedbde130a989"
+      },
+      "launch_sha256": "c7813385f4ca5788bfe02fdf0eb3fd3a22acb71f15b36e278bf4fd9daf53c888",
+      "medium": "kcd-1-2000",
+      "name": "Interscope BlackBox",
+      "note": "",
+      "version": "2.0"
+    },
+    {
+      "distribution": "unknown",
+      "identification_id": "identification:9649f00dc3e0b75fbda4343da66a3772199d6eb1674d1b81b677bc5cc3524f7f",
+      "inferred": false,
+      "key": {
+        "entry": "Tool426c61636b426f78",
+        "manifest": "sha256:c433899341a492cb6c472842f312b6f46fc693ba981b8679593eba67de906f12"
+      },
+      "launch_sha256": "c7813385f4ca5788bfe02fdf0eb3fd3a22acb71f15b36e278bf4fd9daf53c888",
+      "medium": "kcd-4-2000",
+      "name": "Interscope BlackBox",
+      "note": "",
+      "version": "2.0"
+    },
+    {
+      "distribution": "unknown",
+      "identification_id": "identification:dcc7e5f0aafde1342b3d49793a6a90cf1a9563c40c321c8d2a78637c55db9601",
+      "inferred": false,
+      "key": {
+        "entry": "Tool426c61636b426f78",
+        "manifest": "sha256:a97d1734f36d18143126fcea22401340937c83e920523660e0d591ca7f10e337"
+      },
+      "launch_sha256": "2aa1cc5869d79362e58135bc85bcca48d1ecbb54d8aa00944df35343058dd6a1",
+      "medium": "kcd-1-2001",
+      "name": "Interscope BlackBox",
+      "note": "",
+      "version": "3.0"
+    },
+    {
+      "distribution": "unknown",
+      "identification_id": "identification:73c19e81fdb841c7eedace36f0a5f8a9d9f6ec3c3d132aa833cb2f3af4194ea1",
+      "inferred": false,
+      "key": {
+        "entry": "Tool426c61636b426f78",
+        "manifest": "sha256:13e520c97edd5869b07eafd3348e854c838a2082663342cabd314c16bb1f4ce2"
+      },
+      "launch_sha256": "2aa1cc5869d79362e58135bc85bcca48d1ecbb54d8aa00944df35343058dd6a1",
+      "medium": "kcd-13-2000",
+      "name": "Interscope BlackBox",
+      "note": "",
+      "version": "3.0"
+    },
+    {
+      "distribution": "unknown",
+      "identification_id": "identification:53e32be3229e66084661d05f8d4a2b7330fa2975a77ecacc3dc06454ad67ea21",
+      "inferred": false,
+      "key": {
+        "entry": "Tool426c61636b426f78",
+        "manifest": "sha256:a4f0f99672722f1468df487b0379251c5e84cc945f8716c5746fc27fe3a3aada"
+      },
+      "launch_sha256": "2aa1cc5869d79362e58135bc85bcca48d1ecbb54d8aa00944df35343058dd6a1",
+      "medium": "kcd-8-2001",
+      "name": "Interscope BlackBox",
+      "note": "",
+      "version": "3.0"
+    },
+    {
+      "distribution": "unknown",
+      "identification_id": "identification:797af14bfc7c6f470b453ddb3e6fba8c44732d1160a992c3f6793afca0acc29b",
+      "inferred": false,
+      "key": {
+        "entry": "Tool426c61636b426f78",
+        "manifest": "sha256:83d64f148704f965abd3ebbf8e6c5ca98428eb088310d792d10e39a9e6f9a2bf"
+      },
+      "launch_sha256": "2aa1cc5869d79362e58135bc85bcca48d1ecbb54d8aa00944df35343058dd6a1",
+      "medium": "kcd-9-2000",
+      "name": "Interscope BlackBox",
+      "note": "",
+      "version": "3.0"
+    },
+    {
+      "distribution": "unknown",
+      "identification_id": "identification:90ddb4697abbcb0e43bc922cfb350fe6b94f999543b7466d42d397741b68c75e",
+      "inferred": false,
+      "key": {
+        "entry": "Tool46696c6520496e76657374696761746f72",
+        "manifest": "sha256:d41fc8423030eebf0a86c198d20e2da50a246bc17a6be75fd26dedbde130a989"
+      },
+      "launch_sha256": "19299884af18046a94520dd11af8c3ed772fb8843b7a0dc3c436dd0bf9e2a29f",
+      "medium": "kcd-1-2000",
+      "name": "File Investigator",
+      "note": "",
+      "version": "1.50"
+    },
+    {
+      "distribution": "unknown",
+      "identification_id": "identification:b8b829b70fbdce39cf1df9186e31e09ce00b056c0d655cc0457f643765a11c71",
+      "inferred": false,
+      "key": {
+        "entry": "Tool46696c6520496e76657374696761746f72",
+        "manifest": "sha256:a97d1734f36d18143126fcea22401340937c83e920523660e0d591ca7f10e337"
+      },
+      "launch_sha256": "19299884af18046a94520dd11af8c3ed772fb8843b7a0dc3c436dd0bf9e2a29f",
+      "medium": "kcd-1-2001",
+      "name": "File Investigator",
+      "note": "",
+      "version": "1.50"
+    },
+    {
+      "distribution": "unknown",
+      "identification_id": "identification:5ec474efdf535af8f95e9cacdeac876d40583c07fe49c20d39f0ee70ff55cf07",
+      "inferred": false,
+      "key": {
+        "entry": "Tool46696c6520496e76657374696761746f72",
+        "manifest": "sha256:13e520c97edd5869b07eafd3348e854c838a2082663342cabd314c16bb1f4ce2"
+      },
+      "launch_sha256": "19299884af18046a94520dd11af8c3ed772fb8843b7a0dc3c436dd0bf9e2a29f",
+      "medium": "kcd-13-2000",
+      "name": "File Investigator",
+      "note": "",
+      "version": "1.50"
+    },
+    {
+      "distribution": "unknown",
+      "identification_id": "identification:93fd48bbdecbcd16de888bb8cf973c4e43e14e05e976d40d4028692f50253ee7",
+      "inferred": false,
+      "key": {
+        "entry": "Tool46696c6520496e76657374696761746f72",
+        "manifest": "sha256:c433899341a492cb6c472842f312b6f46fc693ba981b8679593eba67de906f12"
+      },
+      "launch_sha256": "19299884af18046a94520dd11af8c3ed772fb8843b7a0dc3c436dd0bf9e2a29f",
+      "medium": "kcd-4-2000",
+      "name": "File Investigator",
+      "note": "",
+      "version": "1.50"
+    },
+    {
+      "distribution": "unknown",
+      "identification_id": "identification:a6299ae983ff78b1127437b27039a65b6cfb3768b7e24730fd4bc71d99526b49",
+      "inferred": false,
+      "key": {
+        "entry": "Tool46696c6520496e76657374696761746f72",
+        "manifest": "sha256:a4f0f99672722f1468df487b0379251c5e84cc945f8716c5746fc27fe3a3aada"
+      },
+      "launch_sha256": "19299884af18046a94520dd11af8c3ed772fb8843b7a0dc3c436dd0bf9e2a29f",
+      "medium": "kcd-8-2001",
+      "name": "File Investigator",
+      "note": "",
+      "version": "1.50"
+    },
+    {
+      "distribution": "unknown",
+      "identification_id": "identification:4627b16b69fa77683325a4bed72473bd0c687f6f5f546114dd6adb7d97672879",
+      "inferred": false,
+      "key": {
+        "entry": "Tool46696c6520496e76657374696761746f72",
+        "manifest": "sha256:83d64f148704f965abd3ebbf8e6c5ca98428eb088310d792d10e39a9e6f9a2bf"
+      },
+      "launch_sha256": "19299884af18046a94520dd11af8c3ed772fb8843b7a0dc3c436dd0bf9e2a29f",
+      "medium": "kcd-9-2000",
+      "name": "File Investigator",
+      "note": "",
+      "version": "1.50"
+    },
+    {
+      "distribution": "unknown",
+      "identification_id": "identification:2bee73eec9ef515812d618b5939acc194d60c47d60d841305ddfb9acdca12a1e",
+      "inferred": false,
+      "key": {
+        "entry": "Tool46696c655368726564646572",
+        "manifest": "sha256:d41fc8423030eebf0a86c198d20e2da50a246bc17a6be75fd26dedbde130a989"
+      },
+      "launch_sha256": "2df3361da9a61d25468e83189a581981774e7b8703d934f836698123a97ff246",
+      "medium": "kcd-1-2000",
+      "name": "File Shredder",
+      "note": "Programfilens FileVersion brukes. ProductVersion sier «Shareware Release» og er ikke et versjonsnummer.",
+      "version": "2.8"
+    },
+    {
+      "distribution": "unknown",
+      "identification_id": "identification:113cc05d7c658d06eed3f5d258f3421990151cfa1260ffcc64ff67790dcff70b",
+      "inferred": false,
+      "key": {
+        "entry": "Tool46696c655368726564646572",
+        "manifest": "sha256:a97d1734f36d18143126fcea22401340937c83e920523660e0d591ca7f10e337"
+      },
+      "launch_sha256": "2df3361da9a61d25468e83189a581981774e7b8703d934f836698123a97ff246",
+      "medium": "kcd-1-2001",
+      "name": "File Shredder",
+      "note": "Programfilens FileVersion brukes. ProductVersion sier «Shareware Release» og er ikke et versjonsnummer.",
+      "version": "2.8"
+    },
+    {
+      "distribution": "unknown",
+      "identification_id": "identification:3b40db54848a6da89aafa7bcb8a69afd02c9aaf715b4063aae558c1b2363633b",
+      "inferred": false,
+      "key": {
+        "entry": "Tool46696c655368726564646572",
+        "manifest": "sha256:13e520c97edd5869b07eafd3348e854c838a2082663342cabd314c16bb1f4ce2"
+      },
+      "launch_sha256": "2df3361da9a61d25468e83189a581981774e7b8703d934f836698123a97ff246",
+      "medium": "kcd-13-2000",
+      "name": "File Shredder",
+      "note": "Programfilens FileVersion brukes. ProductVersion sier «Shareware Release» og er ikke et versjonsnummer.",
+      "version": "2.8"
+    },
+    {
+      "distribution": "unknown",
+      "identification_id": "identification:043e818ed78393bdc92da3a9b5c13ebbc9e150f52146afa57525ea789168bcf2",
+      "inferred": false,
+      "key": {
+        "entry": "Tool46696c655368726564646572",
+        "manifest": "sha256:c433899341a492cb6c472842f312b6f46fc693ba981b8679593eba67de906f12"
+      },
+      "launch_sha256": "2df3361da9a61d25468e83189a581981774e7b8703d934f836698123a97ff246",
+      "medium": "kcd-4-2000",
+      "name": "File Shredder",
+      "note": "Programfilens FileVersion brukes. ProductVersion sier «Shareware Release» og er ikke et versjonsnummer.",
+      "version": "2.8"
+    },
+    {
+      "distribution": "unknown",
+      "identification_id": "identification:64b58cb30c832ab7c565d494f693528824e13ff0e38bfbca56b879a983134f8a",
+      "inferred": false,
+      "key": {
+        "entry": "Tool46696c655368726564646572",
+        "manifest": "sha256:a4f0f99672722f1468df487b0379251c5e84cc945f8716c5746fc27fe3a3aada"
+      },
+      "launch_sha256": "2df3361da9a61d25468e83189a581981774e7b8703d934f836698123a97ff246",
+      "medium": "kcd-8-2001",
+      "name": "File Shredder",
+      "note": "Programfilens FileVersion brukes. ProductVersion sier «Shareware Release» og er ikke et versjonsnummer.",
+      "version": "2.8"
+    },
+    {
+      "distribution": "unknown",
+      "identification_id": "identification:5b4029e6f9b725e3d303d6f581500560e53f35ab69450c668a15270a2e98a031",
+      "inferred": false,
+      "key": {
+        "entry": "Tool46696c655368726564646572",
+        "manifest": "sha256:83d64f148704f965abd3ebbf8e6c5ca98428eb088310d792d10e39a9e6f9a2bf"
+      },
+      "launch_sha256": "2df3361da9a61d25468e83189a581981774e7b8703d934f836698123a97ff246",
+      "medium": "kcd-9-2000",
+      "name": "File Shredder",
+      "note": "Programfilens FileVersion brukes. ProductVersion sier «Shareware Release» og er ikke et versjonsnummer.",
+      "version": "2.8"
+    },
+    {
+      "distribution": "unknown",
+      "identification_id": "identification:521e101aeb4589e32fe5c25153cecb40f7a9d8753d5475b4cb23f74f92ea6d7b",
+      "inferred": false,
+      "key": {
+        "entry": "Tool547765616b696e67",
+        "manifest": "sha256:a97d1734f36d18143126fcea22401340937c83e920523660e0d591ca7f10e337"
+      },
+      "launch_sha256": "0b5e16c5e828a075fcc374beb22c1ed64878431764d07c1fd339d2218d486bb6",
+      "medium": "kcd-1-2001",
+      "name": "Tweaking Toolbox for Windows",
+      "note": "Versjonen gjelder TTW.exe. Kontrollpanelmodulen 1.02 og installasjonsverktøyet 1.42 er separate komponenter.",
+      "version": "1.60"
+    },
+    {
+      "distribution": "unknown",
+      "identification_id": "identification:624a546b56f4ec09e682e556720e3007a9b8b8ddfc0ed924f798e92be051fc9e",
+      "inferred": false,
+      "key": {
+        "entry": "Tool547765616b696e67",
+        "manifest": "sha256:13e520c97edd5869b07eafd3348e854c838a2082663342cabd314c16bb1f4ce2"
+      },
+      "launch_sha256": "0b5e16c5e828a075fcc374beb22c1ed64878431764d07c1fd339d2218d486bb6",
+      "medium": "kcd-13-2000",
+      "name": "Tweaking Toolbox for Windows",
+      "note": "Versjonen gjelder TTW.exe. Kontrollpanelmodulen 1.02 og installasjonsverktøyet 1.42 er separate komponenter.",
+      "version": "1.60"
+    },
+    {
+      "distribution": "unknown",
+      "identification_id": "identification:e9ae535f727a75696e122066e341f3f3aba6fdce04cc0449a3fd47d31d3f61d5",
+      "inferred": false,
+      "key": {
+        "entry": "Tool547765616b696e67",
+        "manifest": "sha256:a4f0f99672722f1468df487b0379251c5e84cc945f8716c5746fc27fe3a3aada"
+      },
+      "launch_sha256": "0b5e16c5e828a075fcc374beb22c1ed64878431764d07c1fd339d2218d486bb6",
+      "medium": "kcd-8-2001",
+      "name": "Tweaking Toolbox for Windows",
+      "note": "Versjonen gjelder TTW.exe. Kontrollpanelmodulen 1.02 og installasjonsverktøyet 1.42 er separate komponenter.",
+      "version": "1.60"
+    },
+    {
+      "distribution": "unknown",
+      "identification_id": "identification:4a962686a7652b848bd426bc523b11749314e0b5bd74d7be4ec7c9b5c280a1ad",
+      "inferred": false,
+      "key": {
+        "entry": "Tool546f6f6c50726f",
+        "manifest": "sha256:a97d1734f36d18143126fcea22401340937c83e920523660e0d591ca7f10e337"
+      },
+      "launch_sha256": "4eed3da39af9a0f6623bf4178c38d6de4bfd54cfa1ba765a01163c069b7bb96c",
+      "medium": "kcd-1-2001",
+      "name": "Tool Pro",
+      "note": "Utgavebetegnelsen i historikken er 1.65; programfilen har byggnummer 1.6.5.1.",
+      "version": "1.65"
+    },
+    {
+      "distribution": "unknown",
+      "identification_id": "identification:3aaf7d17047510bf2f0250756bedfe414a3d50f392bb1e6c01f01af3b6f16094",
+      "inferred": false,
+      "key": {
+        "entry": "Tool546f6f6c50726f",
+        "manifest": "sha256:13e520c97edd5869b07eafd3348e854c838a2082663342cabd314c16bb1f4ce2"
+      },
+      "launch_sha256": "4eed3da39af9a0f6623bf4178c38d6de4bfd54cfa1ba765a01163c069b7bb96c",
+      "medium": "kcd-13-2000",
+      "name": "Tool Pro",
+      "note": "Utgavebetegnelsen i historikken er 1.65; programfilen har byggnummer 1.6.5.1.",
+      "version": "1.65"
+    },
+    {
+      "distribution": "unknown",
+      "identification_id": "identification:47dbd6b15ef060b2c3a6485584a8d4817be63eed5f96cf035b8f96d694cf69e7",
+      "inferred": false,
+      "key": {
+        "entry": "Tool546f6f6c50726f",
+        "manifest": "sha256:a4f0f99672722f1468df487b0379251c5e84cc945f8716c5746fc27fe3a3aada"
+      },
+      "launch_sha256": "4eed3da39af9a0f6623bf4178c38d6de4bfd54cfa1ba765a01163c069b7bb96c",
+      "medium": "kcd-8-2001",
+      "name": "Tool Pro",
+      "note": "Utgavebetegnelsen i historikken er 1.65; programfilen har byggnummer 1.6.5.1.",
+      "version": "1.65"
+    },
+    {
+      "distribution": "unknown",
+      "identification_id": "identification:b609e100dbf9462c95655083d5b9b2318c61fab68a43d41a649603e557e23f12",
+      "inferred": false,
+      "key": {
+        "entry": "Tool546f6f6c50726f",
+        "manifest": "sha256:83d64f148704f965abd3ebbf8e6c5ca98428eb088310d792d10e39a9e6f9a2bf"
+      },
+      "launch_sha256": "4eed3da39af9a0f6623bf4178c38d6de4bfd54cfa1ba765a01163c069b7bb96c",
+      "medium": "kcd-9-2000",
+      "name": "Tool Pro",
+      "note": "Utgavebetegnelsen i historikken er 1.65; programfilen har byggnummer 1.6.5.1.",
+      "version": "1.65"
+    },
+    {
+      "distribution": "unknown",
+      "identification_id": "identification:b9382b6faf68c7ac67702b29232998b827910e1bbaa8f79241de662365c15ef7",
+      "inferred": false,
+      "key": {
+        "entry": "Tool50726f70657274696573506c7573",
+        "manifest": "sha256:a97d1734f36d18143126fcea22401340937c83e920523660e0d591ca7f10e337"
+      },
+      "launch_sha256": "951e56ef49f9722c118baf9aadfce893aad47a2f319c7f646c50c7f89147735c",
+      "medium": "kcd-1-2001",
+      "name": "PropertiesPlus",
+      "note": "DLL-versjonen 1.0.0.1 er ikke brukt som programversjon. Freeware er ikke automatisk tolket som fullversjon.",
+      "version": "1.65"
+    },
+    {
+      "distribution": "unknown",
+      "identification_id": "identification:415afab8d93b31ebaca615b32a6338d1222fa1d481987a197bf77b8e109f1e1c",
+      "inferred": false,
+      "key": {
+        "entry": "Tool50726f70657274696573506c7573",
+        "manifest": "sha256:13e520c97edd5869b07eafd3348e854c838a2082663342cabd314c16bb1f4ce2"
+      },
+      "launch_sha256": "951e56ef49f9722c118baf9aadfce893aad47a2f319c7f646c50c7f89147735c",
+      "medium": "kcd-13-2000",
+      "name": "PropertiesPlus",
+      "note": "DLL-versjonen 1.0.0.1 er ikke brukt som programversjon. Freeware er ikke automatisk tolket som fullversjon.",
+      "version": "1.65"
+    },
+    {
+      "distribution": "unknown",
+      "identification_id": "identification:11b2c41763ec87d507d8494e92e6b2b0fe08af389115844808ba16f09907fbc8",
+      "inferred": false,
+      "key": {
+        "entry": "Tool50726f70657274696573506c7573",
+        "manifest": "sha256:a4f0f99672722f1468df487b0379251c5e84cc945f8716c5746fc27fe3a3aada"
+      },
+      "launch_sha256": "951e56ef49f9722c118baf9aadfce893aad47a2f319c7f646c50c7f89147735c",
+      "medium": "kcd-8-2001",
+      "name": "PropertiesPlus",
+      "note": "DLL-versjonen 1.0.0.1 er ikke brukt som programversjon. Freeware er ikke automatisk tolket som fullversjon.",
+      "version": "1.65"
+    },
+    {
+      "distribution": "unknown",
+      "identification_id": "identification:6662cd5c02d4422bb3bdeb9afbb7530c3e4fa7bc0349646e07fc3e13bcbad861",
+      "inferred": false,
+      "key": {
+        "entry": "Tool537061636520547275636b696e67",
+        "manifest": "sha256:a4f0f99672722f1468df487b0379251c5e84cc945f8716c5746fc27fe3a3aada"
+      },
+      "launch_sha256": "7f27601d9dc5bbcfbc579f5e22234712d883c2c5a9248e11a4691b2d3f4678de",
+      "medium": "kcd-8-2001",
+      "name": "Uninstall Manager",
+      "note": "",
+      "version": "3.21"
+    },
+    {
+      "distribution": "unknown",
+      "identification_id": "identification:9abd01f85a74208629b9077272d45177a153dc932da7b1c20b7d4fb37f75ae47",
+      "inferred": false,
+      "key": {
+        "entry": "Tool436c69704361636865",
+        "manifest": "sha256:d41fc8423030eebf0a86c198d20e2da50a246bc17a6be75fd26dedbde130a989"
+      },
+      "launch_sha256": "3196a2ed70e01b4b7e789f84457c1e4d5dc49fec174abf9fa6d3acf95fb41df5",
+      "medium": "kcd-1-2000",
+      "name": "ClipCache",
+      "note": "Navn og versjon står sammen i installasjonspakkens DATA.TAG. Selve programfilen er ikke pakket ut.",
+      "version": "1.41"
+    },
+    {
+      "distribution": "unknown",
+      "identification_id": "identification:6b7e0aec84d7eaeccce4eceee70150435e00f7cdb3b8d685a4964a9df9091e62",
+      "inferred": false,
+      "key": {
+        "entry": "Tool436c69704361636865",
+        "manifest": "sha256:a97d1734f36d18143126fcea22401340937c83e920523660e0d591ca7f10e337"
+      },
+      "launch_sha256": "3196a2ed70e01b4b7e789f84457c1e4d5dc49fec174abf9fa6d3acf95fb41df5",
+      "medium": "kcd-1-2001",
+      "name": "ClipCache",
+      "note": "Navn og versjon står sammen i installasjonspakkens DATA.TAG. Selve programfilen er ikke pakket ut.",
+      "version": "1.41"
+    },
+    {
+      "distribution": "unknown",
+      "identification_id": "identification:4f933e0b28daa622c681d6d8d7cb883f0ae7157e099c5bcc946652df0edc99cf",
+      "inferred": false,
+      "key": {
+        "entry": "Tool436c69704361636865",
+        "manifest": "sha256:13e520c97edd5869b07eafd3348e854c838a2082663342cabd314c16bb1f4ce2"
+      },
+      "launch_sha256": "3196a2ed70e01b4b7e789f84457c1e4d5dc49fec174abf9fa6d3acf95fb41df5",
+      "medium": "kcd-13-2000",
+      "name": "ClipCache",
+      "note": "Navn og versjon står sammen i installasjonspakkens DATA.TAG. Selve programfilen er ikke pakket ut.",
+      "version": "1.41"
+    },
+    {
+      "distribution": "unknown",
+      "identification_id": "identification:9eeddc1d4f5081d68bbcc9555f4e2ae2e397c399814152684177777f65d17841",
+      "inferred": false,
+      "key": {
+        "entry": "Tool436c69704361636865",
+        "manifest": "sha256:c433899341a492cb6c472842f312b6f46fc693ba981b8679593eba67de906f12"
+      },
+      "launch_sha256": "3196a2ed70e01b4b7e789f84457c1e4d5dc49fec174abf9fa6d3acf95fb41df5",
+      "medium": "kcd-4-2000",
+      "name": "ClipCache",
+      "note": "Navn og versjon står sammen i installasjonspakkens DATA.TAG. Selve programfilen er ikke pakket ut.",
+      "version": "1.41"
+    },
+    {
+      "distribution": "unknown",
+      "identification_id": "identification:2e7d1da4c4b987805849ee0b79b0438f38ee23486a0e680c6a5801877ee8454f",
+      "inferred": false,
+      "key": {
+        "entry": "Tool436c69704361636865",
+        "manifest": "sha256:a4f0f99672722f1468df487b0379251c5e84cc945f8716c5746fc27fe3a3aada"
+      },
+      "launch_sha256": "3196a2ed70e01b4b7e789f84457c1e4d5dc49fec174abf9fa6d3acf95fb41df5",
+      "medium": "kcd-8-2001",
+      "name": "ClipCache",
+      "note": "Navn og versjon står sammen i installasjonspakkens DATA.TAG. Selve programfilen er ikke pakket ut.",
+      "version": "1.41"
+    },
+    {
+      "distribution": "unknown",
+      "identification_id": "identification:77f54e82cc8e955e351abd790c2f73d6e7068c2daa1fef6cd46dda2252e26a67",
+      "inferred": false,
+      "key": {
+        "entry": "Tool436c69704361636865",
+        "manifest": "sha256:83d64f148704f965abd3ebbf8e6c5ca98428eb088310d792d10e39a9e6f9a2bf"
+      },
+      "launch_sha256": "3196a2ed70e01b4b7e789f84457c1e4d5dc49fec174abf9fa6d3acf95fb41df5",
+      "medium": "kcd-9-2000",
+      "name": "ClipCache",
+      "note": "Navn og versjon står sammen i installasjonspakkens DATA.TAG. Selve programfilen er ikke pakket ut.",
+      "version": "1.41"
+    },
+    {
+      "distribution": "unknown",
+      "identification_id": "identification:62d94657783891e52536a522a90a08ce36f56772ea67fd80498fd9e43a76a9a3",
+      "inferred": false,
+      "key": {
+        "entry": "Tool53616e647261",
+        "manifest": "sha256:d41fc8423030eebf0a86c198d20e2da50a246bc17a6be75fd26dedbde130a989"
+      },
+      "launch_sha256": "f7ce7b679a9c812f79969a8085d79032b9ee431e2ac62d004420ac8802801cfe",
+      "medium": "kcd-1-2000",
+      "name": "SiSoft Sandra 98 Standard",
+      "note": "Kildens fulle versjonsbetegnelse beholdes. Ikke redusert til årstallet 98.",
+      "version": "98.7.4.10"
+    },
+    {
+      "distribution": "unknown",
+      "identification_id": "identification:0d8db91e3527d772d3f67ff9e88654a6d106d0e4a41402cf7f20779472d6692d",
+      "inferred": false,
+      "key": {
+        "entry": "Tool53616e647261",
+        "manifest": "sha256:c433899341a492cb6c472842f312b6f46fc693ba981b8679593eba67de906f12"
+      },
+      "launch_sha256": "f7ce7b679a9c812f79969a8085d79032b9ee431e2ac62d004420ac8802801cfe",
+      "medium": "kcd-4-2000",
+      "name": "SiSoft Sandra 98 Standard",
+      "note": "Kildens fulle versjonsbetegnelse beholdes. Ikke redusert til årstallet 98.",
+      "version": "98.7.4.10"
+    },
+    {
+      "distribution": "unknown",
+      "identification_id": "identification:770ee53897051adcb6b2412127250442ccc1ea825d8d307c577a88cc39bf0b7d",
+      "inferred": false,
+      "key": {
+        "entry": "Tool53616e647261",
+        "manifest": "sha256:83d64f148704f965abd3ebbf8e6c5ca98428eb088310d792d10e39a9e6f9a2bf"
+      },
+      "launch_sha256": "f7ce7b679a9c812f79969a8085d79032b9ee431e2ac62d004420ac8802801cfe",
+      "medium": "kcd-9-2000",
+      "name": "SiSoft Sandra 98 Standard",
+      "note": "Kildens fulle versjonsbetegnelse beholdes. Ikke redusert til årstallet 98.",
+      "version": "98.7.4.10"
+    },
+    {
+      "distribution": "unknown",
+      "identification_id": "identification:16d6342ba9f2990722563531f96fa55bd4d43ca89fa05a62a6833ed40e0069b4",
+      "inferred": false,
+      "key": {
+        "entry": "Tool53616e647261",
+        "manifest": "sha256:a97d1734f36d18143126fcea22401340937c83e920523660e0d591ca7f10e337"
+      },
+      "launch_sha256": "83441525fb5aebe10892cfbc931395e2bb1f68c8720e49bb58749cb95981f06d",
+      "medium": "kcd-1-2001",
+      "name": "SiSoft Sandra 2000 Standard",
+      "note": "Navn og versjon fra DATA.TAG. Selve programfilen er ikke pakket ut.",
+      "version": "2000.0.6.0"
+    },
+    {
+      "distribution": "unknown",
+      "identification_id": "identification:9d2ebe08a415654e88898bd923897bb75106807da967e1bc50457629532e9ff9",
+      "inferred": false,
+      "key": {
+        "entry": "Tool53616e647261",
+        "manifest": "sha256:13e520c97edd5869b07eafd3348e854c838a2082663342cabd314c16bb1f4ce2"
+      },
+      "launch_sha256": "83441525fb5aebe10892cfbc931395e2bb1f68c8720e49bb58749cb95981f06d",
+      "medium": "kcd-13-2000",
+      "name": "SiSoft Sandra 2000 Standard",
+      "note": "Navn og versjon fra DATA.TAG. Selve programfilen er ikke pakket ut.",
+      "version": "2000.0.6.0"
+    },
+    {
+      "distribution": "unknown",
+      "identification_id": "identification:3cbf6666b0084d665d9969b125e2376ba61ea2c68a1b9db2e1867fd7b0e211bc",
+      "inferred": false,
+      "key": {
+        "entry": "Tool53616e647261",
+        "manifest": "sha256:a4f0f99672722f1468df487b0379251c5e84cc945f8716c5746fc27fe3a3aada"
+      },
+      "launch_sha256": "83441525fb5aebe10892cfbc931395e2bb1f68c8720e49bb58749cb95981f06d",
+      "medium": "kcd-8-2001",
+      "name": "SiSoft Sandra 2000 Standard",
+      "note": "Navn og versjon fra DATA.TAG. Selve programfilen er ikke pakket ut.",
+      "version": "2000.0.6.0"
+    },
+    {
+      "distribution": "trial",
+      "identification_id": "identification:c61fa22fbede7d31a8ecde532f8ff4cbb213122388f157e7b45b8e3e1c7faa0d",
+      "inferred": false,
+      "key": {
+        "entry": "I30",
+        "manifest": "sha256:2e5f128883b3a0afea67604f1fd2518397e4b5c1fb128c2cd3f9d33aac6b3f50"
+      },
+      "launch_sha256": "49f4db2adb3833811c95e6008abb7c2fae433175368bd3ec57d608b8f4e28ce7",
+      "medium": "kcd-15-2001",
+      "name": "SuperCat",
+      "note": "README på K-CD 15/2001 sier uttrykkelig Trial Version. Dette gjelder ikke SuperCat 3.1 på andre CD-er.",
+      "version": "4.2"
+    },
+    {
+      "distribution": "unknown",
+      "identification_id": "identification:46815d9b7025277e7e49ea6eebbe5c7d114e3d8816bc4e26101ba372ea335dd1",
+      "inferred": false,
+      "key": {
+        "entry": "Tool53746174733938",
+        "manifest": "sha256:d41fc8423030eebf0a86c198d20e2da50a246bc17a6be75fd26dedbde130a989"
+      },
+      "launch_sha256": "bddb40bb6cfaa95ec6120964615e069509174bdaccffc8778b0414c13c5e93f4",
+      "medium": "kcd-1-2000",
+      "name": "Stats ’98",
+      "note": "Versjonen står i den utpakkede programfilens tekst. Datablokken er kontrollert mot CRC32 i installasjonspakken.",
+      "version": "1.2"
+    },
+    {
+      "distribution": "unknown",
+      "identification_id": "identification:9568f82d4bf1a85a7f0c8736c311204903c4ff84f121508b62d1bcaa375939ba",
+      "inferred": false,
+      "key": {
+        "entry": "Tool53746174733938",
+        "manifest": "sha256:c433899341a492cb6c472842f312b6f46fc693ba981b8679593eba67de906f12"
+      },
+      "launch_sha256": "bddb40bb6cfaa95ec6120964615e069509174bdaccffc8778b0414c13c5e93f4",
+      "medium": "kcd-4-2000",
+      "name": "Stats ’98",
+      "note": "Versjonen står i den utpakkede programfilens tekst. Datablokken er kontrollert mot CRC32 i installasjonspakken.",
+      "version": "1.2"
+    },
+    {
+      "distribution": "unknown",
+      "identification_id": "identification:bbb8a32d7ca8ad3fdf5126d0da88073bbe8d39a40eadb4f81b4cf38569b9bab6",
+      "inferred": false,
+      "key": {
+        "entry": "Tool4a6574436172",
+        "manifest": "sha256:a97d1734f36d18143126fcea22401340937c83e920523660e0d591ca7f10e337"
+      },
+      "launch_sha256": "19a05946bfaff826dcd97e5a70a3207a79800d990e460f235f0fbee8415d5df9",
+      "medium": "kcd-1-2001",
+      "name": "FlashGet",
+      "note": "Endringsloggen oppgir 0.76. Programfilens produktversjon 0.7.6.0 støtter dette; versjonene til tilleggs-DLL-er er ikke brukt.",
+      "version": "0.76"
+    },
+    {
+      "distribution": "unknown",
+      "identification_id": "identification:2076fb58e297e32853864c008b119e18733a9308dcb6a5a9bc2d86fa965ad788",
+      "inferred": false,
+      "key": {
+        "entry": "Tool4a6574436172",
+        "manifest": "sha256:13e520c97edd5869b07eafd3348e854c838a2082663342cabd314c16bb1f4ce2"
+      },
+      "launch_sha256": "19a05946bfaff826dcd97e5a70a3207a79800d990e460f235f0fbee8415d5df9",
+      "medium": "kcd-13-2000",
+      "name": "FlashGet",
+      "note": "Endringsloggen oppgir 0.76. Programfilens produktversjon 0.7.6.0 støtter dette; versjonene til tilleggs-DLL-er er ikke brukt.",
+      "version": "0.76"
+    },
+    {
+      "distribution": "unknown",
+      "identification_id": "identification:d9fec220089c83abf1e538eb1ad095f51f57bf9925b0017065306de613464abd",
+      "inferred": false,
+      "key": {
+        "entry": "Tool4a6574436172",
+        "manifest": "sha256:a4f0f99672722f1468df487b0379251c5e84cc945f8716c5746fc27fe3a3aada"
+      },
+      "launch_sha256": "19a05946bfaff826dcd97e5a70a3207a79800d990e460f235f0fbee8415d5df9",
+      "medium": "kcd-8-2001",
+      "name": "FlashGet",
+      "note": "Endringsloggen oppgir 0.76. Programfilens produktversjon 0.7.6.0 støtter dette; versjonene til tilleggs-DLL-er er ikke brukt.",
+      "version": "0.76"
+    },
+    {
+      "distribution": "unknown",
+      "identification_id": "identification:f9455a9f9f48802161a5cceec81fb6b1d576e807a152ab773d6bac12eb86409f",
+      "inferred": false,
+      "key": {
+        "entry": "Tool4a6574436172",
+        "manifest": "sha256:83d64f148704f965abd3ebbf8e6c5ca98428eb088310d792d10e39a9e6f9a2bf"
+      },
+      "launch_sha256": "19a05946bfaff826dcd97e5a70a3207a79800d990e460f235f0fbee8415d5df9",
+      "medium": "kcd-9-2000",
+      "name": "FlashGet",
+      "note": "Endringsloggen oppgir 0.76. Programfilens produktversjon 0.7.6.0 støtter dette; versjonene til tilleggs-DLL-er er ikke brukt.",
+      "version": "0.76"
+    },
+    {
+      "distribution": "unknown",
+      "identification_id": "identification:66878141c3add6926b3ea7f12bb6aad4ca8f7e1981f0de7a828f3016674423d9",
+      "inferred": false,
+      "key": {
+        "entry": "Tool576562576173686572",
+        "manifest": "sha256:d41fc8423030eebf0a86c198d20e2da50a246bc17a6be75fd26dedbde130a989"
+      },
+      "launch_sha256": "1611f2fdf3c7a3651f0c7efa051a35f8e5c9bd82a0196c117423bee75647d6be",
+      "medium": "kcd-1-2000",
+      "name": "WebWasher",
+      "note": "README fra installasjonsfilen som menyen peker på. En eldre pakke i samme mappe knyttes ikke automatisk til menyen.",
+      "version": "1.1"
+    },
+    {
+      "distribution": "unknown",
+      "identification_id": "identification:8a7fab83a90ab25fb2a709342e9e7ab0105baf8d2dbb9c46c353245d2261fd6b",
+      "inferred": false,
+      "key": {
+        "entry": "Tool576562576173686572",
+        "manifest": "sha256:a97d1734f36d18143126fcea22401340937c83e920523660e0d591ca7f10e337"
+      },
+      "launch_sha256": "1611f2fdf3c7a3651f0c7efa051a35f8e5c9bd82a0196c117423bee75647d6be",
+      "medium": "kcd-1-2001",
+      "name": "WebWasher",
+      "note": "README fra installasjonsfilen som menyen peker på. En eldre pakke i samme mappe knyttes ikke automatisk til menyen.",
+      "version": "1.1"
+    },
+    {
+      "distribution": "unknown",
+      "identification_id": "identification:29d53d9cc0d8844431d229a85b47fd1607b25e9e03d58826fe09ba8564c2206c",
+      "inferred": false,
+      "key": {
+        "entry": "Tool576562576173686572",
+        "manifest": "sha256:13e520c97edd5869b07eafd3348e854c838a2082663342cabd314c16bb1f4ce2"
+      },
+      "launch_sha256": "1611f2fdf3c7a3651f0c7efa051a35f8e5c9bd82a0196c117423bee75647d6be",
+      "medium": "kcd-13-2000",
+      "name": "WebWasher",
+      "note": "README fra installasjonsfilen som menyen peker på. En eldre pakke i samme mappe knyttes ikke automatisk til menyen.",
+      "version": "1.1"
+    },
+    {
+      "distribution": "unknown",
+      "identification_id": "identification:cbe6fb1102a40d53d1d959bdf3264f3456500bcf800df7898e05588369906942",
+      "inferred": false,
+      "key": {
+        "entry": "Tool576562576173686572",
+        "manifest": "sha256:c433899341a492cb6c472842f312b6f46fc693ba981b8679593eba67de906f12"
+      },
+      "launch_sha256": "1611f2fdf3c7a3651f0c7efa051a35f8e5c9bd82a0196c117423bee75647d6be",
+      "medium": "kcd-4-2000",
+      "name": "WebWasher",
+      "note": "README fra installasjonsfilen som menyen peker på. En eldre pakke i samme mappe knyttes ikke automatisk til menyen.",
+      "version": "1.1"
+    },
+    {
+      "distribution": "unknown",
+      "identification_id": "identification:fde4447089c37ccabe998c4bd2af33ad2fe0ac1b62ef0d539210d6f488969b7c",
+      "inferred": false,
+      "key": {
+        "entry": "Tool576562576173686572",
+        "manifest": "sha256:83d64f148704f965abd3ebbf8e6c5ca98428eb088310d792d10e39a9e6f9a2bf"
+      },
+      "launch_sha256": "1611f2fdf3c7a3651f0c7efa051a35f8e5c9bd82a0196c117423bee75647d6be",
+      "medium": "kcd-9-2000",
+      "name": "WebWasher",
+      "note": "README fra installasjonsfilen som menyen peker på. En eldre pakke i samme mappe knyttes ikke automatisk til menyen.",
+      "version": "1.1"
+    },
+    {
+      "distribution": "unknown",
+      "identification_id": "identification:817471ddc8ecb564a1d211fc0e0ab2cee7f44ad04529c3a4dbcebd8dd56ec41b",
+      "inferred": false,
+      "key": {
+        "entry": "Tool576562576173686572",
+        "manifest": "sha256:a4f0f99672722f1468df487b0379251c5e84cc945f8716c5746fc27fe3a3aada"
+      },
+      "launch_sha256": "da2e1de1843b7cb85f8b671086b0a45c19a1047cdf425f0393431770ea48585a",
+      "medium": "kcd-8-2001",
+      "name": "WebWasher",
+      "note": "Beta-betegnelsen beholdes. Programfilens byggnummer er 3.0.0.7; dette gir ikke grunnlag for å fjerne beta 3 fra utgavenavnet.",
+      "version": "3.0 beta 3"
+    },
+    {
+      "distribution": "unknown",
+      "identification_id": "identification:965ecc14cfbdf5c64af6dd1bc5acc2f60a44f83cf1331e521311569accf842ae",
+      "inferred": false,
+      "key": {
+        "entry": "Tool517569636b5365656b",
+        "manifest": "sha256:d41fc8423030eebf0a86c198d20e2da50a246bc17a6be75fd26dedbde130a989"
+      },
+      "launch_sha256": "9c616591340c5b8cf71a21a71e04ba7598f97b67f297801473d4385edaf46b0e",
+      "medium": "kcd-1-2000",
+      "name": "Infoseek Quickseek",
+      "note": "README angir utgaven. Programfilens generiske produktversjon 1.0.0.1 er bevart som et separat funn, ikke brukt som utgavebetegnelse.",
+      "version": "3.2P1n"
+    },
+    {
+      "distribution": "unknown",
+      "identification_id": "identification:87e1fc67a3ae80ef84efdc3888165eddea185a81ce823953ff2f0c77476a38c1",
+      "inferred": false,
+      "key": {
+        "entry": "Tool517569636b5365656b",
+        "manifest": "sha256:c433899341a492cb6c472842f312b6f46fc693ba981b8679593eba67de906f12"
+      },
+      "launch_sha256": "9c616591340c5b8cf71a21a71e04ba7598f97b67f297801473d4385edaf46b0e",
+      "medium": "kcd-4-2000",
+      "name": "Infoseek Quickseek",
+      "note": "README angir utgaven. Programfilens generiske produktversjon 1.0.0.1 er bevart som et separat funn, ikke brukt som utgavebetegnelse.",
+      "version": "3.2P1n"
+    },
+    {
+      "distribution": "unknown",
+      "identification_id": "identification:e6041a55ccf1e53dd0c6154f87aab283f9ebebcc230d12fcbdad1af2fd911495",
+      "inferred": false,
+      "key": {
+        "entry": "Tool46696c65447573746572",
+        "manifest": "sha256:d41fc8423030eebf0a86c198d20e2da50a246bc17a6be75fd26dedbde130a989"
+      },
+      "launch_sha256": "ddf0eb50d9a5c9348ab1f2c3ead14c1cadbc4db0290fdb77f6e5a66a55c2ff84",
+      "medium": "kcd-1-2000",
+      "name": "FileDuster",
+      "note": "Programidentiteten er bekreftet i pakkens dokumentasjon og programfil. Versjon er fortsatt ikke oppgitt; identifisering betyr ikke at alle metadata er kjent.",
+      "version": "unknown"
+    },
+    {
+      "distribution": "unknown",
+      "identification_id": "identification:4f38bfbfe224fa449810f50c4de7a52ed61f8f7262424d247d1e6df609eed7db",
+      "inferred": false,
+      "key": {
+        "entry": "Tool46696c65447573746572",
+        "manifest": "sha256:a97d1734f36d18143126fcea22401340937c83e920523660e0d591ca7f10e337"
+      },
+      "launch_sha256": "ddf0eb50d9a5c9348ab1f2c3ead14c1cadbc4db0290fdb77f6e5a66a55c2ff84",
+      "medium": "kcd-1-2001",
+      "name": "FileDuster",
+      "note": "Programidentiteten er bekreftet i pakkens dokumentasjon og programfil. Versjon er fortsatt ikke oppgitt; identifisering betyr ikke at alle metadata er kjent.",
+      "version": "unknown"
+    },
+    {
+      "distribution": "unknown",
+      "identification_id": "identification:c4abb1d17b2b81ec324e7a4d2e501daf07e2c1d3a2a61b276bd57e571bf4884d",
+      "inferred": false,
+      "key": {
+        "entry": "Tool46696c65447573746572",
+        "manifest": "sha256:13e520c97edd5869b07eafd3348e854c838a2082663342cabd314c16bb1f4ce2"
+      },
+      "launch_sha256": "ddf0eb50d9a5c9348ab1f2c3ead14c1cadbc4db0290fdb77f6e5a66a55c2ff84",
+      "medium": "kcd-13-2000",
+      "name": "FileDuster",
+      "note": "Programidentiteten er bekreftet i pakkens dokumentasjon og programfil. Versjon er fortsatt ikke oppgitt; identifisering betyr ikke at alle metadata er kjent.",
+      "version": "unknown"
+    },
+    {
+      "distribution": "unknown",
+      "identification_id": "identification:f9a8eac61207a8094b040ecf0dcdc517c2ce755a6f2768364b37e7617efa9d2d",
+      "inferred": false,
+      "key": {
+        "entry": "Tool46696c65447573746572",
+        "manifest": "sha256:c433899341a492cb6c472842f312b6f46fc693ba981b8679593eba67de906f12"
+      },
+      "launch_sha256": "ddf0eb50d9a5c9348ab1f2c3ead14c1cadbc4db0290fdb77f6e5a66a55c2ff84",
+      "medium": "kcd-4-2000",
+      "name": "FileDuster",
+      "note": "Programidentiteten er bekreftet i pakkens dokumentasjon og programfil. Versjon er fortsatt ikke oppgitt; identifisering betyr ikke at alle metadata er kjent.",
+      "version": "unknown"
+    },
+    {
+      "distribution": "unknown",
+      "identification_id": "identification:371c7e997eb8686063844c2773d4ec6310ec79db9348e047745947a4f4a2b580",
+      "inferred": false,
+      "key": {
+        "entry": "Tool46696c65447573746572",
+        "manifest": "sha256:a4f0f99672722f1468df487b0379251c5e84cc945f8716c5746fc27fe3a3aada"
+      },
+      "launch_sha256": "ddf0eb50d9a5c9348ab1f2c3ead14c1cadbc4db0290fdb77f6e5a66a55c2ff84",
+      "medium": "kcd-8-2001",
+      "name": "FileDuster",
+      "note": "Programidentiteten er bekreftet i pakkens dokumentasjon og programfil. Versjon er fortsatt ikke oppgitt; identifisering betyr ikke at alle metadata er kjent.",
+      "version": "unknown"
+    },
+    {
+      "distribution": "unknown",
+      "identification_id": "identification:9124b0537ba14d8b45ab84cf0bd15f59b7fc0c272222054be7bb4cb78d1ab217",
+      "inferred": false,
+      "key": {
+        "entry": "Tool46696c65447573746572",
+        "manifest": "sha256:83d64f148704f965abd3ebbf8e6c5ca98428eb088310d792d10e39a9e6f9a2bf"
+      },
+      "launch_sha256": "ddf0eb50d9a5c9348ab1f2c3ead14c1cadbc4db0290fdb77f6e5a66a55c2ff84",
+      "medium": "kcd-9-2000",
+      "name": "FileDuster",
+      "note": "Programidentiteten er bekreftet i pakkens dokumentasjon og programfil. Versjon er fortsatt ikke oppgitt; identifisering betyr ikke at alle metadata er kjent.",
+      "version": "unknown"
+    },
+    {
+      "distribution": "unknown",
+      "identification_id": "identification:8a13b1f25e5ff907aa95d01c1a81d48d0ec73169a7541aba6ff3b0f19510fa4f",
+      "inferred": false,
+      "key": {
+        "entry": "Tool436865636b53637265656e",
+        "manifest": "sha256:d41fc8423030eebf0a86c198d20e2da50a246bc17a6be75fd26dedbde130a989"
+      },
+      "launch_sha256": "5643f747285265694c7f94c9012ef95e7dd878ed34c504c764834e93ecd7d2ec",
+      "medium": "kcd-1-2000",
+      "name": "Monitors Matter CheckScreen",
+      "note": "Produktnavnet står i den utpakkede programfilen. Versjon er ikke oppgitt. Navnet på installasjonsfilen er ikke brukt som eneste belegg.",
+      "version": "unknown"
+    },
+    {
+      "distribution": "unknown",
+      "identification_id": "identification:586b8b851815ac8b43a52613570ed77afe7cd5a9558672f6dcf689ec15e5d044",
+      "inferred": false,
+      "key": {
+        "entry": "Tool436865636b53637265656e",
+        "manifest": "sha256:a97d1734f36d18143126fcea22401340937c83e920523660e0d591ca7f10e337"
+      },
+      "launch_sha256": "5643f747285265694c7f94c9012ef95e7dd878ed34c504c764834e93ecd7d2ec",
+      "medium": "kcd-1-2001",
+      "name": "Monitors Matter CheckScreen",
+      "note": "Produktnavnet står i den utpakkede programfilen. Versjon er ikke oppgitt. Navnet på installasjonsfilen er ikke brukt som eneste belegg.",
+      "version": "unknown"
+    },
+    {
+      "distribution": "unknown",
+      "identification_id": "identification:a7d80c9679a25030513343c676b16fefaa6ef136df4514877c42984de3c0c518",
+      "inferred": false,
+      "key": {
+        "entry": "Tool436865636b53637265656e",
+        "manifest": "sha256:13e520c97edd5869b07eafd3348e854c838a2082663342cabd314c16bb1f4ce2"
+      },
+      "launch_sha256": "5643f747285265694c7f94c9012ef95e7dd878ed34c504c764834e93ecd7d2ec",
+      "medium": "kcd-13-2000",
+      "name": "Monitors Matter CheckScreen",
+      "note": "Produktnavnet står i den utpakkede programfilen. Versjon er ikke oppgitt. Navnet på installasjonsfilen er ikke brukt som eneste belegg.",
+      "version": "unknown"
+    },
+    {
+      "distribution": "unknown",
+      "identification_id": "identification:aebaf647e9028e1f6e383ee2635d8d81e4e3554c28d5adf86c3abc1b539cdbe3",
+      "inferred": false,
+      "key": {
+        "entry": "Tool436865636b53637265656e",
+        "manifest": "sha256:c433899341a492cb6c472842f312b6f46fc693ba981b8679593eba67de906f12"
+      },
+      "launch_sha256": "5643f747285265694c7f94c9012ef95e7dd878ed34c504c764834e93ecd7d2ec",
+      "medium": "kcd-4-2000",
+      "name": "Monitors Matter CheckScreen",
+      "note": "Produktnavnet står i den utpakkede programfilen. Versjon er ikke oppgitt. Navnet på installasjonsfilen er ikke brukt som eneste belegg.",
+      "version": "unknown"
+    },
+    {
+      "distribution": "unknown",
+      "identification_id": "identification:08d7fc34901c183b28ee1f1a6eec2a7deabbd9c0680453c17a8ff496df85294c",
+      "inferred": false,
+      "key": {
+        "entry": "Tool436865636b53637265656e",
+        "manifest": "sha256:a4f0f99672722f1468df487b0379251c5e84cc945f8716c5746fc27fe3a3aada"
+      },
+      "launch_sha256": "5643f747285265694c7f94c9012ef95e7dd878ed34c504c764834e93ecd7d2ec",
+      "medium": "kcd-8-2001",
+      "name": "Monitors Matter CheckScreen",
+      "note": "Produktnavnet står i den utpakkede programfilen. Versjon er ikke oppgitt. Navnet på installasjonsfilen er ikke brukt som eneste belegg.",
+      "version": "unknown"
+    },
+    {
+      "distribution": "unknown",
+      "identification_id": "identification:ee8cd8a47b256fc760d9524afc4baa7ca18b4d898400557fd1a8155799e6a75d",
+      "inferred": false,
+      "key": {
+        "entry": "Tool436865636b53637265656e",
+        "manifest": "sha256:83d64f148704f965abd3ebbf8e6c5ca98428eb088310d792d10e39a9e6f9a2bf"
+      },
+      "launch_sha256": "5643f747285265694c7f94c9012ef95e7dd878ed34c504c764834e93ecd7d2ec",
+      "medium": "kcd-9-2000",
+      "name": "Monitors Matter CheckScreen",
+      "note": "Produktnavnet står i den utpakkede programfilen. Versjon er ikke oppgitt. Navnet på installasjonsfilen er ikke brukt som eneste belegg.",
+      "version": "unknown"
+    },
+    {
+      "distribution": "unknown",
+      "identification_id": "identification:74180ef02a1bf98fca8e593fdd016905217ea9e03f90f96231aa69bce5df727a",
+      "inferred": false,
+      "key": {
+        "entry": "Tool4175746f52756e4d616e",
+        "manifest": "sha256:a97d1734f36d18143126fcea22401340937c83e920523660e0d591ca7f10e337"
+      },
+      "launch_sha256": "6884fb36f2af4c12fffbc9ae0d2c742771686a7212bbf4447959d24cbab6d67a",
+      "medium": "kcd-1-2001",
+      "name": "AutoRunMan",
+      "note": "Navn og versjon står i det medfølgende oppsettskriptet og støttes av hjelpesidens overskrift AutoRunMan 1.0. Innholdet er lest uten å kjøre installasjonen.",
+      "version": "1.0"
+    },
+    {
+      "distribution": "unknown",
+      "identification_id": "identification:ccd5205662ed3f6e0326bee2148b762ee7ba5c15d22268e60de1aa0b269d24b3",
+      "inferred": false,
+      "key": {
+        "entry": "Tool4175746f52756e4d616e",
+        "manifest": "sha256:13e520c97edd5869b07eafd3348e854c838a2082663342cabd314c16bb1f4ce2"
+      },
+      "launch_sha256": "6884fb36f2af4c12fffbc9ae0d2c742771686a7212bbf4447959d24cbab6d67a",
+      "medium": "kcd-13-2000",
+      "name": "AutoRunMan",
+      "note": "Navn og versjon står i det medfølgende oppsettskriptet og støttes av hjelpesidens overskrift AutoRunMan 1.0. Innholdet er lest uten å kjøre installasjonen.",
+      "version": "1.0"
+    },
+    {
+      "distribution": "unknown",
+      "identification_id": "identification:a07777d46631a7fbe753d0edec424d4ec37f6a1a90be026b7f17285b5ae4d109",
+      "inferred": false,
+      "key": {
+        "entry": "Tool4175746f52756e4d616e",
+        "manifest": "sha256:a4f0f99672722f1468df487b0379251c5e84cc945f8716c5746fc27fe3a3aada"
+      },
+      "launch_sha256": "6884fb36f2af4c12fffbc9ae0d2c742771686a7212bbf4447959d24cbab6d67a",
+      "medium": "kcd-8-2001",
+      "name": "AutoRunMan",
+      "note": "Navn og versjon står i det medfølgende oppsettskriptet og støttes av hjelpesidens overskrift AutoRunMan 1.0. Innholdet er lest uten å kjøre installasjonen.",
+      "version": "1.0"
+    },
+    {
+      "distribution": "unknown",
+      "identification_id": "identification:f5b8ddffc2363b40f09c1db5a046cf45db2ab4c765dac368c019a9acc92f8fd0",
+      "inferred": false,
+      "key": {
+        "entry": "Tool4175746f52756e4d616e",
+        "manifest": "sha256:83d64f148704f965abd3ebbf8e6c5ca98428eb088310d792d10e39a9e6f9a2bf"
+      },
+      "launch_sha256": "6884fb36f2af4c12fffbc9ae0d2c742771686a7212bbf4447959d24cbab6d67a",
+      "medium": "kcd-9-2000",
+      "name": "AutoRunMan",
+      "note": "Navn og versjon står i det medfølgende oppsettskriptet og støttes av hjelpesidens overskrift AutoRunMan 1.0. Innholdet er lest uten å kjøre installasjonen.",
+      "version": "1.0"
+    },
+    {
+      "distribution": "unknown",
+      "identification_id": "identification:f4bc19f751615ce3a8bcb5f6e0560aa86eb001803524c0b0720b1f7c9df404c3",
+      "inferred": false,
+      "key": {
+        "entry": "Tool4d697261636c65",
+        "manifest": "sha256:a97d1734f36d18143126fcea22401340937c83e920523660e0d591ca7f10e337"
+      },
+      "launch_sha256": "77adfafd359b5b82162df773569a9ae4a800c02a70c600a178e9519eb57971fd",
+      "medium": "kcd-1-2001",
+      "name": "Meracl FontMap",
+      "note": "Produkt og versjon står sammen i programfilen. Kildekjeden er CD-ens setup.exe → innebygd setup.exe → kontrollert zlib-datablokk.",
+      "version": "1.3.1"
+    },
+    {
+      "distribution": "unknown",
+      "identification_id": "identification:c4227af1058995281138bc1d1dd7af3e3dba3f2ecb2d1f5c64402016e08afffb",
+      "inferred": false,
+      "key": {
+        "entry": "Tool4d697261636c65",
+        "manifest": "sha256:a4f0f99672722f1468df487b0379251c5e84cc945f8716c5746fc27fe3a3aada"
+      },
+      "launch_sha256": "77adfafd359b5b82162df773569a9ae4a800c02a70c600a178e9519eb57971fd",
+      "medium": "kcd-8-2001",
+      "name": "Meracl FontMap",
+      "note": "Produkt og versjon står sammen i programfilen. Kildekjeden er CD-ens setup.exe → innebygd setup.exe → kontrollert zlib-datablokk.",
+      "version": "1.3.1"
+    },
+    {
+      "distribution": "unknown",
+      "identification_id": "identification:915523df76581e86e3d6f2721830687e92c0b056a6e9e2269f3e89476883fa87",
+      "inferred": false,
+      "key": {
+        "entry": "Tool496e74657243656e74",
+        "manifest": "sha256:a97d1734f36d18143126fcea22401340937c83e920523660e0d591ca7f10e337"
+      },
+      "launch_sha256": "23df73f98b4d65d555d57742afe5a7ed84e72383cef6241b7ccbe49419e97614",
+      "medium": "kcd-1-2001",
+      "name": "Intercent 99",
+      "note": "README kommer fra _setup.1 i samme installasjonsmappe som menyens Setup.exe. Setup.ini navngir Intercent, og Setup.pkg lister Intercent99.exe og readme.htm. Dette er en dokumentert tilknytning til installasjonens følgefiler, ikke bevis på at installasjonen er kjørt.",
+      "version": "3.20"
+    },
+    {
+      "distribution": "unknown",
+      "identification_id": "identification:d040f0f6f7d7df0e3e6448c61070b3ec4ab7fc7f347ad22386b9ab51ff3e6c87",
+      "inferred": false,
+      "key": {
+        "entry": "Tool496e74657243656e74",
+        "manifest": "sha256:a4f0f99672722f1468df487b0379251c5e84cc945f8716c5746fc27fe3a3aada"
+      },
+      "launch_sha256": "23df73f98b4d65d555d57742afe5a7ed84e72383cef6241b7ccbe49419e97614",
+      "medium": "kcd-8-2001",
+      "name": "Intercent 99",
+      "note": "README kommer fra _setup.1 i samme installasjonsmappe som menyens Setup.exe. Setup.ini navngir Intercent, og Setup.pkg lister Intercent99.exe og readme.htm. Dette er en dokumentert tilknytning til installasjonens følgefiler, ikke bevis på at installasjonen er kjørt.",
+      "version": "3.20"
+    },
+    {
+      "distribution": "unknown",
+      "identification_id": "identification:f1eb175e716c4335d584d439530e57b5e25afabd8f6db6437eabf0117490c559",
+      "inferred": false,
+      "key": {
+        "entry": "Tool41646452656d6f7665",
+        "manifest": "sha256:a4f0f99672722f1468df487b0379251c5e84cc945f8716c5746fc27fe3a3aada"
+      },
+      "launch_sha256": "933254160833f98f4e085e2d75f0a6aa719d41f213a6e6e558a4d431a91b6aac",
+      "medium": "kcd-8-2001",
+      "name": "Add/Remove Pro",
+      "note": "README oppgir 2.04. Et feilaktig selvrefererende neste-arkivfelt er fjernet i en separat lesekopi. Alle komprimerte data er uendret, alle sju filer består arkivtesten. Gjelder bare K-CD 8/2001, ikke posten med manglende fil på K-CD 1/2001.",
+      "version": "2.04"
+    },
+    {
+      "distribution": "unknown",
+      "identification_id": "identification:c00dfe557b6b34e3beaf5193428493e6fb5ee3391eeca0e1be69d77fa9fc4524",
+      "inferred": true,
+      "key": {
+        "entry": "Tool4173736f6369617465",
+        "manifest": "sha256:a97d1734f36d18143126fcea22401340937c83e920523660e0d591ca7f10e337"
+      },
+      "launch_sha256": "8b3403eb297f40e4b789e66269f08e3acfe63d2924aa08ff82119e68ebca3e09",
+      "medium": "kcd-1-2001",
+      "name": "Associate",
+      "note": "Forslag støttet av arkivets filnavn, størrelse og CRC32 og samsvarende løse kildefiler. Selve Eschalon-medlemmet er ikke pakket ut. CRC32 er ikke en kryptografisk bekreftelse på identiske bytes; tilknytningen er derfor merket som en slutning.",
+      "version": "1.3"
+    },
+    {
+      "distribution": "unknown",
+      "identification_id": "identification:3e1250b1ba5516b406ec3083d640d25d2b8374026188b192512d5d51d29ad4e0",
+      "inferred": true,
+      "key": {
+        "entry": "Tool4173736f6369617465",
+        "manifest": "sha256:13e520c97edd5869b07eafd3348e854c838a2082663342cabd314c16bb1f4ce2"
+      },
+      "launch_sha256": "8b3403eb297f40e4b789e66269f08e3acfe63d2924aa08ff82119e68ebca3e09",
+      "medium": "kcd-13-2000",
+      "name": "Associate",
+      "note": "Forslag støttet av arkivets filnavn, størrelse og CRC32 og samsvarende løse kildefiler. Selve Eschalon-medlemmet er ikke pakket ut. CRC32 er ikke en kryptografisk bekreftelse på identiske bytes; tilknytningen er derfor merket som en slutning.",
+      "version": "1.3"
+    },
+    {
+      "distribution": "unknown",
+      "identification_id": "identification:7571bf171fb43deb3f9910002ed59a50779bc3b6ba8d05d76dcf17270c9724ff",
+      "inferred": true,
+      "key": {
+        "entry": "Tool4173736f6369617465",
+        "manifest": "sha256:a4f0f99672722f1468df487b0379251c5e84cc945f8716c5746fc27fe3a3aada"
+      },
+      "launch_sha256": "8b3403eb297f40e4b789e66269f08e3acfe63d2924aa08ff82119e68ebca3e09",
+      "medium": "kcd-8-2001",
+      "name": "Associate",
+      "note": "Forslag støttet av arkivets filnavn, størrelse og CRC32 og samsvarende løse kildefiler. Selve Eschalon-medlemmet er ikke pakket ut. CRC32 er ikke en kryptografisk bekreftelse på identiske bytes; tilknytningen er derfor merket som en slutning.",
+      "version": "1.3"
+    },
+    {
+      "distribution": "unknown",
+      "identification_id": "identification:2284d1864b04a919f57830a267319cad36190c08bca1ee4e965a82abcccac953",
+      "inferred": true,
+      "key": {
+        "entry": "Tool4d6f64656d4d6f6e69746f72",
+        "manifest": "sha256:a97d1734f36d18143126fcea22401340937c83e920523660e0d591ca7f10e337"
+      },
+      "launch_sha256": "495114fbaeb48ebea3de00700c14898542e6bd3cfec769cffff56ea480b08922",
+      "medium": "kcd-1-2001",
+      "name": "Modem Monitor Graph",
+      "note": "Forslag støttet av arkivets filnavn, størrelse og CRC32 og samsvarende løse kildefiler. Selve Eschalon-medlemmet er ikke pakket ut. CRC32 er ikke en kryptografisk bekreftelse på identiske bytes; tilknytningen er derfor merket som en slutning.",
+      "version": "3.3"
+    },
+    {
+      "distribution": "unknown",
+      "identification_id": "identification:f7b3f83c8093de2dc150d21f06a05af8c387c8d7c447a59def2c92dbaff9d552",
+      "inferred": true,
+      "key": {
+        "entry": "Tool4d6f64656d4d6f6e69746f72",
+        "manifest": "sha256:13e520c97edd5869b07eafd3348e854c838a2082663342cabd314c16bb1f4ce2"
+      },
+      "launch_sha256": "495114fbaeb48ebea3de00700c14898542e6bd3cfec769cffff56ea480b08922",
+      "medium": "kcd-13-2000",
+      "name": "Modem Monitor Graph",
+      "note": "Forslag støttet av arkivets filnavn, størrelse og CRC32 og samsvarende løse kildefiler. Selve Eschalon-medlemmet er ikke pakket ut. CRC32 er ikke en kryptografisk bekreftelse på identiske bytes; tilknytningen er derfor merket som en slutning.",
+      "version": "3.3"
+    },
+    {
+      "distribution": "unknown",
+      "identification_id": "identification:d05de9be86acae1a0bd3259481f0c800dbd0dbf85d7fc35fc932b482b4159b72",
+      "inferred": true,
+      "key": {
+        "entry": "Tool4d6f64656d4d6f6e69746f72",
+        "manifest": "sha256:a4f0f99672722f1468df487b0379251c5e84cc945f8716c5746fc27fe3a3aada"
+      },
+      "launch_sha256": "495114fbaeb48ebea3de00700c14898542e6bd3cfec769cffff56ea480b08922",
+      "medium": "kcd-8-2001",
+      "name": "Modem Monitor Graph",
+      "note": "Forslag støttet av arkivets filnavn, størrelse og CRC32 og samsvarende løse kildefiler. Selve Eschalon-medlemmet er ikke pakket ut. CRC32 er ikke en kryptografisk bekreftelse på identiske bytes; tilknytningen er derfor merket som en slutning.",
+      "version": "3.3"
+    },
+    {
+      "distribution": "unknown",
+      "identification_id": "identification:b1ef2e6fd2b9c889e9b373b3dcdd681fd118e2e2ae81c698841a50d114698f36",
+      "inferred": true,
+      "key": {
+        "entry": "Tool4469736b5370616365",
+        "manifest": "sha256:a97d1734f36d18143126fcea22401340937c83e920523660e0d591ca7f10e337"
+      },
+      "launch_sha256": "a367f38eba2b06da106296c7903e5e48aa4aeb826250d9436c7b42c7294f8070",
+      "medium": "kcd-1-2001",
+      "name": "DiskSpace",
+      "note": "Forslag støttet av arkivets filnavn, størrelse og CRC32 og samsvarende løse kildefiler. Selve Eschalon-medlemmet er ikke pakket ut. CRC32 er ikke en kryptografisk bekreftelse på identiske bytes; tilknytningen er derfor merket som en slutning.",
+      "version": "1.00"
+    },
+    {
+      "distribution": "unknown",
+      "identification_id": "identification:2dac76910ad6828933f5a9d9115208821ef7249fb05cc6cbe928f082011ad05e",
+      "inferred": true,
+      "key": {
+        "entry": "Tool4469736b7370616365",
+        "manifest": "sha256:13e520c97edd5869b07eafd3348e854c838a2082663342cabd314c16bb1f4ce2"
+      },
+      "launch_sha256": "a367f38eba2b06da106296c7903e5e48aa4aeb826250d9436c7b42c7294f8070",
+      "medium": "kcd-13-2000",
+      "name": "DiskSpace",
+      "note": "Forslag støttet av arkivets filnavn, størrelse og CRC32 og samsvarende løse kildefiler. Selve Eschalon-medlemmet er ikke pakket ut. CRC32 er ikke en kryptografisk bekreftelse på identiske bytes; tilknytningen er derfor merket som en slutning.",
+      "version": "1.00"
+    },
+    {
+      "distribution": "unknown",
+      "identification_id": "identification:fdbb0f19b87d46e47a591b5ec7792b34b5b543e6c120ad27b8561ac11f65b42f",
+      "inferred": true,
+      "key": {
+        "entry": "Tool4469736b5370616365",
+        "manifest": "sha256:a4f0f99672722f1468df487b0379251c5e84cc945f8716c5746fc27fe3a3aada"
+      },
+      "launch_sha256": "a367f38eba2b06da106296c7903e5e48aa4aeb826250d9436c7b42c7294f8070",
+      "medium": "kcd-8-2001",
+      "name": "DiskSpace",
+      "note": "Forslag støttet av arkivets filnavn, størrelse og CRC32 og samsvarende løse kildefiler. Selve Eschalon-medlemmet er ikke pakket ut. CRC32 er ikke en kryptografisk bekreftelse på identiske bytes; tilknytningen er derfor merket som en slutning.",
+      "version": "1.00"
+    },
+    {
+      "distribution": "unknown",
+      "identification_id": "identification:546829db862053a303260362c586c601e046b81714905e60afc056fe9a005c74",
+      "inferred": false,
+      "key": {
+        "entry": "Tool41646177617265",
+        "manifest": "sha256:a4f0f99672722f1468df487b0379251c5e84cc945f8716c5746fc27fe3a3aada"
+      },
+      "launch_sha256": "0e63af3144d0c007b1719e19af6a202c70c97da327a3c5d452fcbb728273795c",
+      "medium": "kcd-8-2001",
+      "name": "Ad-aware",
+      "note": "Programnavnet er belagt. Samme dokument sier både 4.0 og Release 4.1; versjon beholdes som uavklart. Dette er ikke en godkjenning av noen av de to versjonene.",
+      "version": "unknown"
+    },
+    {
+      "distribution": "unknown",
+      "identification_id": "identification:f19dc6c7003a22ed18bbc278264bf65584e2d969ad5c4f51ab224785d71bbfaa",
+      "inferred": false,
+      "key": {
+        "entry": "Tool476f6f676c65",
+        "manifest": "sha256:a4f0f99672722f1468df487b0379251c5e84cc945f8716c5746fc27fe3a3aada"
+      },
+      "launch_sha256": "39e5fe5846b8a62e9d6403b9503868c04a39d8621ce38342e76f4304d0250cdc",
+      "medium": "kcd-8-2001",
+      "name": "Google Toolbar for IE",
+      "note": "Navnet står i installasjonspakkens signaturmetadata. Signaturens gyldighet er ikke verifisert og brukes ikke som tillitsbevis. Den Petite-komprimerte programkoden er ikke pakket ut; versjon er ukjent. VeriSign-tekstens «version 1.0» er ikke programversjonen.",
+      "version": "unknown"
+    }
+  ]
+}
