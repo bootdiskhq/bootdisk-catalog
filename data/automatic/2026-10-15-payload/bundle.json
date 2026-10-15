@@ -1,0 +1,756 @@
+{
+  "catalog_schema": "bootdisk-catalog-0.1",
+  "records": [
+    {
+      "id": "software:payload-d34f943b2965bd693d50e58960a3b7205bf76589961408bf6b6a7fffa71a58c1",
+      "name": "BlackBox",
+      "schema": "bootdisk-catalog-0.1",
+      "type": "software"
+    },
+    {
+      "id": "release:payload-d34f943b2965bd693d50e58960a3b7205bf76589961408bf6b6a7fffa71a58c1",
+      "schema": "bootdisk-catalog-0.1",
+      "software_id": "software:payload-d34f943b2965bd693d50e58960a3b7205bf76589961408bf6b6a7fffa71a58c1",
+      "type": "software_release",
+      "version": "4.0"
+    },
+    {
+      "artifact_id": "artifact:sha256:4f258b8c3473ca58eb0a4263c913adb9ba6d4350cbb1f7eb3977d96d3e9de761",
+      "distribution_kind": "unknown",
+      "evidence": [
+        {
+          "field": "automatic_payload_identity",
+          "kind": "derived",
+          "source_ref": {
+            "entry": "I6",
+            "manifest": "sha256:2e5f128883b3a0afea67604f1fd2518397e4b5c1fb128c2cd3f9d33aac6b3f50",
+            "path": "Tools/BlackBox/ibbx40-en.exe"
+          },
+          "value": {
+            "actor": "machine",
+            "container_sha256": "4f258b8c3473ca58eb0a4263c913adb9ba6d4350cbb1f7eb3977d96d3e9de761",
+            "container_size": 2214733,
+            "decision": {
+              "evidence": [
+                {
+                  "member": "ibbx.exe",
+                  "member_sha256": "a83376e3197f916a1e5d986f9da5e927b1349cb24cfd437be5de2d0ec67ac6a0",
+                  "member_size": 680019,
+                  "name": "BlackBox",
+                  "observations": [
+                    {
+                      "field": "StringFileInfo/040904b0/ProductName",
+                      "length": 40,
+                      "offset": 522932,
+                      "raw_base64": "SQBuAHQAZQByAHMAYwBvAHAAZQAgAEIAbABhAGMAawBCAG8AeAAAAA==",
+                      "resource_path": [
+                        16,
+                        1,
+                        0
+                      ],
+                      "value": "Interscope BlackBox"
+                    },
+                    {
+                      "field": "StringFileInfo/040904b0/ProductVersion",
+                      "length": 8,
+                      "offset": 523008,
+                      "raw_base64": "NAAuADAAAAA=",
+                      "resource_path": [
+                        16,
+                        1,
+                        0
+                      ],
+                      "value": "4.0"
+                    },
+                    {
+                      "field": "StringFileInfo/040904b0/FileDescription",
+                      "length": 64,
+                      "offset": 522316,
+                      "raw_base64": "SQBuAHQAZQByAHMAYwBvAHAAZQAgAEIAbABhAGMAawBCAG8AeAAgAEEAcABwAGwAaQBjAGEAdABpAG8AbgAAAA==",
+                      "resource_path": [
+                        16,
+                        1,
+                        0
+                      ],
+                      "value": "Interscope BlackBox Application"
+                    }
+                  ],
+                  "product_name": "Interscope BlackBox",
+                  "version": "4.0"
+                },
+                {
+                  "member": "ibbxsstn.exe",
+                  "member_sha256": "15f13506ec4fa20345cadbef6d34258c9df12e4b6f3303efcc208d9bb28ba710",
+                  "member_size": 110670,
+                  "name": "BlackBox",
+                  "observations": [
+                    {
+                      "field": "StringFileInfo/040904b0/ProductName",
+                      "length": 40,
+                      "offset": 80008,
+                      "raw_base64": "SQBuAHQAZQByAHMAYwBvAHAAZQAgAEIAbABhAGMAawBCAG8AeAAAAA==",
+                      "resource_path": [
+                        16,
+                        1,
+                        0
+                      ],
+                      "value": "Interscope BlackBox"
+                    },
+                    {
+                      "field": "StringFileInfo/040904b0/ProductVersion",
+                      "length": 8,
+                      "offset": 80084,
+                      "raw_base64": "NAAuADAAAAA=",
+                      "resource_path": [
+                        16,
+                        1,
+                        0
+                      ],
+                      "value": "4.0"
+                    },
+                    {
+                      "field": "StringFileInfo/040904b0/FileDescription",
+                      "length": 66,
+                      "offset": 79372,
+                      "raw_base64": "SQBuAHQAZQByAHMAYwBvAHAAZQAgAEIAbABhAGMAawBCAG8AeAAgAFQAcgBhAHkAIABNAG8AbgBpAHQAbwByAAAA",
+                      "resource_path": [
+                        16,
+                        1,
+                        0
+                      ],
+                      "value": "Interscope BlackBox Tray Monitor"
+                    }
+                  ],
+                  "product_name": "Interscope BlackBox",
+                  "version": "4.0"
+                },
+                {
+                  "member": "ibbxclpb.exe",
+                  "member_sha256": "212bc780c3a372385e4ee56de6ddaa3deb483be30e984212ea0865a791a33c20",
+                  "member_size": 319567,
+                  "name": "BlackBox",
+                  "observations": [
+                    {
+                      "field": "StringFileInfo/040904B0/ProductName",
+                      "length": 40,
+                      "offset": 270436,
+                      "raw_base64": "SQBuAHQAZQByAHMAYwBvAHAAZQAgAEIAbABhAGMAawBCAG8AeAAAAA==",
+                      "resource_path": [
+                        16,
+                        1,
+                        0
+                      ],
+                      "value": "Interscope BlackBox"
+                    },
+                    {
+                      "field": "StringFileInfo/040904B0/ProductVersion",
+                      "length": 8,
+                      "offset": 270512,
+                      "raw_base64": "NAAuADAAAAA=",
+                      "resource_path": [
+                        16,
+                        1,
+                        0
+                      ],
+                      "value": "4.0"
+                    },
+                    {
+                      "field": "StringFileInfo/040904B0/FileDescription",
+                      "length": 82,
+                      "offset": 269828,
+                      "raw_base64": "SQBuAHQAZQByAHMAYwBvAHAAZQAgAEIAbABhAGMAawBCAG8AeAAgAEMAbABpAHAAYgBvAGEAcgBkACAARQBuAGMAcgB5AHAAdABpAG8AbgAAAA==",
+                      "resource_path": [
+                        16,
+                        1,
+                        0
+                      ],
+                      "value": "Interscope BlackBox Clipboard Encryption"
+                    }
+                  ],
+                  "product_name": "Interscope BlackBox",
+                  "version": "4.0"
+                }
+              ],
+              "name": "BlackBox",
+              "version": "4.0"
+            },
+            "decoder": "7zip",
+            "decoder_sha256": "74b0910e50ea44d9760a57fada2192cfd530ba8bffbe7b47c412a464b796cabf",
+            "rule": "payload-product-identity-1",
+            "scope": "Product identity and numeric ProductVersion; no edition or redistribution inference"
+          }
+        }
+      ],
+      "id": "identification:payload-d34f943b2965bd693d50e58960a3b7205bf76589961408bf6b6a7fffa71a58c1",
+      "schema": "bootdisk-catalog-0.1",
+      "software_release_id": "release:payload-d34f943b2965bd693d50e58960a3b7205bf76589961408bf6b6a7fffa71a58c1",
+      "status": "curated",
+      "type": "identification"
+    },
+    {
+      "id": "software:payload-4ffd3e1a8b8f5722aafacdd1977eb8d33d63f5c39abc09323ac5161870af47a6",
+      "name": "Dimension 4",
+      "schema": "bootdisk-catalog-0.1",
+      "type": "software"
+    },
+    {
+      "id": "release:payload-4ffd3e1a8b8f5722aafacdd1977eb8d33d63f5c39abc09323ac5161870af47a6",
+      "schema": "bootdisk-catalog-0.1",
+      "software_id": "software:payload-4ffd3e1a8b8f5722aafacdd1977eb8d33d63f5c39abc09323ac5161870af47a6",
+      "type": "software_release",
+      "version": "4.2.1005"
+    },
+    {
+      "artifact_id": "artifact:sha256:78ec55681a45689ba7479e0badcf6b4bfbf6cf334643d7483d0c6c115d3db5e9",
+      "distribution_kind": "unknown",
+      "evidence": [
+        {
+          "field": "automatic_payload_identity",
+          "kind": "derived",
+          "source_ref": {
+            "entry": "I10",
+            "manifest": "sha256:2e5f128883b3a0afea67604f1fd2518397e4b5c1fb128c2cd3f9d33aac6b3f50",
+            "path": "Tools/D4/Setup.exe"
+          },
+          "value": {
+            "actor": "machine",
+            "container_sha256": "78ec55681a45689ba7479e0badcf6b4bfbf6cf334643d7483d0c6c115d3db5e9",
+            "container_size": 299624,
+            "decision": {
+              "evidence": [
+                {
+                  "member": "D4.___",
+                  "member_sha256": "20da597337a5b6914646f72e5a894209400ee6ddd6eb760b06bdb0a836704351",
+                  "member_size": 114688,
+                  "name": "Dimension 4",
+                  "observations": [
+                    {
+                      "field": "StringFileInfo/040904b0/ProductName",
+                      "length": 24,
+                      "offset": 112228,
+                      "raw_base64": "RABpAG0AZQBuAHMAaQBvAG4AIAA0AAAA",
+                      "resource_path": [
+                        16,
+                        1,
+                        1033
+                      ],
+                      "value": "Dimension 4"
+                    },
+                    {
+                      "field": "StringFileInfo/040904b0/ProductVersion",
+                      "length": 18,
+                      "offset": 112288,
+                      "raw_base64": "NAAuADIALgAxADAAMAA1AAAA",
+                      "resource_path": [
+                        16,
+                        1,
+                        1033
+                      ],
+                      "value": "4.2.1005"
+                    },
+                    {
+                      "field": "StringFileInfo/040904b0/FileDescription",
+                      "length": 24,
+                      "offset": 111892,
+                      "raw_base64": "RABpAG0AZQBuAHMAaQBvAG4AIAA0AAAA",
+                      "resource_path": [
+                        16,
+                        1,
+                        1033
+                      ],
+                      "value": "Dimension 4"
+                    }
+                  ],
+                  "product_name": "Dimension 4",
+                  "version": "4.2.1005"
+                }
+              ],
+              "name": "Dimension 4",
+              "version": "4.2.1005"
+            },
+            "decoder": "7zip",
+            "decoder_sha256": "74b0910e50ea44d9760a57fada2192cfd530ba8bffbe7b47c412a464b796cabf",
+            "rule": "payload-product-identity-1",
+            "scope": "Product identity and numeric ProductVersion; no edition or redistribution inference"
+          }
+        }
+      ],
+      "id": "identification:payload-4ffd3e1a8b8f5722aafacdd1977eb8d33d63f5c39abc09323ac5161870af47a6",
+      "schema": "bootdisk-catalog-0.1",
+      "software_release_id": "release:payload-4ffd3e1a8b8f5722aafacdd1977eb8d33d63f5c39abc09323ac5161870af47a6",
+      "status": "curated",
+      "type": "identification"
+    },
+    {
+      "id": "software:payload-ad92d97f81b9734b27c5e6d1ff28b6e01f9ea92f3c157556590e93e538e59e72",
+      "name": "File Investigator",
+      "schema": "bootdisk-catalog-0.1",
+      "type": "software"
+    },
+    {
+      "id": "release:payload-ad92d97f81b9734b27c5e6d1ff28b6e01f9ea92f3c157556590e93e538e59e72",
+      "schema": "bootdisk-catalog-0.1",
+      "software_id": "software:payload-ad92d97f81b9734b27c5e6d1ff28b6e01f9ea92f3c157556590e93e538e59e72",
+      "type": "software_release",
+      "version": "1.50.0.0"
+    },
+    {
+      "artifact_id": "artifact:sha256:19299884af18046a94520dd11af8c3ed772fb8843b7a0dc3c436dd0bf9e2a29f",
+      "distribution_kind": "unknown",
+      "evidence": [
+        {
+          "field": "automatic_payload_identity",
+          "kind": "derived",
+          "source_ref": {
+            "entry": "I13",
+            "manifest": "sha256:2e5f128883b3a0afea67604f1fd2518397e4b5c1fb128c2cd3f9d33aac6b3f50",
+            "path": "Tools/File Investigator/FI150SW.EXE"
+          },
+          "value": {
+            "actor": "machine",
+            "container_sha256": "19299884af18046a94520dd11af8c3ed772fb8843b7a0dc3c436dd0bf9e2a29f",
+            "container_size": 595968,
+            "decision": {
+              "evidence": [
+                {
+                  "member": "FIPROP.EXE",
+                  "member_sha256": "2e82e5a78def0f50bcaa8ae7855e220cffc3f9b6f0bd0024e518947b640fe474",
+                  "member_size": 94208,
+                  "name": "File Investigator",
+                  "observations": [
+                    {
+                      "field": "StringFileInfo/040904b0/ProductName",
+                      "length": 96,
+                      "offset": 91704,
+                      "raw_base64": "RgBpAGwAZQAgAEkAbgB2AGUAcwB0AGkAZwBhAHQAbwByACAAZgBvAHIAIABXAGkAbgBkAG8AdwBzACAAOQA1AC8AOQA4AC8AMgAwADAAMAAgACYAIABOAFQAIAA0AAAA",
+                      "resource_path": [
+                        16,
+                        1,
+                        1033
+                      ],
+                      "value": "File Investigator for Windows 95/98/2000 & NT 4"
+                    },
+                    {
+                      "field": "StringFileInfo/040904b0/ProductVersion",
+                      "length": 24,
+                      "offset": 91836,
+                      "raw_base64": "MQAsACAANQAwACwAIAAwACwAIAAwAAAA",
+                      "resource_path": [
+                        16,
+                        1,
+                        1033
+                      ],
+                      "value": "1, 50, 0, 0"
+                    },
+                    {
+                      "field": "StringFileInfo/040904b0/FileDescription",
+                      "length": 118,
+                      "offset": 91144,
+                      "raw_base64": "RgBpAGwAZQAgAEkAbgB2AGUAcwB0AGkAZwBhAHQAbwByACAAUAByAG8AcABlAHIAdABpAGUAcwAgAGYAbwByACAAVwBpAG4AZABvAHcAcwAgADkANQAvADkAOAAvADIAMAAwADAAIAAmACAATgBUACAANAAAAA==",
+                      "resource_path": [
+                        16,
+                        1,
+                        1033
+                      ],
+                      "value": "File Investigator Properties for Windows 95/98/2000 & NT 4"
+                    }
+                  ],
+                  "product_name": "File Investigator for Windows 95/98/2000 & NT 4",
+                  "version": "1.50.0.0"
+                }
+              ],
+              "name": "File Investigator",
+              "version": "1.50.0.0"
+            },
+            "decoder": "7zip",
+            "decoder_sha256": "74b0910e50ea44d9760a57fada2192cfd530ba8bffbe7b47c412a464b796cabf",
+            "rule": "payload-product-identity-1",
+            "scope": "Product identity and numeric ProductVersion; no edition or redistribution inference"
+          }
+        }
+      ],
+      "id": "identification:payload-ad92d97f81b9734b27c5e6d1ff28b6e01f9ea92f3c157556590e93e538e59e72",
+      "schema": "bootdisk-catalog-0.1",
+      "software_release_id": "release:payload-ad92d97f81b9734b27c5e6d1ff28b6e01f9ea92f3c157556590e93e538e59e72",
+      "status": "curated",
+      "type": "identification"
+    },
+    {
+      "id": "software:payload-fc1d224613593da38e47425fdbc39269b02ef16d51b7966fa8cc382f237cd411",
+      "name": "Tool Pro",
+      "schema": "bootdisk-catalog-0.1",
+      "type": "software"
+    },
+    {
+      "id": "release:payload-fc1d224613593da38e47425fdbc39269b02ef16d51b7966fa8cc382f237cd411",
+      "schema": "bootdisk-catalog-0.1",
+      "software_id": "software:payload-fc1d224613593da38e47425fdbc39269b02ef16d51b7966fa8cc382f237cd411",
+      "type": "software_release",
+      "version": "1.76"
+    },
+    {
+      "artifact_id": "artifact:sha256:eda6cf11dd35909a8c6e3428eee65688890f205807ab8f4335a2a2a44b16944d",
+      "distribution_kind": "unknown",
+      "evidence": [
+        {
+          "field": "automatic_payload_identity",
+          "kind": "derived",
+          "source_ref": {
+            "entry": "I31",
+            "manifest": "sha256:2e5f128883b3a0afea67604f1fd2518397e4b5c1fb128c2cd3f9d33aac6b3f50",
+            "path": "Tools/Tool Pro/TPRO.EXE"
+          },
+          "value": {
+            "actor": "machine",
+            "container_sha256": "eda6cf11dd35909a8c6e3428eee65688890f205807ab8f4335a2a2a44b16944d",
+            "container_size": 498912,
+            "decision": {
+              "evidence": [
+                {
+                  "member": "TPr1.___",
+                  "member_sha256": "1d21a76ef08641d403e5b4c1fd34febb652147a5622234c02acfd00a539fa4b2",
+                  "member_size": 794624,
+                  "name": "Tool Pro",
+                  "observations": [
+                    {
+                      "field": "StringFileInfo/080904e4/ProductName",
+                      "length": 42,
+                      "offset": 755016,
+                      "raw_base64": "VABvAG8AbAAgAFAAcgBvACAAQQBwAHAAbABpAGMAYQB0AGkAbwBuAAAA",
+                      "resource_path": [
+                        16,
+                        1,
+                        2057
+                      ],
+                      "value": "Tool Pro Application"
+                    },
+                    {
+                      "field": "StringFileInfo/080904e4/ProductVersion",
+                      "length": 10,
+                      "offset": 755096,
+                      "raw_base64": "MQAuADcANgAAAA==",
+                      "resource_path": [
+                        16,
+                        1,
+                        2057
+                      ],
+                      "value": "1.76"
+                    },
+                    {
+                      "field": "StringFileInfo/080904e4/FileDescription",
+                      "length": 18,
+                      "offset": 754628,
+                      "raw_base64": "VABvAG8AbAAgAFAAcgBvAAAA",
+                      "resource_path": [
+                        16,
+                        1,
+                        2057
+                      ],
+                      "value": "Tool Pro"
+                    }
+                  ],
+                  "product_name": "Tool Pro Application",
+                  "version": "1.76"
+                }
+              ],
+              "name": "Tool Pro",
+              "version": "1.76"
+            },
+            "decoder": "7zip",
+            "decoder_sha256": "74b0910e50ea44d9760a57fada2192cfd530ba8bffbe7b47c412a464b796cabf",
+            "rule": "payload-product-identity-1",
+            "scope": "Product identity and numeric ProductVersion; no edition or redistribution inference"
+          }
+        }
+      ],
+      "id": "identification:payload-fc1d224613593da38e47425fdbc39269b02ef16d51b7966fa8cc382f237cd411",
+      "schema": "bootdisk-catalog-0.1",
+      "software_release_id": "release:payload-fc1d224613593da38e47425fdbc39269b02ef16d51b7966fa8cc382f237cd411",
+      "status": "curated",
+      "type": "identification"
+    },
+    {
+      "id": "software:payload-3e1913215fbc78db253153e970d1e9c43ea4a379da396182d5e759519692d3cf",
+      "name": "LastQuit",
+      "schema": "bootdisk-catalog-0.1",
+      "type": "software"
+    },
+    {
+      "id": "release:payload-3e1913215fbc78db253153e970d1e9c43ea4a379da396182d5e759519692d3cf",
+      "schema": "bootdisk-catalog-0.1",
+      "software_id": "software:payload-3e1913215fbc78db253153e970d1e9c43ea4a379da396182d5e759519692d3cf",
+      "type": "software_release",
+      "version": "1.0.0.1"
+    },
+    {
+      "artifact_id": "artifact:sha256:25bbcb5415f46aaf593450a471d8122c9b804bb6757a3e532d71a6aef40955c7",
+      "distribution_kind": "unknown",
+      "evidence": [
+        {
+          "field": "automatic_payload_identity",
+          "kind": "derived",
+          "source_ref": {
+            "entry": "K2D2",
+            "manifest": "sha256:3c84ce0bbf53d88fbc45ae9aaaf937d71d643cf0500c7fb1fc0b634ccc41c57d",
+            "path": "LastQuit/LastQUITv1.exe"
+          },
+          "value": {
+            "actor": "machine",
+            "container_sha256": "25bbcb5415f46aaf593450a471d8122c9b804bb6757a3e532d71a6aef40955c7",
+            "container_size": 5398212,
+            "decision": {
+              "evidence": [
+                {
+                  "member": "/Disk1/LastQuit.exe",
+                  "member_sha256": "1bb8935993befaa8274af061bb4ee06588f7cda3461f9f6b12d2d4cb505b965b",
+                  "member_size": 655360,
+                  "name": "LastQuit",
+                  "observations": [
+                    {
+                      "field": "StringFileInfo/040904B0/ProductName",
+                      "length": 42,
+                      "offset": 433832,
+                      "raw_base64": "TABhAHMAdABRAHUAaQB0ACAAQQBwAHAAbABpAGMAYQB0AGkAbwBuAAAA",
+                      "resource_path": [
+                        16,
+                        1,
+                        1033
+                      ],
+                      "value": "LastQuit Application"
+                    },
+                    {
+                      "field": "StringFileInfo/040904B0/ProductVersion",
+                      "length": 22,
+                      "offset": 433912,
+                      "raw_base64": "MQAsACAAMAAsACAAMAAsACAAMQAAAA==",
+                      "resource_path": [
+                        16,
+                        1,
+                        1033
+                      ],
+                      "value": "1, 0, 0, 1"
+                    },
+                    {
+                      "field": "StringFileInfo/040904B0/FileDescription",
+                      "length": 50,
+                      "offset": 433456,
+                      "raw_base64": "TABhAHMAdABRAHUAaQB0ACAATQBGAEMAIABBAHAAcABsAGkAYwBhAHQAaQBvAG4AAAA=",
+                      "resource_path": [
+                        16,
+                        1,
+                        1033
+                      ],
+                      "value": "LastQuit MFC Application"
+                    }
+                  ],
+                  "product_name": "LastQuit Application",
+                  "version": "1.0.0.1"
+                }
+              ],
+              "name": "LastQuit",
+              "version": "1.0.0.1"
+            },
+            "decoder": "7zip",
+            "decoder_sha256": "74b0910e50ea44d9760a57fada2192cfd530ba8bffbe7b47c412a464b796cabf",
+            "rule": "payload-product-identity-1",
+            "scope": "Product identity and numeric ProductVersion; no edition or redistribution inference"
+          }
+        }
+      ],
+      "id": "identification:payload-3e1913215fbc78db253153e970d1e9c43ea4a379da396182d5e759519692d3cf",
+      "schema": "bootdisk-catalog-0.1",
+      "software_release_id": "release:payload-3e1913215fbc78db253153e970d1e9c43ea4a379da396182d5e759519692d3cf",
+      "status": "curated",
+      "type": "identification"
+    },
+    {
+      "id": "software:payload-0b0082bc75f9f7a88731f9d25c290beae69cf29af91ebffcb602095d098fac82",
+      "name": "Deep Pockets",
+      "schema": "bootdisk-catalog-0.1",
+      "type": "software"
+    },
+    {
+      "id": "release:payload-0b0082bc75f9f7a88731f9d25c290beae69cf29af91ebffcb602095d098fac82",
+      "schema": "bootdisk-catalog-0.1",
+      "software_id": "software:payload-0b0082bc75f9f7a88731f9d25c290beae69cf29af91ebffcb602095d098fac82",
+      "type": "software_release",
+      "version": "1.0.0.0"
+    },
+    {
+      "artifact_id": "artifact:sha256:5e662d45df7791a463cd384b2569ac0363c4240262339b588edc470634a7a0bd",
+      "distribution_kind": "unknown",
+      "evidence": [
+        {
+          "field": "automatic_payload_identity",
+          "kind": "derived",
+          "source_ref": {
+            "entry": "K2D3",
+            "manifest": "sha256:540ca0325f78fb9d89e84a43cb49d95a6a30dfb0901f9a9147d31429712e2a11",
+            "path": "DeepPockets/SETUP.EXE"
+          },
+          "value": {
+            "actor": "machine",
+            "container_sha256": "5e662d45df7791a463cd384b2569ac0363c4240262339b588edc470634a7a0bd",
+            "container_size": 198727,
+            "decision": {
+              "evidence": [
+                {
+                  "member": "DEEPP.EXE",
+                  "member_sha256": "096066849816e6733463ba323778ef8f97683d54f26cb82cf1fdd8fee0b1943b",
+                  "member_size": 197632,
+                  "name": "Deep Pockets",
+                  "observations": [
+                    {
+                      "field": "StringFileInfo/040904b0/ProductName",
+                      "length": 64,
+                      "offset": 191396,
+                      "raw_base64": "RABlAGUAcAAgAFAAbwBjAGsAZQB0AHMAIABiAHkAIABNAGkAZABTAHQAcgBlAGEAbQAsACAASQBuAGMALgAAAA==",
+                      "resource_path": [
+                        16,
+                        1,
+                        1033
+                      ],
+                      "value": "Deep Pockets by MidStream, Inc."
+                    },
+                    {
+                      "field": "StringFileInfo/040904b0/ProductVersion",
+                      "length": 22,
+                      "offset": 191496,
+                      "raw_base64": "MQAsACAAMAAsACAAMAAsACAAMAAAAA==",
+                      "resource_path": [
+                        16,
+                        1,
+                        1033
+                      ],
+                      "value": "1, 0, 0, 0"
+                    },
+                    {
+                      "field": "StringFileInfo/040904b0/FileDescription",
+                      "length": 36,
+                      "offset": 191048,
+                      "raw_base64": "RABlAGUAcAAgAFAAbwBjAGsAZQB0AHMAIABHAGEAbQBlAAAA",
+                      "resource_path": [
+                        16,
+                        1,
+                        1033
+                      ],
+                      "value": "Deep Pockets Game"
+                    }
+                  ],
+                  "product_name": "Deep Pockets by MidStream, Inc.",
+                  "version": "1.0.0.0"
+                }
+              ],
+              "name": "Deep Pockets",
+              "version": "1.0.0.0"
+            },
+            "decoder": "7zip",
+            "decoder_sha256": "74b0910e50ea44d9760a57fada2192cfd530ba8bffbe7b47c412a464b796cabf",
+            "rule": "payload-product-identity-1",
+            "scope": "Product identity and numeric ProductVersion; no edition or redistribution inference"
+          }
+        }
+      ],
+      "id": "identification:payload-0b0082bc75f9f7a88731f9d25c290beae69cf29af91ebffcb602095d098fac82",
+      "schema": "bootdisk-catalog-0.1",
+      "software_release_id": "release:payload-0b0082bc75f9f7a88731f9d25c290beae69cf29af91ebffcb602095d098fac82",
+      "status": "curated",
+      "type": "identification"
+    },
+    {
+      "id": "software:payload-7977ab9f49ac8e58f8868d09215c98aea77a4204256cc5d6520f3770b945aa2c",
+      "name": "Motocross Madness 2",
+      "schema": "bootdisk-catalog-0.1",
+      "type": "software"
+    },
+    {
+      "id": "release:payload-7977ab9f49ac8e58f8868d09215c98aea77a4204256cc5d6520f3770b945aa2c",
+      "schema": "bootdisk-catalog-0.1",
+      "software_id": "software:payload-7977ab9f49ac8e58f8868d09215c98aea77a4204256cc5d6520f3770b945aa2c",
+      "type": "software_release",
+      "version": "2.0.0.0"
+    },
+    {
+      "artifact_id": "artifact:sha256:cdc95afa6ada9fd2192500a10b20de460e526d4ebfc19d5d9098e05e692682bc",
+      "distribution_kind": "unknown",
+      "evidence": [
+        {
+          "field": "automatic_payload_identity",
+          "kind": "derived",
+          "source_ref": {
+            "entry": "K13",
+            "manifest": "sha256:f50e2b8ffb99c25e5d398c9f1ed1b7afd74a53ecff3976f11f6bf4d9f6a6dfcc",
+            "path": "Motocross/MCM2Trial.exe"
+          },
+          "value": {
+            "actor": "machine",
+            "container_sha256": "cdc95afa6ada9fd2192500a10b20de460e526d4ebfc19d5d9098e05e692682bc",
+            "container_size": 42811450,
+            "decision": {
+              "evidence": [
+                {
+                  "member": "mcm2.exe",
+                  "member_sha256": "31fde4cc686a5ee89ef9095b90235325b195596867ecacefe511263e1509b874",
+                  "member_size": 1552384,
+                  "name": "Motocross Madness 2",
+                  "observations": [
+                    {
+                      "field": "StringFileInfo/000004b0/ProductName",
+                      "length": 62,
+                      "offset": 1548480,
+                      "raw_base64": "TQBpAGMAcgBvAHMAbwBmAHQArgAgAE0AbwB0AG8AYwByAG8AcwBzACAATQBhAGQAbgBlAHMAcwAgADIAAAA=",
+                      "resource_path": [
+                        16,
+                        1,
+                        1033
+                      ],
+                      "value": "Microsoft® Motocross Madness 2"
+                    },
+                    {
+                      "field": "StringFileInfo/000004b0/ProductVersion",
+                      "length": 22,
+                      "offset": 1548580,
+                      "raw_base64": "MgAsACAAMAAsACAAMAAsACAAMAAAAA==",
+                      "resource_path": [
+                        16,
+                        1,
+                        1033
+                      ],
+                      "value": "2, 0, 0, 0"
+                    },
+                    {
+                      "field": "StringFileInfo/000004b0/FileDescription",
+                      "length": 62,
+                      "offset": 1547860,
+                      "raw_base64": "TQBpAGMAcgBvAHMAbwBmAHQArgAgAE0AbwB0AG8AYwByAG8AcwBzACAATQBhAGQAbgBlAHMAcwAgADIAAAA=",
+                      "resource_path": [
+                        16,
+                        1,
+                        1033
+                      ],
+                      "value": "Microsoft® Motocross Madness 2"
+                    }
+                  ],
+                  "product_name": "Microsoft® Motocross Madness 2",
+                  "version": "2.0.0.0"
+                }
+              ],
+              "name": "Motocross Madness 2",
+              "version": "2.0.0.0"
+            },
+            "decoder": "7zip",
+            "decoder_sha256": "74b0910e50ea44d9760a57fada2192cfd530ba8bffbe7b47c412a464b796cabf",
+            "rule": "payload-product-identity-1",
+            "scope": "Product identity and numeric ProductVersion; no edition or redistribution inference"
+          }
+        }
+      ],
+      "id": "identification:payload-7977ab9f49ac8e58f8868d09215c98aea77a4204256cc5d6520f3770b945aa2c",
+      "schema": "bootdisk-catalog-0.1",
+      "software_release_id": "release:payload-7977ab9f49ac8e58f8868d09215c98aea77a4204256cc5d6520f3770b945aa2c",
+      "status": "curated",
+      "type": "identification"
+    }
+  ],
+  "schema": "bootdisk-catalog-curation-0.1"
+}
