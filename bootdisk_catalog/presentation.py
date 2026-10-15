@@ -78,6 +78,22 @@ def source_context(manifest_path):
         tools = _tools_description(manifest, entry)
         original = entry.get("raw", {}).get("Global")
         description = observation(original, "raw/Global") if isinstance(original, str) and original.strip() else None
+        special = entry.get("evidence", {}).get("metadata_section") == "Generelt"
+        if special:
+            evidence = entry["evidence"]
+            fields = manifest.get("source", {}).get("sections", {}).get("Generelt", {})
+            raw = entry.get("raw", {})
+            container = evidence.get("metadata_container", {})
+            inventory = [f for f in manifest.get("file_inventory", []) if f.get("path") == container.get("path")]
+            text = fields.get("SpecielTekst")
+            if not (evidence.get("title_field") == "Speciel" and evidence.get("description_field") == "SpecielTekst"
+                    and isinstance(text, str) and text.strip()
+                    and isinstance(fields.get("Speciel"), str) and fields["Speciel"].strip()
+                    and raw.get("Speciel") == fields["Speciel"] == entry.get("normalized", {}).get("title")
+                    and raw.get("SpecielTekst") == text
+                    and len(inventory) == 1 and all(container.get(k) == inventory[0].get(k) for k in ("size", "sha256"))):
+                raise CatalogError("Special description does not match preserved metadata")
+            description = observation(text, "raw/SpecielTekst")
         is_tools = "description_tools" in entry.get("evidence", {})
         if is_tools:
             description = observation(tools, "evidence/description_tools/text") if tools is not None else None
