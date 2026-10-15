@@ -53,3 +53,25 @@ protected by being outside this pipeline, not by a claim of merged integration.
 5. Wire the queue into the local service and Claude's read-only Web adapter.
 
 The public site and its release version are unchanged by this work.
+
+## October 2026: source-attributed machine interpretations
+
+See [ADR-009](adr-009-machine-source-identification.md) for the bounded successor
+rule in `bootdisk_catalog.automatic_identification.build_bundle`. It produces
+Catalog records and an audit, not just field suggestions. Its results are
+explicitly preliminary; the payload inspection work above remains outstanding.
+
+Run a reversible snapshot (Python 3.10+, no network or executable execution):
+
+```sh
+python -m bootdisk_catalog.automatic_identification /path/to/catalog \
+  --manifest /path/to/manifest.json --source /Volumes/CD \
+  --entries /path/to/pending-source-ids.json \
+  --review-state /path/to/review-state.json --output /path/to/new-snapshot
+```
+
+`pending-source-ids.json` is an explicit array of source IDs for this manifest.
+The output contains `catalog/`, `bundle.json` and `audit.json`. Existing outputs
+are refused. The input catalog and review state remain unchanged. Generate public
+projections from the candidate snapshot after checking its audit. Revert by using
+the input snapshot. Do not copy it over a live review workspace.
