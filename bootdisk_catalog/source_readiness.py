@@ -13,8 +13,9 @@ from pathlib import Path
 
 from .catalog import CatalogError
 from .file_association import explain_references
+from .completed_investigations import completed_investigation
 
-RULE = "source-catalog-readiness-2"
+RULE = "source-catalog-readiness-3"
 KNOWN_ISSUES = {
     "conflicting_launch_targets", "missing_launch_file",
     "missing_auxiliary_launch_file", "unresolved_warning_continue_launch",
@@ -97,6 +98,9 @@ def assess_manifest(manifest_path):
         else:
             association = "not_applicable_or_unrecorded"
         explanation = explain_references(entry)
+        completion = completed_investigation(ref, entry["source_id"])
+        if completion and not unknown:
+            explanation = completion
         if explanation:
             association = "observed"
         # Technical exceptions go to machine inspection first. A human queue
