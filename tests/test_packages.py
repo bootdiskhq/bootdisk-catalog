@@ -68,3 +68,23 @@ class PackageTests(unittest.TestCase):
                 path = root / "manifest.json"; path.write_text(json.dumps(m))
                 with self.assertRaises((IngestImportError, CatalogValidationError)):
                     import_manifest(path, root / "catalog")
+
+    def test_empty_source_inventory_is_retained_without_empty_package(self):
+        from bootdisk_catalog.packages import import_packages
+        m=fixture();empty={"source_id":"K9","files":{"inventory_refs":[]},
+            "content_identity":{"algorithm":"sha256","file_count":0,"total_size":0,
+                                "manifest_sha256":hashlib.sha256(b"").hexdigest()}}
+        m['entries'].append(empty)
+        with tempfile.TemporaryDirectory() as directory:
+            import_packages(m,Path(directory))
+            self.assertEqual(len(list((Path(directory)/'packages').glob('*.json'))),2)
+            self.assertEqual(m['entries'][-1],empty)
+
+    def test_inconsistent_empty_identity_is_rejected(self):
+        from bootdisk_catalog.packages import import_packages
+        for field,value in [('file_count',1),('total_size',1),('manifest_sha256','0'*64)]:
+            m=fixture();e=m['entries'][0];e['files']['inventory_refs']=[]
+            e['content_identity']={'algorithm':'sha256','file_count':0,'total_size':0,'manifest_sha256':hashlib.sha256(b'').hexdigest()}
+            e['content_identity'][field]=value
+            with tempfile.TemporaryDirectory() as directory:
+                with self.assertRaisesRegex(IngestImportError,'invalid empty'):import_packages(m,Path(directory))
