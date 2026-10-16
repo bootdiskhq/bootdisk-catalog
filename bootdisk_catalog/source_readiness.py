@@ -53,6 +53,10 @@ def title_evidence(manifest, entry):
     if manifest.get("schema_version") != "0.9":
         return None
     raw = entry.get("raw", {})
+    if "calendar_metadata" in evidence:
+        from .calendar_source import validate_calendar
+        if validate_calendar(manifest, entry):
+            return {"field": "raw/Titel", "value": title, "original": raw["Titel"]}
     if "description_tools" in evidence:
         # source_context validates preserved bytes, hash, section and raw fields.
         field, section = "Navn", raw
