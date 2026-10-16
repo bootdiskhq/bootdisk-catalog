@@ -75,6 +75,8 @@ def source_context(manifest_path):
         key = {"manifest": manifest_ref, "entry": entry["source_id"]}
         def observation(value, pointer):
             return {"value": value, "source_ref": {**key, "pointer": f"/entries/{position}/{pointer}"}}
+        from .calendar_source import validate_calendar
+        validate_calendar(manifest, entry)
         tools = _tools_description(manifest, entry)
         original = entry.get("raw", {}).get("Global")
         description = observation(original, "raw/Global") if isinstance(original, str) and original.strip() else None
