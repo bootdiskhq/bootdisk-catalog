@@ -4,6 +4,7 @@ The ingest path/NUL/SHA-256/newline framing is preserved exactly. These packages
 include editorial assets and are observations, not claims of installation closure.
 """
 from pathlib import Path
+import hashlib
 
 from .catalog import SCHEMA, Catalog, LoadedRecord
 from .import_ingest import IngestImportError, _write_json
@@ -31,7 +32,15 @@ def import_packages(manifest, output):
     for entry in entries:
         refs = entry["files"]["inventory_refs"]
         identity = entry.get("content_identity", {})
-        if not isinstance(refs, list) or not refs or any(not isinstance(p, str) for p in refs):
+        if refs == []:
+            empty = {"algorithm": "sha256", "file_count": 0, "total_size": 0,
+                     "manifest_sha256": hashlib.sha256(b"").hexdigest()}
+            if identity != empty:
+                raise IngestImportError("invalid empty package content identity")
+            # An editorial source row can exist without any package bytes.
+            # Do not invent a shared empty package for unrelated source rows.
+            continue
+        if not isinstance(refs, list) or any(not isinstance(p, str) for p in refs):
             raise IngestImportError("package inventory_refs must be non-empty paths")
         if len(refs) != len(set(refs)):
             raise IngestImportError("duplicate package inventory reference")
