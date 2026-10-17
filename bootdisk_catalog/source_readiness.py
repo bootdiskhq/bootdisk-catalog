@@ -15,7 +15,7 @@ from .catalog import CatalogError
 from .file_association import explain_references
 from .completed_investigations import completed_investigation
 
-RULE = "source-catalog-readiness-3"
+RULE = "source-catalog-readiness-4"
 KNOWN_ISSUES = {
     "conflicting_launch_targets", "missing_launch_file",
     "missing_auxiliary_launch_file", "unresolved_warning_continue_launch",
@@ -53,6 +53,9 @@ def title_evidence(manifest, entry):
     if manifest.get("schema_version") != "0.9":
         return None
     raw = entry.get("raw", {})
+    if any(k.casefold() == 'titelno' and isinstance(v, str) and v.strip() for k, v in raw.items()):
+        from .localized_source import localized_title
+        return localized_title(manifest, entry)
     if "calendar_metadata" in evidence:
         from .calendar_source import validate_calendar
         if validate_calendar(manifest, entry):

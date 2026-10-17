@@ -37,10 +37,14 @@ def _tools_description(manifest, entry):
         raw = base64.b64decode(source.get("raw_base64", ""), validate=True)
         parser = configparser.ConfigParser(interpolation=None, strict=False)
         parser.optionxform = str
-        parser.read_string(raw.decode("cp1252"))
+        from .dtx_text import ini_projection
+        text, continuation_lines = ini_projection(raw.decode("cp1252"))
+        parser.read_string(text)
         section = dict(parser[entry["source_id"]])
     except (ValueError, TypeError, KeyError, UnicodeError, configparser.Error) as exc:
         raise CatalogError("invalid preserved Tools metadata") from exc
+    if continuation_lines and source.get("text_projection") != {"method": "dtx-prose-continuation-1", "continuation_lines": continuation_lines}:
+        raise CatalogError("Tools multiline projection does not match preserved bytes")
     binding = {"path": source.get("resolved_path", source.get("path")), "sha256": hashlib.sha256(raw).hexdigest(),
                "section": entry["source_id"]}
     inventory = [f for f in manifest.get("file_inventory", []) if f.get("path") == binding["path"]]
