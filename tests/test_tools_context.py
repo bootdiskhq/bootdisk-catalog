@@ -42,6 +42,21 @@ class ToolsContextTests(unittest.TestCase):
         m['entries'][0]['evidence']['description_rtf'] = {'text': 'Not the Tools source'}
         self.assertIsNone(self.project(m)['description'])
 
+    def test_multiline_projection_is_bound_to_bytes_and_line_numbers(self):
+        m = self.fixture()
+        source = m['source']['supplemental_metadata'][0]
+        data = base64.b64decode(source['raw_base64']).replace(b'Original omtale', b'Original omtale\nAgain\nAgain')
+        digest = hashlib.sha256(data).hexdigest()
+        source.update(raw_base64=base64.b64encode(data).decode(), sha256=digest, size=len(data),
+                      text_projection={'method':'dtx-prose-continuation-1','continuation_lines':[4,5]})
+        m['file_inventory'][0].update(sha256=digest,size=len(data))
+        e=m['entries'][0];e['evidence']['metadata_source']['sha256']=digest
+        e['evidence']['description_tools'].update(sha256=digest,text='Original omtale\nAgain\nAgain')
+        e['raw']['InstruksNo']='Original omtale\nAgain\nAgain'
+        self.assertEqual(self.project(m)['description']['value'],'Original omtale\nAgain\nAgain')
+        source['text_projection']['continuation_lines']=[4]
+        with self.assertRaises(CatalogError):self.project(m)
+
     def test_forged_text_bytes_or_binding_are_rejected(self):
         for change in ('text', 'bytes', 'section', 'inventory', 'raw'):
             with self.subTest(change=change):
