@@ -38,6 +38,10 @@ def title_evidence(manifest, entry):
     title = entry.get("normalized", {}).get("title")
     if not isinstance(title, str) or not title.strip() or any(ord(c) < 32 for c in title):
         return None
+    from .html_source import validate_html
+    html = validate_html(manifest, entry)
+    if html is not None:
+        return {"field": "evidence/html_menu/observation/title", "value": html["title"]}
     evidence = entry.get("evidence", {})
     if manifest.get("schema_version") == "kcd-director-experimental-1":
         selection = evidence.get("selection", {})

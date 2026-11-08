@@ -82,8 +82,12 @@ def source_context(manifest_path):
         from .calendar_source import validate_calendar
         validate_calendar(manifest, entry)
         tools = _tools_description(manifest, entry)
+        from .html_source import validate_html
+        html = validate_html(manifest, entry)
         original = entry.get("raw", {}).get("Global")
         description = observation(original, "raw/Global") if isinstance(original, str) and original.strip() else None
+        if html is not None:
+            description = observation(html["description"], "evidence/html_menu/observation/description")
         special = entry.get("evidence", {}).get("metadata_section") == "Generelt"
         if special:
             evidence = entry["evidence"]
