@@ -1,6 +1,7 @@
 """Validate HTML observations against preserved page and menu-index bytes."""
 import base64
 import hashlib
+from pathlib import PurePosixPath
 from .catalog import CatalogError
 
 def validate_html(manifest, entry):
@@ -18,6 +19,10 @@ def validate_html(manifest, entry):
         row=index_rows(raw('scripts/cdindex.js'))[position]
         if evidence['page']!=row['url']:raise ValueError('HTML page/index mismatch')
         observed=parse_page(raw(row['url']),row)
+        expected_id = (row['category'] + PurePosixPath(observed['image']).parent.name
+                       if row['category'] in ('articles', 'videos') else PurePosixPath(row['url']).stem)
+        if entry['source_id'] != expected_id:
+            raise ValueError('HTML source ID differs from selected menu entry')
         if observed!=evidence['observation'] or entry['raw']!={'html_title':observed['title'],'html_description':observed['description']}:raise ValueError('HTML observation mismatch')
         if any(entry['normalized'].get(k)!=observed[k] for k in ('title','description','license')) or entry['normalized']['categories']!=[observed['category']]:raise ValueError('HTML normalization mismatch')
         refs=entry['files']['referenced']

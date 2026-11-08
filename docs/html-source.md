@@ -11,6 +11,6 @@ new approval or installed-product identification: the result is documented CD
 source wording with independent file-association state. Source versions and
 licenses remain observations, not curated SoftwareRelease facts.
 
-Six focused tests cover valid evidence and negative cases. Real-media acceptance
+Seven focused tests cover valid evidence and negative cases. Real-media acceptance
 is recorded with the coordinator's 2012 intake report. A missing Ingest checkout
 skips these integration tests explicitly; it must not be counted as passing.
