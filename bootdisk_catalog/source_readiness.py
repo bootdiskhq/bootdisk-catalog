@@ -42,6 +42,9 @@ def title_evidence(manifest, entry):
     html = validate_html(manifest, entry)
     if html is not None:
         return {"field": "evidence/html_menu/observation/title", "value": html["title"]}
+    from .late_dtx import fields
+    selected=fields(manifest,entry)
+    if selected:return {"field":"raw/"+selected[0],"value":title}
     evidence = entry.get("evidence", {})
     if manifest.get("schema_version") == "kcd-director-experimental-1":
         selection = evidence.get("selection", {})

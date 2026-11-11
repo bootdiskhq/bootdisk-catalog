@@ -86,6 +86,10 @@ def source_context(manifest_path):
         html = validate_html(manifest, entry)
         original = entry.get("raw", {}).get("Global")
         description = observation(original, "raw/Global") if isinstance(original, str) and original.strip() else None
+        from .late_dtx import fields
+        selected=fields(manifest,entry)
+        if selected:
+            description=observation(entry["raw"][selected[1]],"raw/"+selected[1])
         if html is not None and html["description"] is not None:
             description = observation(html["description"], "evidence/html_menu/observation/description")
         special = entry.get("evidence", {}).get("metadata_section") == "Generelt"
