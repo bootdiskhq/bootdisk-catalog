@@ -114,6 +114,10 @@ def assess_manifest(manifest_path):
             explanation = completion
         if explanation:
             association = "observed"
+        if manifest.get('schema_version') == 'kcd-html-1' and title and entry.get('evidence', {}).get('html_menu', {}).get('observation', {}).get('source_defect') == 'original_page_render_failed':
+            # title_evidence above replayed both the index and the preserved page.
+            explanation = {**key, 'pattern':'documented_source_defect', 'explanation':'Spillet er oppført i CD-menyen under «Spill», men omtalesiden mangler på platen.'}
+            association = 'not_applicable_or_unrecorded'
         # Technical exceptions go to machine inspection first. A human queue
         # must contain a concrete unanswered question, not every unknown field.
         tasks = []
