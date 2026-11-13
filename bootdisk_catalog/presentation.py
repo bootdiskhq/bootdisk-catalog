@@ -128,6 +128,8 @@ def source_context(manifest_path):
             "menu_groups": observation(entry.get("normalized", {}).get("categories", []), "normalized/categories"),
             "issues": observation(entry.get("issues", []), "issues"),
         }
+        if html and html.get("version"):
+            result[entry["source_id"]]["version"] = observation(html["version"], "evidence/html_menu/observation/version")
     return result
 
 
